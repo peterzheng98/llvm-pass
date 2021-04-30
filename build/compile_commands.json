@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/mnt/ssd/projects/llvm-pass/build",
+  "command": "/usr/bin/c++  -I/mnt/ssd/llvm-project/llvm/include -I/mnt/ssd/llvm-project/build/include  -pedantic -Wall -Wextra -g -fno-rtti -fno-omit-frame-pointer -fsanitize=address -std=c++17 -o CMakeFiles/memorybuffer.dir/main.cpp.o -c /mnt/ssd/projects/llvm-pass/main.cpp",
+  "file": "/mnt/ssd/projects/llvm-pass/main.cpp"
+}
+]

@@ -1,0 +1,1 @@
+/mnt/ssd/llvm-project/build/bin/clang++ -g CMakeFiles/llvm_pass.dir/main.cpp.o -o llvm_pass 

@@ -1,0 +1,6 @@
+/mnt/ssd/projects/llvm-pass/build/CMakeFiles/edit_cache.dir
+/mnt/ssd/projects/llvm-pass/build/CMakeFiles/rebuild_cache.dir
+/mnt/ssd/projects/llvm-pass/build/CMakeFiles/intrinsics_gen.dir
+/mnt/ssd/projects/llvm-pass/build/CMakeFiles/omp_gen.dir
+/mnt/ssd/projects/llvm-pass/build/CMakeFiles/acc_gen.dir
+/mnt/ssd/projects/llvm-pass/build/CMakeFiles/memorybuffer.dir
