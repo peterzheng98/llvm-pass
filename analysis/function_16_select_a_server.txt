@@ -1,0 +1,24 @@
+[16]Function: select_a_server
+	Block: entry
+		alloca
+		alloca
+		store
+		store
+		load
+		load
+		icmp
+		br
+	Block: if.then
+		store
+		br
+	Block: if.end
+		load
+		load
+		add
+		store
+		sext
+		getelementptr
+		ret
+Phase 1: Allocated Variables: 
+number_servers.addr
+server_infos.addr

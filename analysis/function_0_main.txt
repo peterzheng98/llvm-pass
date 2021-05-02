@@ -1,0 +1,465 @@
+[0]Function: main
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		store
+		store
+		store
+		store
+		store
+		store
+		load
+		sext
+		call
+		bitcast
+		store
+		store
+		br
+	Block: while.cond
+		load
+		load
+		call
+		store
+		icmp
+		br
+	Block: while.body
+		load
+		switch
+	Block: sw.bb
+		load
+		call
+		store
+		load
+		icmp
+		br
+	Block: land.lhs.true
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		trunc
+		store
+		br
+	Block: if.else
+		load
+		call
+		store
+		br
+	Block: if.end
+		br
+	Block: sw.bb10
+		load
+		icmp
+		br
+	Block: if.then13
+		load
+		call
+		store
+		br
+	Block: if.else15
+		load
+		store
+		br
+	Block: if.end16
+		br
+	Block: sw.bb17
+		load
+		call
+		store
+		load
+		icmp
+		br
+	Block: land.lhs.true21
+		load
+		icmp
+		br
+	Block: if.then24
+		load
+		trunc
+		store
+		br
+	Block: if.else26
+		load
+		call
+		store
+		br
+	Block: if.end28
+		br
+	Block: sw.bb29
+		load
+		load
+		load
+		add
+		store
+		sext
+		getelementptr
+		store
+		br
+	Block: sw.bb30
+		load
+		icmp
+		br
+	Block: if.then33
+		load
+		call
+		store
+		br
+	Block: if.else35
+		load
+		store
+		br
+	Block: if.end36
+		br
+	Block: sw.bb37
+		store
+		load
+		icmp
+		br
+	Block: if.then38
+		load
+		call
+		store
+		br
+	Block: if.end40
+		br
+	Block: sw.bb41
+		store
+		load
+		icmp
+		br
+	Block: if.then43
+		load
+		call
+		store
+		br
+	Block: if.end45
+		br
+	Block: sw.default
+		load
+		call
+		store
+		br
+	Block: sw.epilog
+		br
+	Block: while.end
+		load
+		icmp
+		zext
+		select
+		call
+		store
+		icmp
+		br
+	Block: if.then51
+		load
+		call
+		load
+		call
+		call
+		store
+		br
+	Block: if.end55
+		load
+		icmp
+		br
+	Block: if.then57
+		load
+		bitcast
+		call
+		icmp
+		br
+	Block: if.then61
+		load
+		call
+		load
+		call
+		call
+		br
+	Block: if.end65
+		br
+	Block: if.end66
+		bitcast
+		call
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		store
+		load
+		bitcast
+		call
+		icmp
+		br
+	Block: if.then70
+		load
+		call
+		load
+		call
+		call
+		store
+		br
+	Block: if.end74
+		bitcast
+		call
+		getelementptr
+		store
+		load
+		bitcast
+		call
+		icmp
+		br
+	Block: if.then78
+		load
+		call
+		load
+		call
+		call
+		store
+		br
+	Block: if.end82
+		load
+		load
+		load
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then86
+		load
+		load
+		load
+		call
+		icmp
+		br
+	Block: if.then90
+		load
+		call
+		load
+		call
+		call
+		store
+		br
+	Block: if.end94
+		load
+		bitcast
+		call
+		br
+	Block: if.else95
+		load
+		call
+		store
+		br
+	Block: if.end97
+		load
+		load
+		load
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then101
+		load
+		call
+		store
+		br
+	Block: if.end103
+		load
+		sext
+		call
+		bitcast
+		store
+		store
+		br
+	Block: for.cond
+		load
+		load
+		icmp
+		br
+	Block: for.body
+		load
+		load
+		sext
+		getelementptr
+		load
+		load
+		load
+		load
+		load
+		sext
+		getelementptr
+		getelementptr
+		call
+		load
+		load
+		sext
+		getelementptr
+		getelementptr
+		store
+		load
+		load
+		sext
+		getelementptr
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then120
+		load
+		load
+		call
+		store
+		br
+	Block: if.end122
+		br
+	Block: for.inc
+		load
+		add
+		store
+		br
+	Block: for.end
+		load
+		call
+		icmp
+		br
+	Block: if.then127
+		load
+		call
+		load
+		call
+		call
+		store
+		br
+	Block: if.end131
+		br
+	Block: for.cond132
+		call
+		bitcast
+		store
+		load
+		call
+		load
+		getelementptr
+		store
+		icmp
+		br
+	Block: if.then137
+		load
+		call
+		load
+		call
+		call
+		load
+		bitcast
+		call
+		br
+	Block: if.else141
+		load
+		load
+		call
+		store
+		load
+		load
+		getelementptr
+		store
+		load
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		store
+		load
+		load
+		getelementptr
+		store
+		load
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		store
+		load
+		bitcast
+		call
+		icmp
+		br
+	Block: if.then153
+		load
+		call
+		load
+		getelementptr
+		load
+		call
+		load
+		bitcast
+		call
+		br
+	Block: if.end157
+		br
+	Block: if.end158
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+L_arg
+S_args
+X_arg
+argc.addr
+argv.addr
+c
+events
+fd
+i
+i_streams
+initmsg
+ipv4only
+ipv6only
+local_addrs
+number_local_addrs
+number_servers
+o_streams
+proxy_info
+retval
+server_info
+server_infos
+tid
+value

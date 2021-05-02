@@ -1,0 +1,180 @@
+[13]Function: parse_addrs_list
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		store
+		store
+		load
+		icmp
+		br
+	Block: lor.lhs.false
+		load
+		icmp
+		br
+	Block: if.then
+		store
+		br
+	Block: if.end
+		store
+		load
+		store
+		br
+	Block: for.cond
+		load
+		load
+		sext
+		icmp
+		br
+	Block: for.body
+		load
+		load
+		sext
+		icmp
+		br
+	Block: if.then7
+		load
+		add
+		store
+		br
+	Block: if.end8
+		br
+	Block: for.inc
+		load
+		getelementptr
+		store
+		br
+	Block: for.end
+		load
+		icmp
+		br
+	Block: if.then9
+		load
+		sext
+		mul
+		store
+		br
+	Block: if.else
+		load
+		sext
+		mul
+		store
+		br
+	Block: if.end13
+		load
+		call
+		bitcast
+		load
+		store
+		bitcast
+		call
+		load
+		icmp
+		br
+	Block: if.then15
+		getelementptr
+		store
+		br
+	Block: if.else16
+		getelementptr
+		store
+		br
+	Block: if.end18
+		getelementptr
+		store
+		getelementptr
+		store
+		getelementptr
+		store
+		load
+		icmp
+		br
+	Block: land.lhs.true
+		load
+		icmp
+		br
+	Block: if.then21
+		getelementptr
+		load
+		or
+		store
+		br
+	Block: if.end23
+		load
+		load
+		bitcast
+		store
+		load
+		call
+		store
+		br
+	Block: for.cond25
+		load
+		icmp
+		br
+	Block: for.body28
+		load
+		load
+		call
+		icmp
+		br
+	Block: if.then32
+		store
+		br
+	Block: if.end33
+		load
+		load
+		getelementptr
+		load
+		bitcast
+		load
+		getelementptr
+		load
+		zext
+		call
+		load
+		getelementptr
+		load
+		load
+		zext
+		getelementptr
+		store
+		load
+		call
+		br
+	Block: for.inc36
+		call
+		store
+		br
+	Block: for.end38
+		load
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+addr
+addr_list.addr
+addrs.addr
+hints
+ipv4only.addr
+ipv6only.addr
+number_local_addrs
+port.addr
+res
+retval
+size
+tmp

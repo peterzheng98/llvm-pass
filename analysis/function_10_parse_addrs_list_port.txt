@@ -1,0 +1,54 @@
+[10]Function: parse_addrs_list_port
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		store
+		br
+	Block: if.end
+		load
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then2
+		store
+		br
+	Block: if.else
+		load
+		getelementptr
+		store
+		load
+		store
+		load
+		load
+		load
+		load
+		load
+		call
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+addr_list.addr
+addrs.addr
+ipv4only.addr
+ipv6only.addr
+last_colon
+port
+retval
