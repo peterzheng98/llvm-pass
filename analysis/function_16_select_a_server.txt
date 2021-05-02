@@ -22,3 +22,5 @@
 Phase 1: Allocated Variables: 
 number_servers.addr
 server_infos.addr
+Phase 2:
+[Sequence]Load(ai_addrlen35) Load(select_a_server.i) Store(select_a_server.i) Load(select_a_server.i) Store(select_a_server.i) 

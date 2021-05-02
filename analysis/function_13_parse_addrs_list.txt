@@ -178,3 +178,5 @@ res
 retval
 size
 tmp
+Phase 2:
+[Sequence]Store() Load() Load() Store() Store(ai_family) Store(ai_family17) Store(ai_socktype) Store(ai_protocol) Store(ai_flags) Load(ai_flags22) Store(ai_flags22) Load() Load(ai_addr) Load(ai_addrlen) Load(ai_addrlen35) 

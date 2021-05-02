@@ -463,3 +463,5 @@ server_info
 server_infos
 tid
 value
+Phase 2:
+[Sequence]Load(optarg) Load(stderr) Load(stderr) Load(optarg) Load(optarg) Load(stderr) Load(optarg) Store(arrayidx) Load(stderr) Load(optarg) Load(stderr) Load(stderr) Load(stderr) Load(stderr) Load(call52) Load(stderr) Load(call62) Store(sinit_num_ostreams) Store(sinit_max_instreams) Load(stderr) Load(call71) Store(sctp_data_io_event) Load(stderr) Load(call79) Load(stderr) Load(call91) Load(stderr) Load(stderr) Load(arrayidx109) Store(number_addrs) Load(number_addrs117) Load(stderr) Load(stderr) Load(call128) Store(client_fd) Load(stderr) Load(call138) Store(ipv4only143) Store(ipv6only144) Store(server_fd) Store(local_addrs145) Store(number_local_addrs146) Load(server_addrs147) Store(server_addrs148) Load(number_addrs149) Store(number_server_addrs) Load(stderr) Load(client_fd155) 

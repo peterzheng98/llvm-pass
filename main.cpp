@@ -10,6 +10,8 @@
 #include "llvm/Support/raw_ostream.h"
 #include "llvm/IR/Operator.h"
 
+#include "element.h"
+
 #include <iostream>
 #include <memory>
 #include <thread>
@@ -17,11 +19,14 @@
 #include <fstream>
 #include <set>
 #include <string>
+#include <utility>
 using namespace llvm;
 
 const std::string path_prefix = "./analysis/";
 
 std::vector<std::thread> thread_pool;
+Element *head;
+
 
 void debug_llvm_value(llvm::Value *p){
   if(isa<llvm::Argument>(p)) std::cout << "type: Argument" << std::endl;
@@ -100,13 +105,17 @@ void check_function(llvm::Module::iterator &iter, int idx){
   for(auto &p : allocated_variables){
     output_files << p << std::endl;
   }
+  std::vector<std::pair<std::string, int>> temporatory_phase2;
+  idx = 0;
   // Phase 2: do Propagation
   // If a variable is on stack, then all its arithmetic target is on the stack
   func_iter = iter->begin(), func_terminal = iter->end();
   for(; func_terminal != func_iter; func_iter++){
     std::cout << "\tBlock: " << func_iter->getName().str() << std::endl;
-    for(auto inst_iter = func_iter->begin(), inst_terminal = func_iter->end(); inst_iter != inst_terminal; inst_iter++){
-      std::cout << "\t\t" << inst_iter->getOpcodeName() << "Use: " << inst_iter->hasOneUse() << std::endl;
+    for(auto inst_iter = func_iter->begin(), inst_terminal = func_iter->end(); inst_iter != inst_terminal; inst_iter++, idx++){
+      std::cout << "\t\t" << inst_iter->getOpcodeName() 
+                << " Target: " << inst_iter->getName().str()
+                << " Use: " << inst_iter->hasOneUse() << std::endl;
       if(isa<AllocaInst>(inst_iter)){
         // Allocation instructions: no need to do for this phase
         continue;
@@ -121,6 +130,13 @@ void check_function(llvm::Module::iterator &iter, int idx){
       }
       if(isa<ICmpInst>(inst_iter)){
         std::cout << "icmp: " << cast<ICmpInst>(inst_iter)->getOperand(0)->getName().str() << " " << cast<ICmpInst>(inst_iter)->getOperand(1)->getName().str() << " " << inst_iter->hasOneUse() << std::endl;
+        bool icmp_stack = true;
+        icmp_stack &= (isa<Constant>(cast<ICmpInst>(inst_iter)->getOperand(0)) || allocated_variables.count(cast<ICmpInst>(inst_iter)->getOperand(0)->getName().str()));
+        icmp_stack &= (isa<Constant>(cast<ICmpInst>(inst_iter)->getOperand(1)) || allocated_variables.count(cast<ICmpInst>(inst_iter)->getOperand(1)->getName().str()));
+        if(icmp_stack) {
+          allocated_variables.insert(inst_iter->getName().str());
+          temporatory_phase2.push_back(std::pair<std::string, int>(inst_iter->getName().str(), idx));
+        }
         continue;
       }
       if(isa<FCmpInst>(inst_iter)){
@@ -151,6 +167,38 @@ void check_function(llvm::Module::iterator &iter, int idx){
       std::cout << "not found: " << inst_iter->getOpcodeName() << std::endl;
     }
   }
+  std::cout << "Phase 2:" << std::endl;
+  output_files << "Phase 2:" << std::endl;
+  for(auto &t : temporatory_phase2){
+    std::cout << "Add: " << t.first << " " << t.second << std::endl;
+    output_files << "Add: " << t.first << " " << t.second << std::endl;
+  }
+
+  // Generate target:
+  Element *original = head;
+  func_iter = iter->begin(), func_terminal = iter->end();
+  for(; func_terminal != func_iter; func_iter++){
+    std::cout << "Phase 3\tBlock: " << func_iter->getName().str() << std::endl;
+    for(auto inst_iter = func_iter->begin(), inst_terminal = func_iter->end(); inst_iter != inst_terminal; inst_iter++, idx++){
+      if(isa<StoreInst>(inst_iter)){
+        std::string target = cast<StoreInst>(inst_iter)->getPointerOperand()->getName().str();
+        if(allocated_variables.count(target)) continue;
+        Element *n = new Element(Store, cast<StoreInst>(inst_iter)->getPointerOperand()->getName().str(), false);
+        head->addElement(n);
+        head = n;
+        continue;
+      }
+      if(isa<LoadInst>(inst_iter)){
+        std::string target = cast<LoadInst>(inst_iter)->getPointerOperand()->getName().str();
+        if(allocated_variables.count(target)) continue;
+        Element *n = new Element(Load, cast<LoadInst>(inst_iter)->getPointerOperand()->getName().str(), false);
+        head->addElement(n);
+        head = n;
+        continue;
+      }
+    }
+  }
+  original->getAllMemoryAccessPath(output_files);
   output_files.close();
 }
 
@@ -159,7 +207,7 @@ int main(int argc, char** argv) {
         std::cerr << "Usage: <executable> <IR Files>" << std::endl;
         return 0;
     }
-
+  head = new Element(element_t::Branch, "HEAD", true);
   llvm::LLVMContext context;
   SMDiagnostic error;
   std::unique_ptr<Module> m = parseIRFile(argv[1], error, context);

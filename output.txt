@@ -1,0 +1,2215 @@
+
+example/proxy.ll
+[0]Function: main
+	Block: entry
+		alloca Target: retval Use: 0
+		alloca Target: argc.addr Use: 0
+		alloca Target: argv.addr Use: 0
+		alloca Target: fd Use: 0
+		alloca Target: local_addrs Use: 0
+		alloca Target: number_local_addrs Use: 0
+		alloca Target: tid Use: 1
+		alloca Target: c Use: 0
+		alloca Target: ipv4only Use: 0
+		alloca Target: ipv6only Use: 0
+		alloca Target: i_streams Use: 0
+		alloca Target: o_streams Use: 0
+		alloca Target: initmsg Use: 0
+		alloca Target: events Use: 0
+		alloca Target: value Use: 0
+		alloca Target: number_servers Use: 0
+		alloca Target: i Use: 0
+		alloca Target: server_infos Use: 0
+		alloca Target: server_info Use: 0
+		alloca Target: L_arg Use: 0
+		alloca Target: X_arg Use: 0
+		alloca Target: S_args Use: 0
+		alloca Target: proxy_info Use: 0
+		store Target:  Use: 0
+Store:  pointer: retval
+		store Target:  Use: 0
+Store: argc pointer: argc.addr
+		store Target:  Use: 0
+Store: argv pointer: argv.addr
+		store Target:  Use: 0
+Store:  pointer: ipv4only
+		store Target:  Use: 0
+Store:  pointer: ipv6only
+		store Target:  Use: 0
+Store:  pointer: i_streams
+		store Target:  Use: 0
+Store:  pointer: o_streams
+		store Target:  Use: 0
+Store:  pointer: L_arg
+		store Target:  Use: 0
+Store:  pointer: X_arg
+		load Target:  Use: 1
+Load: argc.addr
+		sext Target: conv Use: 1
+		call Target: call Use: 1
+not found: call
+		bitcast Target:  Use: 1
+		store Target:  Use: 0
+Store:  pointer: S_args
+		store Target:  Use: 0
+Store:  pointer: number_servers
+		br Target:  Use: 0
+	Block: while.cond
+		load Target:  Use: 1
+Load: argc.addr
+		load Target:  Use: 1
+Load: argv.addr
+		call Target: call1 Use: 0
+not found: call
+		store Target:  Use: 0
+Store: call1 pointer: c
+		icmp Target: cmp Use: 1
+icmp: call1  1
+		br Target:  Use: 0
+	Block: while.body
+		load Target:  Use: 1
+Load: c
+		switch Target:  Use: 0
+not found: switch
+	Block: sw.bb
+		load Target:  Use: 1
+Load: optarg
+		call Target: call3 Use: 1
+not found: call
+		store Target:  Use: 0
+Store: call3 pointer: value
+		load Target:  Use: 1
+Load: value
+		icmp Target: cmp4 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: land.lhs.true
+		load Target:  Use: 1
+Load: value
+		icmp Target: cmp6 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then
+		load Target:  Use: 1
+Load: value
+		trunc Target: conv8 Use: 1
+		store Target:  Use: 0
+Store: conv8 pointer: i_streams
+		br Target:  Use: 0
+	Block: if.else
+		load Target:  Use: 1
+Load: stderr
+		call Target: call9 Use: 0
+not found: call
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.end
+		br Target:  Use: 0
+	Block: sw.bb10
+		load Target:  Use: 1
+Load: L_arg
+		icmp Target: cmp11 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then13
+		load Target:  Use: 1
+Load: stderr
+		call Target: call14 Use: 0
+not found: call
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.else15
+		load Target:  Use: 1
+Load: optarg
+		store Target:  Use: 0
+Store:  pointer: L_arg
+		br Target:  Use: 0
+	Block: if.end16
+		br Target:  Use: 0
+	Block: sw.bb17
+		load Target:  Use: 1
+Load: optarg
+		call Target: call18 Use: 1
+not found: call
+		store Target:  Use: 0
+Store: call18 pointer: value
+		load Target:  Use: 1
+Load: value
+		icmp Target: cmp19 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: land.lhs.true21
+		load Target:  Use: 1
+Load: value
+		icmp Target: cmp22 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then24
+		load Target:  Use: 1
+Load: value
+		trunc Target: conv25 Use: 1
+		store Target:  Use: 0
+Store: conv25 pointer: o_streams
+		br Target:  Use: 0
+	Block: if.else26
+		load Target:  Use: 1
+Load: stderr
+		call Target: call27 Use: 0
+not found: call
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.end28
+		br Target:  Use: 0
+	Block: sw.bb29
+		load Target:  Use: 1
+Load: optarg
+		load Target:  Use: 1
+Load: S_args
+		load Target:  Use: 0
+Load: number_servers
+		add Target: inc Use: 1
+not found: add
+		store Target:  Use: 0
+Store: inc pointer: number_servers
+		sext Target: idxprom Use: 1
+		getelementptr Target: arrayidx Use: 1
+		store Target:  Use: 0
+Store:  pointer: arrayidx
+		br Target:  Use: 0
+	Block: sw.bb30
+		load Target:  Use: 1
+Load: X_arg
+		icmp Target: cmp31 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then33
+		load Target:  Use: 1
+Load: stderr
+		call Target: call34 Use: 0
+not found: call
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.else35
+		load Target:  Use: 1
+Load: optarg
+		store Target:  Use: 0
+Store:  pointer: X_arg
+		br Target:  Use: 0
+	Block: if.end36
+		br Target:  Use: 0
+	Block: sw.bb37
+		store Target:  Use: 0
+Store:  pointer: ipv4only
+		load Target:  Use: 1
+Load: ipv6only
+		icmp Target: tobool Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then38
+		load Target:  Use: 1
+Load: stderr
+		call Target: call39 Use: 0
+not found: call
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.end40
+		br Target:  Use: 0
+	Block: sw.bb41
+		store Target:  Use: 0
+Store:  pointer: ipv6only
+		load Target:  Use: 1
+Load: ipv4only
+		icmp Target: tobool42 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then43
+		load Target:  Use: 1
+Load: stderr
+		call Target: call44 Use: 0
+not found: call
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.end45
+		br Target:  Use: 0
+	Block: sw.default
+		load Target:  Use: 1
+Load: stderr
+		call Target: call46 Use: 0
+not found: call
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: sw.epilog
+		br Target:  Use: 0
+	Block: while.end
+		load Target:  Use: 1
+Load: ipv4only
+		icmp Target: tobool47 Use: 0
+icmp:   0
+		zext Target:  Use: 0
+		select Target: cond Use: 1
+not found: select
+		call Target: call48 Use: 0
+not found: call
+		store Target:  Use: 0
+Store: call48 pointer: fd
+		icmp Target: cmp49 Use: 1
+icmp: call48  1
+		br Target:  Use: 0
+	Block: if.then51
+		load Target:  Use: 1
+Load: stderr
+		call Target: call52 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call52
+		call Target: call53 Use: 1
+not found: call
+		call Target: call54 Use: 0
+not found: call
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.end55
+		load Target:  Use: 1
+Load: ipv4only
+		icmp Target: tobool56 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then57
+		load Target:  Use: 1
+Load: fd
+		bitcast Target:  Use: 1
+		call Target: call58 Use: 1
+not found: call
+		icmp Target: cmp59 Use: 1
+icmp: call58  1
+		br Target:  Use: 0
+	Block: if.then61
+		load Target:  Use: 1
+Load: stderr
+		call Target: call62 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call62
+		call Target: call63 Use: 1
+not found: call
+		call Target: call64 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.end65
+		br Target:  Use: 0
+	Block: if.end66
+		bitcast Target:  Use: 1
+		call Target:  Use: 0
+not found: call
+		load Target:  Use: 1
+Load: o_streams
+		getelementptr Target: sinit_num_ostreams Use: 1
+		store Target:  Use: 0
+Store:  pointer: sinit_num_ostreams
+		load Target:  Use: 1
+Load: i_streams
+		getelementptr Target: sinit_max_instreams Use: 1
+		store Target:  Use: 0
+Store:  pointer: sinit_max_instreams
+		load Target:  Use: 1
+Load: fd
+		bitcast Target:  Use: 1
+		call Target: call67 Use: 1
+not found: call
+		icmp Target: cmp68 Use: 1
+icmp: call67  1
+		br Target:  Use: 0
+	Block: if.then70
+		load Target:  Use: 1
+Load: stderr
+		call Target: call71 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call71
+		call Target: call72 Use: 1
+not found: call
+		call Target: call73 Use: 0
+not found: call
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.end74
+		bitcast Target:  Use: 1
+		call Target:  Use: 0
+not found: call
+		getelementptr Target: sctp_data_io_event Use: 1
+		store Target:  Use: 0
+Store:  pointer: sctp_data_io_event
+		load Target:  Use: 1
+Load: fd
+		bitcast Target:  Use: 1
+		call Target: call75 Use: 1
+not found: call
+		icmp Target: cmp76 Use: 1
+icmp: call75  1
+		br Target:  Use: 0
+	Block: if.then78
+		load Target:  Use: 1
+Load: stderr
+		call Target: call79 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call79
+		call Target: call80 Use: 1
+not found: call
+		call Target: call81 Use: 0
+not found: call
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.end82
+		load Target:  Use: 1
+Load: L_arg
+		load Target:  Use: 1
+Load: ipv4only
+		load Target:  Use: 1
+Load: ipv6only
+		call Target: call83 Use: 1
+not found: call
+		store Target:  Use: 0
+Store: call83 pointer: number_local_addrs
+		load Target:  Use: 1
+Load: number_local_addrs
+		icmp Target: cmp84 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then86
+		load Target:  Use: 1
+Load: fd
+		load Target:  Use: 1
+Load: local_addrs
+		load Target:  Use: 1
+Load: number_local_addrs
+		call Target: call87 Use: 1
+not found: call
+		icmp Target: cmp88 Use: 1
+icmp: call87  1
+		br Target:  Use: 0
+	Block: if.then90
+		load Target:  Use: 1
+Load: stderr
+		call Target: call91 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call91
+		call Target: call92 Use: 1
+not found: call
+		call Target: call93 Use: 0
+not found: call
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.end94
+		load Target:  Use: 1
+Load: local_addrs
+		bitcast Target:  Use: 1
+		call Target:  Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.else95
+		load Target:  Use: 1
+Load: stderr
+		call Target: call96 Use: 0
+not found: call
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.end97
+		load Target:  Use: 1
+Load: X_arg
+		load Target:  Use: 1
+Load: ipv4only
+		load Target:  Use: 1
+Load: ipv6only
+		call Target: call98 Use: 1
+not found: call
+		store Target:  Use: 0
+Store: call98 pointer: number_local_addrs
+		load Target:  Use: 1
+Load: number_local_addrs
+		icmp Target: cmp99 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then101
+		load Target:  Use: 1
+Load: stderr
+		call Target: call102 Use: 0
+not found: call
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.end103
+		load Target:  Use: 1
+Load: number_servers
+		sext Target: conv104 Use: 1
+		call Target: call105 Use: 1
+not found: call
+		bitcast Target:  Use: 1
+		store Target:  Use: 0
+Store:  pointer: server_infos
+		store Target:  Use: 0
+Store:  pointer: i
+		br Target:  Use: 0
+	Block: for.cond
+		load Target:  Use: 1
+Load: i
+		load Target:  Use: 1
+Load: number_servers
+		icmp Target: cmp106 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: for.body
+		load Target:  Use: 1
+Load: S_args
+		load Target:  Use: 1
+Load: i
+		sext Target: idxprom108 Use: 1
+		getelementptr Target: arrayidx109 Use: 1
+		load Target:  Use: 1
+Load: arrayidx109
+		load Target:  Use: 1
+Load: ipv4only
+		load Target:  Use: 1
+Load: ipv6only
+		load Target:  Use: 1
+Load: server_infos
+		load Target:  Use: 1
+Load: i
+		sext Target: idxprom110 Use: 1
+		getelementptr Target: arrayidx111 Use: 1
+		getelementptr Target: server_addrs Use: 1
+		call Target: call112 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: server_infos
+		load Target:  Use: 1
+Load: i
+		sext Target: idxprom113 Use: 1
+		getelementptr Target: arrayidx114 Use: 1
+		getelementptr Target: number_addrs Use: 1
+		store Target:  Use: 0
+Store: call112 pointer: number_addrs
+		load Target:  Use: 1
+Load: server_infos
+		load Target:  Use: 1
+Load: i
+		sext Target: idxprom115 Use: 1
+		getelementptr Target: arrayidx116 Use: 1
+		getelementptr Target: number_addrs117 Use: 1
+		load Target:  Use: 1
+Load: number_addrs117
+		icmp Target: cmp118 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then120
+		load Target:  Use: 1
+Load: stderr
+		load Target:  Use: 1
+Load: i
+		call Target: call121 Use: 0
+not found: call
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.end122
+		br Target:  Use: 0
+	Block: for.inc
+		load Target:  Use: 1
+Load: i
+		add Target: inc123 Use: 1
+not found: add
+		store Target:  Use: 0
+Store: inc123 pointer: i
+		br Target:  Use: 0
+	Block: for.end
+		load Target:  Use: 1
+Load: fd
+		call Target: call124 Use: 1
+not found: call
+		icmp Target: cmp125 Use: 1
+icmp: call124  1
+		br Target:  Use: 0
+	Block: if.then127
+		load Target:  Use: 1
+Load: stderr
+		call Target: call128 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call128
+		call Target: call129 Use: 1
+not found: call
+		call Target: call130 Use: 0
+not found: call
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.end131
+		br Target:  Use: 0
+	Block: for.cond132
+		call Target: call133 Use: 1
+not found: call
+		bitcast Target:  Use: 1
+		store Target:  Use: 0
+Store:  pointer: proxy_info
+		load Target:  Use: 1
+Load: fd
+		call Target: call134 Use: 0
+not found: call
+		load Target:  Use: 1
+Load: proxy_info
+		getelementptr Target: client_fd Use: 1
+		store Target:  Use: 0
+Store: call134 pointer: client_fd
+		icmp Target: cmp135 Use: 1
+icmp: call134  1
+		br Target:  Use: 0
+	Block: if.then137
+		load Target:  Use: 1
+Load: stderr
+		call Target: call138 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call138
+		call Target: call139 Use: 1
+not found: call
+		call Target: call140 Use: 0
+not found: call
+		load Target:  Use: 1
+Load: proxy_info
+		bitcast Target:  Use: 1
+		call Target:  Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.else141
+		load Target:  Use: 1
+Load: server_infos
+		load Target:  Use: 1
+Load: number_servers
+		call Target: call142 Use: 1
+not found: call
+		store Target:  Use: 0
+Store: call142 pointer: server_info
+		load Target:  Use: 1
+Load: ipv4only
+		load Target:  Use: 1
+Load: proxy_info
+		getelementptr Target: ipv4only143 Use: 1
+		store Target:  Use: 0
+Store:  pointer: ipv4only143
+		load Target:  Use: 1
+Load: ipv6only
+		load Target:  Use: 1
+Load: proxy_info
+		getelementptr Target: ipv6only144 Use: 1
+		store Target:  Use: 0
+Store:  pointer: ipv6only144
+		load Target:  Use: 1
+Load: proxy_info
+		getelementptr Target: server_fd Use: 1
+		store Target:  Use: 0
+Store:  pointer: server_fd
+		load Target:  Use: 1
+Load: local_addrs
+		load Target:  Use: 1
+Load: proxy_info
+		getelementptr Target: local_addrs145 Use: 1
+		store Target:  Use: 0
+Store:  pointer: local_addrs145
+		load Target:  Use: 1
+Load: number_local_addrs
+		load Target:  Use: 1
+Load: proxy_info
+		getelementptr Target: number_local_addrs146 Use: 1
+		store Target:  Use: 0
+Store:  pointer: number_local_addrs146
+		load Target:  Use: 1
+Load: server_info
+		getelementptr Target: server_addrs147 Use: 1
+		load Target:  Use: 1
+Load: server_addrs147
+		load Target:  Use: 1
+Load: proxy_info
+		getelementptr Target: server_addrs148 Use: 1
+		store Target:  Use: 0
+Store:  pointer: server_addrs148
+		load Target:  Use: 1
+Load: server_info
+		getelementptr Target: number_addrs149 Use: 1
+		load Target:  Use: 1
+Load: number_addrs149
+		load Target:  Use: 1
+Load: proxy_info
+		getelementptr Target: number_server_addrs Use: 1
+		store Target:  Use: 0
+Store:  pointer: number_server_addrs
+		load Target:  Use: 1
+Load: proxy_info
+		bitcast Target:  Use: 1
+		call Target: call150 Use: 1
+not found: call
+		icmp Target: cmp151 Use: 1
+icmp: call150  1
+		br Target:  Use: 0
+	Block: if.then153
+		load Target:  Use: 1
+Load: stderr
+		call Target: call154 Use: 0
+not found: call
+		load Target:  Use: 1
+Load: proxy_info
+		getelementptr Target: client_fd155 Use: 1
+		load Target:  Use: 1
+Load: client_fd155
+		call Target: call156 Use: 0
+not found: call
+		load Target:  Use: 1
+Load: proxy_info
+		bitcast Target:  Use: 1
+		call Target:  Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.end157
+		br Target:  Use: 0
+	Block: if.end158
+		br Target:  Use: 0
+	Block: return
+		load Target:  Use: 1
+Load: retval
+		ret Target:  Use: 0
+Phase 2:
+Phase 3	Block: entry
+Phase 3	Block: while.cond
+Phase 3	Block: while.body
+Phase 3	Block: sw.bb
+Phase 3	Block: land.lhs.true
+Phase 3	Block: if.then
+Phase 3	Block: if.else
+Phase 3	Block: if.end
+Phase 3	Block: sw.bb10
+Phase 3	Block: if.then13
+Phase 3	Block: if.else15
+Phase 3	Block: if.end16
+Phase 3	Block: sw.bb17
+Phase 3	Block: land.lhs.true21
+Phase 3	Block: if.then24
+Phase 3	Block: if.else26
+Phase 3	Block: if.end28
+Phase 3	Block: sw.bb29
+Phase 3	Block: sw.bb30
+Phase 3	Block: if.then33
+Phase 3	Block: if.else35
+Phase 3	Block: if.end36
+Phase 3	Block: sw.bb37
+Phase 3	Block: if.then38
+Phase 3	Block: if.end40
+Phase 3	Block: sw.bb41
+Phase 3	Block: if.then43
+Phase 3	Block: if.end45
+Phase 3	Block: sw.default
+Phase 3	Block: sw.epilog
+Phase 3	Block: while.end
+Phase 3	Block: if.then51
+Phase 3	Block: if.end55
+Phase 3	Block: if.then57
+Phase 3	Block: if.then61
+Phase 3	Block: if.end65
+Phase 3	Block: if.end66
+Phase 3	Block: if.then70
+Phase 3	Block: if.end74
+Phase 3	Block: if.then78
+Phase 3	Block: if.end82
+Phase 3	Block: if.then86
+Phase 3	Block: if.then90
+Phase 3	Block: if.end94
+Phase 3	Block: if.else95
+Phase 3	Block: if.end97
+Phase 3	Block: if.then101
+Phase 3	Block: if.end103
+Phase 3	Block: for.cond
+Phase 3	Block: for.body
+Phase 3	Block: if.then120
+Phase 3	Block: if.end122
+Phase 3	Block: for.inc
+Phase 3	Block: for.end
+Phase 3	Block: if.then127
+Phase 3	Block: if.end131
+Phase 3	Block: for.cond132
+Phase 3	Block: if.then137
+Phase 3	Block: if.else141
+Phase 3	Block: if.then153
+Phase 3	Block: if.end157
+Phase 3	Block: if.end158
+Phase 3	Block: return
+[1]Function: calloc
+[2]Function: getopt
+[3]Function: strtol
+[4]Function: fprintf
+[5]Function: socket
+[6]Function: strerror
+[7]Function: __errno_location
+[8]Function: setsockopt
+[9]Function: llvm.memset.p0i8.i64
+[10]Function: parse_addrs_list_port
+	Block: entry
+		alloca Target: retval Use: 0
+		alloca Target: addr_list.addr Use: 0
+		alloca Target: ipv4only.addr Use: 0
+		alloca Target: ipv6only.addr Use: 0
+		alloca Target: addrs.addr Use: 0
+		alloca Target: port Use: 0
+		alloca Target: last_colon Use: 0
+		store Target:  Use: 0
+Store: addr_list pointer: addr_list.addr
+		store Target:  Use: 0
+Store: ipv4only pointer: ipv4only.addr
+		store Target:  Use: 0
+Store: ipv6only pointer: ipv6only.addr
+		store Target:  Use: 0
+Store: addrs pointer: addrs.addr
+		load Target:  Use: 1
+Load: addr_list.addr
+		icmp Target: cmp Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.end
+		load Target:  Use: 1
+Load: addr_list.addr
+		call Target: call Use: 1
+not found: call
+		store Target:  Use: 0
+Store: call pointer: last_colon
+		load Target:  Use: 1
+Load: last_colon
+		icmp Target: cmp1 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then2
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.else
+		load Target:  Use: 1
+Load: last_colon
+		getelementptr Target: add.ptr Use: 1
+		store Target:  Use: 0
+Store: add.ptr pointer: port
+		load Target:  Use: 1
+Load: last_colon
+		store Target:  Use: 0
+Store:  pointer: 
+		load Target:  Use: 1
+Load: addr_list.addr
+		load Target:  Use: 1
+Load: port
+		load Target:  Use: 1
+Load: ipv4only.addr
+		load Target:  Use: 1
+Load: ipv6only.addr
+		load Target:  Use: 1
+Load: addrs.addr
+		call Target: call3 Use: 1
+not found: call
+		store Target:  Use: 0
+Store: call3 pointer: retval
+		br Target:  Use: 0
+	Block: return
+		load Target:  Use: 1
+Load: retval
+		ret Target:  Use: 0
+Phase 2:
+Phase 3	Block: entry
+Phase 3	Block: if.then
+Phase 3	Block: if.end
+Phase 3	Block: if.then2
+Phase 3	Block: if.else
+Phase 3	Block: return
+[11]Function: sctp_bindx
+[12]Function: free
+[13]Function: parse_addrs_list
+	Block: entry
+		alloca Target: retval Use: 0
+		alloca Target: addr_list.addr Use: 0
+		alloca Target: port.addr Use: 0
+		alloca Target: ipv4only.addr Use: 0
+		alloca Target: ipv6only.addr Use: 0
+		alloca Target: addrs.addr Use: 0
+		alloca Target: hints Use: 0
+		alloca Target: res Use: 0
+		alloca Target: addr Use: 0
+		alloca Target: tmp Use: 0
+		alloca Target: size Use: 0
+		alloca Target: number_local_addrs Use: 0
+		store Target:  Use: 0
+Store: addr_list pointer: addr_list.addr
+		store Target:  Use: 0
+Store: port pointer: port.addr
+		store Target:  Use: 0
+Store: ipv4only pointer: ipv4only.addr
+		store Target:  Use: 0
+Store: ipv6only pointer: ipv6only.addr
+		store Target:  Use: 0
+Store: addrs pointer: addrs.addr
+		load Target:  Use: 1
+Load: addr_list.addr
+		icmp Target: cmp Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: lor.lhs.false
+		load Target:  Use: 1
+Load: port.addr
+		icmp Target: cmp1 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.end
+		store Target:  Use: 0
+Store:  pointer: number_local_addrs
+		load Target:  Use: 1
+Load: addr_list.addr
+		store Target:  Use: 0
+Store:  pointer: tmp
+		br Target:  Use: 0
+	Block: for.cond
+		load Target:  Use: 1
+Load: tmp
+		load Target:  Use: 1
+Load: 
+		sext Target: conv Use: 1
+		icmp Target: cmp2 Use: 1
+icmp: conv  1
+		br Target:  Use: 0
+	Block: for.body
+		load Target:  Use: 1
+Load: tmp
+		load Target:  Use: 1
+Load: 
+		sext Target: conv4 Use: 1
+		icmp Target: cmp5 Use: 1
+icmp: conv4  1
+		br Target:  Use: 0
+	Block: if.then7
+		load Target:  Use: 1
+Load: number_local_addrs
+		add Target: inc Use: 1
+not found: add
+		store Target:  Use: 0
+Store: inc pointer: number_local_addrs
+		br Target:  Use: 0
+	Block: if.end8
+		br Target:  Use: 0
+	Block: for.inc
+		load Target:  Use: 1
+Load: tmp
+		getelementptr Target: incdec.ptr Use: 1
+		store Target:  Use: 0
+Store: incdec.ptr pointer: tmp
+		br Target:  Use: 0
+	Block: for.end
+		load Target:  Use: 1
+Load: ipv4only.addr
+		icmp Target: tobool Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then9
+		load Target:  Use: 1
+Load: number_local_addrs
+		sext Target: conv10 Use: 1
+		mul Target: mul Use: 1
+not found: mul
+		store Target:  Use: 0
+Store: mul pointer: size
+		br Target:  Use: 0
+	Block: if.else
+		load Target:  Use: 1
+Load: number_local_addrs
+		sext Target: conv11 Use: 1
+		mul Target: mul12 Use: 1
+not found: mul
+		store Target:  Use: 0
+Store: mul12 pointer: size
+		br Target:  Use: 0
+	Block: if.end13
+		load Target:  Use: 1
+Load: size
+		call Target: call Use: 1
+not found: call
+		bitcast Target:  Use: 1
+		load Target:  Use: 1
+Load: addrs.addr
+		store Target:  Use: 0
+Store:  pointer: 
+		bitcast Target:  Use: 1
+		call Target:  Use: 0
+not found: call
+		load Target:  Use: 1
+Load: ipv4only.addr
+		icmp Target: tobool14 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then15
+		getelementptr Target: ai_family Use: 1
+		store Target:  Use: 0
+Store:  pointer: ai_family
+		br Target:  Use: 0
+	Block: if.else16
+		getelementptr Target: ai_family17 Use: 1
+		store Target:  Use: 0
+Store:  pointer: ai_family17
+		br Target:  Use: 0
+	Block: if.end18
+		getelementptr Target: ai_socktype Use: 1
+		store Target:  Use: 0
+Store:  pointer: ai_socktype
+		getelementptr Target: ai_protocol Use: 1
+		store Target:  Use: 0
+Store:  pointer: ai_protocol
+		getelementptr Target: ai_flags Use: 1
+		store Target:  Use: 0
+Store:  pointer: ai_flags
+		load Target:  Use: 1
+Load: ipv4only.addr
+		icmp Target: tobool19 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: land.lhs.true
+		load Target:  Use: 1
+Load: ipv6only.addr
+		icmp Target: tobool20 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then21
+		getelementptr Target: ai_flags22 Use: 0
+		load Target:  Use: 1
+Load: ai_flags22
+		or Target: or Use: 1
+not found: or
+		store Target:  Use: 0
+Store: or pointer: ai_flags22
+		br Target:  Use: 0
+	Block: if.end23
+		load Target:  Use: 1
+Load: addrs.addr
+		load Target:  Use: 1
+Load: 
+		bitcast Target:  Use: 1
+		store Target:  Use: 0
+Store:  pointer: tmp
+		load Target:  Use: 1
+Load: addr_list.addr
+		call Target: call24 Use: 1
+not found: call
+		store Target:  Use: 0
+Store: call24 pointer: addr
+		br Target:  Use: 0
+	Block: for.cond25
+		load Target:  Use: 1
+Load: addr
+		icmp Target: cmp26 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: for.body28
+		load Target:  Use: 1
+Load: addr
+		load Target:  Use: 1
+Load: port.addr
+		call Target: call29 Use: 1
+not found: call
+		icmp Target: cmp30 Use: 1
+icmp: call29  1
+		br Target:  Use: 0
+	Block: if.then32
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: if.end33
+		load Target:  Use: 1
+Load: tmp
+		load Target:  Use: 1
+Load: res
+		getelementptr Target: ai_addr Use: 1
+		load Target:  Use: 1
+Load: ai_addr
+		bitcast Target:  Use: 1
+		load Target:  Use: 1
+Load: res
+		getelementptr Target: ai_addrlen Use: 1
+		load Target:  Use: 1
+Load: ai_addrlen
+		zext Target: conv34 Use: 1
+		call Target:  Use: 0
+not found: call
+		load Target:  Use: 1
+Load: res
+		getelementptr Target: ai_addrlen35 Use: 1
+		load Target:  Use: 1
+Load: ai_addrlen35
+		load Target:  Use: 1
+Load: tmp
+		zext Target: idx.ext Use: 1
+		getelementptr Target: add.ptr Use: 1
+		store Target:  Use: 0
+Store: add.ptr pointer: tmp
+		load Target:  Use: 1
+Load: res
+		call Target:  Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: for.inc36
+		call Target: call37 Use: 1
+not found: call
+		store Target:  Use: 0
+Store: call37 pointer: addr
+		br Target:  Use: 0
+	Block: for.end38
+		load Target:  Use: 1
+Load: number_local_addrs
+		store Target:  Use: 0
+Store:  pointer: retval
+		br Target:  Use: 0
+	Block: return
+		load Target:  Use: 1
+Load: retval
+		ret Target:  Use: 0
+Phase 2:
+Phase 3	Block: entry
+Phase 3	Block: lor.lhs.false
+Phase 3	Block: if.then
+Phase 3	Block: if.end
+Phase 3	Block: for.cond
+Phase 3	Block: for.body
+Phase 3	Block: if.then7
+Phase 3	Block: if.end8
+Phase 3	Block: for.inc
+Phase 3	Block: for.end
+Phase 3	Block: if.then9
+Phase 3	Block: if.else
+Phase 3	Block: if.end13
+Phase 3	Block: if.then15
+Phase 3	Block: if.else16
+Phase 3	Block: if.end18
+Phase 3	Block: land.lhs.true
+Phase 3	Block: if.then21
+Phase 3	Block: if.end23
+Phase 3	Block: for.cond25
+Phase 3	Block: for.body28
+Phase 3	Block: if.then32
+Phase 3	Block: if.end33
+Phase 3	Block: for.inc36
+Phase 3	Block: for.end38
+Phase 3	Block: return
+[14]Function: listen
+[15]Function: accept
+[16]Function: select_a_server
+	Block: entry
+		alloca Target: server_infos.addr Use: 0
+		alloca Target: number_servers.addr Use: 0
+		store Target:  Use: 0
+Store: server_infos pointer: server_infos.addr
+		store Target:  Use: 0
+Store: number_servers pointer: number_servers.addr
+		load Target:  Use: 1
+Load: select_a_server.i
+		load Target:  Use: 1
+Load: number_servers.addr
+		icmp Target: cmp Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then
+		store Target:  Use: 0
+Store:  pointer: select_a_server.i
+		br Target:  Use: 0
+	Block: if.end
+		load Target:  Use: 1
+Load: server_infos.addr
+		load Target:  Use: 0
+Load: select_a_server.i
+		add Target: inc Use: 1
+not found: add
+		store Target:  Use: 0
+Store: inc pointer: select_a_server.i
+		sext Target: idxprom Use: 1
+		getelementptr Target: arrayidx Use: 1
+		ret Target:  Use: 0
+Phase 2:
+Phase 3	Block: entry
+Phase 3	Block: if.then
+Phase 3	Block: if.end
+[17]Function: pthread_create
+[18]Function: proxy
+	Block: entry
+		alloca Target: arg.addr Use: 0
+		alloca Target: info Use: 0
+		alloca Target: rset Use: 0
+		alloca Target: max_fd Use: 0
+		alloca Target: flags Use: 0
+		alloca Target: n Use: 0
+		alloca Target: sndrcvinfo Use: 0
+		alloca Target: status Use: 0
+		alloca Target: initmsg Use: 0
+		alloca Target: events Use: 0
+		alloca Target: len Use: 0
+		alloca Target: __d0 Use: 1
+		alloca Target: __d1 Use: 1
+		store Target:  Use: 0
+Store: arg pointer: arg.addr
+		call Target: call Use: 1
+not found: call
+		call Target: call1 Use: 0
+not found: call
+		load Target:  Use: 1
+Load: arg.addr
+		bitcast Target:  Use: 1
+		store Target:  Use: 0
+Store:  pointer: info
+		store Target:  Use: 0
+Store:  pointer: len
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_fd Use: 1
+		load Target:  Use: 1
+Load: client_fd
+		bitcast Target:  Use: 1
+		call Target: call2 Use: 1
+not found: call
+		icmp Target: cmp Use: 1
+icmp: call2  1
+		br Target:  Use: 0
+	Block: if.then
+		load Target:  Use: 1
+Load: stderr
+		call Target: call3 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call3
+		call Target: call4 Use: 1
+not found: call
+		call Target: call5 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.end
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf_size Use: 1
+		store Target:  Use: 0
+Store:  pointer: client_buf_size
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf_offset Use: 1
+		store Target:  Use: 0
+Store:  pointer: client_buf_offset
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf_size6 Use: 1
+		load Target:  Use: 1
+Load: client_buf_size6
+		call Target: call7 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf Use: 1
+		store Target:  Use: 0
+Store: call7 pointer: client_buf
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf8 Use: 1
+		load Target:  Use: 1
+Load: client_buf8
+		icmp Target: cmp9 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then10
+		load Target:  Use: 1
+Load: stderr
+		call Target: call11 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.end12
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf_size Use: 1
+		store Target:  Use: 0
+Store:  pointer: server_buf_size
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf_offset Use: 1
+		store Target:  Use: 0
+Store:  pointer: server_buf_offset
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf_size13 Use: 1
+		load Target:  Use: 1
+Load: server_buf_size13
+		call Target: call14 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf Use: 1
+		store Target:  Use: 0
+Store: call14 pointer: server_buf
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf15 Use: 1
+		load Target:  Use: 1
+Load: server_buf15
+		icmp Target: cmp16 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then17
+		load Target:  Use: 1
+Load: stderr
+		call Target: call18 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.end19
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: ipv4only Use: 1
+		load Target:  Use: 1
+Load: ipv4only
+		icmp Target: tobool Use: 0
+icmp:   0
+		zext Target:  Use: 0
+		select Target: cond Use: 1
+not found: select
+		call Target: call20 Use: 0
+not found: call
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_fd Use: 1
+		store Target:  Use: 0
+Store: call20 pointer: server_fd
+		icmp Target: cmp21 Use: 1
+icmp: call20  1
+		br Target:  Use: 0
+	Block: if.then22
+		load Target:  Use: 1
+Load: stderr
+		call Target: call23 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call23
+		call Target: call24 Use: 1
+not found: call
+		call Target: call25 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.end26
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: ipv4only27 Use: 1
+		load Target:  Use: 1
+Load: ipv4only27
+		icmp Target: tobool28 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then29
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_fd30 Use: 1
+		load Target:  Use: 1
+Load: server_fd30
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: ipv6only Use: 1
+		bitcast Target:  Use: 1
+		call Target: call31 Use: 1
+not found: call
+		icmp Target: cmp32 Use: 1
+icmp: call31  1
+		br Target:  Use: 0
+	Block: if.then33
+		load Target:  Use: 1
+Load: stderr
+		call Target: call34 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call34
+		call Target: call35 Use: 1
+not found: call
+		call Target: call36 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.end37
+		br Target:  Use: 0
+	Block: if.end38
+		bitcast Target:  Use: 1
+		call Target:  Use: 0
+not found: call
+		getelementptr Target: sstat_instrms Use: 1
+		load Target:  Use: 1
+Load: sstat_instrms
+		getelementptr Target: sinit_num_ostreams Use: 1
+		store Target:  Use: 0
+Store:  pointer: sinit_num_ostreams
+		getelementptr Target: sstat_outstrms Use: 1
+		load Target:  Use: 1
+Load: sstat_outstrms
+		getelementptr Target: sinit_max_instreams Use: 1
+		store Target:  Use: 0
+Store:  pointer: sinit_max_instreams
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_fd39 Use: 1
+		load Target:  Use: 1
+Load: server_fd39
+		bitcast Target:  Use: 1
+		call Target: call40 Use: 1
+not found: call
+		icmp Target: cmp41 Use: 1
+icmp: call40  1
+		br Target:  Use: 0
+	Block: if.then42
+		load Target:  Use: 1
+Load: stderr
+		call Target: call43 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call43
+		call Target: call44 Use: 1
+not found: call
+		call Target: call45 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.end46
+		bitcast Target:  Use: 1
+		call Target:  Use: 0
+not found: call
+		getelementptr Target: sctp_data_io_event Use: 1
+		store Target:  Use: 0
+Store:  pointer: sctp_data_io_event
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_fd47 Use: 1
+		load Target:  Use: 1
+Load: server_fd47
+		bitcast Target:  Use: 1
+		call Target: call48 Use: 1
+not found: call
+		icmp Target: cmp49 Use: 1
+icmp: call48  1
+		br Target:  Use: 0
+	Block: if.then50
+		load Target:  Use: 1
+Load: stderr
+		call Target: call51 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call51
+		call Target: call52 Use: 1
+not found: call
+		call Target: call53 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.end54
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_fd55 Use: 1
+		load Target:  Use: 1
+Load: server_fd55
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: local_addrs Use: 1
+		load Target:  Use: 1
+Load: local_addrs
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: number_local_addrs Use: 1
+		load Target:  Use: 1
+Load: number_local_addrs
+		call Target: call56 Use: 1
+not found: call
+		icmp Target: cmp57 Use: 1
+icmp: call56  1
+		br Target:  Use: 0
+	Block: if.then58
+		load Target:  Use: 1
+Load: stderr
+		call Target: call59 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call59
+		call Target: call60 Use: 1
+not found: call
+		call Target: call61 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.end62
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_fd63 Use: 1
+		load Target:  Use: 1
+Load: server_fd63
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_addrs Use: 1
+		load Target:  Use: 1
+Load: server_addrs
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: number_server_addrs Use: 1
+		load Target:  Use: 1
+Load: number_server_addrs
+		call Target: call64 Use: 1
+not found: call
+		icmp Target: cmp65 Use: 1
+icmp: call64  1
+		br Target:  Use: 0
+	Block: if.then66
+		load Target:  Use: 1
+Load: stderr
+		call Target: call67 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call67
+		call Target: call68 Use: 1
+not found: call
+		call Target: call69 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.end70
+		br Target:  Use: 0
+	Block: for.cond
+		br Target:  Use: 0
+	Block: do.body
+		getelementptr Target: __fds_bits Use: 1
+		getelementptr Target: arrayidx Use: 1
+		call Target:  Use: 0
+not found: call
+		extractvalue Target: asmresult Use: 1
+		extractvalue Target: asmresult71 Use: 1
+		trunc Target:  Use: 1
+		store Target:  Use: 0
+Store:  pointer: __d0
+		ptrtoint Target:  Use: 1
+		trunc Target:  Use: 1
+		store Target:  Use: 0
+Store:  pointer: __d1
+		br Target:  Use: 0
+	Block: do.end
+		store Target:  Use: 0
+Store:  pointer: max_fd
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_fd72 Use: 1
+		load Target:  Use: 1
+Load: client_fd72
+		srem Target: rem Use: 1
+not found: srem
+		zext Target: sh_prom Use: 1
+		shl Target: shl Use: 1
+not found: shl
+		getelementptr Target: __fds_bits73 Use: 1
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_fd74 Use: 1
+		load Target:  Use: 1
+Load: client_fd74
+		sdiv Target: div Use: 1
+not found: sdiv
+		sext Target: idxprom Use: 1
+		getelementptr Target: arrayidx75 Use: 0
+		load Target:  Use: 1
+Load: arrayidx75
+		or Target: or Use: 1
+not found: or
+		store Target:  Use: 0
+Store: or pointer: arrayidx75
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_fd76 Use: 1
+		load Target:  Use: 1
+Load: client_fd76
+		load Target:  Use: 1
+Load: max_fd
+		icmp Target: cmp77 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then78
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_fd79 Use: 1
+		load Target:  Use: 1
+Load: client_fd79
+		store Target:  Use: 0
+Store:  pointer: max_fd
+		br Target:  Use: 0
+	Block: if.end80
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_fd81 Use: 1
+		load Target:  Use: 1
+Load: server_fd81
+		srem Target: rem82 Use: 1
+not found: srem
+		zext Target: sh_prom83 Use: 1
+		shl Target: shl84 Use: 1
+not found: shl
+		getelementptr Target: __fds_bits85 Use: 1
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_fd86 Use: 1
+		load Target:  Use: 1
+Load: server_fd86
+		sdiv Target: div87 Use: 1
+not found: sdiv
+		sext Target: idxprom88 Use: 1
+		getelementptr Target: arrayidx89 Use: 0
+		load Target:  Use: 1
+Load: arrayidx89
+		or Target: or90 Use: 1
+not found: or
+		store Target:  Use: 0
+Store: or90 pointer: arrayidx89
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_fd91 Use: 1
+		load Target:  Use: 1
+Load: server_fd91
+		load Target:  Use: 1
+Load: max_fd
+		icmp Target: cmp92 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then93
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_fd94 Use: 1
+		load Target:  Use: 1
+Load: server_fd94
+		store Target:  Use: 0
+Store:  pointer: max_fd
+		br Target:  Use: 0
+	Block: if.end95
+		load Target:  Use: 1
+Load: max_fd
+		add Target: add Use: 1
+not found: add
+		call Target: call96 Use: 0
+not found: call
+		getelementptr Target: __fds_bits97 Use: 1
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_fd98 Use: 1
+		load Target:  Use: 1
+Load: client_fd98
+		sdiv Target: div99 Use: 1
+not found: sdiv
+		sext Target: idxprom100 Use: 1
+		getelementptr Target: arrayidx101 Use: 1
+		load Target:  Use: 1
+Load: arrayidx101
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_fd102 Use: 1
+		load Target:  Use: 1
+Load: client_fd102
+		srem Target: rem103 Use: 1
+not found: srem
+		zext Target: sh_prom104 Use: 1
+		shl Target: shl105 Use: 1
+not found: shl
+		and Target: and Use: 1
+not found: and
+		icmp Target: cmp106 Use: 1
+icmp: and  1
+		br Target:  Use: 0
+	Block: if.then107
+		store Target:  Use: 0
+Store:  pointer: flags
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_fd108 Use: 1
+		load Target:  Use: 1
+Load: client_fd108
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf109 Use: 1
+		load Target:  Use: 1
+Load: client_buf109
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf_offset110 Use: 1
+		load Target:  Use: 1
+Load: client_buf_offset110
+		getelementptr Target: add.ptr Use: 1
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf_size111 Use: 1
+		load Target:  Use: 1
+Load: client_buf_size111
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf_offset112 Use: 1
+		load Target:  Use: 1
+Load: client_buf_offset112
+		sub Target: sub Use: 1
+not found: sub
+		call Target: call113 Use: 1
+not found: call
+		sext Target: conv Use: 1
+		store Target:  Use: 0
+Store: conv pointer: n
+		load Target:  Use: 1
+Load: n
+		icmp Target: cmp114 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then116
+		load Target:  Use: 1
+Load: stderr
+		call Target: call117 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call117
+		call Target: call118 Use: 1
+not found: call
+		call Target: call119 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.else
+		load Target:  Use: 1
+Load: n
+		icmp Target: cmp120 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then122
+		br Target:  Use: 0
+	Block: if.else123
+		load Target:  Use: 1
+Load: n
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf_offset124 Use: 0
+		load Target:  Use: 1
+Load: client_buf_offset124
+		add Target: add125 Use: 1
+not found: add
+		store Target:  Use: 0
+Store: add125 pointer: client_buf_offset124
+		load Target:  Use: 1
+Load: flags
+		and Target: and126 Use: 1
+not found: and
+		icmp Target: tobool127 Use: 1
+icmp: and126  1
+		br Target:  Use: 0
+	Block: if.then128
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_fd129 Use: 1
+		load Target:  Use: 1
+Load: server_fd129
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf130 Use: 1
+		load Target:  Use: 1
+Load: client_buf130
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf_offset131 Use: 1
+		load Target:  Use: 1
+Load: client_buf_offset131
+		getelementptr Target: sinfo_ppid Use: 1
+		load Target:  Use: 1
+Load: sinfo_ppid
+		getelementptr Target: sinfo_flags Use: 1
+		load Target:  Use: 1
+Load: sinfo_flags
+		zext Target: conv132 Use: 1
+		and Target: and133 Use: 1
+not found: and
+		getelementptr Target: sinfo_stream Use: 1
+		load Target:  Use: 1
+Load: sinfo_stream
+		call Target: call134 Use: 1
+not found: call
+		sext Target: conv135 Use: 1
+		store Target:  Use: 0
+Store: conv135 pointer: n
+		load Target:  Use: 1
+Load: n
+		icmp Target: cmp136 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then138
+		load Target:  Use: 1
+Load: stderr
+		call Target: call139 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call139
+		call Target: call140 Use: 1
+not found: call
+		call Target: call141 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.else142
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf_offset143 Use: 1
+		store Target:  Use: 0
+Store:  pointer: client_buf_offset143
+		br Target:  Use: 0
+	Block: if.end144
+		br Target:  Use: 0
+	Block: if.else145
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf_offset146 Use: 1
+		load Target:  Use: 1
+Load: client_buf_offset146
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf_size147 Use: 1
+		load Target:  Use: 1
+Load: client_buf_size147
+		icmp Target: cmp148 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then150
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf_size151 Use: 0
+		load Target:  Use: 1
+Load: client_buf_size151
+		mul Target: mul Use: 1
+not found: mul
+		store Target:  Use: 0
+Store: mul pointer: client_buf_size151
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf152 Use: 1
+		load Target:  Use: 1
+Load: client_buf152
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf_size153 Use: 1
+		load Target:  Use: 1
+Load: client_buf_size153
+		call Target: call154 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf155 Use: 1
+		store Target:  Use: 0
+Store: call154 pointer: client_buf155
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf156 Use: 1
+		load Target:  Use: 1
+Load: client_buf156
+		icmp Target: cmp157 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then159
+		load Target:  Use: 1
+Load: stderr
+		call Target: call160 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.end161
+		br Target:  Use: 0
+	Block: if.end162
+		br Target:  Use: 0
+	Block: if.end163
+		br Target:  Use: 0
+	Block: if.end164
+		br Target:  Use: 0
+	Block: if.end165
+		br Target:  Use: 0
+	Block: if.end166
+		getelementptr Target: __fds_bits167 Use: 1
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_fd168 Use: 1
+		load Target:  Use: 1
+Load: server_fd168
+		sdiv Target: div169 Use: 1
+not found: sdiv
+		sext Target: idxprom170 Use: 1
+		getelementptr Target: arrayidx171 Use: 1
+		load Target:  Use: 1
+Load: arrayidx171
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_fd172 Use: 1
+		load Target:  Use: 1
+Load: server_fd172
+		srem Target: rem173 Use: 1
+not found: srem
+		zext Target: sh_prom174 Use: 1
+		shl Target: shl175 Use: 1
+not found: shl
+		and Target: and176 Use: 1
+not found: and
+		icmp Target: cmp177 Use: 1
+icmp: and176  1
+		br Target:  Use: 0
+	Block: if.then179
+		store Target:  Use: 0
+Store:  pointer: flags
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_fd180 Use: 1
+		load Target:  Use: 1
+Load: server_fd180
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf181 Use: 1
+		load Target:  Use: 1
+Load: server_buf181
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf_offset182 Use: 1
+		load Target:  Use: 1
+Load: server_buf_offset182
+		getelementptr Target: add.ptr183 Use: 1
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf_size184 Use: 1
+		load Target:  Use: 1
+Load: server_buf_size184
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf_offset185 Use: 1
+		load Target:  Use: 1
+Load: server_buf_offset185
+		sub Target: sub186 Use: 1
+not found: sub
+		call Target: call187 Use: 1
+not found: call
+		sext Target: conv188 Use: 1
+		store Target:  Use: 0
+Store: conv188 pointer: n
+		load Target:  Use: 1
+Load: n
+		icmp Target: cmp189 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then191
+		load Target:  Use: 1
+Load: stderr
+		call Target: call192 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call192
+		call Target: call193 Use: 1
+not found: call
+		call Target: call194 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.else195
+		load Target:  Use: 1
+Load: n
+		icmp Target: cmp196 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then198
+		br Target:  Use: 0
+	Block: if.else199
+		load Target:  Use: 1
+Load: n
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf_offset200 Use: 0
+		load Target:  Use: 1
+Load: server_buf_offset200
+		add Target: add201 Use: 1
+not found: add
+		store Target:  Use: 0
+Store: add201 pointer: server_buf_offset200
+		load Target:  Use: 1
+Load: flags
+		and Target: and202 Use: 1
+not found: and
+		icmp Target: tobool203 Use: 1
+icmp: and202  1
+		br Target:  Use: 0
+	Block: if.then204
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_fd205 Use: 1
+		load Target:  Use: 1
+Load: client_fd205
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf206 Use: 1
+		load Target:  Use: 1
+Load: server_buf206
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf_offset207 Use: 1
+		load Target:  Use: 1
+Load: server_buf_offset207
+		getelementptr Target: sinfo_ppid208 Use: 1
+		load Target:  Use: 1
+Load: sinfo_ppid208
+		getelementptr Target: sinfo_flags209 Use: 1
+		load Target:  Use: 1
+Load: sinfo_flags209
+		zext Target: conv210 Use: 1
+		and Target: and211 Use: 1
+not found: and
+		getelementptr Target: sinfo_stream212 Use: 1
+		load Target:  Use: 1
+Load: sinfo_stream212
+		call Target: call213 Use: 1
+not found: call
+		sext Target: conv214 Use: 1
+		store Target:  Use: 0
+Store: conv214 pointer: n
+		load Target:  Use: 1
+Load: n
+		icmp Target: cmp215 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then217
+		load Target:  Use: 1
+Load: stderr
+		call Target: call218 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: call218
+		call Target: call219 Use: 1
+not found: call
+		call Target: call220 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.else221
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf_offset222 Use: 1
+		store Target:  Use: 0
+Store:  pointer: server_buf_offset222
+		br Target:  Use: 0
+	Block: if.end223
+		br Target:  Use: 0
+	Block: if.else224
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf_offset225 Use: 1
+		load Target:  Use: 1
+Load: server_buf_offset225
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf_size226 Use: 1
+		load Target:  Use: 1
+Load: server_buf_size226
+		icmp Target: cmp227 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then229
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf_size230 Use: 0
+		load Target:  Use: 1
+Load: server_buf_size230
+		mul Target: mul231 Use: 1
+not found: mul
+		store Target:  Use: 0
+Store: mul231 pointer: server_buf_size230
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf232 Use: 1
+		load Target:  Use: 1
+Load: server_buf232
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf_size233 Use: 1
+		load Target:  Use: 1
+Load: server_buf_size233
+		call Target: call234 Use: 1
+not found: call
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf235 Use: 1
+		store Target:  Use: 0
+Store: call234 pointer: server_buf235
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf236 Use: 1
+		load Target:  Use: 1
+Load: server_buf236
+		icmp Target: cmp237 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then239
+		load Target:  Use: 1
+Load: stderr
+		call Target: call240 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.end241
+		br Target:  Use: 0
+	Block: if.end242
+		br Target:  Use: 0
+	Block: if.end243
+		br Target:  Use: 0
+	Block: if.end244
+		br Target:  Use: 0
+	Block: if.end245
+		br Target:  Use: 0
+	Block: if.end246
+		br Target:  Use: 0
+	Block: cleanup
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_fd247 Use: 1
+		load Target:  Use: 1
+Load: server_fd247
+		icmp Target: cmp248 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then250
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_fd251 Use: 1
+		load Target:  Use: 1
+Load: server_fd251
+		call Target: call252 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.end253
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_fd254 Use: 1
+		load Target:  Use: 1
+Load: client_fd254
+		icmp Target: cmp255 Use: 1
+icmp:   1
+		br Target:  Use: 0
+	Block: if.then257
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_fd258 Use: 1
+		load Target:  Use: 1
+Load: client_fd258
+		call Target: call259 Use: 0
+not found: call
+		br Target:  Use: 0
+	Block: if.end260
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: client_buf261 Use: 1
+		load Target:  Use: 1
+Load: client_buf261
+		call Target:  Use: 0
+not found: call
+		load Target:  Use: 1
+Load: info
+		getelementptr Target: server_buf262 Use: 1
+		load Target:  Use: 1
+Load: server_buf262
+		call Target:  Use: 0
+not found: call
+		load Target:  Use: 1
+Load: info
+		bitcast Target:  Use: 1
+		call Target:  Use: 0
+not found: call
+		ret Target:  Use: 0
+Phase 2:
+Phase 3	Block: entry
+Phase 3	Block: if.then
+Phase 3	Block: if.end
+Phase 3	Block: if.then10
+Phase 3	Block: if.end12
+Phase 3	Block: if.then17
+Phase 3	Block: if.end19
+Phase 3	Block: if.then22
+Phase 3	Block: if.end26
+Phase 3	Block: if.then29
+Phase 3	Block: if.then33
+Phase 3	Block: if.end37
+Phase 3	Block: if.end38
+Phase 3	Block: if.then42
+Phase 3	Block: if.end46
+Phase 3	Block: if.then50
+Phase 3	Block: if.end54
+Phase 3	Block: if.then58
+Phase 3	Block: if.end62
+Phase 3	Block: if.then66
+Phase 3	Block: if.end70
+Phase 3	Block: for.cond
+Phase 3	Block: do.body
+Phase 3	Block: do.end
+Phase 3	Block: if.then78
+Phase 3	Block: if.end80
+Phase 3	Block: if.then93
+Phase 3	Block: if.end95
+Phase 3	Block: if.then107
+Phase 3	Block: if.then116
+Phase 3	Block: if.else
+Phase 3	Block: if.then122
+Phase 3	Block: if.else123
+Phase 3	Block: if.then128
+Phase 3	Block: if.then138
+Phase 3	Block: if.else142
+Phase 3	Block: if.end144
+Phase 3	Block: if.else145
+Phase 3	Block: if.then150
+Phase 3	Block: if.then159
+Phase 3	Block: if.end161
+Phase 3	Block: if.end162
+Phase 3	Block: if.end163
+Phase 3	Block: if.end164
+Phase 3	Block: if.end165
+Phase 3	Block: if.end166
+Phase 3	Block: if.then179
+Phase 3	Block: if.then191
+Phase 3	Block: if.else195
+Phase 3	Block: if.then198
+Phase 3	Block: if.else199
+Phase 3	Block: if.then204
+Phase 3	Block: if.then217
+Phase 3	Block: if.else221
+Phase 3	Block: if.end223
+Phase 3	Block: if.else224
+Phase 3	Block: if.then229
+Phase 3	Block: if.then239
+Phase 3	Block: if.end241
+Phase 3	Block: if.end242
+Phase 3	Block: if.end243
+Phase 3	Block: if.end244
+Phase 3	Block: if.end245
+Phase 3	Block: if.end246
+Phase 3	Block: cleanup
+Phase 3	Block: if.then250
+Phase 3	Block: if.end253
+Phase 3	Block: if.then257
+Phase 3	Block: if.end260
+[19]Function: close
+[20]Function: strrchr
+[21]Function: malloc
+[22]Function: strtok
+[23]Function: getaddrinfo
+[24]Function: llvm.memcpy.p0i8.p0i8.i64
+[25]Function: freeaddrinfo
+[26]Function: pthread_detach
+[27]Function: pthread_self
+[28]Function: getsockopt
+[29]Function: sctp_connectx
+[30]Function: select
+[31]Function: sctp_recvmsg
+[32]Function: sctp_sendmsg
+[33]Function: realloc
