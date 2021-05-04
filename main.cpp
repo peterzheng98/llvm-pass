@@ -27,6 +27,35 @@ const std::string path_prefix = "./analysis/";
 std::vector<std::thread> thread_pool;
 Element *head;
 
+void generate_dfs(Element *r, std::vector<BaseElement> &start_obj, std::map<std::string, std::vector<BaseElement>> &p, std::map<std::string, int> &visit_times){
+  Element *prev = r;
+  for(auto &j: start_obj){
+    if(j.getType() == Branch){
+      Element *n = new Element(j);
+      prev->addElement(n);
+      std::string br1 = j.getBr1(), br2 = j.getBr2();
+      if(visit_times[br1] != 2){
+        visit_times[br1]++;
+        generate_dfs(n, p[br1], p, visit_times);
+      }
+      if(br2 != "" && visit_times[br2] != 2){
+        visit_times[br2]++;
+        generate_dfs(n, p[br2], p, visit_times);
+      }
+      Element *p = n;
+      
+      prev = n;
+    } else if (j.getType() == Store){
+      Element *n = new Element(j);
+      prev->addElement(n);
+      prev = n;
+    } else if (j.getType() == Load){
+      Element *n = new Element(j);
+      prev->addElement(n);
+      prev = n;
+    }
+  }
+}
 
 void debug_llvm_value(llvm::Value *p){
   if(isa<llvm::Argument>(p)) std::cout << "type: Argument" << std::endl;
@@ -174,30 +203,59 @@ void check_function(llvm::Module::iterator &iter, int idx){
     output_files << "Add: " << t.first << " " << t.second << std::endl;
   }
 
-  // Generate target:
-  Element *original = head;
+  std::map<std::string, std::vector<BaseElement>> block2insts;
+  std::map<std::string, int> visit_time;
+  std::vector<BaseElement> *p = new std::vector<BaseElement>();
   func_iter = iter->begin(), func_terminal = iter->end();
-  for(; func_terminal != func_iter; func_iter++){
+  for(; func_terminal != func_iter; ++func_iter){
     std::cout << "Phase 3\tBlock: " << func_iter->getName().str() << std::endl;
     for(auto inst_iter = func_iter->begin(), inst_terminal = func_iter->end(); inst_iter != inst_terminal; inst_iter++, idx++){
       if(isa<StoreInst>(inst_iter)){
         std::string target = cast<StoreInst>(inst_iter)->getPointerOperand()->getName().str();
         if(allocated_variables.count(target)) continue;
-        Element *n = new Element(Store, cast<StoreInst>(inst_iter)->getPointerOperand()->getName().str(), false);
-        head->addElement(n);
-        head = n;
+        BaseElement tmp(Store, target);
+        p->push_back(tmp);
         continue;
       }
       if(isa<LoadInst>(inst_iter)){
         std::string target = cast<LoadInst>(inst_iter)->getPointerOperand()->getName().str();
         if(allocated_variables.count(target)) continue;
-        Element *n = new Element(Load, cast<LoadInst>(inst_iter)->getPointerOperand()->getName().str(), false);
-        head->addElement(n);
-        head = n;
+        BaseElement tmp(Load, target);
+        p->push_back(tmp);
         continue;
       }
+      if(isa<BranchInst>(inst_iter)){
+        if(cast<BranchInst>(inst_iter)->isConditional()){
+          BaseElement tmp(Branch, cast<BranchInst>(inst_iter)->getOperand(1)->getName().str(), cast<BranchInst>(inst_iter)->getOperand(2)->getName().str());
+          p->push_back(tmp);
+          continue;
+        } else {
+          BaseElement tmp(Branch, cast<BranchInst>(inst_iter)->getOperand(0)->getName().str(), "");
+          p->push_back(tmp);
+          continue;
+        }
+      }
     }
+    block2insts[func_iter->getName().str()] = *p;
+    visit_time[func_iter->getName().str()] = 0;
+    p = new std::vector<BaseElement>();
   }
+  delete p;
+  // debug output of jump, load
+  std::cout << "Debug phase 3: " << std::endl;
+  for(auto &p: block2insts){
+    std::cout << "Block: " << p.first << "[";
+    for(auto &r : p.second) std::cout << r.toString() << " ";
+    std::cout << "]" <<  std::endl;
+  }
+
+  
+  
+
+  // Generate target:
+  Element *original = head;
+  generate_dfs(original, block2insts["entry"], block2insts, visit_time);
+  original = head;
   original->getAllMemoryAccessPath(output_files);
   output_files.close();
 }
@@ -207,7 +265,7 @@ int main(int argc, char** argv) {
         std::cerr << "Usage: <executable> <IR Files>" << std::endl;
         return 0;
     }
-  head = new Element(element_t::Branch, "HEAD", true);
+  head = new Element(element_t::HEAD, "HEAD", true);
   llvm::LLVMContext context;
   SMDiagnostic error;
   std::unique_ptr<Module> m = parseIRFile(argv[1], error, context);
