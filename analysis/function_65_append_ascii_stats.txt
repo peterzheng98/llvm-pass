@@ -120,8 +120,8 @@ Add: __ANOMY_19 65
 Add: __ANOMY_20 66
 Add: __ANOMY_21 71
 Add: __ANOMY_22 73
-[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats3) Load(stats21) Store(stats21) 
-[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats3) Load(stats21) Store(stats21) 
-[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats3) Load(stats21) Store(stats21) 
-[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats3) 
-[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats3) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats3) Call(snprintf) Load(stats21) Store(stats21) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats3) Call(snprintf) Load(stats21) Store(stats21) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats3) Call(snprintf) Load(stats21) Store(stats21) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats3) Call(snprintf) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats3) Call(snprintf) 

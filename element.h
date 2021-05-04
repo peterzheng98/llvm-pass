@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 typedef enum{
-  HEAD, Branch, Store, Load, Switch
+  HEAD, Branch, Store, Load, Switch, FunctionCall
 } element_t;
 class BaseElement;
 

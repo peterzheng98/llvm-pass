@@ -72,5 +72,5 @@ Add: __ANOMY_12 34
 Add: __ANOMY_13 37
 Add: __ANOMY_14 40
 Add: __ANOMY_15 43
-[Sequence]
-[Sequence]
+[Sequence]Call(free) 
+[Sequence]Call(item_remove) Call(free) 

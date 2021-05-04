@@ -5,3 +5,4 @@
 		ret
 Phase 1: Allocated Variables: 
 Phase 2:
+[Sequence]Call(printf) Call(printf) 

@@ -24,4 +24,4 @@ retval
 Phase 2:
 Add: __ANOMY_2 14
 [Sequence]Load(do_run_conn_timeout_thread) 
-[Sequence]Load(do_run_conn_timeout_thread) Store(do_run_conn_timeout_thread) Load(conn_timeout_tid) 
+[Sequence]Load(do_run_conn_timeout_thread) Call(pthread_mutex_lock) Store(do_run_conn_timeout_thread) Call(pthread_cond_signal) Call(pthread_mutex_unlock) Load(conn_timeout_tid) Call(pthread_join) 

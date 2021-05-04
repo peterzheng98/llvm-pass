@@ -61,5 +61,6 @@ Add: __ANOMY_2 13
 Add: __ANOMY_3 15
 Add: __ANOMY_4 22
 Add: __ANOMY_6 29
-[Sequence]Load(settings) Store(max_fds) Load(stderr) Load(max_fds) Store(conns) Load(stderr) 
-[Sequence]Load(settings) Store(max_fds) Store(max_fds) Load(max_fds) Store(conns) Load(stderr) 
+[Sequence]Call(dup) Load(settings) Store(max_fds) Call(getrlimit) Load(stderr) Call(fprintf) Call(close) Load(max_fds) Call(calloc) Store(conns) Load(stderr) Call(fprintf) Call(exit) 
+[Sequence]Call(dup) Load(settings) Store(max_fds) Call(getrlimit) Store(max_fds) Call(close) Load(max_fds) Call(calloc) Store(conns) Load(stderr) Call(fprintf) Call(exit) 
+[Sequence]Call(dup) Call(perror) Call(exit) 

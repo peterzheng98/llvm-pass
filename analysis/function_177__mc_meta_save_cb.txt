@@ -105,4 +105,4 @@ Add: __ANOMY_33 66
 Add: __ANOMY_35 69
 Add: __ANOMY_36 70
 Add: __ANOMY_37 72
-[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(current_time) Load(process_started) Load(settings) Load(stats_state) Load(settings) 
+[Sequence]Call(restart_set_kv) Load(settings) Call(restart_set_kv) Load(settings) Call(restart_set_kv) Load(settings) Call(restart_set_kv) Load(settings) Call(restart_set_kv) Load(settings) Call(restart_set_kv) Load(settings) Call(restart_set_kv) Load(settings) Call(restart_set_kv) Load(current_time) Call(restart_set_kv) Load(process_started) Call(restart_set_kv) Call(gettimeofday) Call(restart_set_kv) Call(get_cas_id) Call(restart_set_kv) Load(settings) Call(restart_set_kv) Call(logger_get_gid) Call(restart_set_kv) Load(stats_state) Call(restart_set_kv) Load(settings) Call(restart_set_kv) Call(restart_set_kv) 

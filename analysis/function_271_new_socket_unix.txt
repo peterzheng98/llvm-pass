@@ -49,7 +49,7 @@ Add: or 17
 Add: __ANOMY_3 22
 Add: __ANOMY_4 26
 Add: __ANOMY_5 29
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
+[Sequence]Call(socket) Call(fcntl) Call(fcntl) 
+[Sequence]Call(socket) Call(fcntl) Call(fcntl) Call(perror) Call(close) 
+[Sequence]Call(socket) Call(fcntl) Call(perror) Call(close) 
+[Sequence]Call(socket) Call(perror) 

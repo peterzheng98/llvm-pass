@@ -12,4 +12,4 @@
 		ret
 Phase 1: Allocated Variables: 
 Phase 2:
-[Sequence]Store(stats_state) Store(process_started) Load(settings) 
+[Sequence]Call(llvm.memset.p0i8.i64) Call(llvm.memset.p0i8.i64) Store(stats_state) Call(time) Store(process_started) Load(settings) Call(stats_prefix_init) 

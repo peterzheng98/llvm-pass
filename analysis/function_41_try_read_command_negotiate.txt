@@ -65,5 +65,7 @@ Add: __ANOMY_12 33
 Add: __ANOMY_13 37
 Add: __ANOMY_14 39
 Add: __ANOMY_15 40
-[Sequence]Load(settings) Load(stderr) 
-[Sequence]Load(settings) Load(stderr) 
+[Sequence]Load(settings) Call(__ANOMY_14) 
+[Sequence]Load(settings) Load(stderr) Call(prot_text) Call(fprintf) Call(__ANOMY_14) 
+[Sequence]Load(settings) Call(__ANOMY_14) 
+[Sequence]Load(settings) Load(stderr) Call(prot_text) Call(fprintf) 

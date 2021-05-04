@@ -34,6 +34,6 @@ Add: __ANOMY_0 4
 Add: cmp 5
 Add: __ANOMY_1 7
 Add: __ANOMY_3 19
-[Sequence]
-[Sequence]
-[Sequence]Load(stderr) 
+[Sequence]Call(event_get_version) 
+[Sequence]Call(event_get_version) Call(strncmp) 
+[Sequence]Call(event_get_version) Call(strncmp) Load(stderr) Call(event_get_version) Call(fprintf) 

@@ -172,7 +172,7 @@ Add: __ANOMY_39 104
 Add: __ANOMY_40 106
 Add: __ANOMY_41 107
 Add: __ANOMY_42 114
-[Sequence]Store(__sockaddr__) 
-[Sequence]Store(__sockaddr__) Load(stats8) Store(stats8) 
-[Sequence]Store(__sockaddr__) Load(stats8) Store(stats8) 
-[Sequence]Store(__sockaddr__) Load(stats8) Store(stats8) 
+[Sequence]Store(__sockaddr__) Call(recvfrom) 
+[Sequence]Store(__sockaddr__) Call(recvfrom) Call(pthread_mutex_lock) Load(stats8) Store(stats8) Call(pthread_mutex_unlock) Call(llvm.memmove.p0i8.p0i8.i64) 
+[Sequence]Store(__sockaddr__) Call(recvfrom) Call(pthread_mutex_lock) Load(stats8) Store(stats8) Call(pthread_mutex_unlock) 
+[Sequence]Store(__sockaddr__) Call(recvfrom) Call(pthread_mutex_lock) Load(stats8) Store(stats8) Call(pthread_mutex_unlock) 

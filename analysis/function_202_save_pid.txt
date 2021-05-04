@@ -101,14 +101,14 @@ Add: __ANOMY_8 47
 Add: __ANOMY_9 51
 Add: __ANOMY_10 59
 Add: __ANOMY_11 64
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]Load(stderr) 
+[Sequence]Call(access) Call(snprintf) Call(fopen) Call(getpid) Call(fprintf) Call(fclose) Call(rename) Call(vperror) 
+[Sequence]Call(access) Call(snprintf) Call(fopen) Call(getpid) Call(fprintf) Call(fclose) Call(vperror) Call(rename) Call(vperror) 
+[Sequence]Call(access) Call(snprintf) Call(fopen) Call(vperror) 
+[Sequence]Call(access) Call(fopen) Call(snprintf) Call(fopen) Call(getpid) Call(fprintf) Call(fclose) Call(rename) Call(vperror) 
+[Sequence]Call(access) Call(fopen) Call(snprintf) Call(fopen) Call(getpid) Call(fprintf) Call(fclose) Call(vperror) 
+[Sequence]Call(access) Call(fopen) Call(snprintf) Call(fopen) Call(vperror) 
+[Sequence]Call(access) Call(fopen) Call(fgets) Call(fclose) Call(snprintf) Call(fopen) Call(getpid) Call(fprintf) Call(fclose) Call(vperror) 
+[Sequence]Call(access) Call(fopen) Call(fgets) Call(fclose) Call(snprintf) Call(fopen) Call(vperror) 
+[Sequence]Call(access) Call(fopen) Call(fgets) Call(safe_strtoul) Call(fclose) 
+[Sequence]Call(access) Call(fopen) Call(fgets) Call(safe_strtoul) Call(kill) Call(fclose) 
+[Sequence]Call(access) Call(fopen) Call(fgets) Call(safe_strtoul) Call(kill) Load(stderr) Call(fprintf) 

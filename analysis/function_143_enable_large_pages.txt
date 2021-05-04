@@ -38,6 +38,6 @@ Add: __ANOMY_1 9
 Add: and 10
 Add: tobool1 11
 Add: __ANOMY_4 21
-[Sequence]Load(stderr) Load(stderr) 
-[Sequence]
-[Sequence]Load(stderr) Load(stderr) 
+[Sequence]Call(stat) Load(stderr) Call(fprintf) Load(stderr) Call(fprintf) 
+[Sequence]Call(stat) 
+[Sequence]Call(stat) Load(stderr) Call(fprintf) Load(stderr) Call(fprintf) 

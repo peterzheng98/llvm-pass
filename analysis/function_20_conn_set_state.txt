@@ -67,4 +67,4 @@ Add: __ANOMY_13 33
 [Sequence]Load(settings) 
 [Sequence]Load(settings) 
 [Sequence]Load(settings) 
-[Sequence]Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(stderr) Call(state_text) Call(state_text) Call(fprintf) 

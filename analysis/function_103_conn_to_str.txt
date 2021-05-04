@@ -175,14 +175,14 @@ Add: __ANOMY_33 94
 Add: __ANOMY_34 96
 Add: __ANOMY_35 98
 Add: __ANOMY_36 100
-[Sequence]
-[Sequence]
-[Sequence]Store(__sockaddr__28) 
-[Sequence]Store(__sockaddr__28) 
-[Sequence]Store(__sockaddr__28) 
-[Sequence]
-[Sequence]Store(__sockaddr__) 
-[Sequence]Store(__sockaddr__) 
-[Sequence]Store(__sockaddr__) 
-[Sequence]Store(__sockaddr__) 
-[Sequence]
+[Sequence]Call(strcpy) 
+[Sequence]Call(get_conn_text) 
+[Sequence]Call(get_conn_text) Store(__sockaddr__28) Call(getsockname) Call(get_conn_text) 
+[Sequence]Call(get_conn_text) Store(__sockaddr__28) Call(getsockname) Call(get_conn_text) 
+[Sequence]Call(get_conn_text) Store(__sockaddr__28) Call(getsockname) Call(get_conn_text) 
+[Sequence]Call(get_conn_text) 
+[Sequence]Store(__sockaddr__) Call(getsockname) Call(get_conn_text) 
+[Sequence]Store(__sockaddr__) Call(getsockname) 
+[Sequence]Store(__sockaddr__) Call(getsockname) 
+[Sequence]Store(__sockaddr__) Call(getsockname) 
+[Sequence]Call(strcpy) 

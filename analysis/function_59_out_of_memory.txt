@@ -44,6 +44,6 @@ Add: __ANOMY_4 17
 Add: __ANOMY_5 18
 Add: __ANOMY_6 21
 Add: __ANOMY_7 22
-[Sequence]
-[Sequence]
-[Sequence]
+[Sequence]Call(out_string) 
+[Sequence]Call(strncmp) Call(write_bin_error) 
+[Sequence]Call(strncmp) Call(write_bin_error) 

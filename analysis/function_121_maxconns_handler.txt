@@ -38,6 +38,6 @@ which.addr
 Phase 2:
 Add: __ANOMY_1 9
 Add: cmp 10
-[Sequence]Load(allow_new_conns) 
-[Sequence]Load(allow_new_conns) Load(main_base) 
-[Sequence]Load(main_base) 
+[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Load(allow_new_conns) Call(event_del) Call(accept_new_conns) 
+[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Load(allow_new_conns) Call(event_set) Load(main_base) Call(event_base_set) Call(event_add) 
+[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(event_set) Load(main_base) Call(event_base_set) Call(event_add) 

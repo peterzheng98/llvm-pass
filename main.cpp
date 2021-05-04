@@ -64,6 +64,10 @@ void generate_dfs(Element *r, std::vector<BaseElement> &start_obj, std::map<std:
       }
       Element *p = n;
       prev = n;
+    } else if(j.getType() == FunctionCall){
+      Element *n = new Element(j);
+      prev->addElement(n);
+      prev = n;
     }
   }
 }
@@ -225,6 +229,14 @@ void check_function(llvm::Module::iterator &iter, int idx){
       if(isa<ReturnInst>(inst_iter)){
         continue;
       }
+      if(isa<CallInst>(inst_iter)){
+        auto call_p = cast<CallInst>(inst_iter);
+        std::string target_function_name = "";
+        if(!call_p->getCalledFunction()) target_function_name = call_p->getOperand(call_p->getNumOperands() - 1)->getName().str();
+        else target_function_name = call_p->getCalledFunction()->getName().str();
+        std::cout << "Call to: " << target_function_name << std::endl;
+        continue;
+      }
       if(isa<BinaryOperator>(inst_iter)){
         std::cout << "binary: " << inst_iter->getNumOperands() << std::endl;
         bool binary_stack = true;
@@ -259,6 +271,15 @@ void check_function(llvm::Module::iterator &iter, int idx){
   for(; func_terminal != func_iter; ++func_iter){
     std::cout << "Phase 3\tBlock: " << func_iter->getName().str() << std::endl;
     for(auto inst_iter = func_iter->begin(), inst_terminal = func_iter->end(); inst_iter != inst_terminal; inst_iter++, idx++){
+      if(isa<CallInst>(inst_iter)){
+        auto call_p = cast<CallInst>(inst_iter);
+        std::string target_function_name = "";
+        if(!call_p->getCalledFunction()) target_function_name = call_p->getOperand(call_p->getNumOperands() - 1)->getName().str();
+        else target_function_name = call_p->getCalledFunction()->getName().str();
+        BaseElement tmp(FunctionCall, target_function_name);
+        p->push_back(tmp);
+        continue;
+      }
       // Notice that from llvm:D70113
       // llvm/lib/IR/Constants.cpp
       // should not call getAsInstruction() since this will add a new instruction

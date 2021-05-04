@@ -184,10 +184,10 @@ Add: __ANOMY_43 112
 Add: __ANOMY_44 113
 Add: __ANOMY_45 115
 Add: __ANOMY_46 121
-[Sequence]Load(stats3) Store(stats3) 
-[Sequence]Load(stats13) Store(stats13) 
-[Sequence]Load(stats13) Store(stats13) 
-[Sequence]Load(stats13) Store(stats13) 
-[Sequence]Load(stats13) Store(stats13) 
-[Sequence]Load(stats13) Store(stats13) 
-[Sequence]Load(stats13) Store(stats13) 
+[Sequence]Call(resp_allocate) Call(pthread_mutex_lock) Load(stats3) Store(stats3) Call(pthread_mutex_unlock) 
+[Sequence]Call(resp_allocate) Call(pthread_mutex_lock) Load(stats13) Store(stats13) Call(pthread_mutex_unlock) Call(llvm.memset.p0i8.i64) 
+[Sequence]Call(resp_allocate) Call(pthread_mutex_lock) Load(stats13) Store(stats13) Call(pthread_mutex_unlock) Call(llvm.memset.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) 
+[Sequence]Call(resp_allocate) Call(pthread_mutex_lock) Load(stats13) Store(stats13) Call(pthread_mutex_unlock) Call(llvm.memset.p0i8.i64) 
+[Sequence]Call(resp_allocate) Call(pthread_mutex_lock) Load(stats13) Store(stats13) Call(pthread_mutex_unlock) Call(llvm.memset.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) 
+[Sequence]Call(resp_allocate) Call(pthread_mutex_lock) Load(stats13) Store(stats13) Call(pthread_mutex_unlock) Call(llvm.memset.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) 
+[Sequence]Call(resp_allocate) Call(pthread_mutex_lock) Load(stats13) Store(stats13) Call(pthread_mutex_unlock) Call(llvm.memset.p0i8.i64) 

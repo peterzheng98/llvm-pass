@@ -266,9 +266,9 @@ Add: __ANOMY_63 156
 [Sequence]
 [Sequence]
 [Sequence]
-[Sequence]Load(stats27) Store(stats27) 
-[Sequence]Load(stats27) Store(stats27) 
-[Sequence]Load(stats27) Store(stats27) 
+[Sequence]Call(do_cache_free) Call(pthread_mutex_lock) Load(stats27) Store(stats27) Call(pthread_mutex_unlock) 
+[Sequence]Call(do_cache_free) Call(pthread_mutex_lock) Load(stats27) Store(stats27) Call(pthread_mutex_unlock) 
+[Sequence]Call(do_cache_free) Call(pthread_mutex_lock) Load(stats27) Store(stats27) Call(pthread_mutex_unlock) 
 [Sequence]
 [Sequence]
 [Sequence]

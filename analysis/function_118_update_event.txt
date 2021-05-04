@@ -86,7 +86,7 @@ Add: __ANOMY_14 41
 Add: __ANOMY_15 43
 Add: __ANOMY_16 46
 Add: __ANOMY_17 55
-[Sequence]Load(event) 
-[Sequence]Load(event) 
-[Sequence]Load(event) 
+[Sequence]Load(event) Call(event_del) Call(event_set) Call(event_base_set) Call(event_add) 
+[Sequence]Load(event) Call(event_del) Call(event_set) Call(event_base_set) Call(event_add) 
+[Sequence]Load(event) Call(event_del) 
 [Sequence]Load(event) 

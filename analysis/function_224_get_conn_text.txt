@@ -162,13 +162,13 @@ Add: __ANOMY_29 101
 Add: __ANOMY_30 103
 Add: __ANOMY_31 107
 Add: __ANOMY_32 108
-[Sequence]Load(__ANOMY_6) 
-[Sequence]Load(__ANOMY_6) 
-[Sequence]Load(__ANOMY_6) 
-[Sequence]Load(__ANOMY_6) 
-[Sequence]Load(__ANOMY_16) 
-[Sequence]Load(__ANOMY_16) 
-[Sequence]Load(__ANOMY_16) 
-[Sequence]Load(__ANOMY_16) 
-[Sequence]
-[Sequence]
+[Sequence]Call(inet_ntop) Load(__ANOMY_6) Call(ntohs) Call(strlen) Call(sprintf) 
+[Sequence]Call(inet_ntop) Load(__ANOMY_6) Call(ntohs) Call(strlen) Call(sprintf) 
+[Sequence]Call(inet_ntop) Load(__ANOMY_6) Call(ntohs) Call(strlen) Call(sprintf) Call(sprintf) 
+[Sequence]Call(inet_ntop) Load(__ANOMY_6) Call(ntohs) Call(strlen) Call(sprintf) Call(sprintf) 
+[Sequence]Call(inet_ntop) Load(__ANOMY_16) Call(ntohs) Call(strlen) Call(sprintf) 
+[Sequence]Call(inet_ntop) Load(__ANOMY_16) Call(ntohs) Call(strlen) Call(sprintf) 
+[Sequence]Call(inet_ntop) Load(__ANOMY_16) Call(ntohs) Call(strlen) Call(sprintf) 
+[Sequence]Call(inet_ntop) Call(strcat) Load(__ANOMY_16) Call(ntohs) Call(strlen) Call(sprintf) 
+[Sequence]Call(strncpy) 
+[Sequence]Call(strncpy) 

@@ -295,15 +295,15 @@ Add: __ANOMY_57 182
 Add: __ANOMY_58 189
 Add: __ANOMY_59 192
 [Sequence]
-[Sequence]
-[Sequence]Load(stats41) Store(stats41) 
-[Sequence]Load(stats41) Store(stats41) Store(arrayidx57) Store(arrayidx60) 
-[Sequence]Load(stats41) Store(stats41) Store(arrayidx57) Store(arrayidx60) Store(arrayidx57) Store(arrayidx60) 
-[Sequence]Load(stats41) Store(stats41) Store(arrayidx57) Store(arrayidx60) Store(arrayidx57) Store(arrayidx60) Store(arrayidx57) Store(arrayidx60) 
-[Sequence]
-[Sequence]Load(stats41) Store(stats41) 
-[Sequence]
-[Sequence]Load(stats41) Store(stats41) 
+[Sequence]Call(do_cache_alloc) 
+[Sequence]Call(do_cache_alloc) Call(pthread_mutex_lock) Load(stats41) Store(stats41) Call(pthread_mutex_unlock) 
+[Sequence]Call(do_cache_alloc) Call(pthread_mutex_lock) Load(stats41) Store(stats41) Call(pthread_mutex_unlock) Store(arrayidx57) Store(arrayidx60) 
+[Sequence]Call(do_cache_alloc) Call(pthread_mutex_lock) Load(stats41) Store(stats41) Call(pthread_mutex_unlock) Store(arrayidx57) Store(arrayidx60) Store(arrayidx57) Store(arrayidx60) 
+[Sequence]Call(do_cache_alloc) Call(pthread_mutex_lock) Load(stats41) Store(stats41) Call(pthread_mutex_unlock) Store(arrayidx57) Store(arrayidx60) Store(arrayidx57) Store(arrayidx60) Store(arrayidx57) Store(arrayidx60) 
+[Sequence]Call(do_cache_alloc) 
+[Sequence]Call(do_cache_alloc) Call(pthread_mutex_lock) Load(stats41) Store(stats41) Call(pthread_mutex_unlock) 
+[Sequence]Call(do_cache_alloc) 
+[Sequence]Call(do_cache_alloc) Call(pthread_mutex_lock) Load(stats41) Store(stats41) Call(pthread_mutex_unlock) 
 [Sequence]
 [Sequence]
 [Sequence]Load(arrayidx) 

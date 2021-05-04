@@ -114,14 +114,14 @@ Add: __ANOMY_23 58
 Add: cmp16 59
 Add: __ANOMY_24 61
 Add: __ANOMY_25 64
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
+[Sequence]Call(event_set) Call(event_base_set) Call(event_add) Call(conn_set_state) 
+[Sequence]Call(event_set) Call(event_base_set) Call(event_add) Call(drive_machine) 
+[Sequence]Call(event_set) Call(event_base_set) Call(event_add) Call(drive_machine) 
+[Sequence]Call(event_set) Call(event_base_set) Call(event_add) Call(perror) Call(conn_set_state) 
+[Sequence]Call(event_set) Call(event_base_set) Call(event_add) Call(perror) Call(drive_machine) 
+[Sequence]Call(event_set) Call(event_base_set) Call(event_add) Call(perror) Call(drive_machine) 
+[Sequence]Call(event_set) Call(event_base_set) Call(event_add) Call(conn_set_state) 
+[Sequence]Call(event_set) Call(event_base_set) Call(event_add) Call(drive_machine) 
+[Sequence]Call(event_set) Call(event_base_set) Call(event_add) Call(drive_machine) 
+[Sequence]Call(event_set) Call(event_base_set) Call(event_add) Call(perror) 
 [Sequence]

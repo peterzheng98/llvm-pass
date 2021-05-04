@@ -122,9 +122,9 @@ Add: __ANOMY_26 68
 Add: __ANOMY_27 71
 Add: add18 72
 Add: __ANOMY_28 75
-[Sequence]Load(settings) 
-[Sequence]Load(settings) 
-[Sequence]Load(settings) Load(stderr) 
-[Sequence]Load(settings) Load(stderr) 
-[Sequence]Load(settings) 
-[Sequence]Load(settings) Load(stderr) 
+[Sequence]Call(resp_reset) Load(settings) Call(strlen) Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(resp_add_iov) Call(conn_set_state) 
+[Sequence]Call(resp_reset) Load(settings) Call(strlen) Call(strlen) Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(resp_add_iov) Call(conn_set_state) 
+[Sequence]Call(resp_reset) Load(settings) Load(stderr) Call(fprintf) Call(strlen) Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(resp_add_iov) Call(conn_set_state) 
+[Sequence]Call(resp_reset) Load(settings) Load(stderr) Call(fprintf) Call(strlen) Call(strlen) 
+[Sequence]Call(resp_reset) Load(settings) Call(conn_set_state) 
+[Sequence]Call(resp_reset) Load(settings) Load(stderr) Call(fprintf) Call(conn_set_state) 

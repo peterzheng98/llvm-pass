@@ -153,17 +153,17 @@ Add: __ANOMY_20 79
 Add: __ANOMY_22 85
 Add: __ANOMY_23 89
 Add: __ANOMY_26 101
-[Sequence]
-[Sequence]Store(__sockaddr__) Load(settings) Load(main_base) Store(listen_conn) Load(stderr) 
-[Sequence]Store(__sockaddr__) Load(settings) Load(main_base) Store(listen_conn) 
-[Sequence]Store(__sockaddr__) Load(settings) 
-[Sequence]Store(__sockaddr__) 
-[Sequence]Store(__sockaddr__) Load(settings) Load(main_base) Store(listen_conn) Load(stderr) 
-[Sequence]Store(__sockaddr__) Load(settings) Load(main_base) Store(listen_conn) 
-[Sequence]Store(__sockaddr__) Load(settings) 
-[Sequence]Store(__sockaddr__) 
-[Sequence]Store(__sockaddr__) Load(settings) Load(main_base) Store(listen_conn) Load(stderr) 
-[Sequence]Store(__sockaddr__) Load(settings) Load(main_base) Store(listen_conn) 
-[Sequence]Store(__sockaddr__) Load(settings) 
-[Sequence]Store(__sockaddr__) 
-[Sequence]
+[Sequence]Call(llvm.memset.p0i8.i64) 
+[Sequence]Call(llvm.memset.p0i8.i64) Call(new_socket_unix) Call(lstat) Call(setsockopt) Call(setsockopt) Call(setsockopt) Call(llvm.memset.p0i8.i64) Call(strncpy) Call(umask) Store(__sockaddr__) Call(bind) Call(umask) Load(settings) Call(listen) Load(main_base) Call(conn_new) Store(listen_conn) Load(stderr) Call(fprintf) Call(exit) 
+[Sequence]Call(llvm.memset.p0i8.i64) Call(new_socket_unix) Call(lstat) Call(setsockopt) Call(setsockopt) Call(setsockopt) Call(llvm.memset.p0i8.i64) Call(strncpy) Call(umask) Store(__sockaddr__) Call(bind) Call(umask) Load(settings) Call(listen) Load(main_base) Call(conn_new) Store(listen_conn) 
+[Sequence]Call(llvm.memset.p0i8.i64) Call(new_socket_unix) Call(lstat) Call(setsockopt) Call(setsockopt) Call(setsockopt) Call(llvm.memset.p0i8.i64) Call(strncpy) Call(umask) Store(__sockaddr__) Call(bind) Call(umask) Load(settings) Call(listen) Call(perror) Call(close) 
+[Sequence]Call(llvm.memset.p0i8.i64) Call(new_socket_unix) Call(lstat) Call(setsockopt) Call(setsockopt) Call(setsockopt) Call(llvm.memset.p0i8.i64) Call(strncpy) Call(umask) Store(__sockaddr__) Call(bind) Call(perror) Call(close) Call(umask) 
+[Sequence]Call(llvm.memset.p0i8.i64) Call(new_socket_unix) Call(lstat) Call(setsockopt) Call(setsockopt) Call(setsockopt) Call(llvm.memset.p0i8.i64) Call(strncpy) Call(umask) Store(__sockaddr__) Call(bind) Call(umask) Load(settings) Call(listen) Load(main_base) Call(conn_new) Store(listen_conn) Load(stderr) Call(fprintf) Call(exit) 
+[Sequence]Call(llvm.memset.p0i8.i64) Call(new_socket_unix) Call(lstat) Call(setsockopt) Call(setsockopt) Call(setsockopt) Call(llvm.memset.p0i8.i64) Call(strncpy) Call(umask) Store(__sockaddr__) Call(bind) Call(umask) Load(settings) Call(listen) Load(main_base) Call(conn_new) Store(listen_conn) 
+[Sequence]Call(llvm.memset.p0i8.i64) Call(new_socket_unix) Call(lstat) Call(setsockopt) Call(setsockopt) Call(setsockopt) Call(llvm.memset.p0i8.i64) Call(strncpy) Call(umask) Store(__sockaddr__) Call(bind) Call(umask) Load(settings) Call(listen) Call(perror) Call(close) 
+[Sequence]Call(llvm.memset.p0i8.i64) Call(new_socket_unix) Call(lstat) Call(setsockopt) Call(setsockopt) Call(setsockopt) Call(llvm.memset.p0i8.i64) Call(strncpy) Call(umask) Store(__sockaddr__) Call(bind) Call(perror) Call(close) Call(umask) 
+[Sequence]Call(llvm.memset.p0i8.i64) Call(new_socket_unix) Call(lstat) Call(unlink) Call(setsockopt) Call(setsockopt) Call(setsockopt) Call(llvm.memset.p0i8.i64) Call(strncpy) Call(umask) Store(__sockaddr__) Call(bind) Call(umask) Load(settings) Call(listen) Load(main_base) Call(conn_new) Store(listen_conn) Load(stderr) Call(fprintf) Call(exit) 
+[Sequence]Call(llvm.memset.p0i8.i64) Call(new_socket_unix) Call(lstat) Call(unlink) Call(setsockopt) Call(setsockopt) Call(setsockopt) Call(llvm.memset.p0i8.i64) Call(strncpy) Call(umask) Store(__sockaddr__) Call(bind) Call(umask) Load(settings) Call(listen) Load(main_base) Call(conn_new) Store(listen_conn) 
+[Sequence]Call(llvm.memset.p0i8.i64) Call(new_socket_unix) Call(lstat) Call(unlink) Call(setsockopt) Call(setsockopt) Call(setsockopt) Call(llvm.memset.p0i8.i64) Call(strncpy) Call(umask) Store(__sockaddr__) Call(bind) Call(umask) Load(settings) Call(listen) Call(perror) Call(close) 
+[Sequence]Call(llvm.memset.p0i8.i64) Call(new_socket_unix) Call(lstat) Call(unlink) Call(setsockopt) Call(setsockopt) Call(setsockopt) Call(llvm.memset.p0i8.i64) Call(strncpy) Call(umask) Store(__sockaddr__) Call(bind) Call(perror) Call(close) Call(umask) 
+[Sequence]Call(llvm.memset.p0i8.i64) Call(new_socket_unix) 

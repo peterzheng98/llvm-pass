@@ -53,6 +53,6 @@ Add: __ANOMY_10 24
 Add: __ANOMY_12 31
 Add: inc 32
 [Sequence]Load(max_fds) Load(conns) Load(__ANOMY_2) Load(max_fds) Load(conns) Load(__ANOMY_2) Load(max_fds) Load(conns) Load(__ANOMY_2) 
-[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_2) Load(max_fds) Load(conns) Load(__ANOMY_2) Load(max_fds) Load(conns) Load(__ANOMY_2) Load(conns) Load(__ANOMY_5) Load(__ANOMY_7) Load(conns) Load(__ANOMY_9) 
-[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_2) Load(max_fds) Load(conns) Load(__ANOMY_2) Load(conns) Load(__ANOMY_5) Load(__ANOMY_7) Load(conns) Load(__ANOMY_9) 
-[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_2) Load(conns) Load(__ANOMY_5) Load(__ANOMY_7) Load(conns) Load(__ANOMY_9) 
+[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_2) Load(max_fds) Load(conns) Load(__ANOMY_2) Load(max_fds) Load(conns) Load(__ANOMY_2) Load(conns) Load(__ANOMY_5) Load(__ANOMY_7) Load(conns) Load(__ANOMY_9) Call(conn_close) 
+[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_2) Load(max_fds) Load(conns) Load(__ANOMY_2) Load(conns) Load(__ANOMY_5) Load(__ANOMY_7) Load(conns) Load(__ANOMY_9) Call(conn_close) 
+[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_2) Load(conns) Load(__ANOMY_5) Load(__ANOMY_7) Load(conns) Load(__ANOMY_9) Call(conn_close) 

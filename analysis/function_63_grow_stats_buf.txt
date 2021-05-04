@@ -135,11 +135,11 @@ Add: __ANOMY_23 72
 Add: __ANOMY_24 76
 Add: __ANOMY_25 77
 Add: __ANOMY_27 90
-[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats11) Load(stats15) Load(stats) Store(stats) 
-[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats11) Load(stats15) Store(stats18) Store(stats20) 
-[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats8) Load(stats11) Load(stats15) Load(stats) Store(stats) 
-[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats8) Load(stats11) Load(stats15) Store(stats18) Store(stats20) 
-[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats8) Load(stats8) Load(stats11) Load(stats15) Load(stats) Store(stats) 
-[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats8) Load(stats8) Load(stats11) Load(stats15) Store(stats18) Store(stats20) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats11) Load(stats15) Call(realloc) Call(STATS_LOCK) Load(stats) Store(stats) Call(STATS_UNLOCK) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats11) Load(stats15) Call(realloc) Store(stats18) Store(stats20) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats8) Load(stats11) Load(stats15) Call(realloc) Call(STATS_LOCK) Load(stats) Store(stats) Call(STATS_UNLOCK) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats8) Load(stats11) Load(stats15) Call(realloc) Store(stats18) Store(stats20) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats8) Load(stats8) Load(stats11) Load(stats15) Call(realloc) Call(STATS_LOCK) Load(stats) Store(stats) Call(STATS_UNLOCK) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats8) Load(stats8) Load(stats11) Load(stats15) Call(realloc) Store(stats18) Store(stats20) 
 [Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats8) Load(stats8) Load(stats8) 
 [Sequence]Load(stats) Load(stats1) Load(stats2) Store(stats3) Store(stats5) 

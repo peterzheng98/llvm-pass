@@ -42,5 +42,5 @@ Add: __ANOMY_4 14
 Add: __ANOMY_5 18
 Add: __ANOMY_6 21
 Add: __ANOMY_7 25
-[Sequence]
-[Sequence]
+[Sequence]Call(try_read_command_ascii) 
+[Sequence]Call(try_read_command_binary) 

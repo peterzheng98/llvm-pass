@@ -33,6 +33,6 @@ retval
 Phase 2:
 Add: __ANOMY_2 13
 Add: __ANOMY_3 20
-[Sequence]Load(settings) Store(do_run_conn_timeout_thread) 
-[Sequence]Load(settings) Store(do_run_conn_timeout_thread) Load(stderr) 
+[Sequence]Load(settings) Store(do_run_conn_timeout_thread) Call(pthread_create) 
+[Sequence]Load(settings) Store(do_run_conn_timeout_thread) Call(pthread_create) Load(stderr) Call(strerror) Call(fprintf) 
 [Sequence]Load(settings) 

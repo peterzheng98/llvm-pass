@@ -73,6 +73,6 @@ Add: __ANOMY_10 35
 Add: __ANOMY_11 37
 Add: __ANOMY_12 40
 Add: __ANOMY_13 43
-[Sequence]
-[Sequence]
-[Sequence]
+[Sequence]Call(item_get_locked) 
+[Sequence]Call(item_get_locked) 
+[Sequence]Call(item_get_locked) Call(do_item_remove) Call(item_unlock) 

@@ -36,7 +36,8 @@ std::string Element::toString(){
   if(this->element_type == Branch) type = "Branch(" + br1 + "=>" + br2;
   else if(this->element_type == Store) type = "Store(";
   else if(this->element_type == Load) type = "Load(";
-  else type = "Switch(";
+  else if(this->element_type == Switch) type = "Switch(";
+  else if(this->element_type == FunctionCall) type = "Call(";
   return std::string(type + target_name + ")");
 }
 
@@ -45,7 +46,8 @@ std::string BaseElement::toString(){
   if(this->element_type == Branch) type = "Branch(" + br1 + "=>" + br2;
   else if(this->element_type == Store) type = "Store(" + target_name;
   else if(this->element_type == Load) type = "Load(" + target_name;
-  else type = "Switch(" + target_name;
+  else if(this->element_type == Switch) type = "Switch(" + target_name;
+  else type = "Call(" + target_name;
   return std::string(type + ")");
 }
 

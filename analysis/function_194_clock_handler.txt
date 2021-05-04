@@ -74,13 +74,13 @@ which.addr
 Phase 2:
 Add: __ANOMY_7 39
 Add: __ANOMY_9 47
-[Sequence]Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Load(settings) Load(main_base) Load(monotonic) Load(process_started) Store(current_time) 
-[Sequence]Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Load(settings) Load(main_base) Load(monotonic) Load(monotonic_start) Store(current_time) 
-[Sequence]Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Load(settings) Load(main_base) Load(monotonic) 
-[Sequence]Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Load(settings) Store(settings) Load(settings) Load(main_base) Load(monotonic) Load(process_started) Store(current_time) 
-[Sequence]Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Load(settings) Store(settings) Load(settings) Load(main_base) Load(monotonic) Load(monotonic_start) Store(current_time) 
-[Sequence]Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Load(settings) Store(settings) Load(settings) Load(main_base) Load(monotonic) 
-[Sequence]Load(clock_handler.initialized) Load(stats_state) Load(settings) Load(main_base) Load(monotonic) Load(process_started) Store(current_time) 
-[Sequence]Load(clock_handler.initialized) Load(stats_state) Load(settings) Load(main_base) Load(monotonic) Load(monotonic_start) Store(current_time) 
-[Sequence]Load(clock_handler.initialized) Load(stats_state) Load(settings) Load(main_base) Load(monotonic) 
-[Sequence]Load(clock_handler.initialized) Load(stats_state) Load(settings) Store(settings) Load(settings) 
+[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Call(assoc_start_expand) Load(settings) Call(event_set) Load(main_base) Call(event_base_set) Call(event_add) Load(monotonic) Call(gettimeofday) Load(process_started) Store(current_time) 
+[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Call(assoc_start_expand) Load(settings) Call(event_set) Load(main_base) Call(event_base_set) Call(event_add) Load(monotonic) Call(clock_gettime) Load(monotonic_start) Store(current_time) 
+[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Call(assoc_start_expand) Load(settings) Call(event_set) Load(main_base) Call(event_base_set) Call(event_add) Load(monotonic) Call(clock_gettime) 
+[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Call(assoc_start_expand) Load(settings) Store(settings) Load(settings) Call(authfile_load) Call(event_set) Load(main_base) Call(event_base_set) Call(event_add) Load(monotonic) Call(gettimeofday) Load(process_started) Store(current_time) 
+[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Call(assoc_start_expand) Load(settings) Store(settings) Load(settings) Call(authfile_load) Call(event_set) Load(main_base) Call(event_base_set) Call(event_add) Load(monotonic) Call(clock_gettime) Load(monotonic_start) Store(current_time) 
+[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Call(assoc_start_expand) Load(settings) Store(settings) Load(settings) Call(authfile_load) Call(event_set) Load(main_base) Call(event_base_set) Call(event_add) Load(monotonic) Call(clock_gettime) 
+[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Load(clock_handler.initialized) Call(event_del) Load(stats_state) Call(assoc_start_expand) Load(settings) Call(event_set) Load(main_base) Call(event_base_set) Call(event_add) Load(monotonic) Call(gettimeofday) Load(process_started) Store(current_time) 
+[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Load(clock_handler.initialized) Call(event_del) Load(stats_state) Call(assoc_start_expand) Load(settings) Call(event_set) Load(main_base) Call(event_base_set) Call(event_add) Load(monotonic) Call(clock_gettime) Load(monotonic_start) Store(current_time) 
+[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Load(clock_handler.initialized) Call(event_del) Load(stats_state) Call(assoc_start_expand) Load(settings) Call(event_set) Load(main_base) Call(event_base_set) Call(event_add) Load(monotonic) Call(clock_gettime) 
+[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Load(clock_handler.initialized) Call(event_del) Load(stats_state) Call(assoc_start_expand) Load(settings) Store(settings) Load(settings) Call(authfile_load) 
