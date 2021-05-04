@@ -155,6 +155,10 @@ void check_function(llvm::Module::iterator &iter, int idx){
       }
       if(isa<LoadInst>(inst_iter)){
         std::cout << "Load: " << cast<LoadInst>(inst_iter)->getPointerOperand()->getName().str() << std::endl;
+        if(allocated_variables.count(cast<LoadInst>(inst_iter)->getPointerOperand()->getName().str())){
+          allocated_variables.insert(inst_iter->getName().str());
+          temporatory_phase2.push_back(std::pair<std::string, int>(inst_iter->getName().str(), idx));
+        }
         continue;
       }
       if(isa<ICmpInst>(inst_iter)){
@@ -191,6 +195,23 @@ void check_function(llvm::Module::iterator &iter, int idx){
         continue;
       }
       if(isa<ReturnInst>(inst_iter)){
+        continue;
+      }
+      if(isa<BinaryOperator>(inst_iter)){
+        std::cout << "binary: " << inst_iter->getNumOperands() << std::endl;
+        bool binary_stack = true;
+        for(int i = 0; i < inst_iter->getNumOperands(); ++i){
+          std::cout << "\t[binary]" << inst_iter->getOperand(i)->getName().str() << std::endl;
+          bool value1 = isa<Constant>(inst_iter->getOperand(i));
+          bool value2 = allocated_variables.count(inst_iter->getOperand(i)->getName().str());
+          std::cout << "check value 1: " << value1 << " 2:" << value2 << std::endl;
+          binary_stack &= (value1 || value2);
+        }
+        std::cout << "target: " << inst_iter->getName().str() << std::endl;
+        if(binary_stack){
+          allocated_variables.insert(inst_iter->getName().str());
+          temporatory_phase2.push_back(std::pair<std::string, int>(inst_iter->getName().str(), idx));
+        }
         continue;
       }
       std::cout << "not found: " << inst_iter->getOpcodeName() << std::endl;

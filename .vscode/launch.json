@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/ir_test",
-            "args": ["example/simple.ll"],
+            "args": ["example/proxy.ll"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

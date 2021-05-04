@@ -179,45 +179,84 @@ retval
 size
 tmp
 Phase 2:
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Load(stderr) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(client_fd) Branch(=>) Store(ipv4only143) Store(ipv6only144) Store(server_fd) Store(local_addrs145) Store(number_local_addrs146) Load(server_addrs147) Store(server_addrs148) Load(number_addrs149) Store(number_server_addrs) Branch(=>) Branch(=>) Branch(=>) Store(client_fd) Branch(=>) Store(ipv4only143) Store(ipv6only144) Store(server_fd) Store(local_addrs145) Store(number_local_addrs146) Load(server_addrs147) Store(server_addrs148) Load(number_addrs149) Store(number_server_addrs) Branch(=>) Branch(=>) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(client_fd) Branch(=>) Store(ipv4only143) Store(ipv6only144) Store(server_fd) Store(local_addrs145) Store(number_local_addrs146) Load(server_addrs147) Store(server_addrs148) Load(number_addrs149) Store(number_server_addrs) Branch(=>) Branch(=>) Branch(=>) Store(client_fd) Branch(=>) Store(ipv4only143) Store(ipv6only144) Store(server_fd) Store(local_addrs145) Store(number_local_addrs146) Load(server_addrs147) Store(server_addrs148) Load(number_addrs149) Store(number_server_addrs) Branch(=>) Load(stderr) Load(client_fd155) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(client_fd) Branch(=>) Store(ipv4only143) Store(ipv6only144) Store(server_fd) Store(local_addrs145) Store(number_local_addrs146) Load(server_addrs147) Store(server_addrs148) Load(number_addrs149) Store(number_server_addrs) Branch(=>) Branch(=>) Branch(=>) Store(client_fd) Branch(=>) Load(stderr) Load(call138) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(client_fd) Branch(=>) Store(ipv4only143) Store(ipv6only144) Store(server_fd) Store(local_addrs145) Store(number_local_addrs146) Load(server_addrs147) Store(server_addrs148) Load(number_addrs149) Store(number_server_addrs) Branch(=>) Load(stderr) Load(client_fd155) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(client_fd) Branch(=>) Load(stderr) Load(call138) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(stderr) Load(call128) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(arrayidx109) Store(number_addrs) Load(number_addrs117) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(arrayidx109) Store(number_addrs) Load(number_addrs117) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(stderr) Load(call128) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(arrayidx109) Store(number_addrs) Load(number_addrs117) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(arrayidx109) Store(number_addrs) Load(number_addrs117) Branch(=>) Branch(=>) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(arrayidx109) Store(number_addrs) Load(number_addrs117) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(arrayidx109) Store(number_addrs) Load(number_addrs117) Branch(=>) Load(stderr) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(arrayidx109) Store(number_addrs) Load(number_addrs117) Branch(=>) Load(stderr) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(stderr) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Branch(=>) Load(stderr) Load(call91) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Load(stderr) Load(call79) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Load(stderr) Load(call71) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(stderr) Load(call62) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Load(stderr) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(stderr) Load(call62) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(stderr) Load(call62) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(stderr) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(stderr) Load(call62) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Branch(=>) Branch(=>) Load(stderr) Load(call91) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(stderr) Load(call62) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Store(sctp_data_io_event) Branch(=>) Load(stderr) Load(call79) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(stderr) Load(call62) Branch(=>) Branch(=>) Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(=>) Load(stderr) Load(call71) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Load(stderr) Load(call52) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Store() Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) Store() Branch(=>) Store(ai_family17) Branch(=>) Store(ai_socktype) Store(ai_protocol) Store(ai_flags) Branch(=>) Branch(=>) Load(ai_flags22) Store(ai_flags22) Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) Store() Branch(=>) Store(ai_family17) Branch(=>) Store(ai_socktype) Store(ai_protocol) Store(ai_flags) Branch(=>) Branch(=>) Load(ai_flags22) Store(ai_flags22) Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) Load(ai_addr) Load(ai_addrlen) Load(ai_addrlen35) Branch(=>) Branch(=>) Branch(=>) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) Store() Branch(=>) Store(ai_family17) Branch(=>) Store(ai_socktype) Store(ai_protocol) Store(ai_flags) Branch(=>) Branch(=>) Load(ai_flags22) Store(ai_flags22) Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) Load(ai_addr) Load(ai_addrlen) Load(ai_addrlen35) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Load(ai_addr) Load(ai_addrlen) Load(ai_addrlen35) Branch(=>) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) Store() Branch(=>) Store(ai_family17) Branch(=>) Store(ai_socktype) Store(ai_protocol) Store(ai_flags) Branch(=>) Branch(=>) Load(ai_flags22) Store(ai_flags22) Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) Load(ai_addr) Load(ai_addrlen) Load(ai_addrlen35) Branch(=>) Branch(=>) Branch(=>) Branch(=>) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) Store() Branch(=>) Store(ai_family17) Branch(=>) Store(ai_socktype) Store(ai_protocol) Store(ai_flags) Branch(=>) Branch(=>) Load(ai_flags22) Store(ai_flags22) Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) Store() Branch(=>) Store(ai_family17) Branch(=>) Store(ai_socktype) Store(ai_protocol) Store(ai_flags) Branch(=>) Branch(=>) Load() Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) Store() Branch(=>) Store(ai_family) Branch(=>) Store(ai_socktype) Store(ai_protocol) Store(ai_flags) Branch(=>) Branch(=>) Load(ai_flags22) Store(ai_flags22) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) Store() Branch(=>) Store(ai_family17) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) Store() Branch(=>) Store(ai_family) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Load() Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Load() Branch(=>) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) Load() Branch(=>) Load() Branch(=>) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) Branch(=>) 
-[Sequence]Branch(=>) Branch(=>) 
+Add: __ANOMY_0 17
+Add: cmp 18
+Add: __ANOMY_1 20
+Add: cmp1 21
+Add: __ANOMY_2 26
+Add: __ANOMY_3 29
+Add: __ANOMY_4 30
+Add: __ANOMY_5 34
+Add: __ANOMY_6 35
+Add: __ANOMY_7 39
+Add: inc 40
+Add: __ANOMY_8 44
+Add: __ANOMY_9 48
+Add: tobool 49
+Add: __ANOMY_10 51
+Add: __ANOMY_11 56
+Add: __ANOMY_12 61
+Add: __ANOMY_14 64
+Add: __ANOMY_16 68
+Add: tobool14 69
+Add: __ANOMY_17 83
+Add: tobool19 84
+Add: __ANOMY_18 86
+Add: tobool20 87
+Add: __ANOMY_20 94
+Add: __ANOMY_21 95
+Add: __ANOMY_23 98
+Add: __ANOMY_24 102
+Add: cmp26 103
+Add: __ANOMY_25 105
+Add: __ANOMY_26 106
+Add: __ANOMY_27 112
+Add: __ANOMY_28 113
+Add: __ANOMY_31 117
+Add: __ANOMY_33 122
+Add: __ANOMY_35 125
+Add: __ANOMY_36 129
+Add: __ANOMY_37 135
+Add: __ANOMY_38 138
+[Sequence]Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Load(stderr) 
+[Sequence]Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Store(client_fd) Store(ipv4only143) Store(ipv6only144) Store(server_fd) Store(local_addrs145) Store(number_local_addrs146) Load(server_addrs147) Store(server_addrs148) Load(number_addrs149) Store(number_server_addrs) Store(client_fd) Store(ipv4only143) Store(ipv6only144) Store(server_fd) Store(local_addrs145) Store(number_local_addrs146) Load(server_addrs147) Store(server_addrs148) Load(number_addrs149) Store(number_server_addrs) 
+[Sequence]Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Store(client_fd) Store(ipv4only143) Store(ipv6only144) Store(server_fd) Store(local_addrs145) Store(number_local_addrs146) Load(server_addrs147) Store(server_addrs148) Load(number_addrs149) Store(number_server_addrs) Store(client_fd) Store(ipv4only143) Store(ipv6only144) Store(server_fd) Store(local_addrs145) Store(number_local_addrs146) Load(server_addrs147) Store(server_addrs148) Load(number_addrs149) Store(number_server_addrs) Load(stderr) Load(client_fd155) 
+[Sequence]Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Store(client_fd) Store(ipv4only143) Store(ipv6only144) Store(server_fd) Store(local_addrs145) Store(number_local_addrs146) Load(server_addrs147) Store(server_addrs148) Load(number_addrs149) Store(number_server_addrs) Store(client_fd) Load(stderr) Load(call138) 
+[Sequence]Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Store(client_fd) Store(ipv4only143) Store(ipv6only144) Store(server_fd) Store(local_addrs145) Store(number_local_addrs146) Load(server_addrs147) Store(server_addrs148) Load(number_addrs149) Store(number_server_addrs) Load(stderr) Load(client_fd155) 
+[Sequence]Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Store(client_fd) Load(stderr) Load(call138) 
+[Sequence]Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Load(stderr) Load(call128) 
+[Sequence]Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Load(arrayidx109) Store(number_addrs) Load(number_addrs117) 
+[Sequence]Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Load(arrayidx109) Store(number_addrs) Load(number_addrs117) Load(stderr) Load(call128) 
+[Sequence]Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Load(arrayidx109) Store(number_addrs) Load(number_addrs117) Load(arrayidx109) Store(number_addrs) Load(number_addrs117) 
+[Sequence]Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Load(arrayidx109) Store(number_addrs) Load(number_addrs117) Load(arrayidx109) Store(number_addrs) Load(number_addrs117) Load(stderr) 
+[Sequence]Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Load(arrayidx109) Store(number_addrs) Load(number_addrs117) Load(stderr) 
+[Sequence]Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Load(stderr) 
+[Sequence]Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Load(stderr) Load(call91) 
+[Sequence]Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Load(stderr) Load(call79) 
+[Sequence]Store(sinit_num_ostreams) Store(sinit_max_instreams) Load(stderr) Load(call71) 
+[Sequence]Load(stderr) Load(call62) Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Load(stderr) 
+[Sequence]Load(stderr) Load(call62) Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) 
+[Sequence]Load(stderr) Load(call62) Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Load(stderr) 
+[Sequence]Load(stderr) Load(call62) Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Load(stderr) Load(call91) 
+[Sequence]Load(stderr) Load(call62) Store(sinit_num_ostreams) Store(sinit_max_instreams) Store(sctp_data_io_event) Load(stderr) Load(call79) 
+[Sequence]Load(stderr) Load(call62) Store(sinit_num_ostreams) Store(sinit_max_instreams) Load(stderr) Load(call71) 
+[Sequence]Load(stderr) Load(call52) 
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]Store(ai_family17) Store(ai_socktype) Store(ai_protocol) Store(ai_flags) Load(ai_flags22) Store(ai_flags22) 
+[Sequence]Store(ai_family17) Store(ai_socktype) Store(ai_protocol) Store(ai_flags) Load(ai_flags22) Store(ai_flags22) Load(ai_addr) Load(ai_addrlen) Load(ai_addrlen35) 
+[Sequence]Store(ai_family17) Store(ai_socktype) Store(ai_protocol) Store(ai_flags) Load(ai_flags22) Store(ai_flags22) Load(ai_addr) Load(ai_addrlen) Load(ai_addrlen35) Load(ai_addr) Load(ai_addrlen) Load(ai_addrlen35) 
+[Sequence]Store(ai_family17) Store(ai_socktype) Store(ai_protocol) Store(ai_flags) Load(ai_flags22) Store(ai_flags22) Load(ai_addr) Load(ai_addrlen) Load(ai_addrlen35) 
+[Sequence]Store(ai_family17) Store(ai_socktype) Store(ai_protocol) Store(ai_flags) Load(ai_flags22) Store(ai_flags22) 
+[Sequence]Store(ai_family17) Store(ai_socktype) Store(ai_protocol) Store(ai_flags) 
+[Sequence]Store(ai_family) Store(ai_socktype) Store(ai_protocol) Store(ai_flags) Load(ai_flags22) Store(ai_flags22) 
+[Sequence]Store(ai_family17) 
+[Sequence]Store(ai_family) 
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]

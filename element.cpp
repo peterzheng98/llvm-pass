@@ -50,7 +50,10 @@ void Element::dfs(Element *p, std::vector<std::string> &output_str, std::ostream
   output_str.push_back(p->toString());
   if(p->idx == 0){
     target << "[Sequence]";
-    for(auto &p: output_str) target << p << " ";
+    for(auto &p: output_str) {
+      if(p.find("Branch") == std::string::npos)
+      target << p << " ";
+    }
     target << std::endl;
     output_str.pop_back();
     return; 

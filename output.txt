@@ -43,21 +43,21 @@ Store:  pointer: o_streams
 Store:  pointer: L_arg
 		store Target:  Use: 0
 Store:  pointer: X_arg
-		load Target:  Use: 1
+		load Target: __ANOMY_0 Use: 1
 Load: argc.addr
 		sext Target: conv Use: 1
 		call Target: call Use: 1
 not found: call
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_1 Use: 1
 		store Target:  Use: 0
-Store:  pointer: S_args
+Store: __ANOMY_1 pointer: S_args
 		store Target:  Use: 0
 Store:  pointer: number_servers
 		br Target:  Use: 0
 	Block: while.cond
-		load Target:  Use: 1
+		load Target: __ANOMY_2 Use: 1
 Load: argc.addr
-		load Target:  Use: 1
+		load Target: __ANOMY_3 Use: 1
 Load: argv.addr
 		call Target: call1 Use: 0
 not found: call
@@ -67,37 +67,37 @@ Store: call1 pointer: c
 icmp: call1  1
 		br Target:  Use: 0
 	Block: while.body
-		load Target:  Use: 1
+		load Target: __ANOMY_4 Use: 1
 Load: c
 		switch Target:  Use: 0
 not found: switch
 	Block: sw.bb
-		load Target:  Use: 1
+		load Target: __ANOMY_5 Use: 1
 Load: optarg
 		call Target: call3 Use: 1
 not found: call
 		store Target:  Use: 0
 Store: call3 pointer: value
-		load Target:  Use: 1
+		load Target: __ANOMY_6 Use: 1
 Load: value
 		icmp Target: cmp4 Use: 1
-icmp:   1
+icmp:  __ANOMY_6 1
 		br Target:  Use: 0
 	Block: land.lhs.true
-		load Target:  Use: 1
+		load Target: __ANOMY_7 Use: 1
 Load: value
 		icmp Target: cmp6 Use: 1
-icmp:   1
+icmp: __ANOMY_7  1
 		br Target:  Use: 0
 	Block: if.then
-		load Target:  Use: 1
+		load Target: __ANOMY_8 Use: 1
 Load: value
 		trunc Target: conv8 Use: 1
 		store Target:  Use: 0
 Store: conv8 pointer: i_streams
 		br Target:  Use: 0
 	Block: if.else
-		load Target:  Use: 1
+		load Target: __ANOMY_9 Use: 1
 Load: stderr
 		call Target: call9 Use: 0
 not found: call
@@ -107,13 +107,13 @@ Store:  pointer: retval
 	Block: if.end
 		br Target:  Use: 0
 	Block: sw.bb10
-		load Target:  Use: 1
+		load Target: __ANOMY_10 Use: 1
 Load: L_arg
 		icmp Target: cmp11 Use: 1
-icmp:   1
+icmp: __ANOMY_10  1
 		br Target:  Use: 0
 	Block: if.then13
-		load Target:  Use: 1
+		load Target: __ANOMY_11 Use: 1
 Load: stderr
 		call Target: call14 Use: 0
 not found: call
@@ -121,40 +121,40 @@ not found: call
 Store:  pointer: retval
 		br Target:  Use: 0
 	Block: if.else15
-		load Target:  Use: 1
+		load Target: __ANOMY_12 Use: 1
 Load: optarg
 		store Target:  Use: 0
-Store:  pointer: L_arg
+Store: __ANOMY_12 pointer: L_arg
 		br Target:  Use: 0
 	Block: if.end16
 		br Target:  Use: 0
 	Block: sw.bb17
-		load Target:  Use: 1
+		load Target: __ANOMY_13 Use: 1
 Load: optarg
 		call Target: call18 Use: 1
 not found: call
 		store Target:  Use: 0
 Store: call18 pointer: value
-		load Target:  Use: 1
+		load Target: __ANOMY_14 Use: 1
 Load: value
 		icmp Target: cmp19 Use: 1
-icmp:   1
+icmp:  __ANOMY_14 1
 		br Target:  Use: 0
 	Block: land.lhs.true21
-		load Target:  Use: 1
+		load Target: __ANOMY_15 Use: 1
 Load: value
 		icmp Target: cmp22 Use: 1
-icmp:   1
+icmp: __ANOMY_15  1
 		br Target:  Use: 0
 	Block: if.then24
-		load Target:  Use: 1
+		load Target: __ANOMY_16 Use: 1
 Load: value
 		trunc Target: conv25 Use: 1
 		store Target:  Use: 0
 Store: conv25 pointer: o_streams
 		br Target:  Use: 0
 	Block: if.else26
-		load Target:  Use: 1
+		load Target: __ANOMY_17 Use: 1
 Load: stderr
 		call Target: call27 Use: 0
 not found: call
@@ -164,29 +164,34 @@ Store:  pointer: retval
 	Block: if.end28
 		br Target:  Use: 0
 	Block: sw.bb29
-		load Target:  Use: 1
+		load Target: __ANOMY_18 Use: 1
 Load: optarg
-		load Target:  Use: 1
+		load Target: __ANOMY_19 Use: 1
 Load: S_args
-		load Target:  Use: 0
+		load Target: __ANOMY_20 Use: 0
 Load: number_servers
 		add Target: inc Use: 1
-not found: add
+binary: 2
+	[binary]__ANOMY_20
+check value 1: 0 2:1
+	[binary]
+check value 1: 1 2:0
+target: inc
 		store Target:  Use: 0
 Store: inc pointer: number_servers
 		sext Target: idxprom Use: 1
 		getelementptr Target: arrayidx Use: 1
 		store Target:  Use: 0
-Store:  pointer: arrayidx
+Store: __ANOMY_18 pointer: arrayidx
 		br Target:  Use: 0
 	Block: sw.bb30
-		load Target:  Use: 1
+		load Target: __ANOMY_21 Use: 1
 Load: X_arg
 		icmp Target: cmp31 Use: 1
-icmp:   1
+icmp: __ANOMY_21  1
 		br Target:  Use: 0
 	Block: if.then33
-		load Target:  Use: 1
+		load Target: __ANOMY_22 Use: 1
 Load: stderr
 		call Target: call34 Use: 0
 not found: call
@@ -194,23 +199,23 @@ not found: call
 Store:  pointer: retval
 		br Target:  Use: 0
 	Block: if.else35
-		load Target:  Use: 1
+		load Target: __ANOMY_23 Use: 1
 Load: optarg
 		store Target:  Use: 0
-Store:  pointer: X_arg
+Store: __ANOMY_23 pointer: X_arg
 		br Target:  Use: 0
 	Block: if.end36
 		br Target:  Use: 0
 	Block: sw.bb37
 		store Target:  Use: 0
 Store:  pointer: ipv4only
-		load Target:  Use: 1
+		load Target: __ANOMY_24 Use: 1
 Load: ipv6only
 		icmp Target: tobool Use: 1
-icmp:   1
+icmp: __ANOMY_24  1
 		br Target:  Use: 0
 	Block: if.then38
-		load Target:  Use: 1
+		load Target: __ANOMY_25 Use: 1
 Load: stderr
 		call Target: call39 Use: 0
 not found: call
@@ -222,13 +227,13 @@ Store:  pointer: retval
 	Block: sw.bb41
 		store Target:  Use: 0
 Store:  pointer: ipv6only
-		load Target:  Use: 1
+		load Target: __ANOMY_26 Use: 1
 Load: ipv4only
 		icmp Target: tobool42 Use: 1
-icmp:   1
+icmp: __ANOMY_26  1
 		br Target:  Use: 0
 	Block: if.then43
-		load Target:  Use: 1
+		load Target: __ANOMY_27 Use: 1
 Load: stderr
 		call Target: call44 Use: 0
 not found: call
@@ -238,7 +243,7 @@ Store:  pointer: retval
 	Block: if.end45
 		br Target:  Use: 0
 	Block: sw.default
-		load Target:  Use: 1
+		load Target: __ANOMY_28 Use: 1
 Load: stderr
 		call Target: call46 Use: 0
 not found: call
@@ -248,11 +253,11 @@ Store:  pointer: retval
 	Block: sw.epilog
 		br Target:  Use: 0
 	Block: while.end
-		load Target:  Use: 1
+		load Target: __ANOMY_29 Use: 1
 Load: ipv4only
 		icmp Target: tobool47 Use: 0
-icmp:   0
-		zext Target:  Use: 0
+icmp: __ANOMY_29  0
+		zext Target: __ANOMY_30 Use: 0
 		select Target: cond Use: 1
 not found: select
 		call Target: call48 Use: 0
@@ -263,11 +268,11 @@ Store: call48 pointer: fd
 icmp: call48  1
 		br Target:  Use: 0
 	Block: if.then51
-		load Target:  Use: 1
+		load Target: __ANOMY_31 Use: 1
 Load: stderr
 		call Target: call52 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_32 Use: 1
 Load: call52
 		call Target: call53 Use: 1
 not found: call
@@ -277,26 +282,26 @@ not found: call
 Store:  pointer: retval
 		br Target:  Use: 0
 	Block: if.end55
-		load Target:  Use: 1
+		load Target: __ANOMY_33 Use: 1
 Load: ipv4only
 		icmp Target: tobool56 Use: 1
-icmp:   1
+icmp: __ANOMY_33  1
 		br Target:  Use: 0
 	Block: if.then57
-		load Target:  Use: 1
+		load Target: __ANOMY_34 Use: 1
 Load: fd
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_35 Use: 1
 		call Target: call58 Use: 1
 not found: call
 		icmp Target: cmp59 Use: 1
 icmp: call58  1
 		br Target:  Use: 0
 	Block: if.then61
-		load Target:  Use: 1
+		load Target: __ANOMY_36 Use: 1
 Load: stderr
 		call Target: call62 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_37 Use: 1
 Load: call62
 		call Target: call63 Use: 1
 not found: call
@@ -306,33 +311,33 @@ not found: call
 	Block: if.end65
 		br Target:  Use: 0
 	Block: if.end66
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_38 Use: 1
 		call Target:  Use: 0
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_39 Use: 1
 Load: o_streams
 		getelementptr Target: sinit_num_ostreams Use: 1
 		store Target:  Use: 0
-Store:  pointer: sinit_num_ostreams
-		load Target:  Use: 1
+Store: __ANOMY_39 pointer: sinit_num_ostreams
+		load Target: __ANOMY_40 Use: 1
 Load: i_streams
 		getelementptr Target: sinit_max_instreams Use: 1
 		store Target:  Use: 0
-Store:  pointer: sinit_max_instreams
-		load Target:  Use: 1
+Store: __ANOMY_40 pointer: sinit_max_instreams
+		load Target: __ANOMY_41 Use: 1
 Load: fd
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_42 Use: 1
 		call Target: call67 Use: 1
 not found: call
 		icmp Target: cmp68 Use: 1
 icmp: call67  1
 		br Target:  Use: 0
 	Block: if.then70
-		load Target:  Use: 1
+		load Target: __ANOMY_43 Use: 1
 Load: stderr
 		call Target: call71 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_44 Use: 1
 Load: call71
 		call Target: call72 Use: 1
 not found: call
@@ -342,26 +347,26 @@ not found: call
 Store:  pointer: retval
 		br Target:  Use: 0
 	Block: if.end74
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_45 Use: 1
 		call Target:  Use: 0
 not found: call
 		getelementptr Target: sctp_data_io_event Use: 1
 		store Target:  Use: 0
 Store:  pointer: sctp_data_io_event
-		load Target:  Use: 1
+		load Target: __ANOMY_46 Use: 1
 Load: fd
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_47 Use: 1
 		call Target: call75 Use: 1
 not found: call
 		icmp Target: cmp76 Use: 1
 icmp: call75  1
 		br Target:  Use: 0
 	Block: if.then78
-		load Target:  Use: 1
+		load Target: __ANOMY_48 Use: 1
 Load: stderr
 		call Target: call79 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_49 Use: 1
 Load: call79
 		call Target: call80 Use: 1
 not found: call
@@ -371,27 +376,27 @@ not found: call
 Store:  pointer: retval
 		br Target:  Use: 0
 	Block: if.end82
-		load Target:  Use: 1
+		load Target: __ANOMY_50 Use: 1
 Load: L_arg
-		load Target:  Use: 1
+		load Target: __ANOMY_51 Use: 1
 Load: ipv4only
-		load Target:  Use: 1
+		load Target: __ANOMY_52 Use: 1
 Load: ipv6only
 		call Target: call83 Use: 1
 not found: call
 		store Target:  Use: 0
 Store: call83 pointer: number_local_addrs
-		load Target:  Use: 1
+		load Target: __ANOMY_53 Use: 1
 Load: number_local_addrs
 		icmp Target: cmp84 Use: 1
-icmp:   1
+icmp: __ANOMY_53  1
 		br Target:  Use: 0
 	Block: if.then86
-		load Target:  Use: 1
+		load Target: __ANOMY_54 Use: 1
 Load: fd
-		load Target:  Use: 1
+		load Target: __ANOMY_55 Use: 1
 Load: local_addrs
-		load Target:  Use: 1
+		load Target: __ANOMY_56 Use: 1
 Load: number_local_addrs
 		call Target: call87 Use: 1
 not found: call
@@ -399,11 +404,11 @@ not found: call
 icmp: call87  1
 		br Target:  Use: 0
 	Block: if.then90
-		load Target:  Use: 1
+		load Target: __ANOMY_57 Use: 1
 Load: stderr
 		call Target: call91 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_58 Use: 1
 Load: call91
 		call Target: call92 Use: 1
 not found: call
@@ -413,14 +418,14 @@ not found: call
 Store:  pointer: retval
 		br Target:  Use: 0
 	Block: if.end94
-		load Target:  Use: 1
+		load Target: __ANOMY_59 Use: 1
 Load: local_addrs
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_60 Use: 1
 		call Target:  Use: 0
 not found: call
 		br Target:  Use: 0
 	Block: if.else95
-		load Target:  Use: 1
+		load Target: __ANOMY_61 Use: 1
 Load: stderr
 		call Target: call96 Use: 0
 not found: call
@@ -428,23 +433,23 @@ not found: call
 Store:  pointer: retval
 		br Target:  Use: 0
 	Block: if.end97
-		load Target:  Use: 1
+		load Target: __ANOMY_62 Use: 1
 Load: X_arg
-		load Target:  Use: 1
+		load Target: __ANOMY_63 Use: 1
 Load: ipv4only
-		load Target:  Use: 1
+		load Target: __ANOMY_64 Use: 1
 Load: ipv6only
 		call Target: call98 Use: 1
 not found: call
 		store Target:  Use: 0
 Store: call98 pointer: number_local_addrs
-		load Target:  Use: 1
+		load Target: __ANOMY_65 Use: 1
 Load: number_local_addrs
 		icmp Target: cmp99 Use: 1
-icmp:   1
+icmp: __ANOMY_65  1
 		br Target:  Use: 0
 	Block: if.then101
-		load Target:  Use: 1
+		load Target: __ANOMY_66 Use: 1
 Load: stderr
 		call Target: call102 Use: 0
 not found: call
@@ -452,72 +457,72 @@ not found: call
 Store:  pointer: retval
 		br Target:  Use: 0
 	Block: if.end103
-		load Target:  Use: 1
+		load Target: __ANOMY_67 Use: 1
 Load: number_servers
 		sext Target: conv104 Use: 1
 		call Target: call105 Use: 1
 not found: call
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_68 Use: 1
 		store Target:  Use: 0
-Store:  pointer: server_infos
+Store: __ANOMY_68 pointer: server_infos
 		store Target:  Use: 0
 Store:  pointer: i
 		br Target:  Use: 0
 	Block: for.cond
-		load Target:  Use: 1
+		load Target: __ANOMY_69 Use: 1
 Load: i
-		load Target:  Use: 1
+		load Target: __ANOMY_70 Use: 1
 Load: number_servers
 		icmp Target: cmp106 Use: 1
-icmp:   1
+icmp: __ANOMY_69 __ANOMY_70 1
 		br Target:  Use: 0
 	Block: for.body
-		load Target:  Use: 1
+		load Target: __ANOMY_71 Use: 1
 Load: S_args
-		load Target:  Use: 1
+		load Target: __ANOMY_72 Use: 1
 Load: i
 		sext Target: idxprom108 Use: 1
 		getelementptr Target: arrayidx109 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_73 Use: 1
 Load: arrayidx109
-		load Target:  Use: 1
+		load Target: __ANOMY_74 Use: 1
 Load: ipv4only
-		load Target:  Use: 1
+		load Target: __ANOMY_75 Use: 1
 Load: ipv6only
-		load Target:  Use: 1
+		load Target: __ANOMY_76 Use: 1
 Load: server_infos
-		load Target:  Use: 1
+		load Target: __ANOMY_77 Use: 1
 Load: i
 		sext Target: idxprom110 Use: 1
 		getelementptr Target: arrayidx111 Use: 1
 		getelementptr Target: server_addrs Use: 1
 		call Target: call112 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_78 Use: 1
 Load: server_infos
-		load Target:  Use: 1
+		load Target: __ANOMY_79 Use: 1
 Load: i
 		sext Target: idxprom113 Use: 1
 		getelementptr Target: arrayidx114 Use: 1
 		getelementptr Target: number_addrs Use: 1
 		store Target:  Use: 0
 Store: call112 pointer: number_addrs
-		load Target:  Use: 1
+		load Target: __ANOMY_80 Use: 1
 Load: server_infos
-		load Target:  Use: 1
+		load Target: __ANOMY_81 Use: 1
 Load: i
 		sext Target: idxprom115 Use: 1
 		getelementptr Target: arrayidx116 Use: 1
 		getelementptr Target: number_addrs117 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_82 Use: 1
 Load: number_addrs117
 		icmp Target: cmp118 Use: 1
-icmp:   1
+icmp: __ANOMY_82  1
 		br Target:  Use: 0
 	Block: if.then120
-		load Target:  Use: 1
+		load Target: __ANOMY_83 Use: 1
 Load: stderr
-		load Target:  Use: 1
+		load Target: __ANOMY_84 Use: 1
 Load: i
 		call Target: call121 Use: 0
 not found: call
@@ -527,15 +532,20 @@ Store:  pointer: retval
 	Block: if.end122
 		br Target:  Use: 0
 	Block: for.inc
-		load Target:  Use: 1
+		load Target: __ANOMY_85 Use: 1
 Load: i
 		add Target: inc123 Use: 1
-not found: add
+binary: 2
+	[binary]__ANOMY_85
+check value 1: 0 2:1
+	[binary]
+check value 1: 1 2:0
+target: inc123
 		store Target:  Use: 0
 Store: inc123 pointer: i
 		br Target:  Use: 0
 	Block: for.end
-		load Target:  Use: 1
+		load Target: __ANOMY_86 Use: 1
 Load: fd
 		call Target: call124 Use: 1
 not found: call
@@ -543,11 +553,11 @@ not found: call
 icmp: call124  1
 		br Target:  Use: 0
 	Block: if.then127
-		load Target:  Use: 1
+		load Target: __ANOMY_87 Use: 1
 Load: stderr
 		call Target: call128 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_88 Use: 1
 Load: call128
 		call Target: call129 Use: 1
 not found: call
@@ -561,14 +571,14 @@ Store:  pointer: retval
 	Block: for.cond132
 		call Target: call133 Use: 1
 not found: call
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_89 Use: 1
 		store Target:  Use: 0
-Store:  pointer: proxy_info
-		load Target:  Use: 1
+Store: __ANOMY_89 pointer: proxy_info
+		load Target: __ANOMY_90 Use: 1
 Load: fd
 		call Target: call134 Use: 0
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_91 Use: 1
 Load: proxy_info
 		getelementptr Target: client_fd Use: 1
 		store Target:  Use: 0
@@ -577,107 +587,107 @@ Store: call134 pointer: client_fd
 icmp: call134  1
 		br Target:  Use: 0
 	Block: if.then137
-		load Target:  Use: 1
+		load Target: __ANOMY_92 Use: 1
 Load: stderr
 		call Target: call138 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_93 Use: 1
 Load: call138
 		call Target: call139 Use: 1
 not found: call
 		call Target: call140 Use: 0
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_94 Use: 1
 Load: proxy_info
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_95 Use: 1
 		call Target:  Use: 0
 not found: call
 		br Target:  Use: 0
 	Block: if.else141
-		load Target:  Use: 1
+		load Target: __ANOMY_96 Use: 1
 Load: server_infos
-		load Target:  Use: 1
+		load Target: __ANOMY_97 Use: 1
 Load: number_servers
 		call Target: call142 Use: 1
 not found: call
 		store Target:  Use: 0
 Store: call142 pointer: server_info
-		load Target:  Use: 1
+		load Target: __ANOMY_98 Use: 1
 Load: ipv4only
-		load Target:  Use: 1
+		load Target: __ANOMY_99 Use: 1
 Load: proxy_info
 		getelementptr Target: ipv4only143 Use: 1
 		store Target:  Use: 0
-Store:  pointer: ipv4only143
-		load Target:  Use: 1
+Store: __ANOMY_98 pointer: ipv4only143
+		load Target: __ANOMY_100 Use: 1
 Load: ipv6only
-		load Target:  Use: 1
+		load Target: __ANOMY_101 Use: 1
 Load: proxy_info
 		getelementptr Target: ipv6only144 Use: 1
 		store Target:  Use: 0
-Store:  pointer: ipv6only144
-		load Target:  Use: 1
+Store: __ANOMY_100 pointer: ipv6only144
+		load Target: __ANOMY_102 Use: 1
 Load: proxy_info
 		getelementptr Target: server_fd Use: 1
 		store Target:  Use: 0
 Store:  pointer: server_fd
-		load Target:  Use: 1
+		load Target: __ANOMY_103 Use: 1
 Load: local_addrs
-		load Target:  Use: 1
+		load Target: __ANOMY_104 Use: 1
 Load: proxy_info
 		getelementptr Target: local_addrs145 Use: 1
 		store Target:  Use: 0
-Store:  pointer: local_addrs145
-		load Target:  Use: 1
+Store: __ANOMY_103 pointer: local_addrs145
+		load Target: __ANOMY_105 Use: 1
 Load: number_local_addrs
-		load Target:  Use: 1
+		load Target: __ANOMY_106 Use: 1
 Load: proxy_info
 		getelementptr Target: number_local_addrs146 Use: 1
 		store Target:  Use: 0
-Store:  pointer: number_local_addrs146
-		load Target:  Use: 1
+Store: __ANOMY_105 pointer: number_local_addrs146
+		load Target: __ANOMY_107 Use: 1
 Load: server_info
 		getelementptr Target: server_addrs147 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_108 Use: 1
 Load: server_addrs147
-		load Target:  Use: 1
+		load Target: __ANOMY_109 Use: 1
 Load: proxy_info
 		getelementptr Target: server_addrs148 Use: 1
 		store Target:  Use: 0
-Store:  pointer: server_addrs148
-		load Target:  Use: 1
+Store: __ANOMY_108 pointer: server_addrs148
+		load Target: __ANOMY_110 Use: 1
 Load: server_info
 		getelementptr Target: number_addrs149 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_111 Use: 1
 Load: number_addrs149
-		load Target:  Use: 1
+		load Target: __ANOMY_112 Use: 1
 Load: proxy_info
 		getelementptr Target: number_server_addrs Use: 1
 		store Target:  Use: 0
-Store:  pointer: number_server_addrs
-		load Target:  Use: 1
+Store: __ANOMY_111 pointer: number_server_addrs
+		load Target: __ANOMY_113 Use: 1
 Load: proxy_info
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_114 Use: 1
 		call Target: call150 Use: 1
 not found: call
 		icmp Target: cmp151 Use: 1
 icmp: call150  1
 		br Target:  Use: 0
 	Block: if.then153
-		load Target:  Use: 1
+		load Target: __ANOMY_115 Use: 1
 Load: stderr
 		call Target: call154 Use: 0
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_116 Use: 1
 Load: proxy_info
 		getelementptr Target: client_fd155 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_117 Use: 1
 Load: client_fd155
 		call Target: call156 Use: 0
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_118 Use: 1
 Load: proxy_info
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_119 Use: 1
 		call Target:  Use: 0
 not found: call
 		br Target:  Use: 0
@@ -686,10 +696,98 @@ not found: call
 	Block: if.end158
 		br Target:  Use: 0
 	Block: return
-		load Target:  Use: 1
+		load Target: __ANOMY_120 Use: 1
 Load: retval
 		ret Target:  Use: 0
 Phase 2:
+Add: __ANOMY_0 32
+Add: __ANOMY_2 39
+Add: __ANOMY_3 40
+Add: __ANOMY_4 45
+Add: __ANOMY_6 50
+Add: cmp4 51
+Add: __ANOMY_7 53
+Add: cmp6 54
+Add: __ANOMY_8 56
+Add: __ANOMY_10 65
+Add: cmp11 66
+Add: __ANOMY_14 79
+Add: cmp19 80
+Add: __ANOMY_15 82
+Add: cmp22 83
+Add: __ANOMY_16 85
+Add: __ANOMY_19 95
+Add: __ANOMY_20 96
+Add: inc 97
+Add: __ANOMY_21 103
+Add: cmp31 104
+Add: __ANOMY_24 115
+Add: tobool 116
+Add: __ANOMY_26 124
+Add: tobool42 125
+Add: __ANOMY_29 137
+Add: tobool47 138
+Add: __ANOMY_33 152
+Add: tobool56 153
+Add: __ANOMY_34 155
+Add: __ANOMY_39 169
+Add: __ANOMY_40 172
+Add: __ANOMY_41 175
+Add: __ANOMY_46 191
+Add: __ANOMY_50 203
+Add: __ANOMY_51 204
+Add: __ANOMY_52 205
+Add: __ANOMY_53 208
+Add: cmp84 209
+Add: __ANOMY_54 211
+Add: __ANOMY_55 212
+Add: __ANOMY_56 213
+Add: __ANOMY_59 224
+Add: __ANOMY_62 232
+Add: __ANOMY_63 233
+Add: __ANOMY_64 234
+Add: __ANOMY_65 237
+Add: cmp99 238
+Add: __ANOMY_67 244
+Add: __ANOMY_69 251
+Add: __ANOMY_70 252
+Add: cmp106 253
+Add: __ANOMY_71 255
+Add: __ANOMY_72 256
+Add: __ANOMY_74 260
+Add: __ANOMY_75 261
+Add: __ANOMY_76 262
+Add: __ANOMY_77 263
+Add: __ANOMY_78 268
+Add: __ANOMY_79 269
+Add: __ANOMY_80 274
+Add: __ANOMY_81 275
+Add: __ANOMY_84 283
+Add: __ANOMY_85 288
+Add: inc123 289
+Add: __ANOMY_86 292
+Add: __ANOMY_90 307
+Add: __ANOMY_91 309
+Add: __ANOMY_94 319
+Add: __ANOMY_96 323
+Add: __ANOMY_97 324
+Add: __ANOMY_98 327
+Add: __ANOMY_99 328
+Add: __ANOMY_100 331
+Add: __ANOMY_101 332
+Add: __ANOMY_102 335
+Add: __ANOMY_103 338
+Add: __ANOMY_104 339
+Add: __ANOMY_105 342
+Add: __ANOMY_106 343
+Add: __ANOMY_107 346
+Add: __ANOMY_109 349
+Add: __ANOMY_110 352
+Add: __ANOMY_112 355
+Add: __ANOMY_113 358
+Add: __ANOMY_116 365
+Add: __ANOMY_118 369
+Add: __ANOMY_120 375
 Phase 3	Block: entry
 Phase 3	Block: while.cond
 Phase 3	Block: while.body
@@ -753,6 +851,70 @@ Phase 3	Block: if.then153
 Phase 3	Block: if.end157
 Phase 3	Block: if.end158
 Phase 3	Block: return
+Debug phase 3: 
+Block: entry[Branch(while.cond=>) ]
+Block: for.body[Load(arrayidx109) Store(number_addrs) Load(number_addrs117) Branch(if.end122=>if.then120) ]
+Block: for.cond[Branch(for.end=>for.body) ]
+Block: for.cond132[Store(client_fd) Branch(if.else141=>if.then137) ]
+Block: for.end[Branch(if.end131=>if.then127) ]
+Block: for.inc[Branch(for.cond=>) ]
+Block: if.else[Load(stderr) Branch(return=>) ]
+Block: if.else141[Store(ipv4only143) Store(ipv6only144) Store(server_fd) Store(local_addrs145) Store(number_local_addrs146) Load(server_addrs147) Store(server_addrs148) Load(number_addrs149) Store(number_server_addrs) Branch(if.end157=>if.then153) ]
+Block: if.else15[Load(optarg) Branch(if.end16=>) ]
+Block: if.else26[Load(stderr) Branch(return=>) ]
+Block: if.else35[Load(optarg) Branch(if.end36=>) ]
+Block: if.else95[Load(stderr) Branch(return=>) ]
+Block: if.end[Branch(sw.epilog=>) ]
+Block: if.end103[Branch(for.cond=>) ]
+Block: if.end122[Branch(for.inc=>) ]
+Block: if.end131[Branch(for.cond132=>) ]
+Block: if.end157[Branch(if.end158=>) ]
+Block: if.end158[Branch(for.cond132=>) ]
+Block: if.end16[Branch(sw.epilog=>) ]
+Block: if.end28[Branch(sw.epilog=>) ]
+Block: if.end36[Branch(sw.epilog=>) ]
+Block: if.end40[Branch(sw.epilog=>) ]
+Block: if.end45[Branch(sw.epilog=>) ]
+Block: if.end55[Branch(if.then57=>if.end66) ]
+Block: if.end65[Branch(if.end66=>) ]
+Block: if.end66[Store(sinit_num_ostreams) Store(sinit_max_instreams) Branch(if.end74=>if.then70) ]
+Block: if.end74[Store(sctp_data_io_event) Branch(if.end82=>if.then78) ]
+Block: if.end82[Branch(if.else95=>if.then86) ]
+Block: if.end94[Branch(if.end97=>) ]
+Block: if.end97[Branch(if.end103=>if.then101) ]
+Block: if.then[Branch(if.end=>) ]
+Block: if.then101[Load(stderr) Branch(return=>) ]
+Block: if.then120[Load(stderr) Branch(return=>) ]
+Block: if.then127[Load(stderr) Load(call128) Branch(return=>) ]
+Block: if.then13[Load(stderr) Branch(return=>) ]
+Block: if.then137[Load(stderr) Load(call138) Branch(if.end158=>) ]
+Block: if.then153[Load(stderr) Load(client_fd155) Branch(if.end157=>) ]
+Block: if.then24[Branch(if.end28=>) ]
+Block: if.then33[Load(stderr) Branch(return=>) ]
+Block: if.then38[Load(stderr) Branch(return=>) ]
+Block: if.then43[Load(stderr) Branch(return=>) ]
+Block: if.then51[Load(stderr) Load(call52) Branch(return=>) ]
+Block: if.then57[Branch(if.end65=>if.then61) ]
+Block: if.then61[Load(stderr) Load(call62) Branch(if.end65=>) ]
+Block: if.then70[Load(stderr) Load(call71) Branch(return=>) ]
+Block: if.then78[Load(stderr) Load(call79) Branch(return=>) ]
+Block: if.then86[Branch(if.end94=>if.then90) ]
+Block: if.then90[Load(stderr) Load(call91) Branch(return=>) ]
+Block: land.lhs.true[Branch(if.else=>if.then) ]
+Block: land.lhs.true21[Branch(if.else26=>if.then24) ]
+Block: return[]
+Block: sw.bb[Load(optarg) Branch(if.else=>land.lhs.true) ]
+Block: sw.bb10[Branch(if.else15=>if.then13) ]
+Block: sw.bb17[Load(optarg) Branch(if.else26=>land.lhs.true21) ]
+Block: sw.bb29[Load(optarg) Store(arrayidx) Branch(sw.epilog=>) ]
+Block: sw.bb30[Branch(if.else35=>if.then33) ]
+Block: sw.bb37[Branch(if.end40=>if.then38) ]
+Block: sw.bb41[Branch(if.end45=>if.then43) ]
+Block: sw.default[Load(stderr) Branch(return=>) ]
+Block: sw.epilog[Branch(while.cond=>) ]
+Block: while.body[]
+Block: while.cond[Branch(while.end=>while.body) ]
+Block: while.end[Branch(if.end55=>if.then51) ]
 [1]Function: calloc
 [2]Function: getopt
 [3]Function: strtol
@@ -779,50 +941,50 @@ Store: ipv4only pointer: ipv4only.addr
 Store: ipv6only pointer: ipv6only.addr
 		store Target:  Use: 0
 Store: addrs pointer: addrs.addr
-		load Target:  Use: 1
+		load Target: __ANOMY_0 Use: 1
 Load: addr_list.addr
 		icmp Target: cmp Use: 1
-icmp:   1
+icmp: __ANOMY_0  1
 		br Target:  Use: 0
 	Block: if.then
 		store Target:  Use: 0
 Store:  pointer: retval
 		br Target:  Use: 0
 	Block: if.end
-		load Target:  Use: 1
+		load Target: __ANOMY_1 Use: 1
 Load: addr_list.addr
 		call Target: call Use: 1
 not found: call
 		store Target:  Use: 0
 Store: call pointer: last_colon
-		load Target:  Use: 1
+		load Target: __ANOMY_2 Use: 1
 Load: last_colon
 		icmp Target: cmp1 Use: 1
-icmp:   1
+icmp: __ANOMY_2  1
 		br Target:  Use: 0
 	Block: if.then2
 		store Target:  Use: 0
 Store:  pointer: retval
 		br Target:  Use: 0
 	Block: if.else
-		load Target:  Use: 1
+		load Target: __ANOMY_3 Use: 1
 Load: last_colon
 		getelementptr Target: add.ptr Use: 1
 		store Target:  Use: 0
 Store: add.ptr pointer: port
-		load Target:  Use: 1
+		load Target: __ANOMY_4 Use: 1
 Load: last_colon
 		store Target:  Use: 0
-Store:  pointer: 
-		load Target:  Use: 1
+Store:  pointer: __ANOMY_4
+		load Target: __ANOMY_5 Use: 1
 Load: addr_list.addr
-		load Target:  Use: 1
+		load Target: __ANOMY_6 Use: 1
 Load: port
-		load Target:  Use: 1
+		load Target: __ANOMY_7 Use: 1
 Load: ipv4only.addr
-		load Target:  Use: 1
+		load Target: __ANOMY_8 Use: 1
 Load: ipv6only.addr
-		load Target:  Use: 1
+		load Target: __ANOMY_9 Use: 1
 Load: addrs.addr
 		call Target: call3 Use: 1
 not found: call
@@ -830,16 +992,36 @@ not found: call
 Store: call3 pointer: retval
 		br Target:  Use: 0
 	Block: return
-		load Target:  Use: 1
+		load Target: __ANOMY_10 Use: 1
 Load: retval
 		ret Target:  Use: 0
 Phase 2:
+Add: __ANOMY_0 11
+Add: cmp 12
+Add: __ANOMY_1 16
+Add: __ANOMY_2 19
+Add: cmp1 20
+Add: __ANOMY_3 24
+Add: __ANOMY_4 27
+Add: __ANOMY_5 29
+Add: __ANOMY_6 30
+Add: __ANOMY_7 31
+Add: __ANOMY_8 32
+Add: __ANOMY_9 33
+Add: __ANOMY_10 37
 Phase 3	Block: entry
 Phase 3	Block: if.then
 Phase 3	Block: if.end
 Phase 3	Block: if.then2
 Phase 3	Block: if.else
 Phase 3	Block: return
+Debug phase 3: 
+Block: entry[Branch(if.end=>if.then) ]
+Block: if.else[Branch(return=>) ]
+Block: if.end[Branch(if.else=>if.then2) ]
+Block: if.then[Branch(return=>) ]
+Block: if.then2[Branch(return=>) ]
+Block: return[]
 [11]Function: sctp_bindx
 [12]Function: free
 [13]Function: parse_addrs_list
@@ -866,16 +1048,16 @@ Store: ipv4only pointer: ipv4only.addr
 Store: ipv6only pointer: ipv6only.addr
 		store Target:  Use: 0
 Store: addrs pointer: addrs.addr
-		load Target:  Use: 1
+		load Target: __ANOMY_0 Use: 1
 Load: addr_list.addr
 		icmp Target: cmp Use: 1
-icmp:   1
+icmp: __ANOMY_0  1
 		br Target:  Use: 0
 	Block: lor.lhs.false
-		load Target:  Use: 1
+		load Target: __ANOMY_1 Use: 1
 Load: port.addr
 		icmp Target: cmp1 Use: 1
-icmp:   1
+icmp: __ANOMY_1  1
 		br Target:  Use: 0
 	Block: if.then
 		store Target:  Use: 0
@@ -884,87 +1066,102 @@ Store:  pointer: retval
 	Block: if.end
 		store Target:  Use: 0
 Store:  pointer: number_local_addrs
-		load Target:  Use: 1
+		load Target: __ANOMY_2 Use: 1
 Load: addr_list.addr
 		store Target:  Use: 0
-Store:  pointer: tmp
+Store: __ANOMY_2 pointer: tmp
 		br Target:  Use: 0
 	Block: for.cond
-		load Target:  Use: 1
+		load Target: __ANOMY_3 Use: 1
 Load: tmp
-		load Target:  Use: 1
-Load: 
+		load Target: __ANOMY_4 Use: 1
+Load: __ANOMY_3
 		sext Target: conv Use: 1
 		icmp Target: cmp2 Use: 1
 icmp: conv  1
 		br Target:  Use: 0
 	Block: for.body
-		load Target:  Use: 1
+		load Target: __ANOMY_5 Use: 1
 Load: tmp
-		load Target:  Use: 1
-Load: 
+		load Target: __ANOMY_6 Use: 1
+Load: __ANOMY_5
 		sext Target: conv4 Use: 1
 		icmp Target: cmp5 Use: 1
 icmp: conv4  1
 		br Target:  Use: 0
 	Block: if.then7
-		load Target:  Use: 1
+		load Target: __ANOMY_7 Use: 1
 Load: number_local_addrs
 		add Target: inc Use: 1
-not found: add
+binary: 2
+	[binary]__ANOMY_7
+check value 1: 0 2:1
+	[binary]
+check value 1: 1 2:0
+target: inc
 		store Target:  Use: 0
 Store: inc pointer: number_local_addrs
 		br Target:  Use: 0
 	Block: if.end8
 		br Target:  Use: 0
 	Block: for.inc
-		load Target:  Use: 1
+		load Target: __ANOMY_8 Use: 1
 Load: tmp
 		getelementptr Target: incdec.ptr Use: 1
 		store Target:  Use: 0
 Store: incdec.ptr pointer: tmp
 		br Target:  Use: 0
 	Block: for.end
-		load Target:  Use: 1
+		load Target: __ANOMY_9 Use: 1
 Load: ipv4only.addr
 		icmp Target: tobool Use: 1
-icmp:   1
+icmp: __ANOMY_9  1
 		br Target:  Use: 0
 	Block: if.then9
-		load Target:  Use: 1
+		load Target: __ANOMY_10 Use: 1
 Load: number_local_addrs
 		sext Target: conv10 Use: 1
 		mul Target: mul Use: 1
-not found: mul
+binary: 2
+	[binary]conv10
+check value 1: 0 2:0
+	[binary]
+check value 1: 1 2:0
+target: mul
 		store Target:  Use: 0
 Store: mul pointer: size
 		br Target:  Use: 0
 	Block: if.else
-		load Target:  Use: 1
+		load Target: __ANOMY_11 Use: 1
 Load: number_local_addrs
 		sext Target: conv11 Use: 1
 		mul Target: mul12 Use: 1
-not found: mul
+binary: 2
+	[binary]conv11
+check value 1: 0 2:0
+	[binary]
+check value 1: 1 2:0
+target: mul12
 		store Target:  Use: 0
 Store: mul12 pointer: size
 		br Target:  Use: 0
 	Block: if.end13
-		load Target:  Use: 1
+		load Target: __ANOMY_12 Use: 1
 Load: size
 		call Target: call Use: 1
 not found: call
-		bitcast Target:  Use: 1
-		load Target:  Use: 1
+		bitcast Target: __ANOMY_13 Use: 1
+		load Target: __ANOMY_14 Use: 1
 Load: addrs.addr
 		store Target:  Use: 0
-Store:  pointer: 
-		bitcast Target:  Use: 1
+Store: __ANOMY_13 pointer: __ANOMY_14
+		bitcast Target: __ANOMY_15 Use: 1
 		call Target:  Use: 0
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_16 Use: 1
 Load: ipv4only.addr
 		icmp Target: tobool14 Use: 1
-icmp:   1
+icmp: __ANOMY_16  1
 		br Target:  Use: 0
 	Block: if.then15
 		getelementptr Target: ai_family Use: 1
@@ -986,35 +1183,40 @@ Store:  pointer: ai_protocol
 		getelementptr Target: ai_flags Use: 1
 		store Target:  Use: 0
 Store:  pointer: ai_flags
-		load Target:  Use: 1
+		load Target: __ANOMY_17 Use: 1
 Load: ipv4only.addr
 		icmp Target: tobool19 Use: 1
-icmp:   1
+icmp: __ANOMY_17  1
 		br Target:  Use: 0
 	Block: land.lhs.true
-		load Target:  Use: 1
+		load Target: __ANOMY_18 Use: 1
 Load: ipv6only.addr
 		icmp Target: tobool20 Use: 1
-icmp:   1
+icmp: __ANOMY_18  1
 		br Target:  Use: 0
 	Block: if.then21
 		getelementptr Target: ai_flags22 Use: 0
-		load Target:  Use: 1
+		load Target: __ANOMY_19 Use: 1
 Load: ai_flags22
 		or Target: or Use: 1
-not found: or
+binary: 2
+	[binary]__ANOMY_19
+check value 1: 0 2:0
+	[binary]
+check value 1: 1 2:0
+target: or
 		store Target:  Use: 0
 Store: or pointer: ai_flags22
 		br Target:  Use: 0
 	Block: if.end23
-		load Target:  Use: 1
+		load Target: __ANOMY_20 Use: 1
 Load: addrs.addr
-		load Target:  Use: 1
-Load: 
-		bitcast Target:  Use: 1
+		load Target: __ANOMY_21 Use: 1
+Load: __ANOMY_20
+		bitcast Target: __ANOMY_22 Use: 1
 		store Target:  Use: 0
-Store:  pointer: tmp
-		load Target:  Use: 1
+Store: __ANOMY_22 pointer: tmp
+		load Target: __ANOMY_23 Use: 1
 Load: addr_list.addr
 		call Target: call24 Use: 1
 not found: call
@@ -1022,15 +1224,15 @@ not found: call
 Store: call24 pointer: addr
 		br Target:  Use: 0
 	Block: for.cond25
-		load Target:  Use: 1
+		load Target: __ANOMY_24 Use: 1
 Load: addr
 		icmp Target: cmp26 Use: 1
-icmp:   1
+icmp: __ANOMY_24  1
 		br Target:  Use: 0
 	Block: for.body28
-		load Target:  Use: 1
+		load Target: __ANOMY_25 Use: 1
 Load: addr
-		load Target:  Use: 1
+		load Target: __ANOMY_26 Use: 1
 Load: port.addr
 		call Target: call29 Use: 1
 not found: call
@@ -1042,34 +1244,34 @@ icmp: call29  1
 Store:  pointer: retval
 		br Target:  Use: 0
 	Block: if.end33
-		load Target:  Use: 1
+		load Target: __ANOMY_27 Use: 1
 Load: tmp
-		load Target:  Use: 1
+		load Target: __ANOMY_28 Use: 1
 Load: res
 		getelementptr Target: ai_addr Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_29 Use: 1
 Load: ai_addr
-		bitcast Target:  Use: 1
-		load Target:  Use: 1
+		bitcast Target: __ANOMY_30 Use: 1
+		load Target: __ANOMY_31 Use: 1
 Load: res
 		getelementptr Target: ai_addrlen Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_32 Use: 1
 Load: ai_addrlen
 		zext Target: conv34 Use: 1
 		call Target:  Use: 0
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_33 Use: 1
 Load: res
 		getelementptr Target: ai_addrlen35 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_34 Use: 1
 Load: ai_addrlen35
-		load Target:  Use: 1
+		load Target: __ANOMY_35 Use: 1
 Load: tmp
 		zext Target: idx.ext Use: 1
 		getelementptr Target: add.ptr Use: 1
 		store Target:  Use: 0
 Store: add.ptr pointer: tmp
-		load Target:  Use: 1
+		load Target: __ANOMY_36 Use: 1
 Load: res
 		call Target:  Use: 0
 not found: call
@@ -1081,16 +1283,55 @@ not found: call
 Store: call37 pointer: addr
 		br Target:  Use: 0
 	Block: for.end38
-		load Target:  Use: 1
+		load Target: __ANOMY_37 Use: 1
 Load: number_local_addrs
 		store Target:  Use: 0
-Store:  pointer: retval
+Store: __ANOMY_37 pointer: retval
 		br Target:  Use: 0
 	Block: return
-		load Target:  Use: 1
+		load Target: __ANOMY_38 Use: 1
 Load: retval
 		ret Target:  Use: 0
 Phase 2:
+Add: __ANOMY_0 17
+Add: cmp 18
+Add: __ANOMY_1 20
+Add: cmp1 21
+Add: __ANOMY_2 26
+Add: __ANOMY_3 29
+Add: __ANOMY_4 30
+Add: __ANOMY_5 34
+Add: __ANOMY_6 35
+Add: __ANOMY_7 39
+Add: inc 40
+Add: __ANOMY_8 44
+Add: __ANOMY_9 48
+Add: tobool 49
+Add: __ANOMY_10 51
+Add: __ANOMY_11 56
+Add: __ANOMY_12 61
+Add: __ANOMY_14 64
+Add: __ANOMY_16 68
+Add: tobool14 69
+Add: __ANOMY_17 83
+Add: tobool19 84
+Add: __ANOMY_18 86
+Add: tobool20 87
+Add: __ANOMY_20 94
+Add: __ANOMY_21 95
+Add: __ANOMY_23 98
+Add: __ANOMY_24 102
+Add: cmp26 103
+Add: __ANOMY_25 105
+Add: __ANOMY_26 106
+Add: __ANOMY_27 112
+Add: __ANOMY_28 113
+Add: __ANOMY_31 117
+Add: __ANOMY_33 122
+Add: __ANOMY_35 125
+Add: __ANOMY_36 129
+Add: __ANOMY_37 135
+Add: __ANOMY_38 138
 Phase 3	Block: entry
 Phase 3	Block: lor.lhs.false
 Phase 3	Block: if.then
@@ -1117,6 +1358,33 @@ Phase 3	Block: if.end33
 Phase 3	Block: for.inc36
 Phase 3	Block: for.end38
 Phase 3	Block: return
+Debug phase 3: 
+Block: entry[Branch(lor.lhs.false=>if.then) ]
+Block: for.body[Branch(if.end8=>if.then7) ]
+Block: for.body28[Branch(if.end33=>if.then32) ]
+Block: for.cond[Branch(for.end=>for.body) ]
+Block: for.cond25[Branch(for.end38=>for.body28) ]
+Block: for.end[Branch(if.else=>if.then9) ]
+Block: for.end38[Branch(return=>) ]
+Block: for.inc[Branch(for.cond=>) ]
+Block: for.inc36[Branch(for.cond25=>) ]
+Block: if.else[Branch(if.end13=>) ]
+Block: if.else16[Store(ai_family17) Branch(if.end18=>) ]
+Block: if.end[Branch(for.cond=>) ]
+Block: if.end13[Branch(if.else16=>if.then15) ]
+Block: if.end18[Store(ai_socktype) Store(ai_protocol) Store(ai_flags) Branch(land.lhs.true=>if.end23) ]
+Block: if.end23[Branch(for.cond25=>) ]
+Block: if.end33[Load(ai_addr) Load(ai_addrlen) Load(ai_addrlen35) Branch(for.inc36=>) ]
+Block: if.end8[Branch(for.inc=>) ]
+Block: if.then[Branch(return=>) ]
+Block: if.then15[Store(ai_family) Branch(if.end18=>) ]
+Block: if.then21[Load(ai_flags22) Store(ai_flags22) Branch(if.end23=>) ]
+Block: if.then32[Branch(return=>) ]
+Block: if.then7[Branch(if.end8=>) ]
+Block: if.then9[Branch(if.end13=>) ]
+Block: land.lhs.true[Branch(if.then21=>if.end23) ]
+Block: lor.lhs.false[Branch(if.end=>if.then) ]
+Block: return[]
 [14]Function: listen
 [15]Function: accept
 [16]Function: select_a_server
@@ -1127,33 +1395,44 @@ Phase 3	Block: return
 Store: server_infos pointer: server_infos.addr
 		store Target:  Use: 0
 Store: number_servers pointer: number_servers.addr
-		load Target:  Use: 1
+		load Target: __ANOMY_0 Use: 1
 Load: select_a_server.i
-		load Target:  Use: 1
+		load Target: __ANOMY_1 Use: 1
 Load: number_servers.addr
 		icmp Target: cmp Use: 1
-icmp:   1
+icmp: __ANOMY_0 __ANOMY_1 1
 		br Target:  Use: 0
 	Block: if.then
 		store Target:  Use: 0
 Store:  pointer: select_a_server.i
 		br Target:  Use: 0
 	Block: if.end
-		load Target:  Use: 1
+		load Target: __ANOMY_2 Use: 1
 Load: server_infos.addr
-		load Target:  Use: 0
+		load Target: __ANOMY_3 Use: 0
 Load: select_a_server.i
 		add Target: inc Use: 1
-not found: add
+binary: 2
+	[binary]__ANOMY_3
+check value 1: 0 2:0
+	[binary]
+check value 1: 1 2:0
+target: inc
 		store Target:  Use: 0
 Store: inc pointer: select_a_server.i
 		sext Target: idxprom Use: 1
 		getelementptr Target: arrayidx Use: 1
 		ret Target:  Use: 0
 Phase 2:
+Add: __ANOMY_1 5
+Add: __ANOMY_2 10
 Phase 3	Block: entry
 Phase 3	Block: if.then
 Phase 3	Block: if.end
+Debug phase 3: 
+Block: entry[Load(select_a_server.i) Branch(if.end=>if.then) ]
+Block: if.end[Load(select_a_server.i) Store(select_a_server.i) ]
+Block: if.then[Store(select_a_server.i) Branch(if.end=>) ]
 [17]Function: pthread_create
 [18]Function: proxy
 	Block: entry
@@ -1176,30 +1455,30 @@ Store: arg pointer: arg.addr
 not found: call
 		call Target: call1 Use: 0
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_0 Use: 1
 Load: arg.addr
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_1 Use: 1
 		store Target:  Use: 0
-Store:  pointer: info
+Store: __ANOMY_1 pointer: info
 		store Target:  Use: 0
 Store:  pointer: len
-		load Target:  Use: 1
+		load Target: __ANOMY_2 Use: 1
 Load: info
 		getelementptr Target: client_fd Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_3 Use: 1
 Load: client_fd
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_4 Use: 1
 		call Target: call2 Use: 1
 not found: call
 		icmp Target: cmp Use: 1
 icmp: call2  1
 		br Target:  Use: 0
 	Block: if.then
-		load Target:  Use: 1
+		load Target: __ANOMY_5 Use: 1
 Load: stderr
 		call Target: call3 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_6 Use: 1
 Load: call3
 		call Target: call4 Use: 1
 not found: call
@@ -1207,93 +1486,93 @@ not found: call
 not found: call
 		br Target:  Use: 0
 	Block: if.end
-		load Target:  Use: 1
+		load Target: __ANOMY_7 Use: 1
 Load: info
 		getelementptr Target: client_buf_size Use: 1
 		store Target:  Use: 0
 Store:  pointer: client_buf_size
-		load Target:  Use: 1
+		load Target: __ANOMY_8 Use: 1
 Load: info
 		getelementptr Target: client_buf_offset Use: 1
 		store Target:  Use: 0
 Store:  pointer: client_buf_offset
-		load Target:  Use: 1
+		load Target: __ANOMY_9 Use: 1
 Load: info
 		getelementptr Target: client_buf_size6 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_10 Use: 1
 Load: client_buf_size6
 		call Target: call7 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_11 Use: 1
 Load: info
 		getelementptr Target: client_buf Use: 1
 		store Target:  Use: 0
 Store: call7 pointer: client_buf
-		load Target:  Use: 1
+		load Target: __ANOMY_12 Use: 1
 Load: info
 		getelementptr Target: client_buf8 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_13 Use: 1
 Load: client_buf8
 		icmp Target: cmp9 Use: 1
-icmp:   1
+icmp: __ANOMY_13  1
 		br Target:  Use: 0
 	Block: if.then10
-		load Target:  Use: 1
+		load Target: __ANOMY_14 Use: 1
 Load: stderr
 		call Target: call11 Use: 0
 not found: call
 		br Target:  Use: 0
 	Block: if.end12
-		load Target:  Use: 1
+		load Target: __ANOMY_15 Use: 1
 Load: info
 		getelementptr Target: server_buf_size Use: 1
 		store Target:  Use: 0
 Store:  pointer: server_buf_size
-		load Target:  Use: 1
+		load Target: __ANOMY_16 Use: 1
 Load: info
 		getelementptr Target: server_buf_offset Use: 1
 		store Target:  Use: 0
 Store:  pointer: server_buf_offset
-		load Target:  Use: 1
+		load Target: __ANOMY_17 Use: 1
 Load: info
 		getelementptr Target: server_buf_size13 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_18 Use: 1
 Load: server_buf_size13
 		call Target: call14 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_19 Use: 1
 Load: info
 		getelementptr Target: server_buf Use: 1
 		store Target:  Use: 0
 Store: call14 pointer: server_buf
-		load Target:  Use: 1
+		load Target: __ANOMY_20 Use: 1
 Load: info
 		getelementptr Target: server_buf15 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_21 Use: 1
 Load: server_buf15
 		icmp Target: cmp16 Use: 1
-icmp:   1
+icmp: __ANOMY_21  1
 		br Target:  Use: 0
 	Block: if.then17
-		load Target:  Use: 1
+		load Target: __ANOMY_22 Use: 1
 Load: stderr
 		call Target: call18 Use: 0
 not found: call
 		br Target:  Use: 0
 	Block: if.end19
-		load Target:  Use: 1
+		load Target: __ANOMY_23 Use: 1
 Load: info
 		getelementptr Target: ipv4only Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_24 Use: 1
 Load: ipv4only
 		icmp Target: tobool Use: 0
-icmp:   0
-		zext Target:  Use: 0
+icmp: __ANOMY_24  0
+		zext Target: __ANOMY_25 Use: 0
 		select Target: cond Use: 1
 not found: select
 		call Target: call20 Use: 0
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_26 Use: 1
 Load: info
 		getelementptr Target: server_fd Use: 1
 		store Target:  Use: 0
@@ -1302,11 +1581,11 @@ Store: call20 pointer: server_fd
 icmp: call20  1
 		br Target:  Use: 0
 	Block: if.then22
-		load Target:  Use: 1
+		load Target: __ANOMY_27 Use: 1
 Load: stderr
 		call Target: call23 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_28 Use: 1
 Load: call23
 		call Target: call24 Use: 1
 not found: call
@@ -1314,35 +1593,35 @@ not found: call
 not found: call
 		br Target:  Use: 0
 	Block: if.end26
-		load Target:  Use: 1
+		load Target: __ANOMY_29 Use: 1
 Load: info
 		getelementptr Target: ipv4only27 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_30 Use: 1
 Load: ipv4only27
 		icmp Target: tobool28 Use: 1
-icmp:   1
+icmp: __ANOMY_30  1
 		br Target:  Use: 0
 	Block: if.then29
-		load Target:  Use: 1
+		load Target: __ANOMY_31 Use: 1
 Load: info
 		getelementptr Target: server_fd30 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_32 Use: 1
 Load: server_fd30
-		load Target:  Use: 1
+		load Target: __ANOMY_33 Use: 1
 Load: info
 		getelementptr Target: ipv6only Use: 1
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_34 Use: 1
 		call Target: call31 Use: 1
 not found: call
 		icmp Target: cmp32 Use: 1
 icmp: call31  1
 		br Target:  Use: 0
 	Block: if.then33
-		load Target:  Use: 1
+		load Target: __ANOMY_35 Use: 1
 Load: stderr
 		call Target: call34 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_36 Use: 1
 Load: call34
 		call Target: call35 Use: 1
 not found: call
@@ -1352,38 +1631,38 @@ not found: call
 	Block: if.end37
 		br Target:  Use: 0
 	Block: if.end38
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_37 Use: 1
 		call Target:  Use: 0
 not found: call
 		getelementptr Target: sstat_instrms Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_38 Use: 1
 Load: sstat_instrms
 		getelementptr Target: sinit_num_ostreams Use: 1
 		store Target:  Use: 0
-Store:  pointer: sinit_num_ostreams
+Store: __ANOMY_38 pointer: sinit_num_ostreams
 		getelementptr Target: sstat_outstrms Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_39 Use: 1
 Load: sstat_outstrms
 		getelementptr Target: sinit_max_instreams Use: 1
 		store Target:  Use: 0
-Store:  pointer: sinit_max_instreams
-		load Target:  Use: 1
+Store: __ANOMY_39 pointer: sinit_max_instreams
+		load Target: __ANOMY_40 Use: 1
 Load: info
 		getelementptr Target: server_fd39 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_41 Use: 1
 Load: server_fd39
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_42 Use: 1
 		call Target: call40 Use: 1
 not found: call
 		icmp Target: cmp41 Use: 1
 icmp: call40  1
 		br Target:  Use: 0
 	Block: if.then42
-		load Target:  Use: 1
+		load Target: __ANOMY_43 Use: 1
 Load: stderr
 		call Target: call43 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_44 Use: 1
 Load: call43
 		call Target: call44 Use: 1
 not found: call
@@ -1391,29 +1670,29 @@ not found: call
 not found: call
 		br Target:  Use: 0
 	Block: if.end46
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_45 Use: 1
 		call Target:  Use: 0
 not found: call
 		getelementptr Target: sctp_data_io_event Use: 1
 		store Target:  Use: 0
 Store:  pointer: sctp_data_io_event
-		load Target:  Use: 1
+		load Target: __ANOMY_46 Use: 1
 Load: info
 		getelementptr Target: server_fd47 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_47 Use: 1
 Load: server_fd47
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_48 Use: 1
 		call Target: call48 Use: 1
 not found: call
 		icmp Target: cmp49 Use: 1
 icmp: call48  1
 		br Target:  Use: 0
 	Block: if.then50
-		load Target:  Use: 1
+		load Target: __ANOMY_49 Use: 1
 Load: stderr
 		call Target: call51 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_50 Use: 1
 Load: call51
 		call Target: call52 Use: 1
 not found: call
@@ -1421,20 +1700,20 @@ not found: call
 not found: call
 		br Target:  Use: 0
 	Block: if.end54
-		load Target:  Use: 1
+		load Target: __ANOMY_51 Use: 1
 Load: info
 		getelementptr Target: server_fd55 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_52 Use: 1
 Load: server_fd55
-		load Target:  Use: 1
+		load Target: __ANOMY_53 Use: 1
 Load: info
 		getelementptr Target: local_addrs Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_54 Use: 1
 Load: local_addrs
-		load Target:  Use: 1
+		load Target: __ANOMY_55 Use: 1
 Load: info
 		getelementptr Target: number_local_addrs Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_56 Use: 1
 Load: number_local_addrs
 		call Target: call56 Use: 1
 not found: call
@@ -1442,11 +1721,11 @@ not found: call
 icmp: call56  1
 		br Target:  Use: 0
 	Block: if.then58
-		load Target:  Use: 1
+		load Target: __ANOMY_57 Use: 1
 Load: stderr
 		call Target: call59 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_58 Use: 1
 Load: call59
 		call Target: call60 Use: 1
 not found: call
@@ -1454,20 +1733,20 @@ not found: call
 not found: call
 		br Target:  Use: 0
 	Block: if.end62
-		load Target:  Use: 1
+		load Target: __ANOMY_59 Use: 1
 Load: info
 		getelementptr Target: server_fd63 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_60 Use: 1
 Load: server_fd63
-		load Target:  Use: 1
+		load Target: __ANOMY_61 Use: 1
 Load: info
 		getelementptr Target: server_addrs Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_62 Use: 1
 Load: server_addrs
-		load Target:  Use: 1
+		load Target: __ANOMY_63 Use: 1
 Load: info
 		getelementptr Target: number_server_addrs Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_64 Use: 1
 Load: number_server_addrs
 		call Target: call64 Use: 1
 not found: call
@@ -1475,11 +1754,11 @@ not found: call
 icmp: call64  1
 		br Target:  Use: 0
 	Block: if.then66
-		load Target:  Use: 1
+		load Target: __ANOMY_65 Use: 1
 Load: stderr
 		call Target: call67 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_66 Use: 1
 Load: call67
 		call Target: call68 Use: 1
 not found: call
@@ -1493,193 +1772,263 @@ not found: call
 	Block: do.body
 		getelementptr Target: __fds_bits Use: 1
 		getelementptr Target: arrayidx Use: 1
-		call Target:  Use: 0
+		call Target: __ANOMY_67 Use: 0
 not found: call
 		extractvalue Target: asmresult Use: 1
 		extractvalue Target: asmresult71 Use: 1
-		trunc Target:  Use: 1
+		trunc Target: __ANOMY_68 Use: 1
 		store Target:  Use: 0
-Store:  pointer: __d0
-		ptrtoint Target:  Use: 1
-		trunc Target:  Use: 1
+Store: __ANOMY_68 pointer: __d0
+		ptrtoint Target: __ANOMY_69 Use: 1
+		trunc Target: __ANOMY_70 Use: 1
 		store Target:  Use: 0
-Store:  pointer: __d1
+Store: __ANOMY_70 pointer: __d1
 		br Target:  Use: 0
 	Block: do.end
 		store Target:  Use: 0
 Store:  pointer: max_fd
-		load Target:  Use: 1
+		load Target: __ANOMY_71 Use: 1
 Load: info
 		getelementptr Target: client_fd72 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_72 Use: 1
 Load: client_fd72
 		srem Target: rem Use: 1
-not found: srem
+binary: 2
+	[binary]__ANOMY_72
+check value 1: 0 2:0
+	[binary]
+check value 1: 1 2:0
+target: rem
 		zext Target: sh_prom Use: 1
 		shl Target: shl Use: 1
-not found: shl
+binary: 2
+	[binary]
+check value 1: 1 2:0
+	[binary]sh_prom
+check value 1: 0 2:0
+target: shl
 		getelementptr Target: __fds_bits73 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_73 Use: 1
 Load: info
 		getelementptr Target: client_fd74 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_74 Use: 1
 Load: client_fd74
 		sdiv Target: div Use: 1
-not found: sdiv
+binary: 2
+	[binary]__ANOMY_74
+check value 1: 0 2:0
+	[binary]
+check value 1: 1 2:0
+target: div
 		sext Target: idxprom Use: 1
 		getelementptr Target: arrayidx75 Use: 0
-		load Target:  Use: 1
+		load Target: __ANOMY_75 Use: 1
 Load: arrayidx75
 		or Target: or Use: 1
-not found: or
+binary: 2
+	[binary]__ANOMY_75
+check value 1: 0 2:0
+	[binary]shl
+check value 1: 0 2:0
+target: or
 		store Target:  Use: 0
 Store: or pointer: arrayidx75
-		load Target:  Use: 1
+		load Target: __ANOMY_76 Use: 1
 Load: info
 		getelementptr Target: client_fd76 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_77 Use: 1
 Load: client_fd76
-		load Target:  Use: 1
+		load Target: __ANOMY_78 Use: 1
 Load: max_fd
 		icmp Target: cmp77 Use: 1
-icmp:   1
+icmp: __ANOMY_77 __ANOMY_78 1
 		br Target:  Use: 0
 	Block: if.then78
-		load Target:  Use: 1
+		load Target: __ANOMY_79 Use: 1
 Load: info
 		getelementptr Target: client_fd79 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_80 Use: 1
 Load: client_fd79
 		store Target:  Use: 0
-Store:  pointer: max_fd
+Store: __ANOMY_80 pointer: max_fd
 		br Target:  Use: 0
 	Block: if.end80
-		load Target:  Use: 1
+		load Target: __ANOMY_81 Use: 1
 Load: info
 		getelementptr Target: server_fd81 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_82 Use: 1
 Load: server_fd81
 		srem Target: rem82 Use: 1
-not found: srem
+binary: 2
+	[binary]__ANOMY_82
+check value 1: 0 2:0
+	[binary]
+check value 1: 1 2:0
+target: rem82
 		zext Target: sh_prom83 Use: 1
 		shl Target: shl84 Use: 1
-not found: shl
+binary: 2
+	[binary]
+check value 1: 1 2:0
+	[binary]sh_prom83
+check value 1: 0 2:0
+target: shl84
 		getelementptr Target: __fds_bits85 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_83 Use: 1
 Load: info
 		getelementptr Target: server_fd86 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_84 Use: 1
 Load: server_fd86
 		sdiv Target: div87 Use: 1
-not found: sdiv
+binary: 2
+	[binary]__ANOMY_84
+check value 1: 0 2:0
+	[binary]
+check value 1: 1 2:0
+target: div87
 		sext Target: idxprom88 Use: 1
 		getelementptr Target: arrayidx89 Use: 0
-		load Target:  Use: 1
+		load Target: __ANOMY_85 Use: 1
 Load: arrayidx89
 		or Target: or90 Use: 1
-not found: or
+binary: 2
+	[binary]__ANOMY_85
+check value 1: 0 2:0
+	[binary]shl84
+check value 1: 0 2:0
+target: or90
 		store Target:  Use: 0
 Store: or90 pointer: arrayidx89
-		load Target:  Use: 1
+		load Target: __ANOMY_86 Use: 1
 Load: info
 		getelementptr Target: server_fd91 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_87 Use: 1
 Load: server_fd91
-		load Target:  Use: 1
+		load Target: __ANOMY_88 Use: 1
 Load: max_fd
 		icmp Target: cmp92 Use: 1
-icmp:   1
+icmp: __ANOMY_87 __ANOMY_88 1
 		br Target:  Use: 0
 	Block: if.then93
-		load Target:  Use: 1
+		load Target: __ANOMY_89 Use: 1
 Load: info
 		getelementptr Target: server_fd94 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_90 Use: 1
 Load: server_fd94
 		store Target:  Use: 0
-Store:  pointer: max_fd
+Store: __ANOMY_90 pointer: max_fd
 		br Target:  Use: 0
 	Block: if.end95
-		load Target:  Use: 1
+		load Target: __ANOMY_91 Use: 1
 Load: max_fd
 		add Target: add Use: 1
-not found: add
+binary: 2
+	[binary]__ANOMY_91
+check value 1: 0 2:1
+	[binary]
+check value 1: 1 2:0
+target: add
 		call Target: call96 Use: 0
 not found: call
 		getelementptr Target: __fds_bits97 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_92 Use: 1
 Load: info
 		getelementptr Target: client_fd98 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_93 Use: 1
 Load: client_fd98
 		sdiv Target: div99 Use: 1
-not found: sdiv
+binary: 2
+	[binary]__ANOMY_93
+check value 1: 0 2:0
+	[binary]
+check value 1: 1 2:0
+target: div99
 		sext Target: idxprom100 Use: 1
 		getelementptr Target: arrayidx101 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_94 Use: 1
 Load: arrayidx101
-		load Target:  Use: 1
+		load Target: __ANOMY_95 Use: 1
 Load: info
 		getelementptr Target: client_fd102 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_96 Use: 1
 Load: client_fd102
 		srem Target: rem103 Use: 1
-not found: srem
+binary: 2
+	[binary]__ANOMY_96
+check value 1: 0 2:0
+	[binary]
+check value 1: 1 2:0
+target: rem103
 		zext Target: sh_prom104 Use: 1
 		shl Target: shl105 Use: 1
-not found: shl
+binary: 2
+	[binary]
+check value 1: 1 2:0
+	[binary]sh_prom104
+check value 1: 0 2:0
+target: shl105
 		and Target: and Use: 1
-not found: and
+binary: 2
+	[binary]__ANOMY_94
+check value 1: 0 2:0
+	[binary]shl105
+check value 1: 0 2:0
+target: and
 		icmp Target: cmp106 Use: 1
 icmp: and  1
 		br Target:  Use: 0
 	Block: if.then107
 		store Target:  Use: 0
 Store:  pointer: flags
-		load Target:  Use: 1
+		load Target: __ANOMY_97 Use: 1
 Load: info
 		getelementptr Target: client_fd108 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_98 Use: 1
 Load: client_fd108
-		load Target:  Use: 1
+		load Target: __ANOMY_99 Use: 1
 Load: info
 		getelementptr Target: client_buf109 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_100 Use: 1
 Load: client_buf109
-		load Target:  Use: 1
+		load Target: __ANOMY_101 Use: 1
 Load: info
 		getelementptr Target: client_buf_offset110 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_102 Use: 1
 Load: client_buf_offset110
 		getelementptr Target: add.ptr Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_103 Use: 1
 Load: info
 		getelementptr Target: client_buf_size111 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_104 Use: 1
 Load: client_buf_size111
-		load Target:  Use: 1
+		load Target: __ANOMY_105 Use: 1
 Load: info
 		getelementptr Target: client_buf_offset112 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_106 Use: 1
 Load: client_buf_offset112
 		sub Target: sub Use: 1
-not found: sub
+binary: 2
+	[binary]__ANOMY_104
+check value 1: 0 2:0
+	[binary]__ANOMY_106
+check value 1: 0 2:0
+target: sub
 		call Target: call113 Use: 1
 not found: call
 		sext Target: conv Use: 1
 		store Target:  Use: 0
 Store: conv pointer: n
-		load Target:  Use: 1
+		load Target: __ANOMY_107 Use: 1
 Load: n
 		icmp Target: cmp114 Use: 1
-icmp:   1
+icmp: __ANOMY_107  1
 		br Target:  Use: 0
 	Block: if.then116
-		load Target:  Use: 1
+		load Target: __ANOMY_108 Use: 1
 Load: stderr
 		call Target: call117 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_109 Use: 1
 Load: call117
 		call Target: call118 Use: 1
 not found: call
@@ -1687,76 +2036,91 @@ not found: call
 not found: call
 		br Target:  Use: 0
 	Block: if.else
-		load Target:  Use: 1
+		load Target: __ANOMY_110 Use: 1
 Load: n
 		icmp Target: cmp120 Use: 1
-icmp:   1
+icmp: __ANOMY_110  1
 		br Target:  Use: 0
 	Block: if.then122
 		br Target:  Use: 0
 	Block: if.else123
-		load Target:  Use: 1
+		load Target: __ANOMY_111 Use: 1
 Load: n
-		load Target:  Use: 1
+		load Target: __ANOMY_112 Use: 1
 Load: info
 		getelementptr Target: client_buf_offset124 Use: 0
-		load Target:  Use: 1
+		load Target: __ANOMY_113 Use: 1
 Load: client_buf_offset124
 		add Target: add125 Use: 1
-not found: add
+binary: 2
+	[binary]__ANOMY_113
+check value 1: 0 2:0
+	[binary]__ANOMY_111
+check value 1: 0 2:1
+target: add125
 		store Target:  Use: 0
 Store: add125 pointer: client_buf_offset124
-		load Target:  Use: 1
+		load Target: __ANOMY_114 Use: 1
 Load: flags
 		and Target: and126 Use: 1
-not found: and
+binary: 2
+	[binary]__ANOMY_114
+check value 1: 0 2:1
+	[binary]
+check value 1: 1 2:0
+target: and126
 		icmp Target: tobool127 Use: 1
 icmp: and126  1
 		br Target:  Use: 0
 	Block: if.then128
-		load Target:  Use: 1
+		load Target: __ANOMY_115 Use: 1
 Load: info
 		getelementptr Target: server_fd129 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_116 Use: 1
 Load: server_fd129
-		load Target:  Use: 1
+		load Target: __ANOMY_117 Use: 1
 Load: info
 		getelementptr Target: client_buf130 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_118 Use: 1
 Load: client_buf130
-		load Target:  Use: 1
+		load Target: __ANOMY_119 Use: 1
 Load: info
 		getelementptr Target: client_buf_offset131 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_120 Use: 1
 Load: client_buf_offset131
 		getelementptr Target: sinfo_ppid Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_121 Use: 1
 Load: sinfo_ppid
 		getelementptr Target: sinfo_flags Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_122 Use: 1
 Load: sinfo_flags
 		zext Target: conv132 Use: 1
 		and Target: and133 Use: 1
-not found: and
+binary: 2
+	[binary]conv132
+check value 1: 0 2:0
+	[binary]
+check value 1: 1 2:0
+target: and133
 		getelementptr Target: sinfo_stream Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_123 Use: 1
 Load: sinfo_stream
 		call Target: call134 Use: 1
 not found: call
 		sext Target: conv135 Use: 1
 		store Target:  Use: 0
 Store: conv135 pointer: n
-		load Target:  Use: 1
+		load Target: __ANOMY_124 Use: 1
 Load: n
 		icmp Target: cmp136 Use: 1
-icmp:   1
+icmp: __ANOMY_124  1
 		br Target:  Use: 0
 	Block: if.then138
-		load Target:  Use: 1
+		load Target: __ANOMY_125 Use: 1
 Load: stderr
 		call Target: call139 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_126 Use: 1
 Load: call139
 		call Target: call140 Use: 1
 not found: call
@@ -1764,7 +2128,7 @@ not found: call
 not found: call
 		br Target:  Use: 0
 	Block: if.else142
-		load Target:  Use: 1
+		load Target: __ANOMY_127 Use: 1
 Load: info
 		getelementptr Target: client_buf_offset143 Use: 1
 		store Target:  Use: 0
@@ -1773,56 +2137,61 @@ Store:  pointer: client_buf_offset143
 	Block: if.end144
 		br Target:  Use: 0
 	Block: if.else145
-		load Target:  Use: 1
+		load Target: __ANOMY_128 Use: 1
 Load: info
 		getelementptr Target: client_buf_offset146 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_129 Use: 1
 Load: client_buf_offset146
-		load Target:  Use: 1
+		load Target: __ANOMY_130 Use: 1
 Load: info
 		getelementptr Target: client_buf_size147 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_131 Use: 1
 Load: client_buf_size147
 		icmp Target: cmp148 Use: 1
-icmp:   1
+icmp: __ANOMY_129 __ANOMY_131 1
 		br Target:  Use: 0
 	Block: if.then150
-		load Target:  Use: 1
+		load Target: __ANOMY_132 Use: 1
 Load: info
 		getelementptr Target: client_buf_size151 Use: 0
-		load Target:  Use: 1
+		load Target: __ANOMY_133 Use: 1
 Load: client_buf_size151
 		mul Target: mul Use: 1
-not found: mul
+binary: 2
+	[binary]__ANOMY_133
+check value 1: 0 2:0
+	[binary]
+check value 1: 1 2:0
+target: mul
 		store Target:  Use: 0
 Store: mul pointer: client_buf_size151
-		load Target:  Use: 1
+		load Target: __ANOMY_134 Use: 1
 Load: info
 		getelementptr Target: client_buf152 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_135 Use: 1
 Load: client_buf152
-		load Target:  Use: 1
+		load Target: __ANOMY_136 Use: 1
 Load: info
 		getelementptr Target: client_buf_size153 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_137 Use: 1
 Load: client_buf_size153
 		call Target: call154 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_138 Use: 1
 Load: info
 		getelementptr Target: client_buf155 Use: 1
 		store Target:  Use: 0
 Store: call154 pointer: client_buf155
-		load Target:  Use: 1
+		load Target: __ANOMY_139 Use: 1
 Load: info
 		getelementptr Target: client_buf156 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_140 Use: 1
 Load: client_buf156
 		icmp Target: cmp157 Use: 1
-icmp:   1
+icmp: __ANOMY_140  1
 		br Target:  Use: 0
 	Block: if.then159
-		load Target:  Use: 1
+		load Target: __ANOMY_141 Use: 1
 Load: stderr
 		call Target: call160 Use: 0
 not found: call
@@ -1839,79 +2208,104 @@ not found: call
 		br Target:  Use: 0
 	Block: if.end166
 		getelementptr Target: __fds_bits167 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_142 Use: 1
 Load: info
 		getelementptr Target: server_fd168 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_143 Use: 1
 Load: server_fd168
 		sdiv Target: div169 Use: 1
-not found: sdiv
+binary: 2
+	[binary]__ANOMY_143
+check value 1: 0 2:0
+	[binary]
+check value 1: 1 2:0
+target: div169
 		sext Target: idxprom170 Use: 1
 		getelementptr Target: arrayidx171 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_144 Use: 1
 Load: arrayidx171
-		load Target:  Use: 1
+		load Target: __ANOMY_145 Use: 1
 Load: info
 		getelementptr Target: server_fd172 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_146 Use: 1
 Load: server_fd172
 		srem Target: rem173 Use: 1
-not found: srem
+binary: 2
+	[binary]__ANOMY_146
+check value 1: 0 2:0
+	[binary]
+check value 1: 1 2:0
+target: rem173
 		zext Target: sh_prom174 Use: 1
 		shl Target: shl175 Use: 1
-not found: shl
+binary: 2
+	[binary]
+check value 1: 1 2:0
+	[binary]sh_prom174
+check value 1: 0 2:0
+target: shl175
 		and Target: and176 Use: 1
-not found: and
+binary: 2
+	[binary]__ANOMY_144
+check value 1: 0 2:0
+	[binary]shl175
+check value 1: 0 2:0
+target: and176
 		icmp Target: cmp177 Use: 1
 icmp: and176  1
 		br Target:  Use: 0
 	Block: if.then179
 		store Target:  Use: 0
 Store:  pointer: flags
-		load Target:  Use: 1
+		load Target: __ANOMY_147 Use: 1
 Load: info
 		getelementptr Target: server_fd180 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_148 Use: 1
 Load: server_fd180
-		load Target:  Use: 1
+		load Target: __ANOMY_149 Use: 1
 Load: info
 		getelementptr Target: server_buf181 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_150 Use: 1
 Load: server_buf181
-		load Target:  Use: 1
+		load Target: __ANOMY_151 Use: 1
 Load: info
 		getelementptr Target: server_buf_offset182 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_152 Use: 1
 Load: server_buf_offset182
 		getelementptr Target: add.ptr183 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_153 Use: 1
 Load: info
 		getelementptr Target: server_buf_size184 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_154 Use: 1
 Load: server_buf_size184
-		load Target:  Use: 1
+		load Target: __ANOMY_155 Use: 1
 Load: info
 		getelementptr Target: server_buf_offset185 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_156 Use: 1
 Load: server_buf_offset185
 		sub Target: sub186 Use: 1
-not found: sub
+binary: 2
+	[binary]__ANOMY_154
+check value 1: 0 2:0
+	[binary]__ANOMY_156
+check value 1: 0 2:0
+target: sub186
 		call Target: call187 Use: 1
 not found: call
 		sext Target: conv188 Use: 1
 		store Target:  Use: 0
 Store: conv188 pointer: n
-		load Target:  Use: 1
+		load Target: __ANOMY_157 Use: 1
 Load: n
 		icmp Target: cmp189 Use: 1
-icmp:   1
+icmp: __ANOMY_157  1
 		br Target:  Use: 0
 	Block: if.then191
-		load Target:  Use: 1
+		load Target: __ANOMY_158 Use: 1
 Load: stderr
 		call Target: call192 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_159 Use: 1
 Load: call192
 		call Target: call193 Use: 1
 not found: call
@@ -1919,76 +2313,91 @@ not found: call
 not found: call
 		br Target:  Use: 0
 	Block: if.else195
-		load Target:  Use: 1
+		load Target: __ANOMY_160 Use: 1
 Load: n
 		icmp Target: cmp196 Use: 1
-icmp:   1
+icmp: __ANOMY_160  1
 		br Target:  Use: 0
 	Block: if.then198
 		br Target:  Use: 0
 	Block: if.else199
-		load Target:  Use: 1
+		load Target: __ANOMY_161 Use: 1
 Load: n
-		load Target:  Use: 1
+		load Target: __ANOMY_162 Use: 1
 Load: info
 		getelementptr Target: server_buf_offset200 Use: 0
-		load Target:  Use: 1
+		load Target: __ANOMY_163 Use: 1
 Load: server_buf_offset200
 		add Target: add201 Use: 1
-not found: add
+binary: 2
+	[binary]__ANOMY_163
+check value 1: 0 2:0
+	[binary]__ANOMY_161
+check value 1: 0 2:1
+target: add201
 		store Target:  Use: 0
 Store: add201 pointer: server_buf_offset200
-		load Target:  Use: 1
+		load Target: __ANOMY_164 Use: 1
 Load: flags
 		and Target: and202 Use: 1
-not found: and
+binary: 2
+	[binary]__ANOMY_164
+check value 1: 0 2:1
+	[binary]
+check value 1: 1 2:0
+target: and202
 		icmp Target: tobool203 Use: 1
 icmp: and202  1
 		br Target:  Use: 0
 	Block: if.then204
-		load Target:  Use: 1
+		load Target: __ANOMY_165 Use: 1
 Load: info
 		getelementptr Target: client_fd205 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_166 Use: 1
 Load: client_fd205
-		load Target:  Use: 1
+		load Target: __ANOMY_167 Use: 1
 Load: info
 		getelementptr Target: server_buf206 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_168 Use: 1
 Load: server_buf206
-		load Target:  Use: 1
+		load Target: __ANOMY_169 Use: 1
 Load: info
 		getelementptr Target: server_buf_offset207 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_170 Use: 1
 Load: server_buf_offset207
 		getelementptr Target: sinfo_ppid208 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_171 Use: 1
 Load: sinfo_ppid208
 		getelementptr Target: sinfo_flags209 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_172 Use: 1
 Load: sinfo_flags209
 		zext Target: conv210 Use: 1
 		and Target: and211 Use: 1
-not found: and
+binary: 2
+	[binary]conv210
+check value 1: 0 2:0
+	[binary]
+check value 1: 1 2:0
+target: and211
 		getelementptr Target: sinfo_stream212 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_173 Use: 1
 Load: sinfo_stream212
 		call Target: call213 Use: 1
 not found: call
 		sext Target: conv214 Use: 1
 		store Target:  Use: 0
 Store: conv214 pointer: n
-		load Target:  Use: 1
+		load Target: __ANOMY_174 Use: 1
 Load: n
 		icmp Target: cmp215 Use: 1
-icmp:   1
+icmp: __ANOMY_174  1
 		br Target:  Use: 0
 	Block: if.then217
-		load Target:  Use: 1
+		load Target: __ANOMY_175 Use: 1
 Load: stderr
 		call Target: call218 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_176 Use: 1
 Load: call218
 		call Target: call219 Use: 1
 not found: call
@@ -1996,7 +2405,7 @@ not found: call
 not found: call
 		br Target:  Use: 0
 	Block: if.else221
-		load Target:  Use: 1
+		load Target: __ANOMY_177 Use: 1
 Load: info
 		getelementptr Target: server_buf_offset222 Use: 1
 		store Target:  Use: 0
@@ -2005,56 +2414,61 @@ Store:  pointer: server_buf_offset222
 	Block: if.end223
 		br Target:  Use: 0
 	Block: if.else224
-		load Target:  Use: 1
+		load Target: __ANOMY_178 Use: 1
 Load: info
 		getelementptr Target: server_buf_offset225 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_179 Use: 1
 Load: server_buf_offset225
-		load Target:  Use: 1
+		load Target: __ANOMY_180 Use: 1
 Load: info
 		getelementptr Target: server_buf_size226 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_181 Use: 1
 Load: server_buf_size226
 		icmp Target: cmp227 Use: 1
-icmp:   1
+icmp: __ANOMY_179 __ANOMY_181 1
 		br Target:  Use: 0
 	Block: if.then229
-		load Target:  Use: 1
+		load Target: __ANOMY_182 Use: 1
 Load: info
 		getelementptr Target: server_buf_size230 Use: 0
-		load Target:  Use: 1
+		load Target: __ANOMY_183 Use: 1
 Load: server_buf_size230
 		mul Target: mul231 Use: 1
-not found: mul
+binary: 2
+	[binary]__ANOMY_183
+check value 1: 0 2:0
+	[binary]
+check value 1: 1 2:0
+target: mul231
 		store Target:  Use: 0
 Store: mul231 pointer: server_buf_size230
-		load Target:  Use: 1
+		load Target: __ANOMY_184 Use: 1
 Load: info
 		getelementptr Target: server_buf232 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_185 Use: 1
 Load: server_buf232
-		load Target:  Use: 1
+		load Target: __ANOMY_186 Use: 1
 Load: info
 		getelementptr Target: server_buf_size233 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_187 Use: 1
 Load: server_buf_size233
 		call Target: call234 Use: 1
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_188 Use: 1
 Load: info
 		getelementptr Target: server_buf235 Use: 1
 		store Target:  Use: 0
 Store: call234 pointer: server_buf235
-		load Target:  Use: 1
+		load Target: __ANOMY_189 Use: 1
 Load: info
 		getelementptr Target: server_buf236 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_190 Use: 1
 Load: server_buf236
 		icmp Target: cmp237 Use: 1
-icmp:   1
+icmp: __ANOMY_190  1
 		br Target:  Use: 0
 	Block: if.then239
-		load Target:  Use: 1
+		load Target: __ANOMY_191 Use: 1
 Load: stderr
 		call Target: call240 Use: 0
 not found: call
@@ -2072,63 +2486,165 @@ not found: call
 	Block: if.end246
 		br Target:  Use: 0
 	Block: cleanup
-		load Target:  Use: 1
+		load Target: __ANOMY_192 Use: 1
 Load: info
 		getelementptr Target: server_fd247 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_193 Use: 1
 Load: server_fd247
 		icmp Target: cmp248 Use: 1
-icmp:   1
+icmp: __ANOMY_193  1
 		br Target:  Use: 0
 	Block: if.then250
-		load Target:  Use: 1
+		load Target: __ANOMY_194 Use: 1
 Load: info
 		getelementptr Target: server_fd251 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_195 Use: 1
 Load: server_fd251
 		call Target: call252 Use: 0
 not found: call
 		br Target:  Use: 0
 	Block: if.end253
-		load Target:  Use: 1
+		load Target: __ANOMY_196 Use: 1
 Load: info
 		getelementptr Target: client_fd254 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_197 Use: 1
 Load: client_fd254
 		icmp Target: cmp255 Use: 1
-icmp:   1
+icmp: __ANOMY_197  1
 		br Target:  Use: 0
 	Block: if.then257
-		load Target:  Use: 1
+		load Target: __ANOMY_198 Use: 1
 Load: info
 		getelementptr Target: client_fd258 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_199 Use: 1
 Load: client_fd258
 		call Target: call259 Use: 0
 not found: call
 		br Target:  Use: 0
 	Block: if.end260
-		load Target:  Use: 1
+		load Target: __ANOMY_200 Use: 1
 Load: info
 		getelementptr Target: client_buf261 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_201 Use: 1
 Load: client_buf261
 		call Target:  Use: 0
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_202 Use: 1
 Load: info
 		getelementptr Target: server_buf262 Use: 1
-		load Target:  Use: 1
+		load Target: __ANOMY_203 Use: 1
 Load: server_buf262
 		call Target:  Use: 0
 not found: call
-		load Target:  Use: 1
+		load Target: __ANOMY_204 Use: 1
 Load: info
-		bitcast Target:  Use: 1
+		bitcast Target: __ANOMY_205 Use: 1
 		call Target:  Use: 0
 not found: call
 		ret Target:  Use: 0
 Phase 2:
+Add: __ANOMY_0 16
+Add: __ANOMY_2 20
+Add: __ANOMY_7 33
+Add: __ANOMY_8 36
+Add: __ANOMY_9 39
+Add: __ANOMY_11 43
+Add: __ANOMY_12 46
+Add: __ANOMY_15 54
+Add: __ANOMY_16 57
+Add: __ANOMY_17 60
+Add: __ANOMY_19 64
+Add: __ANOMY_20 67
+Add: __ANOMY_23 75
+Add: __ANOMY_26 82
+Add: __ANOMY_29 93
+Add: __ANOMY_31 98
+Add: __ANOMY_33 101
+Add: __ANOMY_40 124
+Add: __ANOMY_46 141
+Add: __ANOMY_51 154
+Add: __ANOMY_53 157
+Add: __ANOMY_55 160
+Add: __ANOMY_59 172
+Add: __ANOMY_61 175
+Add: __ANOMY_63 178
+Add: __ANOMY_71 204
+Add: __ANOMY_73 211
+Add: __ANOMY_76 220
+Add: __ANOMY_78 223
+Add: __ANOMY_79 226
+Add: __ANOMY_81 231
+Add: __ANOMY_83 238
+Add: __ANOMY_86 247
+Add: __ANOMY_88 250
+Add: __ANOMY_89 253
+Add: __ANOMY_91 258
+Add: add 259
+Add: __ANOMY_92 262
+Add: __ANOMY_95 269
+Add: __ANOMY_97 279
+Add: __ANOMY_99 282
+Add: __ANOMY_101 285
+Add: __ANOMY_103 289
+Add: __ANOMY_105 292
+Add: __ANOMY_107 299
+Add: cmp114 300
+Add: __ANOMY_110 308
+Add: cmp120 309
+Add: __ANOMY_111 312
+Add: __ANOMY_112 313
+Add: __ANOMY_114 318
+Add: and126 319
+Add: tobool127 320
+Add: __ANOMY_115 322
+Add: __ANOMY_117 325
+Add: __ANOMY_119 328
+Add: __ANOMY_124 342
+Add: cmp136 343
+Add: __ANOMY_127 351
+Add: __ANOMY_128 356
+Add: __ANOMY_130 359
+Add: __ANOMY_132 364
+Add: __ANOMY_134 369
+Add: __ANOMY_136 372
+Add: __ANOMY_138 376
+Add: __ANOMY_139 379
+Add: __ANOMY_142 393
+Add: __ANOMY_145 400
+Add: __ANOMY_147 410
+Add: __ANOMY_149 413
+Add: __ANOMY_151 416
+Add: __ANOMY_153 420
+Add: __ANOMY_155 423
+Add: __ANOMY_157 430
+Add: cmp189 431
+Add: __ANOMY_160 439
+Add: cmp196 440
+Add: __ANOMY_161 443
+Add: __ANOMY_162 444
+Add: __ANOMY_164 449
+Add: and202 450
+Add: tobool203 451
+Add: __ANOMY_165 453
+Add: __ANOMY_167 456
+Add: __ANOMY_169 459
+Add: __ANOMY_174 473
+Add: cmp215 474
+Add: __ANOMY_177 482
+Add: __ANOMY_178 487
+Add: __ANOMY_180 490
+Add: __ANOMY_182 495
+Add: __ANOMY_184 500
+Add: __ANOMY_186 503
+Add: __ANOMY_188 507
+Add: __ANOMY_189 510
+Add: __ANOMY_192 524
+Add: __ANOMY_194 529
+Add: __ANOMY_196 534
+Add: __ANOMY_198 539
+Add: __ANOMY_200 544
+Add: __ANOMY_202 548
+Add: __ANOMY_204 552
 Phase 3	Block: entry
 Phase 3	Block: if.then
 Phase 3	Block: if.end
@@ -2198,6 +2714,76 @@ Phase 3	Block: if.then250
 Phase 3	Block: if.end253
 Phase 3	Block: if.then257
 Phase 3	Block: if.end260
+Debug phase 3: 
+Block: cleanup[Load(server_fd247) Branch(if.end253=>if.then250) ]
+Block: do.body[Branch(do.end=>) ]
+Block: do.end[Load(client_fd72) Load(client_fd74) Load(arrayidx75) Store(arrayidx75) Load(client_fd76) Branch(if.end80=>if.then78) ]
+Block: entry[Load(client_fd) Branch(if.end=>if.then) ]
+Block: for.cond[Branch(do.body=>) ]
+Block: if.else[Branch(if.else123=>if.then122) ]
+Block: if.else123[Load(client_buf_offset124) Store(client_buf_offset124) Branch(if.else145=>if.then128) ]
+Block: if.else142[Store(client_buf_offset143) Branch(if.end144=>) ]
+Block: if.else145[Load(client_buf_offset146) Load(client_buf_size147) Branch(if.end162=>if.then150) ]
+Block: if.else195[Branch(if.else199=>if.then198) ]
+Block: if.else199[Load(server_buf_offset200) Store(server_buf_offset200) Branch(if.else224=>if.then204) ]
+Block: if.else221[Store(server_buf_offset222) Branch(if.end223=>) ]
+Block: if.else224[Load(server_buf_offset225) Load(server_buf_size226) Branch(if.end242=>if.then229) ]
+Block: if.end[Store(client_buf_size) Store(client_buf_offset) Load(client_buf_size6) Store(client_buf) Load(client_buf8) Branch(if.end12=>if.then10) ]
+Block: if.end12[Store(server_buf_size) Store(server_buf_offset) Load(server_buf_size13) Store(server_buf) Load(server_buf15) Branch(if.end19=>if.then17) ]
+Block: if.end144[Branch(if.end163=>) ]
+Block: if.end161[Branch(if.end162=>) ]
+Block: if.end162[Branch(if.end163=>) ]
+Block: if.end163[Branch(if.end164=>) ]
+Block: if.end164[Branch(if.end165=>) ]
+Block: if.end165[Branch(if.end166=>) ]
+Block: if.end166[Load(server_fd168) Load(arrayidx171) Load(server_fd172) Branch(if.end246=>if.then179) ]
+Block: if.end19[Load(ipv4only) Store(server_fd) Branch(if.end26=>if.then22) ]
+Block: if.end223[Branch(if.end243=>) ]
+Block: if.end241[Branch(if.end242=>) ]
+Block: if.end242[Branch(if.end243=>) ]
+Block: if.end243[Branch(if.end244=>) ]
+Block: if.end244[Branch(if.end245=>) ]
+Block: if.end245[Branch(if.end246=>) ]
+Block: if.end246[Branch(for.cond=>) ]
+Block: if.end253[Load(client_fd254) Branch(if.end260=>if.then257) ]
+Block: if.end26[Load(ipv4only27) Branch(if.then29=>if.end38) ]
+Block: if.end260[Load(client_buf261) Load(server_buf262) ]
+Block: if.end37[Branch(if.end38=>) ]
+Block: if.end38[Load(sstat_instrms) Store(sinit_num_ostreams) Load(sstat_outstrms) Store(sinit_max_instreams) Load(server_fd39) Branch(if.end46=>if.then42) ]
+Block: if.end46[Store(sctp_data_io_event) Load(server_fd47) Branch(if.end54=>if.then50) ]
+Block: if.end54[Load(server_fd55) Load(local_addrs) Load(number_local_addrs) Branch(if.end62=>if.then58) ]
+Block: if.end62[Load(server_fd63) Load(server_addrs) Load(number_server_addrs) Branch(if.end70=>if.then66) ]
+Block: if.end70[Branch(for.cond=>) ]
+Block: if.end80[Load(server_fd81) Load(server_fd86) Load(arrayidx89) Store(arrayidx89) Load(server_fd91) Branch(if.end95=>if.then93) ]
+Block: if.end95[Load(client_fd98) Load(arrayidx101) Load(client_fd102) Branch(if.end166=>if.then107) ]
+Block: if.then[Load(stderr) Load(call3) Branch(cleanup=>) ]
+Block: if.then10[Load(stderr) Branch(cleanup=>) ]
+Block: if.then107[Load(client_fd108) Load(client_buf109) Load(client_buf_offset110) Load(client_buf_size111) Load(client_buf_offset112) Branch(if.else=>if.then116) ]
+Block: if.then116[Load(stderr) Load(call117) Branch(cleanup=>) ]
+Block: if.then122[Branch(cleanup=>) ]
+Block: if.then128[Load(server_fd129) Load(client_buf130) Load(client_buf_offset131) Load(sinfo_ppid) Load(sinfo_flags) Load(sinfo_stream) Branch(if.else142=>if.then138) ]
+Block: if.then138[Load(stderr) Load(call139) Branch(cleanup=>) ]
+Block: if.then150[Load(client_buf_size151) Store(client_buf_size151) Load(client_buf152) Load(client_buf_size153) Store(client_buf155) Load(client_buf156) Branch(if.end161=>if.then159) ]
+Block: if.then159[Load(stderr) Branch(cleanup=>) ]
+Block: if.then17[Load(stderr) Branch(cleanup=>) ]
+Block: if.then179[Load(server_fd180) Load(server_buf181) Load(server_buf_offset182) Load(server_buf_size184) Load(server_buf_offset185) Branch(if.else195=>if.then191) ]
+Block: if.then191[Load(stderr) Load(call192) Branch(cleanup=>) ]
+Block: if.then198[Branch(cleanup=>) ]
+Block: if.then204[Load(client_fd205) Load(server_buf206) Load(server_buf_offset207) Load(sinfo_ppid208) Load(sinfo_flags209) Load(sinfo_stream212) Branch(if.else221=>if.then217) ]
+Block: if.then217[Load(stderr) Load(call218) Branch(cleanup=>) ]
+Block: if.then22[Load(stderr) Load(call23) Branch(cleanup=>) ]
+Block: if.then229[Load(server_buf_size230) Store(server_buf_size230) Load(server_buf232) Load(server_buf_size233) Store(server_buf235) Load(server_buf236) Branch(if.end241=>if.then239) ]
+Block: if.then239[Load(stderr) Branch(cleanup=>) ]
+Block: if.then250[Load(server_fd251) Branch(if.end253=>) ]
+Block: if.then257[Load(client_fd258) Branch(if.end260=>) ]
+Block: if.then29[Load(server_fd30) Branch(if.end37=>if.then33) ]
+Block: if.then33[Load(stderr) Load(call34) Branch(cleanup=>) ]
+Block: if.then42[Load(stderr) Load(call43) Branch(cleanup=>) ]
+Block: if.then50[Load(stderr) Load(call51) Branch(cleanup=>) ]
+Block: if.then58[Load(stderr) Load(call59) Branch(cleanup=>) ]
+Block: if.then66[Load(stderr) Load(call67) Branch(cleanup=>) ]
+Block: if.then78[Load(client_fd79) Branch(if.end80=>) ]
+Block: if.then93[Load(server_fd94) Branch(if.end95=>) ]
 [19]Function: close
 [20]Function: strrchr
 [21]Function: malloc
