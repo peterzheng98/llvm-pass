@@ -1,0 +1,49 @@
+[59]Function: out_of_memory
+	Block: entry
+		alloca
+		alloca
+		store
+		store
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		call
+		icmp
+		br
+	Block: if.then1
+		load
+		getelementptr
+		store
+		br
+	Block: if.end
+		load
+		load
+		call
+		br
+	Block: if.else
+		load
+		load
+		call
+		br
+	Block: if.end2
+		ret
+Phase 1: Allocated Variables: 
+ascii_error.addr
+c.addr
+Phase 2:
+Add: __ANOMY_0 4
+Add: __ANOMY_1 6
+Add: cmp 7
+Add: __ANOMY_2 9
+Add: __ANOMY_3 13
+Add: __ANOMY_4 17
+Add: __ANOMY_5 18
+Add: __ANOMY_6 21
+Add: __ANOMY_7 22
+[Sequence]
+[Sequence]
+[Sequence]

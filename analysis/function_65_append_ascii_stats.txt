@@ -1,0 +1,127 @@
+[65]Function: append_ascii_stats
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		store
+		store
+		load
+		getelementptr
+		getelementptr
+		load
+		load
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		store
+		store
+		load
+		getelementptr
+		getelementptr
+		load
+		load
+		getelementptr
+		getelementptr
+		load
+		sub
+		trunc
+		store
+		load
+		sub
+		store
+		load
+		zext
+		icmp
+		br
+	Block: land.lhs.true
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		load
+		sext
+		call
+		store
+		br
+	Block: if.else
+		load
+		icmp
+		br
+	Block: if.then13
+		load
+		load
+		sext
+		load
+		call
+		store
+		br
+	Block: if.else16
+		load
+		load
+		sext
+		load
+		load
+		call
+		store
+		br
+	Block: if.end
+		br
+	Block: if.end19
+		load
+		zext
+		load
+		getelementptr
+		getelementptr
+		load
+		add
+		store
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+key.addr
+klen.addr
+nbytes
+pos
+remaining
+room
+val.addr
+vlen.addr
+Phase 2:
+Add: __ANOMY_0 14
+Add: __ANOMY_2 18
+Add: __ANOMY_4 25
+Add: __ANOMY_6 29
+Add: __ANOMY_8 36
+Add: sub5 37
+Add: __ANOMY_9 39
+Add: __ANOMY_10 43
+Add: cmp8 44
+Add: __ANOMY_11 46
+Add: __ANOMY_12 47
+Add: __ANOMY_13 52
+Add: cmp11 53
+Add: __ANOMY_14 55
+Add: __ANOMY_15 56
+Add: __ANOMY_16 58
+Add: __ANOMY_17 62
+Add: __ANOMY_18 63
+Add: __ANOMY_19 65
+Add: __ANOMY_20 66
+Add: __ANOMY_21 71
+Add: __ANOMY_22 73
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats3) Load(stats21) Store(stats21) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats3) Load(stats21) Store(stats21) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats3) Load(stats21) Store(stats21) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats3) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats3) 

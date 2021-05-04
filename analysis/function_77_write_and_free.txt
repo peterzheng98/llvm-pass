@@ -1,0 +1,53 @@
+[77]Function: write_and_free
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		getelementptr
+		load
+		store
+		load
+		load
+		getelementptr
+		store
+		load
+		load
+		load
+		call
+		load
+		call
+		br
+	Block: if.else
+		load
+		call
+		br
+	Block: if.end
+		ret
+Phase 1: Allocated Variables: 
+buf.addr
+bytes.addr
+c.addr
+resp
+Phase 2:
+Add: __ANOMY_0 7
+Add: tobool 8
+Add: __ANOMY_1 10
+Add: __ANOMY_2 12
+Add: __ANOMY_3 14
+Add: __ANOMY_4 15
+Add: __ANOMY_5 18
+Add: __ANOMY_6 19
+Add: __ANOMY_7 20
+Add: __ANOMY_8 22
+Add: __ANOMY_9 25
+[Sequence]
+[Sequence]

@@ -1,0 +1,14 @@
+[127]Function: sig_usrhandler
+	Block: entry
+		alloca
+		store
+		load
+		call
+		call
+		store
+		ret
+Phase 1: Allocated Variables: 
+sig.addr
+Phase 2:
+Add: __ANOMY_0 2
+[Sequence]Store(stop_main_loop) 

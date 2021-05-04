@@ -1,0 +1,65 @@
+[174]Function: conn_init
+	Block: entry
+		alloca
+		alloca
+		alloca
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		call
+		call
+		unreachable
+	Block: if.end
+		store
+		load
+		load
+		add
+		load
+		add
+		store
+		call
+		icmp
+		br
+	Block: if.then4
+		getelementptr
+		load
+		trunc
+		store
+		br
+	Block: if.else
+		load
+		call
+		br
+	Block: if.end6
+		load
+		call
+		load
+		sext
+		call
+		bitcast
+		store
+		icmp
+		br
+	Block: if.then12
+		load
+		call
+		call
+		unreachable
+	Block: if.end14
+		ret
+Phase 1: Allocated Variables: 
+headroom
+next_fd
+rl
+Phase 2:
+Add: __ANOMY_0 5
+Add: cmp 6
+Add: __ANOMY_2 13
+Add: __ANOMY_3 15
+Add: __ANOMY_4 22
+Add: __ANOMY_6 29
+[Sequence]Load(settings) Store(max_fds) Load(stderr) Load(max_fds) Store(conns) Load(stderr) 
+[Sequence]Load(settings) Store(max_fds) Store(max_fds) Load(max_fds) Store(conns) Load(stderr) 

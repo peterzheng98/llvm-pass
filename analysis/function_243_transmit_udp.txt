@@ -1,0 +1,320 @@
+[243]Function: transmit_udp
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		load
+		getelementptr
+		load
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		store
+		br
+	Block: if.end
+		load
+		getelementptr
+		load
+		trunc
+		br
+	Block: if.then2
+		load
+		load
+		call
+		store
+		store
+		br
+	Block: if.end3
+		bitcast
+		call
+		getelementptr
+		getelementptr
+		store
+		load
+		getelementptr
+		bitcast
+		getelementptr
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		store
+		getelementptr
+		getelementptr
+		getelementptr
+		store
+		getelementptr
+		getelementptr
+		store
+		getelementptr
+		load
+		call
+		load
+		add
+		store
+		load
+		getelementptr
+		load
+		call
+		store
+		store
+		store
+		store
+		br
+	Block: for.cond
+		load
+		load
+		icmp
+		br
+	Block: for.body
+		load
+		sext
+		load
+		sext
+		getelementptr
+		getelementptr
+		load
+		add
+		icmp
+		br
+	Block: if.then13
+		load
+		sub
+		sext
+		load
+		sext
+		getelementptr
+		getelementptr
+		store
+		load
+		add
+		store
+		br
+	Block: if.else
+		load
+		sext
+		getelementptr
+		getelementptr
+		load
+		load
+		sext
+		add
+		trunc
+		store
+		br
+	Block: if.end25
+		br
+	Block: for.inc
+		load
+		add
+		store
+		br
+	Block: for.end
+		load
+		store
+		load
+		sext
+		getelementptr
+		store
+		load
+		getelementptr
+		load
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then31
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		load
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		load
+		add
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		load
+		sub
+		store
+		load
+		load
+		call
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then43
+		store
+		br
+	Block: if.else44
+		store
+		br
+	Block: if.end45
+		load
+		icmp
+		br
+	Block: land.lhs.true
+		call
+		load
+		icmp
+		br
+	Block: lor.lhs.false
+		call
+		load
+		icmp
+		br
+	Block: if.then54
+		load
+		call
+		br
+	Block: if.then56
+		load
+		icmp
+		br
+	Block: if.then59
+		load
+		call
+		br
+	Block: if.end61
+		load
+		call
+		store
+		br
+	Block: if.end62
+		store
+		br
+	Block: if.end63
+		load
+		icmp
+		br
+	Block: if.then66
+		call
+		br
+	Block: if.end67
+		load
+		call
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+iovs
+iovused
+len
+msg
+res
+resp
+retval
+udp_hdr
+x
+Phase 2:
+Add: __ANOMY_0 12
+Add: __ANOMY_1 14
+Add: __ANOMY_2 16
+Add: tobool 17
+Add: __ANOMY_3 21
+Add: __ANOMY_4 23
+Add: __ANOMY_5 26
+Add: __ANOMY_6 27
+Add: __ANOMY_8 37
+Add: __ANOMY_10 42
+Add: __ANOMY_11 44
+Add: __ANOMY_12 55
+Add: __ANOMY_13 57
+Add: inc 58
+Add: __ANOMY_14 60
+Add: __ANOMY_15 62
+Add: __ANOMY_16 69
+Add: __ANOMY_17 70
+Add: cmp 71
+Add: __ANOMY_18 73
+Add: __ANOMY_19 75
+Add: __ANOMY_21 83
+Add: sub 84
+Add: __ANOMY_22 86
+Add: __ANOMY_23 91
+Add: inc18 92
+Add: __ANOMY_24 95
+Add: __ANOMY_26 100
+Add: __ANOMY_27 107
+Add: inc26 108
+Add: __ANOMY_28 111
+Add: __ANOMY_29 113
+Add: __ANOMY_30 117
+Add: __ANOMY_31 119
+Add: __ANOMY_32 122
+Add: cmp29 123
+Add: __ANOMY_33 125
+Add: __ANOMY_34 127
+Add: __ANOMY_35 131
+Add: __ANOMY_36 132
+Add: __ANOMY_37 134
+Add: __ANOMY_39 140
+Add: __ANOMY_40 142
+Add: __ANOMY_41 146
+Add: sub40 147
+Add: __ANOMY_42 149
+Add: __ANOMY_43 150
+Add: __ANOMY_44 152
+Add: __ANOMY_45 154
+Add: tobool42 155
+Add: __ANOMY_46 161
+Add: cmp46 162
+Add: __ANOMY_49 172
+Add: __ANOMY_52 181
+Add: __ANOMY_54 192
+Add: __ANOMY_55 196
+[Sequence]
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(settings) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(settings) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(call48) Load(call51) Load(settings) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(call48) Load(call51) Load(settings) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(call48) Load(call51) Load(settings) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(call48) Load(call51) Load(settings) Load(stderr) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(call48) Load(call51) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(call48) Load(settings) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(call48) Load(settings) Load(stderr) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(call48) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(stats34) Store(stats34) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(stats34) Store(stats34) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(arrayidx9) Load(arrayidx20) Load(settings) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(arrayidx9) Load(arrayidx20) Load(call48) Load(call51) Load(settings) Load(stderr) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(arrayidx9) Load(arrayidx20) Load(call48) Load(call51) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(arrayidx9) Load(arrayidx20) Load(stats34) Store(stats34) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(arrayidx9) Load(arrayidx20) Load(stats34) Store(stats34) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(arrayidx9) Load(arrayidx20) Load(arrayidx9) Load(arrayidx20) Load(call48) Load(call51) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(arrayidx9) Load(arrayidx20) Load(arrayidx9) Load(arrayidx20) Load(stats34) Store(stats34) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(arrayidx9) Load(arrayidx20) Load(arrayidx9) Load(arrayidx20) Load(stats34) Store(stats34) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(arrayidx9) Load(arrayidx20) Load(arrayidx9) Load(arrayidx20) Load(arrayidx9) Load(arrayidx20) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(arrayidx9) Load(arrayidx20) Load(arrayidx9) Load(arrayidx20) Load(arrayidx9) Store(arrayidx16) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(arrayidx9) Load(arrayidx20) Load(arrayidx9) Store(arrayidx16) 
+[Sequence]Store(arrayidx) Store(arrayidx5) Load(arrayidx9) Store(arrayidx16) 
+[Sequence]

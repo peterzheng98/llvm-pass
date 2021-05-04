@@ -1,0 +1,65 @@
+[28]Function: conn_io_queue_get
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		load
+		getelementptr
+		getelementptr
+		store
+		br
+	Block: while.cond
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: while.body
+		load
+		getelementptr
+		load
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		store
+		br
+	Block: if.end
+		load
+		getelementptr
+		store
+		br
+	Block: while.end
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+q
+retval
+type.addr
+Phase 2:
+Add: __ANOMY_0 6
+Add: __ANOMY_1 11
+Add: __ANOMY_2 13
+Add: cmp 14
+Add: __ANOMY_3 16
+Add: __ANOMY_4 18
+Add: __ANOMY_5 19
+Add: cmp3 20
+Add: __ANOMY_6 22
+Add: __ANOMY_7 25
+Add: __ANOMY_8 31
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]

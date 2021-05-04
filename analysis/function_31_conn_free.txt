@@ -1,0 +1,48 @@
+[31]Function: conn_free
+	Block: entry
+		alloca
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		load
+		getelementptr
+		load
+		sext
+		getelementptr
+		store
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then2
+		load
+		getelementptr
+		load
+		call
+		br
+	Block: if.end
+		load
+		bitcast
+		call
+		br
+	Block: if.end4
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+Phase 2:
+Add: __ANOMY_0 2
+Add: tobool 3
+Add: __ANOMY_2 6
+Add: __ANOMY_3 8
+Add: __ANOMY_4 12
+Add: __ANOMY_5 14
+Add: tobool1 15
+Add: __ANOMY_6 17
+Add: __ANOMY_7 19
+Add: __ANOMY_8 22
+[Sequence]Load(conns) Store(__ANOMY_1) 
+[Sequence]Load(conns) Store(__ANOMY_1) 

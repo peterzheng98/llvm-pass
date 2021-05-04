@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/ir_test",
-            "args": ["example/proxy.ll"],
+            "args": ["example/memcached.ll"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

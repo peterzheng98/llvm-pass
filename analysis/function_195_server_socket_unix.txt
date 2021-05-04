@@ -1,0 +1,169 @@
+[195]Function: server_socket_unix
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		bitcast
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		store
+		br
+	Block: if.end
+		call
+		store
+		icmp
+		br
+	Block: if.then1
+		store
+		br
+	Block: if.end2
+		load
+		call
+		icmp
+		br
+	Block: if.then5
+		getelementptr
+		load
+		and
+		icmp
+		br
+	Block: if.then7
+		load
+		call
+		br
+	Block: if.end9
+		br
+	Block: if.end10
+		load
+		bitcast
+		call
+		load
+		bitcast
+		call
+		load
+		bitcast
+		call
+		bitcast
+		call
+		getelementptr
+		store
+		getelementptr
+		getelementptr
+		load
+		call
+		load
+		and
+		xor
+		call
+		store
+		load
+		bitcast
+		bitcast
+		store
+		getelementptr
+		load
+		call
+		icmp
+		br
+	Block: if.then19
+		call
+		load
+		call
+		load
+		call
+		store
+		br
+	Block: if.end22
+		load
+		call
+		load
+		load
+		call
+		icmp
+		br
+	Block: if.then26
+		call
+		load
+		call
+		store
+		br
+	Block: if.end28
+		load
+		load
+		call
+		store
+		icmp
+		br
+	Block: if.then31
+		load
+		call
+		call
+		unreachable
+	Block: if.end33
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+access_mask.addr
+addr
+agg.tmp
+flags
+ling
+old_umask
+path.addr
+retval
+sfd
+tstat
+Phase 2:
+Add: __ANOMY_1 15
+Add: tobool 16
+Add: __ANOMY_2 26
+Add: __ANOMY_3 31
+Add: and 32
+Add: cmp6 33
+Add: __ANOMY_4 35
+Add: __ANOMY_5 39
+Add: __ANOMY_7 42
+Add: __ANOMY_9 45
+Add: __ANOMY_12 54
+Add: __ANOMY_13 56
+Add: and15 57
+Add: neg 58
+Add: __ANOMY_14 61
+Add: __ANOMY_16 66
+Add: __ANOMY_17 71
+Add: __ANOMY_18 73
+Add: __ANOMY_19 77
+Add: __ANOMY_20 79
+Add: __ANOMY_22 85
+Add: __ANOMY_23 89
+Add: __ANOMY_26 101
+[Sequence]
+[Sequence]Store(__sockaddr__) Load(settings) Load(main_base) Store(listen_conn) Load(stderr) 
+[Sequence]Store(__sockaddr__) Load(settings) Load(main_base) Store(listen_conn) 
+[Sequence]Store(__sockaddr__) Load(settings) 
+[Sequence]Store(__sockaddr__) 
+[Sequence]Store(__sockaddr__) Load(settings) Load(main_base) Store(listen_conn) Load(stderr) 
+[Sequence]Store(__sockaddr__) Load(settings) Load(main_base) Store(listen_conn) 
+[Sequence]Store(__sockaddr__) Load(settings) 
+[Sequence]Store(__sockaddr__) 
+[Sequence]Store(__sockaddr__) Load(settings) Load(main_base) Store(listen_conn) Load(stderr) 
+[Sequence]Store(__sockaddr__) Load(settings) Load(main_base) Store(listen_conn) 
+[Sequence]Store(__sockaddr__) Load(settings) 
+[Sequence]Store(__sockaddr__) 
+[Sequence]

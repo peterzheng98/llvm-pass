@@ -1,0 +1,856 @@
+[66]Function: do_store_item
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		store
+		load
+		getelementptr
+		bitcast
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		store
+		load
+		load
+		getelementptr
+		load
+		zext
+		load
+		load
+		call
+		store
+		store
+		store
+		store
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		br
+	Block: cond.true
+		load
+		getelementptr
+		getelementptr
+		bitcast
+		load
+		br
+	Block: cond.false
+		br
+	Block: cond.end
+		phi
+		store
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		br
+	Block: cond.true13
+		load
+		getelementptr
+		getelementptr
+		bitcast
+		load
+		br
+	Block: cond.false17
+		br
+	Block: cond.end18
+		phi
+		store
+		load
+		icmp
+		br
+	Block: if.then22
+		store
+		br
+	Block: if.else
+		load
+		load
+		icmp
+		br
+	Block: if.then25
+		store
+		br
+	Block: if.else26
+		load
+		getelementptr
+		load
+		trunc
+		br
+	Block: land.lhs.true
+		load
+		load
+		icmp
+		br
+	Block: if.then31
+		store
+		br
+	Block: if.else32
+		store
+		br
+	Block: if.end
+		br
+	Block: if.end33
+		br
+	Block: if.end34
+		load
+		switch
+	Block: sw.bb
+		load
+		call
+		br
+	Block: sw.bb35
+		load
+		icmp
+		br
+	Block: if.then38
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		sext
+		getelementptr
+		getelementptr
+		load
+		add
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		store
+		br
+	Block: if.else48
+		load
+		icmp
+		br
+	Block: if.then51
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		load
+		zext
+		or
+		trunc
+		store
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		br
+	Block: if.then60
+		load
+		getelementptr
+		load
+		zext
+		or
+		trunc
+		store
+		br
+	Block: if.end65
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		sext
+		getelementptr
+		getelementptr
+		load
+		add
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		store
+		br
+	Block: if.else84
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		sext
+		getelementptr
+		getelementptr
+		load
+		add
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		load
+		icmp
+		br
+	Block: if.then104
+		load
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		br
+	Block: cond.true109
+		load
+		getelementptr
+		getelementptr
+		bitcast
+		load
+		br
+	Block: cond.false113
+		br
+	Block: cond.end114
+		phi
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		br
+	Block: cond.true120
+		load
+		getelementptr
+		getelementptr
+		bitcast
+		load
+		br
+	Block: cond.false124
+		br
+	Block: cond.end125
+		phi
+		call
+		br
+	Block: if.end128
+		store
+		br
+	Block: if.end129
+		br
+	Block: if.end130
+		br
+	Block: sw.bb131
+		load
+		icmp
+		br
+	Block: land.lhs.true134
+		load
+		icmp
+		br
+	Block: if.then137
+		store
+		br
+	Block: if.end138
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		br
+	Block: if.then144
+		br
+	Block: if.end145
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		br
+	Block: if.then150
+		load
+		getelementptr
+		bitcast
+		load
+		getelementptr
+		load
+		zext
+		sext
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		bitcast
+		load
+		store
+		br
+	Block: if.else162
+		store
+		br
+	Block: if.end163
+		load
+		load
+		getelementptr
+		load
+		zext
+		load
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		add
+		sub
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then171
+		br
+	Block: if.end172
+		load
+		load
+		load
+		load
+		call
+		icmp
+		br
+	Block: if.then176
+		br
+	Block: if.else177
+		load
+		store
+		store
+		br
+	Block: if.end178
+		br
+	Block: sw.bb179
+		store
+		br
+	Block: sw.epilog
+		load
+		trunc
+		br
+	Block: if.then181
+		br
+	Block: do.body
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		load
+		call
+		br
+	Block: do.end
+		load
+		load
+		load
+		call
+		store
+		br
+	Block: if.end184
+		load
+		call
+		load
+		icmp
+		br
+	Block: if.then187
+		load
+		call
+		br
+	Block: if.end188
+		br
+	Block: if.else189
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		br
+	Block: cond.true194
+		load
+		getelementptr
+		getelementptr
+		bitcast
+		load
+		br
+	Block: cond.false198
+		br
+	Block: cond.end199
+		phi
+		icmp
+		br
+	Block: if.then203
+		store
+		br
+	Block: if.end204
+		load
+		switch
+	Block: sw.bb205
+		store
+		br
+	Block: sw.bb206
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		load
+		add
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		br
+	Block: sw.bb218
+		br
+	Block: sw.epilog219
+		load
+		trunc
+		br
+	Block: if.then221
+		load
+		load
+		call
+		store
+		br
+	Block: if.end223
+		br
+	Block: if.end224
+		load
+		icmp
+		br
+	Block: if.then227
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		br
+	Block: cond.true232
+		load
+		getelementptr
+		getelementptr
+		bitcast
+		load
+		br
+	Block: cond.false236
+		br
+	Block: cond.end237
+		phi
+		load
+		getelementptr
+		store
+		br
+	Block: if.end240
+		br
+	Block: do.body241
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then247
+		load
+		call
+		bitcast
+		store
+		br
+	Block: if.end249
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		br
+	Block: if.then253
+		load
+		load
+		load
+		load
+		getelementptr
+		bitcast
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		zext
+		and
+		load
+		getelementptr
+		load
+		call
+		br
+	Block: if.end268
+		br
+	Block: do.end269
+		load
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+cas_res
+comm.addr
+do_store
+flags
+hv.addr
+it.addr
+it_cas
+key
+myl
+new_it
+old_cas
+old_it
+stored
+Phase 2:
+Add: __ANOMY_0 18
+Add: __ANOMY_2 21
+Add: __ANOMY_3 23
+Add: __ANOMY_5 31
+Add: __ANOMY_6 32
+Add: __ANOMY_7 34
+Add: __ANOMY_8 36
+Add: __ANOMY_9 37
+Add: __ANOMY_10 44
+Add: cmp 45
+Add: __ANOMY_11 47
+Add: __ANOMY_12 49
+Add: __ANOMY_13 54
+Add: __ANOMY_15 63
+Add: __ANOMY_16 65
+Add: __ANOMY_17 70
+Add: __ANOMY_19 79
+Add: cmp20 80
+Add: __ANOMY_20 84
+Add: __ANOMY_21 85
+Add: cmp23 86
+Add: __ANOMY_22 90
+Add: __ANOMY_23 92
+Add: __ANOMY_24 95
+Add: __ANOMY_25 96
+Add: cmp29 97
+Add: __ANOMY_26 105
+Add: __ANOMY_27 107
+Add: __ANOMY_28 110
+Add: cmp36 111
+Add: __ANOMY_29 113
+Add: __ANOMY_30 115
+Add: __ANOMY_31 119
+Add: __ANOMY_32 121
+Add: __ANOMY_33 124
+Add: __ANOMY_34 126
+Add: __ANOMY_36 135
+Add: __ANOMY_37 137
+Add: __ANOMY_38 143
+Add: cmp49 144
+Add: __ANOMY_39 146
+Add: __ANOMY_40 148
+Add: __ANOMY_41 149
+Add: __ANOMY_42 152
+Add: __ANOMY_43 154
+Add: __ANOMY_44 159
+Add: __ANOMY_45 161
+Add: __ANOMY_46 166
+Add: __ANOMY_47 168
+Add: __ANOMY_48 174
+Add: __ANOMY_49 176
+Add: __ANOMY_50 180
+Add: __ANOMY_51 182
+Add: __ANOMY_52 185
+Add: __ANOMY_53 187
+Add: __ANOMY_55 196
+Add: __ANOMY_56 198
+Add: __ANOMY_57 204
+Add: __ANOMY_58 206
+Add: __ANOMY_59 210
+Add: __ANOMY_60 212
+Add: __ANOMY_61 215
+Add: __ANOMY_62 217
+Add: __ANOMY_64 226
+Add: __ANOMY_65 228
+Add: __ANOMY_68 236
+Add: __ANOMY_69 238
+Add: __ANOMY_70 243
+Add: __ANOMY_72 251
+Add: __ANOMY_73 253
+Add: __ANOMY_74 258
+Add: __ANOMY_76 272
+Add: cmp132 273
+Add: __ANOMY_77 275
+Add: cmp135 276
+Add: __ANOMY_78 280
+Add: __ANOMY_79 282
+Add: __ANOMY_80 288
+Add: __ANOMY_81 290
+Add: __ANOMY_82 295
+Add: __ANOMY_84 298
+Add: __ANOMY_85 300
+Add: __ANOMY_86 305
+Add: __ANOMY_87 307
+Add: __ANOMY_91 320
+Add: __ANOMY_92 321
+Add: __ANOMY_93 323
+Add: __ANOMY_94 325
+Add: __ANOMY_95 326
+Add: __ANOMY_96 328
+Add: __ANOMY_97 329
+Add: __ANOMY_98 331
+Add: __ANOMY_99 332
+Add: __ANOMY_100 334
+Add: add 335
+Add: sub 336
+Add: __ANOMY_101 339
+Add: cmp169 340
+Add: __ANOMY_102 343
+Add: __ANOMY_103 344
+Add: __ANOMY_104 345
+Add: __ANOMY_105 346
+Add: __ANOMY_106 351
+Add: __ANOMY_107 358
+Add: __ANOMY_108 362
+Add: __ANOMY_109 364
+Add: __ANOMY_110 366
+Add: __ANOMY_111 367
+Add: __ANOMY_112 370
+Add: __ANOMY_113 371
+Add: __ANOMY_114 372
+Add: __ANOMY_115 376
+Add: __ANOMY_116 378
+Add: cmp185 379
+Add: __ANOMY_117 381
+Add: __ANOMY_118 385
+Add: __ANOMY_119 387
+Add: __ANOMY_120 392
+Add: __ANOMY_122 404
+Add: __ANOMY_123 409
+Add: __ANOMY_124 411
+Add: __ANOMY_125 415
+Add: __ANOMY_126 417
+Add: __ANOMY_128 423
+Add: __ANOMY_129 425
+Add: __ANOMY_130 431
+Add: __ANOMY_131 434
+Add: __ANOMY_132 435
+Add: __ANOMY_133 440
+Add: cmp225 441
+Add: __ANOMY_134 443
+Add: __ANOMY_135 445
+Add: __ANOMY_136 450
+Add: __ANOMY_138 458
+Add: __ANOMY_139 463
+Add: __ANOMY_140 465
+Add: __ANOMY_141 467
+Add: __ANOMY_142 469
+Add: __ANOMY_143 471
+Add: __ANOMY_144 473
+Add: cmp245 474
+Add: __ANOMY_147 481
+Add: __ANOMY_148 483
+Add: __ANOMY_149 488
+Add: __ANOMY_150 489
+Add: __ANOMY_151 490
+Add: __ANOMY_152 491
+Add: __ANOMY_154 494
+Add: __ANOMY_155 496
+Add: __ANOMY_157 503
+Add: __ANOMY_158 505
+Add: __ANOMY_159 507
+Add: __ANOMY_160 509
+Add: __ANOMY_161 510
+Add: __ANOMY_162 512
+Add: __ANOMY_163 515
+Add: __ANOMY_164 517
+Add: __ANOMY_165 521
+[Sequence]
+[Sequence]
+[Sequence]Load(logger_key) 
+[Sequence]Load(logger_key) 
+[Sequence]
+[Sequence]Load(logger_key) 
+[Sequence]Load(cas235) Load(logger_key) 
+[Sequence]
+[Sequence]Load(cas235) 
+[Sequence]
+[Sequence]Load(cas235) 
+[Sequence]
+[Sequence]Load(stats212) Store(stats212) 
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]Load(stats212) Store(stats212) 
+[Sequence]Load(cas197) Load(stats212) Store(stats212) 
+[Sequence]Load(cas197) 
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]Load(arrayidx96) Store(arrayidx96) Load(settings) 
+[Sequence]Load(arrayidx96) Store(arrayidx96) Load(settings) 
+[Sequence]Load(arrayidx96) Store(arrayidx96) Load(settings) Load(stderr) 
+[Sequence]Load(arrayidx96) Store(arrayidx96) Load(settings) Load(stderr) Load(cas123) 
+[Sequence]Load(arrayidx96) Store(arrayidx96) Load(settings) Load(stderr) Load(cas112) 
+[Sequence]Load(arrayidx96) Store(arrayidx96) Load(settings) Load(stderr) Load(cas112) Load(cas123) 
+[Sequence]Load(arrayidx77) Store(arrayidx77) 
+[Sequence]Load(arrayidx77) Store(arrayidx77) 
+[Sequence]Load(arrayidx) Store(arrayidx) 
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]Load(__ANOMY_89) 
+[Sequence]Load(__ANOMY_89) 
+[Sequence]Load(__ANOMY_89) 
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]Load(__ANOMY_89) 
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]Load(__ANOMY_89) 
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]Load(arrayidx96) Store(arrayidx96) Load(settings) Load(stderr) 
+[Sequence]Load(arrayidx96) Store(arrayidx96) Load(settings) Load(stderr) Load(cas123) 
+[Sequence]Load(arrayidx96) Store(arrayidx96) Load(settings) Load(stderr) Load(cas112) 
+[Sequence]Load(arrayidx77) Store(arrayidx77) 
+[Sequence]
+[Sequence]Load(arrayidx) Store(arrayidx) 
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]Load(arrayidx96) Store(arrayidx96) Load(settings) Load(stderr) 
+[Sequence]Load(arrayidx96) Store(arrayidx96) Load(settings) Load(stderr) Load(cas112) 
+[Sequence]
+[Sequence]Load(arrayidx) Store(arrayidx) 
+[Sequence]
+[Sequence]
+[Sequence]Load(cas16) 
+[Sequence]Load(cas16) 
+[Sequence]Load(cas16) 
+[Sequence]Load(cas16) 
+[Sequence]Load(cas) 
+[Sequence]Load(cas) 
+[Sequence]Load(cas) 
+[Sequence]Load(cas) Load(cas16) 

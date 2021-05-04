@@ -1,0 +1,145 @@
+[63]Function: grow_stats_buf
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		load
+		getelementptr
+		getelementptr
+		load
+		store
+		load
+		load
+		getelementptr
+		getelementptr
+		load
+		sub
+		store
+		store
+		load
+		getelementptr
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then
+		store
+		load
+		getelementptr
+		getelementptr
+		store
+		load
+		getelementptr
+		getelementptr
+		store
+		store
+		br
+	Block: if.end
+		br
+	Block: while.cond
+		load
+		load
+		icmp
+		br
+	Block: while.body
+		load
+		shl
+		store
+		load
+		load
+		getelementptr
+		getelementptr
+		load
+		sub
+		store
+		br
+	Block: while.end
+		load
+		load
+		getelementptr
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then14
+		load
+		getelementptr
+		getelementptr
+		load
+		load
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then17
+		load
+		load
+		getelementptr
+		getelementptr
+		store
+		load
+		load
+		getelementptr
+		getelementptr
+		store
+		br
+	Block: if.else
+		call
+		load
+		add
+		store
+		call
+		store
+		br
+	Block: if.end22
+		br
+	Block: if.end23
+		load
+		trunc
+		ret
+Phase 1: Allocated Variables: 
+available
+c.addr
+needed.addr
+nsize
+ptr
+rv
+Phase 2:
+Add: __ANOMY_0 8
+Add: __ANOMY_2 13
+Add: __ANOMY_3 14
+Add: __ANOMY_5 21
+Add: __ANOMY_7 28
+Add: __ANOMY_8 32
+Add: __ANOMY_9 39
+Add: __ANOMY_10 40
+Add: cmp7 41
+Add: __ANOMY_11 43
+Add: shl 44
+Add: __ANOMY_12 46
+Add: __ANOMY_13 47
+Add: __ANOMY_15 54
+Add: __ANOMY_16 55
+Add: __ANOMY_18 61
+Add: __ANOMY_20 65
+Add: __ANOMY_21 68
+Add: tobool 69
+Add: __ANOMY_22 71
+Add: __ANOMY_23 72
+Add: __ANOMY_24 76
+Add: __ANOMY_25 77
+Add: __ANOMY_27 90
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats11) Load(stats15) Load(stats) Store(stats) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats11) Load(stats15) Store(stats18) Store(stats20) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats8) Load(stats11) Load(stats15) Load(stats) Store(stats) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats8) Load(stats11) Load(stats15) Store(stats18) Store(stats20) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats8) Load(stats8) Load(stats11) Load(stats15) Load(stats) Store(stats) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats8) Load(stats8) Load(stats11) Load(stats15) Store(stats18) Store(stats20) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Load(stats8) Load(stats8) Load(stats8) 
+[Sequence]Load(stats) Load(stats1) Load(stats2) Store(stats3) Store(stats5) 

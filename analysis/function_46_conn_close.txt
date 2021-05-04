@@ -1,0 +1,67 @@
+[46]Function: conn_close
+	Block: entry
+		alloca
+		store
+		load
+		getelementptr
+		call
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		load
+		getelementptr
+		load
+		call
+		br
+	Block: if.end
+		load
+		call
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then2
+		load
+		getelementptr
+		store
+		load
+		call
+		br
+	Block: if.end3
+		load
+		call
+		load
+		getelementptr
+		load
+		call
+		call
+		store
+		call
+		call
+		load
+		add
+		store
+		call
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+Phase 2:
+Add: __ANOMY_0 2
+Add: __ANOMY_3 9
+Add: __ANOMY_4 11
+Add: __ANOMY_5 14
+Add: __ANOMY_6 16
+Add: __ANOMY_7 18
+Add: tobool 19
+Add: __ANOMY_8 21
+Add: __ANOMY_9 24
+Add: __ANOMY_10 27
+Add: __ANOMY_11 29
+Add: __ANOMY_12 31
+[Sequence]Load(settings) Store(allow_new_conns) Load(stats_state) Store(stats_state) 
+[Sequence]Load(settings) Store(allow_new_conns) Load(stats_state) Store(stats_state) 
+[Sequence]Load(settings) Load(stderr) Store(allow_new_conns) Load(stats_state) Store(stats_state) 
+[Sequence]Load(settings) Load(stderr) 

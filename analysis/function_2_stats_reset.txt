@@ -1,0 +1,11 @@
+[2]Function: stats_reset
+	Block: entry
+		call
+		call
+		call
+		call
+		call
+		call
+		ret
+Phase 1: Allocated Variables: 
+Phase 2:

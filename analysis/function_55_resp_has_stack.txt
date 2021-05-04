@@ -1,0 +1,21 @@
+[55]Function: resp_has_stack
+	Block: entry
+		alloca
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		icmp
+		zext
+		select
+		icmp
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+Phase 2:
+Add: __ANOMY_0 2
+Add: __ANOMY_1 4
+Add: __ANOMY_2 6
+Add: cmp 7

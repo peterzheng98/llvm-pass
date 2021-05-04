@@ -1,0 +1,530 @@
+[89]Function: process_stat_settings
+	Block: entry
+		alloca
+		alloca
+		store
+		store
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		icmp
+		br
+	Block: cond.true
+		load
+		br
+	Block: cond.false
+		br
+	Block: cond.end
+		phi
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		zext
+		call
+		load
+		load
+		bitcast
+		load
+		icmp
+		zext
+		select
+		call
+		load
+		load
+		bitcast
+		load
+		icmp
+		br
+	Block: cond.true4
+		load
+		br
+	Block: cond.false5
+		br
+	Block: cond.end6
+		phi
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		sext
+		call
+		load
+		load
+		bitcast
+		load
+		icmp
+		zext
+		select
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		trunc
+		zext
+		select
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		call
+		load
+		load
+		bitcast
+		load
+		trunc
+		zext
+		select
+		call
+		load
+		load
+		bitcast
+		load
+		icmp
+		br
+	Block: cond.true18
+		load
+		br
+	Block: cond.false19
+		br
+	Block: cond.end20
+		phi
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		trunc
+		zext
+		select
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		trunc
+		zext
+		select
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		trunc
+		zext
+		select
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		zext
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		trunc
+		zext
+		select
+		call
+		load
+		load
+		bitcast
+		load
+		trunc
+		zext
+		select
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		trunc
+		zext
+		select
+		call
+		load
+		load
+		bitcast
+		load
+		trunc
+		zext
+		select
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		trunc
+		zext
+		select
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		call
+		zext
+		select
+		call
+		load
+		load
+		bitcast
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		trunc
+		zext
+		select
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		ret
+Phase 1: Allocated Variables: 
+add_stats.addr
+c.addr
+Phase 2:
+Add: __ANOMY_0 4
+Add: __ANOMY_1 5
+Add: __ANOMY_4 9
+Add: __ANOMY_5 10
+Add: __ANOMY_8 14
+Add: __ANOMY_9 15
+Add: __ANOMY_12 19
+Add: __ANOMY_13 20
+Add: __ANOMY_16 24
+Add: __ANOMY_17 25
+Add: __ANOMY_21 35
+Add: __ANOMY_22 36
+Add: __ANOMY_25 40
+Add: __ANOMY_26 41
+Add: __ANOMY_29 46
+Add: __ANOMY_30 47
+Add: __ANOMY_34 54
+Add: __ANOMY_35 55
+Add: __ANOMY_39 65
+Add: __ANOMY_40 66
+Add: __ANOMY_43 70
+Add: __ANOMY_44 71
+Add: __ANOMY_47 75
+Add: __ANOMY_48 76
+Add: __ANOMY_51 80
+Add: __ANOMY_52 81
+Add: __ANOMY_55 85
+Add: __ANOMY_56 86
+Add: __ANOMY_59 90
+Add: __ANOMY_60 91
+Add: __ANOMY_63 96
+Add: __ANOMY_64 97
+Add: __ANOMY_68 104
+Add: __ANOMY_69 105
+Add: __ANOMY_72 109
+Add: __ANOMY_73 110
+Add: __ANOMY_77 117
+Add: __ANOMY_78 118
+Add: __ANOMY_81 122
+Add: __ANOMY_82 123
+Add: __ANOMY_85 128
+Add: __ANOMY_86 129
+Add: __ANOMY_90 136
+Add: __ANOMY_91 137
+Add: __ANOMY_95 147
+Add: __ANOMY_96 148
+Add: __ANOMY_99 152
+Add: __ANOMY_100 153
+Add: __ANOMY_104 160
+Add: __ANOMY_105 161
+Add: __ANOMY_108 165
+Add: __ANOMY_109 166
+Add: __ANOMY_113 173
+Add: __ANOMY_114 174
+Add: __ANOMY_117 178
+Add: __ANOMY_118 179
+Add: __ANOMY_121 183
+Add: __ANOMY_122 184
+Add: __ANOMY_125 188
+Add: __ANOMY_126 189
+Add: __ANOMY_129 193
+Add: __ANOMY_130 194
+Add: __ANOMY_134 201
+Add: __ANOMY_135 202
+Add: __ANOMY_138 206
+Add: __ANOMY_139 207
+Add: __ANOMY_142 212
+Add: __ANOMY_143 213
+Add: __ANOMY_146 217
+Add: __ANOMY_147 218
+Add: __ANOMY_151 225
+Add: __ANOMY_152 226
+Add: __ANOMY_156 233
+Add: __ANOMY_157 234
+Add: __ANOMY_160 238
+Add: __ANOMY_161 239
+Add: __ANOMY_165 246
+Add: __ANOMY_166 247
+Add: __ANOMY_170 254
+Add: __ANOMY_171 255
+Add: __ANOMY_174 259
+Add: __ANOMY_175 260
+Add: __ANOMY_178 264
+Add: __ANOMY_179 265
+Add: __ANOMY_182 269
+Add: __ANOMY_183 270
+Add: __ANOMY_186 274
+Add: __ANOMY_187 275
+Add: __ANOMY_191 282
+Add: __ANOMY_192 283
+Add: __ANOMY_195 287
+Add: __ANOMY_196 288
+Add: __ANOMY_199 292
+Add: __ANOMY_200 293
+Add: __ANOMY_203 297
+Add: __ANOMY_204 298
+Add: __ANOMY_207 302
+Add: __ANOMY_208 303
+Add: __ANOMY_211 307
+Add: __ANOMY_212 308
+Add: __ANOMY_215 314
+Add: __ANOMY_216 315
+Add: __ANOMY_218 318
+Add: __ANOMY_219 319
+Add: __ANOMY_222 323
+Add: __ANOMY_223 324
+Add: __ANOMY_226 328
+Add: __ANOMY_227 329
+Add: __ANOMY_230 333
+Add: __ANOMY_231 334
+Add: __ANOMY_234 338
+Add: __ANOMY_235 339
+Add: __ANOMY_238 343
+Add: __ANOMY_239 344
+Add: __ANOMY_242 348
+Add: __ANOMY_243 349
+Add: __ANOMY_246 353
+Add: __ANOMY_247 354
+Add: __ANOMY_250 358
+Add: __ANOMY_251 359
+Add: __ANOMY_254 363
+Add: __ANOMY_255 364
+Add: __ANOMY_259 371
+Add: __ANOMY_260 372
+Add: __ANOMY_263 376
+Add: __ANOMY_264 377
+[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) 

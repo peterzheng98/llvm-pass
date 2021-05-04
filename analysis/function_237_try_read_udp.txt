@@ -1,0 +1,178 @@
+[237]Function: try_read_udp
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		sext
+		bitcast
+		load
+		getelementptr
+		bitcast
+		store
+		load
+		getelementptr
+		getelementptr
+		load
+		call
+		trunc
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		getelementptr
+		load
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		load
+		sext
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		load
+		add
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		load
+		getelementptr
+		load
+		zext
+		mul
+		load
+		getelementptr
+		load
+		zext
+		add
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		load
+		zext
+		icmp
+		br
+	Block: lor.lhs.false
+		load
+		getelementptr
+		load
+		zext
+		icmp
+		br
+	Block: if.then25
+		store
+		br
+	Block: if.end
+		load
+		sub
+		store
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		sext
+		call
+		load
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		store
+		store
+		br
+	Block: if.end30
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+agg.tmp
+buf
+c.addr
+res
+retval
+Phase 2:
+Add: __ANOMY_0 6
+Add: __ANOMY_1 9
+Add: __ANOMY_2 11
+Add: __ANOMY_3 12
+Add: __ANOMY_4 14
+Add: __ANOMY_5 15
+Add: __ANOMY_6 17
+Add: __ANOMY_7 20
+Add: __ANOMY_9 24
+Add: __ANOMY_10 27
+Add: __ANOMY_11 31
+Add: cmp 32
+Add: __ANOMY_12 34
+Add: __ANOMY_13 36
+Add: __ANOMY_14 38
+Add: __ANOMY_15 40
+Add: __ANOMY_16 44
+Add: __ANOMY_17 46
+Add: __ANOMY_18 48
+Add: __ANOMY_20 54
+Add: __ANOMY_21 56
+Add: __ANOMY_22 60
+Add: __ANOMY_23 62
+Add: __ANOMY_24 65
+Add: __ANOMY_25 67
+Add: __ANOMY_26 70
+Add: __ANOMY_27 73
+Add: __ANOMY_28 75
+Add: __ANOMY_29 79
+Add: __ANOMY_30 81
+Add: __ANOMY_31 87
+Add: sub 88
+Add: __ANOMY_32 90
+Add: __ANOMY_33 92
+Add: __ANOMY_34 93
+Add: __ANOMY_35 95
+Add: __ANOMY_36 97
+Add: __ANOMY_37 100
+Add: __ANOMY_38 101
+Add: __ANOMY_39 104
+Add: __ANOMY_40 106
+Add: __ANOMY_41 107
+Add: __ANOMY_42 114
+[Sequence]Store(__sockaddr__) 
+[Sequence]Store(__sockaddr__) Load(stats8) Store(stats8) 
+[Sequence]Store(__sockaddr__) Load(stats8) Store(stats8) 
+[Sequence]Store(__sockaddr__) Load(stats8) Store(stats8) 

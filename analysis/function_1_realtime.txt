@@ -1,0 +1,57 @@
+[1]Function: realtime
+	Block: entry
+		alloca
+		alloca
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		store
+		br
+	Block: if.end
+		load
+		icmp
+		br
+	Block: if.then2
+		load
+		load
+		icmp
+		br
+	Block: if.then4
+		store
+		br
+	Block: if.end5
+		load
+		load
+		sub
+		trunc
+		store
+		br
+	Block: if.else
+		load
+		load
+		zext
+		add
+		trunc
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+exptime.addr
+retval
+Phase 2:
+Add: __ANOMY_0 3
+Add: cmp 4
+Add: __ANOMY_1 8
+Add: cmp1 9
+Add: __ANOMY_2 11
+Add: __ANOMY_4 17
+Add: __ANOMY_6 23
+Add: __ANOMY_8 30
+[Sequence]Load(current_time) 
+[Sequence]Load(process_started) Load(process_started) 
+[Sequence]Load(process_started) 
+[Sequence]

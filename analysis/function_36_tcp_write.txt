@@ -1,0 +1,24 @@
+[36]Function: tcp_write
+	Block: entry
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		load
+		getelementptr
+		load
+		load
+		load
+		call
+		ret
+Phase 1: Allocated Variables: 
+buf.addr
+c.addr
+count.addr
+Phase 2:
+Add: __ANOMY_0 6
+Add: __ANOMY_1 8
+Add: __ANOMY_2 9
+Add: __ANOMY_3 10

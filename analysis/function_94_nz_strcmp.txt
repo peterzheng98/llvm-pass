@@ -1,0 +1,44 @@
+[94]Function: nz_strcmp
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		load
+		call
+		trunc
+		store
+		load
+		load
+		icmp
+		br
+	Block: land.rhs
+		load
+		load
+		load
+		sext
+		call
+		icmp
+		br
+	Block: land.end
+		phi
+		zext
+		select
+		ret
+Phase 1: Allocated Variables: 
+nz.addr
+nzlength.addr
+z.addr
+zlength
+Phase 2:
+Add: __ANOMY_0 7
+Add: __ANOMY_1 11
+Add: __ANOMY_2 12
+Add: cmp 13
+Add: __ANOMY_3 15
+Add: __ANOMY_4 16
+Add: __ANOMY_5 17
+[Sequence]

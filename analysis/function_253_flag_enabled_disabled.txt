@@ -1,0 +1,14 @@
+[253]Function: flag_enabled_disabled
+	Block: entry
+		alloca
+		zext
+		store
+		load
+		trunc
+		zext
+		select
+		ret
+Phase 1: Allocated Variables: 
+flag.addr
+Phase 2:
+Add: __ANOMY_0 3

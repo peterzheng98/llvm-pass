@@ -1,0 +1,193 @@
+[52]Function: resp_start
+	Block: entry
+		alloca
+		alloca
+		alloca
+		store
+		load
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		load
+		add
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		store
+		br
+	Block: if.end
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		load
+		add
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		load
+		bitcast
+		getelementptr
+		call
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then20
+		load
+		load
+		getelementptr
+		store
+		br
+	Block: if.end22
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then25
+		load
+		load
+		getelementptr
+		store
+		br
+	Block: if.else
+		load
+		load
+		getelementptr
+		load
+		getelementptr
+		store
+		load
+		load
+		getelementptr
+		store
+		br
+	Block: if.end29
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then30
+		load
+		getelementptr
+		load
+		trunc
+		load
+		getelementptr
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		getelementptr
+		bitcast
+		bitcast
+		call
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		getelementptr
+		store
+		br
+	Block: if.end37
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+resp
+retval
+Phase 2:
+Add: __ANOMY_0 4
+Add: __ANOMY_1 7
+Add: tobool 8
+Add: __ANOMY_2 10
+Add: __ANOMY_3 12
+Add: __ANOMY_4 16
+Add: __ANOMY_5 18
+Add: __ANOMY_7 24
+Add: __ANOMY_8 26
+Add: __ANOMY_9 32
+Add: __ANOMY_10 34
+Add: __ANOMY_11 38
+Add: __ANOMY_12 40
+Add: __ANOMY_14 46
+Add: __ANOMY_15 48
+Add: __ANOMY_16 52
+Add: __ANOMY_18 56
+Add: __ANOMY_19 58
+Add: tobool19 59
+Add: __ANOMY_20 61
+Add: __ANOMY_21 62
+Add: __ANOMY_22 66
+Add: __ANOMY_23 68
+Add: tobool24 69
+Add: __ANOMY_24 71
+Add: __ANOMY_25 72
+Add: __ANOMY_26 76
+Add: __ANOMY_27 77
+Add: __ANOMY_28 79
+Add: __ANOMY_29 82
+Add: __ANOMY_30 83
+Add: __ANOMY_31 87
+Add: __ANOMY_32 89
+Add: cmp 90
+Add: __ANOMY_33 92
+Add: __ANOMY_34 94
+Add: __ANOMY_35 96
+Add: __ANOMY_36 98
+Add: __ANOMY_37 101
+Add: __ANOMY_38 103
+Add: __ANOMY_39 105
+Add: __ANOMY_42 110
+Add: __ANOMY_43 112
+Add: __ANOMY_44 113
+Add: __ANOMY_45 115
+Add: __ANOMY_46 121
+[Sequence]Load(stats3) Store(stats3) 
+[Sequence]Load(stats13) Store(stats13) 
+[Sequence]Load(stats13) Store(stats13) 
+[Sequence]Load(stats13) Store(stats13) 
+[Sequence]Load(stats13) Store(stats13) 
+[Sequence]Load(stats13) Store(stats13) 
+[Sequence]Load(stats13) Store(stats13) 

@@ -1,0 +1,92 @@
+[118]Function: update_event
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		load
+		getelementptr
+		getelementptr
+		load
+		store
+		load
+		getelementptr
+		load
+		sext
+		load
+		icmp
+		br
+	Block: if.then
+		store
+		br
+	Block: if.end
+		load
+		getelementptr
+		call
+		icmp
+		br
+	Block: if.then5
+		store
+		br
+	Block: if.end6
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		load
+		trunc
+		load
+		bitcast
+		call
+		load
+		load
+		getelementptr
+		call
+		load
+		trunc
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		call
+		icmp
+		br
+	Block: if.then17
+		store
+		br
+	Block: if.end18
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+base
+c.addr
+new_flags.addr
+retval
+Phase 2:
+Add: __ANOMY_0 6
+Add: __ANOMY_2 11
+Add: __ANOMY_3 13
+Add: __ANOMY_4 15
+Add: __ANOMY_5 20
+Add: __ANOMY_6 27
+Add: __ANOMY_7 29
+Add: __ANOMY_8 31
+Add: __ANOMY_9 32
+Add: __ANOMY_10 34
+Add: __ANOMY_12 37
+Add: __ANOMY_13 38
+Add: __ANOMY_14 41
+Add: __ANOMY_15 43
+Add: __ANOMY_16 46
+Add: __ANOMY_17 55
+[Sequence]Load(event) 
+[Sequence]Load(event) 
+[Sequence]Load(event) 
+[Sequence]Load(event) 

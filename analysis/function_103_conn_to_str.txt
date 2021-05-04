@@ -1,0 +1,188 @@
+[103]Function: conn_to_str
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		call
+		br
+	Block: if.else
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then1
+		load
+		call
+		br
+	Block: if.else3
+		load
+		getelementptr
+		bitcast
+		bitcast
+		store
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: lor.lhs.false
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: land.lhs.true
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then9
+		store
+		load
+		getelementptr
+		load
+		bitcast
+		bitcast
+		store
+		getelementptr
+		load
+		call
+		icmp
+		br
+	Block: if.then12
+		bitcast
+		store
+		br
+	Block: if.end
+		br
+	Block: if.end13
+		load
+		load
+		getelementptr
+		load
+		zext
+		load
+		load
+		call
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: land.lhs.true17
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: land.lhs.true21
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then25
+		store
+		load
+		getelementptr
+		load
+		bitcast
+		bitcast
+		store
+		getelementptr
+		load
+		call
+		load
+		getelementptr
+		load
+		zext
+		load
+		bitcast
+		call
+		br
+	Block: if.end32
+		br
+	Block: if.end33
+		br
+	Block: if.end34
+		ret
+Phase 1: Allocated Variables: 
+addr.addr
+agg.tmp
+agg.tmp27
+c.addr
+local_addr
+local_addr_len
+sock_addr
+svr_addr.addr
+svr_addr_len
+svr_sock_addr
+Phase 2:
+Add: __ANOMY_0 13
+Add: tobool 14
+Add: __ANOMY_1 16
+Add: __ANOMY_2 19
+Add: __ANOMY_3 21
+Add: cmp 22
+Add: __ANOMY_4 24
+Add: __ANOMY_5 27
+Add: __ANOMY_8 32
+Add: __ANOMY_9 34
+Add: cmp5 35
+Add: __ANOMY_10 37
+Add: __ANOMY_11 39
+Add: cmp6 40
+Add: __ANOMY_12 42
+Add: __ANOMY_13 44
+Add: cmp8 45
+Add: __ANOMY_14 48
+Add: __ANOMY_15 50
+Add: __ANOMY_17 55
+Add: __ANOMY_19 63
+Add: __ANOMY_20 64
+Add: __ANOMY_21 66
+Add: __ANOMY_22 68
+Add: __ANOMY_23 69
+Add: __ANOMY_24 71
+Add: __ANOMY_25 73
+Add: cmp15 74
+Add: __ANOMY_26 76
+Add: __ANOMY_27 78
+Add: cmp19 79
+Add: __ANOMY_28 81
+Add: __ANOMY_29 83
+Add: cmp23 84
+Add: __ANOMY_30 87
+Add: __ANOMY_31 89
+Add: __ANOMY_33 94
+Add: __ANOMY_34 96
+Add: __ANOMY_35 98
+Add: __ANOMY_36 100
+[Sequence]
+[Sequence]
+[Sequence]Store(__sockaddr__28) 
+[Sequence]Store(__sockaddr__28) 
+[Sequence]Store(__sockaddr__28) 
+[Sequence]
+[Sequence]Store(__sockaddr__) 
+[Sequence]Store(__sockaddr__) 
+[Sequence]Store(__sockaddr__) 
+[Sequence]Store(__sockaddr__) 
+[Sequence]

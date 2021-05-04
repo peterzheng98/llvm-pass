@@ -1,0 +1,246 @@
+[250]Function: _transmit_post
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		load
+		getelementptr
+		load
+		store
+		br
+	Block: while.cond
+		load
+		icmp
+		br
+	Block: while.body
+		load
+		getelementptr
+		load
+		trunc
+		br
+	Block: if.then
+		load
+		load
+		call
+		store
+		br
+	Block: if.end
+		load
+		load
+		getelementptr
+		load
+		sext
+		icmp
+		br
+	Block: if.then3
+		load
+		getelementptr
+		load
+		sext
+		load
+		sub
+		store
+		load
+		load
+		call
+		store
+		br
+	Block: if.end7
+		store
+		br
+	Block: for.cond
+		load
+		load
+		getelementptr
+		load
+		zext
+		icmp
+		br
+	Block: for.body
+		load
+		getelementptr
+		load
+		sext
+		getelementptr
+		store
+		load
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then14
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		sext
+		sub
+		trunc
+		store
+		load
+		getelementptr
+		load
+		load
+		sub
+		store
+		load
+		getelementptr
+		store
+		br
+	Block: if.else
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: lor.lhs.false
+		load
+		load
+		getelementptr
+		load
+		zext
+		icmp
+		br
+	Block: if.then28
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		getelementptr
+		store
+		br
+	Block: if.end30
+		load
+		load
+		getelementptr
+		load
+		sub
+		store
+		load
+		load
+		getelementptr
+		load
+		sext
+		sub
+		trunc
+		store
+		store
+		br
+	Block: if.end37
+		br
+	Block: for.inc
+		load
+		add
+		store
+		br
+	Block: for.end
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then41
+		load
+		load
+		call
+		store
+		br
+	Block: if.else43
+		br
+	Block: if.end44
+		br
+	Block: while.end
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+iov
+res.addr
+resp
+x
+Phase 2:
+Add: __ANOMY_0 7
+Add: __ANOMY_1 9
+Add: __ANOMY_2 12
+Add: tobool 13
+Add: __ANOMY_3 15
+Add: __ANOMY_4 17
+Add: __ANOMY_5 20
+Add: __ANOMY_6 21
+Add: __ANOMY_7 25
+Add: __ANOMY_8 26
+Add: __ANOMY_9 28
+Add: __ANOMY_10 32
+Add: __ANOMY_11 34
+Add: __ANOMY_12 36
+Add: __ANOMY_13 39
+Add: __ANOMY_14 40
+Add: __ANOMY_15 46
+Add: __ANOMY_16 47
+Add: __ANOMY_17 49
+Add: __ANOMY_18 53
+Add: __ANOMY_19 55
+Add: __ANOMY_20 59
+Add: __ANOMY_21 60
+Add: __ANOMY_22 62
+Add: cmp12 63
+Add: __ANOMY_23 65
+Add: __ANOMY_24 67
+Add: __ANOMY_25 68
+Add: __ANOMY_26 70
+Add: __ANOMY_27 75
+Add: __ANOMY_28 77
+Add: __ANOMY_29 78
+Add: sub21 79
+Add: __ANOMY_30 81
+Add: __ANOMY_31 85
+Add: __ANOMY_32 87
+Add: tobool23 88
+Add: __ANOMY_33 90
+Add: __ANOMY_34 91
+Add: __ANOMY_35 93
+Add: __ANOMY_36 97
+Add: __ANOMY_37 99
+Add: __ANOMY_38 100
+Add: __ANOMY_39 102
+Add: __ANOMY_40 106
+Add: __ANOMY_41 107
+Add: __ANOMY_42 109
+Add: sub32 110
+Add: __ANOMY_43 112
+Add: __ANOMY_44 113
+Add: __ANOMY_45 115
+Add: __ANOMY_46 123
+Add: inc 124
+Add: __ANOMY_47 127
+Add: __ANOMY_48 129
+Add: cmp39 130
+Add: __ANOMY_49 132
+Add: __ANOMY_50 133
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]

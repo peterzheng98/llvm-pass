@@ -1,0 +1,93 @@
+[235]Function: rbuf_alloc
+	Block: entry
+		alloca
+		alloca
+		store
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		call
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then3
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		load
+		add
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		store
+		br
+	Block: if.end
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		store
+		br
+	Block: if.end13
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+retval
+Phase 2:
+Add: __ANOMY_0 3
+Add: __ANOMY_1 5
+Add: cmp 6
+Add: __ANOMY_2 8
+Add: __ANOMY_3 10
+Add: __ANOMY_4 12
+Add: __ANOMY_5 14
+Add: __ANOMY_6 17
+Add: __ANOMY_7 19
+Add: tobool 20
+Add: __ANOMY_8 22
+Add: __ANOMY_9 24
+Add: __ANOMY_10 28
+Add: __ANOMY_11 30
+Add: __ANOMY_13 36
+Add: __ANOMY_14 38
+Add: __ANOMY_15 44
+Add: __ANOMY_16 47
+Add: __ANOMY_17 49
+Add: __ANOMY_18 50
+Add: __ANOMY_19 56
+[Sequence]
+[Sequence]Load(stats7) Store(stats7) 
+[Sequence]

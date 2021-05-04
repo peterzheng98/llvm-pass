@@ -1,0 +1,50 @@
+[78]Function: append_stat
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		store
+		getelementptr
+		bitcast
+		call
+		getelementptr
+		load
+		getelementptr
+		call
+		store
+		getelementptr
+		bitcast
+		call
+		load
+		load
+		load
+		call
+		trunc
+		getelementptr
+		load
+		load
+		bitcast
+		call
+		ret
+Phase 1: Allocated Variables: 
+add_stats.addr
+ap
+c.addr
+fmt.addr
+name.addr
+val_str
+vlen
+Phase 2:
+Add: __ANOMY_0 15
+Add: __ANOMY_1 22
+Add: __ANOMY_2 23
+Add: __ANOMY_3 24
+Add: __ANOMY_4 28
+Add: __ANOMY_5 29

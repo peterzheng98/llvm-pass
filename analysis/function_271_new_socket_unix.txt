@@ -1,0 +1,55 @@
+[271]Function: new_socket_unix
+	Block: entry
+		alloca
+		alloca
+		alloca
+		call
+		store
+		icmp
+		br
+	Block: if.then
+		call
+		store
+		br
+	Block: if.end
+		load
+		call
+		store
+		icmp
+		br
+	Block: lor.lhs.false
+		load
+		load
+		or
+		call
+		icmp
+		br
+	Block: if.then5
+		call
+		load
+		call
+		store
+		br
+	Block: if.end7
+		load
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+flags
+retval
+sfd
+Phase 2:
+Add: __ANOMY_0 10
+Add: __ANOMY_1 15
+Add: __ANOMY_2 16
+Add: or 17
+Add: __ANOMY_3 22
+Add: __ANOMY_4 26
+Add: __ANOMY_5 29
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]

@@ -1,0 +1,108 @@
+[177]Function: _mc_meta_save_cb
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		load
+		bitcast
+		store
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		call
+		load
+		load
+		call
+		load
+		load
+		call
+		load
+		load
+		call
+		load
+		load
+		call
+		load
+		load
+		trunc
+		zext
+		select
+		call
+		load
+		load
+		trunc
+		zext
+		select
+		call
+		load
+		load
+		call
+		load
+		load
+		call
+		call
+		load
+		getelementptr
+		load
+		call
+		load
+		call
+		call
+		load
+		load
+		call
+		load
+		call
+		call
+		load
+		load
+		call
+		load
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		ret
+Phase 1: Allocated Variables: 
+ctx.addr
+data.addr
+meta
+tag.addr
+tv
+Phase 2:
+Add: __ANOMY_0 8
+Add: __ANOMY_2 11
+Add: __ANOMY_3 12
+Add: __ANOMY_4 14
+Add: __ANOMY_5 16
+Add: __ANOMY_7 19
+Add: __ANOMY_9 22
+Add: __ANOMY_11 25
+Add: __ANOMY_13 28
+Add: __ANOMY_15 31
+Add: __ANOMY_18 37
+Add: __ANOMY_21 43
+Add: __ANOMY_23 46
+Add: __ANOMY_25 50
+Add: __ANOMY_26 52
+Add: __ANOMY_27 54
+Add: __ANOMY_28 57
+Add: __ANOMY_30 60
+Add: __ANOMY_31 63
+Add: __ANOMY_33 66
+Add: __ANOMY_35 69
+Add: __ANOMY_36 70
+Add: __ANOMY_37 72
+[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(current_time) Load(process_started) Load(settings) Load(stats_state) Load(settings) 

@@ -1,0 +1,38 @@
+[266]Function: start_conn_timeout_thread
+	Block: entry
+		alloca
+		alloca
+		load
+		icmp
+		br
+	Block: if.then
+		store
+		br
+	Block: if.end
+		store
+		call
+		store
+		icmp
+		br
+	Block: if.then2
+		load
+		load
+		call
+		call
+		store
+		br
+	Block: if.end5
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+ret
+retval
+Phase 2:
+Add: __ANOMY_2 13
+Add: __ANOMY_3 20
+[Sequence]Load(settings) Store(do_run_conn_timeout_thread) 
+[Sequence]Load(settings) Store(do_run_conn_timeout_thread) Load(stderr) 
+[Sequence]Load(settings) 

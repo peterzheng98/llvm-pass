@@ -1,0 +1,42 @@
+[213]Function: conn_cleanup
+	Block: entry
+		alloca
+		store
+		load
+		call
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		getelementptr
+		store
+		br
+	Block: if.end
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then2
+		load
+		call
+		br
+	Block: if.end3
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+Phase 2:
+Add: __ANOMY_0 2
+Add: __ANOMY_1 4
+Add: __ANOMY_2 6
+Add: tobool 7
+Add: __ANOMY_3 9
+Add: __ANOMY_4 13
+Add: __ANOMY_5 15
+Add: cmp 16
+Add: __ANOMY_6 18
+[Sequence]
+[Sequence]

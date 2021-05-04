@@ -1,0 +1,669 @@
+[82]Function: server_stats
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		call
+		store
+		load
+		store
+		call
+		call
+		call
+		call
+		load
+		load
+		load
+		sext
+		call
+		load
+		load
+		load
+		sub
+		call
+		load
+		load
+		load
+		zext
+		load
+		add
+		call
+		load
+		load
+		call
+		load
+		load
+		call
+		call
+		load
+		load
+		call
+		load
+		load
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		load
+		call
+		load
+		load
+		load
+		call
+		load
+		load
+		load
+		sub
+		call
+		load
+		load
+		load
+		call
+		load
+		trunc
+		br
+	Block: if.then
+		load
+		load
+		load
+		call
+		br
+	Block: if.end
+		load
+		load
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then10
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		br
+	Block: if.end11
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		icmp
+		br
+	Block: if.then13
+		load
+		load
+		getelementptr
+		load
+		call
+		br
+	Block: if.end14
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		load
+		call
+		load
+		load
+		load
+		trunc
+		zext
+		call
+		load
+		load
+		load
+		call
+		load
+		load
+		load
+		call
+		load
+		load
+		load
+		call
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		load
+		load
+		call
+		load
+		load
+		load
+		call
+		load
+		load
+		load
+		trunc
+		zext
+		call
+		load
+		trunc
+		br
+	Block: if.then20
+		load
+		load
+		load
+		call
+		load
+		load
+		load
+		call
+		load
+		load
+		load
+		call
+		load
+		load
+		load
+		call
+		load
+		load
+		load
+		call
+		load
+		load
+		load
+		call
+		load
+		load
+		load
+		trunc
+		zext
+		call
+		load
+		load
+		load
+		call
+		br
+	Block: if.end23
+		load
+		trunc
+		br
+	Block: if.then25
+		load
+		load
+		load
+		trunc
+		zext
+		call
+		load
+		load
+		load
+		call
+		br
+	Block: if.end28
+		load
+		trunc
+		br
+	Block: if.then30
+		load
+		load
+		load
+		call
+		br
+	Block: if.end31
+		load
+		load
+		load
+		call
+		load
+		load
+		load
+		call
+		load
+		load
+		load
+		call
+		load
+		load
+		load
+		call
+		load
+		load
+		load
+		call
+		call
+		load
+		load
+		call
+		load
+		load
+		load
+		call
+		load
+		load
+		load
+		call
+		ret
+Phase 1: Allocated Variables: 
+add_stats.addr
+c.addr
+now
+pid
+slab_stats
+thread_stats
+usage
+Phase 2:
+Add: __ANOMY_1 17
+Add: __ANOMY_2 18
+Add: __ANOMY_3 19
+Add: __ANOMY_4 22
+Add: __ANOMY_5 23
+Add: __ANOMY_6 24
+Add: sub 25
+Add: __ANOMY_7 27
+Add: __ANOMY_8 28
+Add: __ANOMY_9 29
+Add: __ANOMY_11 34
+Add: __ANOMY_12 35
+Add: __ANOMY_13 37
+Add: __ANOMY_14 38
+Add: __ANOMY_15 41
+Add: __ANOMY_16 42
+Add: __ANOMY_17 44
+Add: __ANOMY_18 45
+Add: __ANOMY_21 53
+Add: __ANOMY_22 54
+Add: __ANOMY_25 62
+Add: __ANOMY_26 63
+Add: __ANOMY_28 66
+Add: __ANOMY_29 67
+Add: __ANOMY_31 71
+Add: __ANOMY_32 72
+Add: __ANOMY_35 78
+Add: __ANOMY_36 79
+Add: __ANOMY_38 83
+Add: __ANOMY_39 84
+Add: __ANOMY_41 87
+Add: __ANOMY_42 88
+Add: __ANOMY_43 90
+Add: __ANOMY_44 92
+Add: __ANOMY_45 93
+Add: __ANOMY_46 95
+Add: __ANOMY_47 97
+Add: __ANOMY_48 98
+Add: __ANOMY_49 100
+Add: __ANOMY_50 102
+Add: __ANOMY_51 103
+Add: __ANOMY_52 105
+Add: __ANOMY_53 107
+Add: __ANOMY_54 108
+Add: __ANOMY_55 110
+Add: __ANOMY_56 112
+Add: __ANOMY_57 113
+Add: __ANOMY_58 115
+Add: __ANOMY_59 117
+Add: __ANOMY_60 118
+Add: __ANOMY_61 120
+Add: __ANOMY_62 122
+Add: __ANOMY_63 123
+Add: __ANOMY_65 126
+Add: __ANOMY_66 127
+Add: __ANOMY_67 129
+Add: __ANOMY_68 131
+Add: __ANOMY_69 132
+Add: __ANOMY_70 134
+Add: __ANOMY_71 136
+Add: __ANOMY_72 137
+Add: __ANOMY_73 139
+Add: __ANOMY_74 141
+Add: __ANOMY_75 142
+Add: __ANOMY_76 144
+Add: __ANOMY_77 146
+Add: __ANOMY_78 147
+Add: __ANOMY_79 149
+Add: __ANOMY_80 151
+Add: __ANOMY_81 152
+Add: __ANOMY_82 154
+Add: __ANOMY_83 156
+Add: __ANOMY_84 157
+Add: __ANOMY_85 159
+Add: __ANOMY_86 161
+Add: __ANOMY_87 162
+Add: __ANOMY_88 164
+Add: __ANOMY_89 166
+Add: __ANOMY_90 167
+Add: __ANOMY_91 169
+Add: __ANOMY_92 171
+Add: __ANOMY_93 173
+Add: __ANOMY_94 175
+Add: tobool9 176
+Add: __ANOMY_95 178
+Add: __ANOMY_96 179
+Add: __ANOMY_97 181
+Add: __ANOMY_98 183
+Add: __ANOMY_99 184
+Add: __ANOMY_100 186
+Add: __ANOMY_101 188
+Add: __ANOMY_102 189
+Add: __ANOMY_103 191
+Add: __ANOMY_104 193
+Add: __ANOMY_105 194
+Add: __ANOMY_106 196
+Add: __ANOMY_107 198
+Add: __ANOMY_108 199
+Add: __ANOMY_109 201
+Add: __ANOMY_110 203
+Add: __ANOMY_111 204
+Add: __ANOMY_112 206
+Add: __ANOMY_113 209
+Add: __ANOMY_114 210
+Add: __ANOMY_115 212
+Add: __ANOMY_116 214
+Add: __ANOMY_117 215
+Add: __ANOMY_118 217
+Add: __ANOMY_119 219
+Add: __ANOMY_120 220
+Add: __ANOMY_121 222
+Add: __ANOMY_122 224
+Add: __ANOMY_123 225
+Add: __ANOMY_124 227
+Add: __ANOMY_125 229
+Add: __ANOMY_126 230
+Add: __ANOMY_127 232
+Add: __ANOMY_128 234
+Add: __ANOMY_129 235
+Add: __ANOMY_130 237
+Add: __ANOMY_131 239
+Add: __ANOMY_132 240
+Add: __ANOMY_133 242
+Add: __ANOMY_134 244
+Add: __ANOMY_135 245
+Add: __ANOMY_136 247
+Add: __ANOMY_137 249
+Add: __ANOMY_138 250
+Add: __ANOMY_139 252
+Add: __ANOMY_140 254
+Add: __ANOMY_141 255
+Add: __ANOMY_142 257
+Add: __ANOMY_143 259
+Add: __ANOMY_144 260
+Add: __ANOMY_145 262
+Add: __ANOMY_146 264
+Add: __ANOMY_147 265
+Add: __ANOMY_148 267
+Add: __ANOMY_149 269
+Add: __ANOMY_150 270
+Add: __ANOMY_151 272
+Add: __ANOMY_153 277
+Add: __ANOMY_154 278
+Add: __ANOMY_155 280
+Add: __ANOMY_156 283
+Add: __ANOMY_157 284
+Add: __ANOMY_158 286
+Add: __ANOMY_159 288
+Add: __ANOMY_160 289
+Add: __ANOMY_161 291
+Add: __ANOMY_162 293
+Add: __ANOMY_163 294
+Add: __ANOMY_165 297
+Add: __ANOMY_166 298
+Add: __ANOMY_168 303
+Add: __ANOMY_169 304
+Add: __ANOMY_171 307
+Add: __ANOMY_172 308
+Add: __ANOMY_174 311
+Add: __ANOMY_175 312
+Add: __ANOMY_177 315
+Add: __ANOMY_178 316
+Add: __ANOMY_179 318
+Add: __ANOMY_180 320
+Add: __ANOMY_181 321
+Add: __ANOMY_183 324
+Add: __ANOMY_184 325
+Add: __ANOMY_186 328
+Add: __ANOMY_187 329
+Add: __ANOMY_190 337
+Add: __ANOMY_191 338
+Add: __ANOMY_193 341
+Add: __ANOMY_194 342
+Add: __ANOMY_196 345
+Add: __ANOMY_197 346
+Add: __ANOMY_199 349
+Add: __ANOMY_200 350
+Add: __ANOMY_202 353
+Add: __ANOMY_203 354
+Add: __ANOMY_205 357
+Add: __ANOMY_206 358
+Add: __ANOMY_208 361
+Add: __ANOMY_209 362
+Add: __ANOMY_211 367
+Add: __ANOMY_212 368
+Add: __ANOMY_215 375
+Add: __ANOMY_216 376
+Add: __ANOMY_218 381
+Add: __ANOMY_219 382
+Add: __ANOMY_222 389
+Add: __ANOMY_223 390
+Add: __ANOMY_225 394
+Add: __ANOMY_226 395
+Add: __ANOMY_228 398
+Add: __ANOMY_229 399
+Add: __ANOMY_231 402
+Add: __ANOMY_232 403
+Add: __ANOMY_234 406
+Add: __ANOMY_235 407
+Add: __ANOMY_237 410
+Add: __ANOMY_238 411
+Add: __ANOMY_240 415
+Add: __ANOMY_241 416
+Add: __ANOMY_242 418
+Add: __ANOMY_243 419
+Add: __ANOMY_245 422
+Add: __ANOMY_246 423
+[Sequence]Load(current_time) Load(process_started) Load(ru_utime) Load(ru_utime4) Load(ru_stime) Load(ru_stime6) Load(settings) Load(stats_state) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Load(stats_state) Load(stats) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Load(settings) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) 
+[Sequence]Load(current_time) Load(process_started) Load(ru_utime) Load(ru_utime4) Load(ru_stime) Load(ru_stime6) Load(settings) Load(stats_state) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Load(stats_state) Load(stats) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Load(settings) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) 
+[Sequence]Load(current_time) Load(process_started) Load(ru_utime) Load(ru_utime4) Load(ru_stime) Load(ru_stime6) Load(settings) Load(stats_state) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Load(stats_state) Load(stats) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Load(stats_state) Load(stats) Load(settings) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) 
+[Sequence]Load(current_time) Load(process_started) Load(ru_utime) Load(ru_utime4) Load(ru_stime) Load(ru_stime6) Load(settings) Load(stats_state) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Load(stats_state) Load(stats) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Load(stats_state) Load(stats) Load(settings) Load(stats) 
+[Sequence]Load(current_time) Load(process_started) Load(ru_utime) Load(ru_utime4) Load(ru_stime) Load(ru_stime6) Load(settings) Load(stats_state) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Load(stats_state) Load(stats) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(stats_state) Load(settings) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats_state) Load(stats) Load(settings) Load(settings) Load(stats) 
+[Sequence]Load(current_time) Load(process_started) Load(ru_utime) Load(ru_utime4) Load(ru_stime) Load(ru_stime6) Load(settings) Load(stats_state) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Load(stats_state) Load(stats) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(stats_state) Load(settings) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats_state) Load(stats) Load(settings) Load(stats_state) Load(stats) 
+[Sequence]Load(current_time) Load(process_started) Load(ru_utime) Load(ru_utime4) Load(ru_stime) Load(ru_stime6) Load(settings) Load(stats_state) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Load(stats_state) Load(stats) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Load(stats_state) Load(stats) 
+[Sequence]Load(current_time) Load(process_started) Load(ru_utime) Load(ru_utime4) Load(ru_stime) Load(ru_stime6) Load(settings) Load(stats_state) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Load(stats_state) Load(stats) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(stats_state) Load(settings) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats_state) Load(stats) 
+[Sequence]Load(current_time) Load(process_started) Load(ru_utime) Load(ru_utime4) Load(ru_stime) Load(ru_stime6) Load(settings) Load(stats_state) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Load(stats_state) Load(stats) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(stats_state) Load(settings) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats) Load(stats_state) Load(stats) 
+[Sequence]Load(current_time) Load(process_started) Load(ru_utime) Load(ru_utime4) Load(ru_stime) Load(ru_stime6) Load(settings) Load(stats_state) Load(stats) Load(settings) Load(stats_state) Load(stats_state) Load(settings) 
+[Sequence]Load(current_time) Load(process_started) Load(ru_utime) Load(ru_utime4) Load(ru_stime) Load(ru_stime6) Load(settings) Load(stats_state) Load(stats) Load(settings) Load(stats) Load(stats_state) Load(stats_state) Load(settings) 
+[Sequence]Load(current_time) Load(process_started) Load(ru_utime) Load(ru_utime4) Load(ru_stime) Load(ru_stime6) Load(settings) Load(stats_state) Load(stats) Load(settings) Load(stats) Load(stats_state) Load(stats_state) 

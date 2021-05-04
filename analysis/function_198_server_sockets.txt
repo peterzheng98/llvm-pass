@@ -1,0 +1,254 @@
+[198]Function: server_sockets
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		load
+		load
+		load
+		load
+		trunc
+		call
+		store
+		br
+	Block: if.else
+		store
+		load
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then3
+		load
+		call
+		store
+		br
+	Block: if.end
+		load
+		call
+		store
+		br
+	Block: for.cond
+		load
+		icmp
+		br
+	Block: for.body
+		load
+		store
+		store
+		load
+		load
+		sext
+		icmp
+		br
+	Block: if.then9
+		load
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then13
+		load
+		load
+		call
+		load
+		call
+		store
+		br
+	Block: if.end15
+		load
+		getelementptr
+		store
+		store
+		load
+		store
+		load
+		getelementptr
+		store
+		store
+		br
+	Block: if.end17
+		load
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then21
+		load
+		getelementptr
+		call
+		icmp
+		br
+	Block: lor.lhs.false
+		load
+		icmp
+		br
+	Block: if.then27
+		load
+		store
+		load
+		getelementptr
+		store
+		load
+		call
+		br
+	Block: if.then30
+		load
+		load
+		call
+		load
+		call
+		store
+		br
+	Block: if.end32
+		br
+	Block: if.end33
+		br
+	Block: if.end34
+		load
+		icmp
+		br
+	Block: if.then37
+		load
+		store
+		br
+	Block: if.end38
+		load
+		call
+		icmp
+		br
+	Block: if.then42
+		store
+		br
+	Block: if.end43
+		load
+		load
+		load
+		load
+		load
+		trunc
+		call
+		load
+		or
+		store
+		br
+	Block: for.inc
+		call
+		store
+		br
+	Block: for.end
+		load
+		call
+		load
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+b
+e
+h
+list
+p
+port.addr
+portnumber_file.addr
+ret
+retval
+s
+ssl_enabled
+the_port
+transport.addr
+Phase 2:
+Add: __ANOMY_2 21
+Add: __ANOMY_3 22
+Add: __ANOMY_4 23
+Add: __ANOMY_5 24
+Add: __ANOMY_7 33
+Add: cmp2 34
+Add: __ANOMY_9 40
+Add: __ANOMY_10 44
+Add: cmp6 45
+Add: __ANOMY_11 47
+Add: __ANOMY_12 50
+Add: __ANOMY_13 51
+Add: __ANOMY_14 55
+Add: __ANOMY_15 58
+Add: cmp11 59
+Add: __ANOMY_17 62
+Add: __ANOMY_18 64
+Add: __ANOMY_19 68
+Add: __ANOMY_20 72
+Add: __ANOMY_21 74
+Add: __ANOMY_22 79
+Add: __ANOMY_23 82
+Add: cmp19 83
+Add: __ANOMY_24 85
+Add: __ANOMY_25 90
+Add: cmp25 91
+Add: __ANOMY_26 93
+Add: __ANOMY_27 95
+Add: __ANOMY_28 98
+Add: __ANOMY_30 102
+Add: __ANOMY_31 104
+Add: __ANOMY_32 110
+Add: cmp35 111
+Add: __ANOMY_33 113
+Add: __ANOMY_34 116
+Add: __ANOMY_35 122
+Add: __ANOMY_36 123
+Add: __ANOMY_37 124
+Add: __ANOMY_38 125
+Add: __ANOMY_39 126
+Add: __ANOMY_40 129
+Add: __ANOMY_41 136
+Add: __ANOMY_42 138
+Add: __ANOMY_43 141
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(settings) 

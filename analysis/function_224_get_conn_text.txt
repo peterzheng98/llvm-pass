@@ -1,0 +1,174 @@
+[224]Function: get_conn_text
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		store
+		getelementptr
+		store
+		store
+		store
+		load
+		switch
+	Block: sw.bb
+		load
+		load
+		bitcast
+		getelementptr
+		bitcast
+		getelementptr
+		call
+		load
+		bitcast
+		getelementptr
+		load
+		call
+		store
+		load
+		getelementptr
+		load
+		icmp
+		zext
+		select
+		store
+		br
+	Block: sw.bb2
+		getelementptr
+		store
+		getelementptr
+		store
+		load
+		load
+		bitcast
+		getelementptr
+		bitcast
+		getelementptr
+		getelementptr
+		call
+		icmp
+		br
+	Block: if.then
+		getelementptr
+		call
+		br
+	Block: if.end
+		load
+		bitcast
+		getelementptr
+		load
+		call
+		store
+		load
+		getelementptr
+		load
+		icmp
+		zext
+		select
+		store
+		br
+	Block: sw.bb13
+		store
+		store
+		load
+		icmp
+		br
+	Block: if.then15
+		store
+		br
+	Block: if.end16
+		getelementptr
+		load
+		bitcast
+		getelementptr
+		getelementptr
+		load
+		call
+		load
+		getelementptr
+		store
+		store
+		br
+	Block: sw.epilog
+		getelementptr
+		call
+		icmp
+		br
+	Block: if.then24
+		getelementptr
+		load
+		call
+		br
+	Block: if.end27
+		load
+		icmp
+		br
+	Block: if.then29
+		load
+		load
+		getelementptr
+		load
+		zext
+		call
+		br
+	Block: if.else
+		load
+		load
+		getelementptr
+		call
+		br
+	Block: if.end34
+		ret
+Phase 1: Allocated Variables: 
+addr.addr
+addr_text
+af.addr
+c.addr
+pathlen
+port
+protoname
+sock_addr.addr
+Phase 2:
+Add: __ANOMY_0 16
+Add: __ANOMY_1 18
+Add: __ANOMY_2 19
+Add: __ANOMY_5 25
+Add: __ANOMY_8 31
+Add: __ANOMY_9 33
+Add: cmp 34
+Add: __ANOMY_11 43
+Add: __ANOMY_12 44
+Add: __ANOMY_15 56
+Add: __ANOMY_18 62
+Add: __ANOMY_19 64
+Add: cmp11 65
+Add: __ANOMY_21 72
+Add: cmp14 73
+Add: __ANOMY_22 78
+Add: __ANOMY_24 82
+Add: __ANOMY_25 84
+Add: __ANOMY_26 94
+Add: __ANOMY_27 97
+Add: tobool28 98
+Add: __ANOMY_28 100
+Add: __ANOMY_29 101
+Add: __ANOMY_30 103
+Add: __ANOMY_31 107
+Add: __ANOMY_32 108
+[Sequence]Load(__ANOMY_6) 
+[Sequence]Load(__ANOMY_6) 
+[Sequence]Load(__ANOMY_6) 
+[Sequence]Load(__ANOMY_6) 
+[Sequence]Load(__ANOMY_16) 
+[Sequence]Load(__ANOMY_16) 
+[Sequence]Load(__ANOMY_16) 
+[Sequence]Load(__ANOMY_16) 
+[Sequence]
+[Sequence]

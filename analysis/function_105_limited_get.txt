@@ -1,0 +1,96 @@
+[105]Function: limited_get
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		store
+		zext
+		store
+		zext
+		store
+		store
+		load
+		trunc
+		br
+	Block: if.then
+		load
+		load
+		load
+		load
+		call
+		store
+		br
+	Block: if.else
+		load
+		load
+		load
+		load
+		trunc
+		call
+		store
+		br
+	Block: if.end
+		load
+		icmp
+		br
+	Block: land.lhs.true
+		load
+		getelementptr
+		load
+		zext
+		icmp
+		br
+	Block: if.then6
+		load
+		call
+		store
+		load
+		store
+		br
+	Block: if.else7
+		load
+		store
+		br
+	Block: if.end8
+		load
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+do_update.addr
+exptime.addr
+it
+key.addr
+nkey.addr
+overflow.addr
+should_touch.addr
+Phase 2:
+Add: __ANOMY_0 17
+Add: __ANOMY_1 20
+Add: __ANOMY_2 21
+Add: __ANOMY_3 22
+Add: __ANOMY_4 23
+Add: __ANOMY_5 27
+Add: __ANOMY_6 28
+Add: __ANOMY_7 29
+Add: __ANOMY_8 30
+Add: __ANOMY_9 35
+Add: tobool4 36
+Add: __ANOMY_10 38
+Add: __ANOMY_11 40
+Add: __ANOMY_12 44
+Add: __ANOMY_13 47
+Add: __ANOMY_14 50
+Add: __ANOMY_15 53
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]

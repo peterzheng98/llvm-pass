@@ -1,0 +1,58 @@
+[45]Function: conn_close_all
+	Block: entry
+		alloca
+		store
+		br
+	Block: for.cond
+		load
+		load
+		icmp
+		br
+	Block: for.body
+		load
+		load
+		sext
+		getelementptr
+		load
+		icmp
+		br
+	Block: land.lhs.true
+		load
+		load
+		sext
+		getelementptr
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		load
+		sext
+		getelementptr
+		load
+		call
+		br
+	Block: if.end
+		br
+	Block: for.inc
+		load
+		add
+		store
+		br
+	Block: for.end
+		ret
+Phase 1: Allocated Variables: 
+i
+Phase 2:
+Add: __ANOMY_0 3
+Add: __ANOMY_3 8
+Add: __ANOMY_6 15
+Add: __ANOMY_10 24
+Add: __ANOMY_12 31
+Add: inc 32
+[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_2) Load(max_fds) Load(conns) Load(__ANOMY_2) Load(max_fds) Load(conns) Load(__ANOMY_2) 
+[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_2) Load(max_fds) Load(conns) Load(__ANOMY_2) Load(max_fds) Load(conns) Load(__ANOMY_2) Load(conns) Load(__ANOMY_5) Load(__ANOMY_7) Load(conns) Load(__ANOMY_9) 
+[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_2) Load(max_fds) Load(conns) Load(__ANOMY_2) Load(conns) Load(__ANOMY_5) Load(__ANOMY_7) Load(conns) Load(__ANOMY_9) 
+[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_2) Load(conns) Load(__ANOMY_5) Load(__ANOMY_7) Load(conns) Load(__ANOMY_9) 

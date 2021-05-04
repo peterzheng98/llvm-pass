@@ -1,0 +1,177 @@
+[242]Function: transmit
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		bitcast
+		call
+		getelementptr
+		getelementptr
+		store
+		load
+		getelementptr
+		load
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		call
+		store
+		br
+	Block: if.end
+		load
+		sext
+		getelementptr
+		store
+		load
+		getelementptr
+		load
+		load
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then5
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		load
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		load
+		add
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		load
+		load
+		call
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then13
+		store
+		br
+	Block: if.else
+		store
+		br
+	Block: if.end14
+		load
+		icmp
+		br
+	Block: land.lhs.true
+		call
+		load
+		icmp
+		br
+	Block: lor.lhs.false
+		call
+		load
+		icmp
+		br
+	Block: if.then23
+		load
+		call
+		br
+	Block: if.then25
+		load
+		icmp
+		br
+	Block: if.then28
+		load
+		call
+		br
+	Block: if.end30
+		load
+		call
+		store
+		br
+	Block: if.end31
+		store
+		br
+	Block: if.end32
+		load
+		icmp
+		br
+	Block: if.then35
+		call
+		br
+	Block: if.end36
+		load
+		call
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+iovs
+iovused
+msg
+res
+retval
+Phase 2:
+Add: __ANOMY_1 13
+Add: __ANOMY_2 15
+Add: __ANOMY_3 18
+Add: cmp 19
+Add: __ANOMY_4 21
+Add: __ANOMY_5 25
+Add: __ANOMY_6 29
+Add: __ANOMY_7 31
+Add: __ANOMY_8 32
+Add: __ANOMY_9 35
+Add: cmp3 36
+Add: __ANOMY_10 38
+Add: __ANOMY_11 40
+Add: __ANOMY_12 44
+Add: __ANOMY_13 45
+Add: __ANOMY_14 47
+Add: __ANOMY_16 53
+Add: __ANOMY_17 55
+Add: __ANOMY_18 59
+Add: __ANOMY_19 60
+Add: __ANOMY_20 62
+Add: __ANOMY_21 64
+Add: tobool 65
+Add: __ANOMY_22 71
+Add: cmp15 72
+Add: __ANOMY_25 82
+Add: __ANOMY_28 91
+Add: __ANOMY_30 102
+Add: __ANOMY_31 106
+[Sequence]Load(settings) 
+[Sequence]Load(settings) 
+[Sequence]Load(call17) Load(call20) Load(settings) 
+[Sequence]Load(call17) Load(call20) Load(settings) 
+[Sequence]Load(call17) Load(call20) Load(settings) 
+[Sequence]Load(call17) Load(call20) Load(settings) Load(stderr) 
+[Sequence]Load(call17) Load(call20) 
+[Sequence]Load(call17) Load(settings) 
+[Sequence]Load(call17) Load(settings) Load(stderr) 
+[Sequence]Load(call17) 
+[Sequence]Load(stats8) Store(stats8) 
+[Sequence]Load(stats8) Store(stats8) 
+[Sequence]

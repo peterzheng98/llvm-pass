@@ -1,0 +1,86 @@
+[194]Function: clock_handler
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		bitcast
+		call
+		load
+		trunc
+		br
+	Block: if.then
+		call
+		br
+	Block: if.else
+		store
+		br
+	Block: if.end
+		load
+		call
+		load
+		icmp
+		br
+	Block: if.then2
+		store
+		load
+		call
+		br
+	Block: if.end4
+		call
+		load
+		call
+		call
+		load
+		trunc
+		br
+	Block: if.then8
+		call
+		icmp
+		br
+	Block: if.then10
+		br
+	Block: if.end11
+		getelementptr
+		load
+		load
+		sub
+		trunc
+		store
+		br
+	Block: if.end12
+		call
+		getelementptr
+		load
+		load
+		sub
+		trunc
+		store
+		br
+	Block: return
+		ret
+Phase 1: Allocated Variables: 
+arg.addr
+fd.addr
+t
+ts
+tv
+which.addr
+Phase 2:
+Add: __ANOMY_7 39
+Add: __ANOMY_9 47
+[Sequence]Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Load(settings) Load(main_base) Load(monotonic) Load(process_started) Store(current_time) 
+[Sequence]Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Load(settings) Load(main_base) Load(monotonic) Load(monotonic_start) Store(current_time) 
+[Sequence]Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Load(settings) Load(main_base) Load(monotonic) 
+[Sequence]Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Load(settings) Store(settings) Load(settings) Load(main_base) Load(monotonic) Load(process_started) Store(current_time) 
+[Sequence]Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Load(settings) Store(settings) Load(settings) Load(main_base) Load(monotonic) Load(monotonic_start) Store(current_time) 
+[Sequence]Load(clock_handler.initialized) Store(clock_handler.initialized) Load(stats_state) Load(settings) Store(settings) Load(settings) Load(main_base) Load(monotonic) 
+[Sequence]Load(clock_handler.initialized) Load(stats_state) Load(settings) Load(main_base) Load(monotonic) Load(process_started) Store(current_time) 
+[Sequence]Load(clock_handler.initialized) Load(stats_state) Load(settings) Load(main_base) Load(monotonic) Load(monotonic_start) Store(current_time) 
+[Sequence]Load(clock_handler.initialized) Load(stats_state) Load(settings) Load(main_base) Load(monotonic) 
+[Sequence]Load(clock_handler.initialized) Load(stats_state) Load(settings) Store(settings) Load(settings) 

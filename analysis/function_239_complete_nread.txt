@@ -1,0 +1,41 @@
+[239]Function: complete_nread
+	Block: entry
+		alloca
+		store
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		call
+		br
+	Block: if.else
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then3
+		load
+		call
+		br
+	Block: if.end
+		br
+	Block: if.end4
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+Phase 2:
+Add: __ANOMY_0 2
+Add: __ANOMY_1 4
+Add: cmp 5
+Add: __ANOMY_2 7
+Add: __ANOMY_3 10
+Add: __ANOMY_4 12
+Add: cmp2 13
+Add: __ANOMY_5 15
+[Sequence]
+[Sequence]
+[Sequence]

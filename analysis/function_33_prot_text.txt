@@ -1,0 +1,29 @@
+[33]Function: prot_text
+	Block: entry
+		alloca
+		alloca
+		store
+		store
+		load
+		switch
+	Block: sw.bb
+		store
+		br
+	Block: sw.bb1
+		store
+		br
+	Block: sw.bb2
+		store
+		br
+	Block: sw.epilog
+		load
+		ret
+Phase 1: Allocated Variables: 
+prot.addr
+rv
+Phase 2:
+Add: __ANOMY_0 4
+Add: __ANOMY_1 12
+[Sequence]
+[Sequence]
+[Sequence]

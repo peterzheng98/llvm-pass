@@ -1,0 +1,107 @@
+[42]Function: conn_release_items
+	Block: entry
+		alloca
+		alloca
+		store
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		getelementptr
+		load
+		bitcast
+		call
+		load
+		getelementptr
+		store
+		br
+	Block: if.end
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then4
+		load
+		getelementptr
+		load
+		store
+		br
+	Block: while.cond
+		load
+		icmp
+		br
+	Block: while.body
+		load
+		getelementptr
+		load
+		trunc
+		br
+	Block: if.then8
+		load
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		icmp
+		zext
+		select
+		call
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		store
+		br
+	Block: if.end11
+		load
+		load
+		call
+		store
+		br
+	Block: while.end
+		br
+	Block: if.end13
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+resp
+Phase 2:
+Add: __ANOMY_0 3
+Add: __ANOMY_1 5
+Add: tobool 6
+Add: __ANOMY_2 8
+Add: __ANOMY_3 10
+Add: __ANOMY_5 13
+Add: __ANOMY_6 17
+Add: __ANOMY_7 19
+Add: tobool3 20
+Add: __ANOMY_8 22
+Add: __ANOMY_9 24
+Add: __ANOMY_10 27
+Add: tobool6 28
+Add: __ANOMY_11 30
+Add: __ANOMY_12 32
+Add: __ANOMY_14 36
+Add: __ANOMY_15 38
+Add: __ANOMY_16 39
+Add: __ANOMY_17 41
+Add: cmp 42
+Add: __ANOMY_19 46
+Add: __ANOMY_20 49
+Add: __ANOMY_21 53
+Add: __ANOMY_22 54
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]Load(stderr) 
+[Sequence]Load(stderr) 
+[Sequence]Load(stderr) 
+[Sequence]

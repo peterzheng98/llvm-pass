@@ -1,0 +1,72 @@
+[245]Function: conn_io_queue_complete
+	Block: entry
+		alloca
+		alloca
+		alloca
+		store
+		load
+		getelementptr
+		getelementptr
+		store
+		br
+	Block: while.cond
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: while.body
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		getelementptr
+		load
+		store
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		load
+		call
+		br
+	Block: if.end
+		load
+		getelementptr
+		store
+		br
+	Block: while.end
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+q
+tmp
+Phase 2:
+Add: __ANOMY_0 4
+Add: __ANOMY_1 9
+Add: __ANOMY_2 11
+Add: cmp 12
+Add: __ANOMY_3 14
+Add: __ANOMY_4 16
+Add: tobool 17
+Add: __ANOMY_5 19
+Add: __ANOMY_6 21
+Add: __ANOMY_7 23
+Add: __ANOMY_8 26
+Add: __ANOMY_9 28
+Add: __ANOMY_10 29
+Add: __ANOMY_11 31
+Add: __ANOMY_12 32
+Add: __ANOMY_13 35
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]

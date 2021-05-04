@@ -1,0 +1,29 @@
+[207]Function: remove_pidfile
+	Block: entry
+		alloca
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		br
+	Block: if.end
+		load
+		call
+		icmp
+		br
+	Block: if.then2
+		load
+		call
+		br
+	Block: if.end3
+		ret
+Phase 1: Allocated Variables: 
+pid_file.addr
+Phase 2:
+Add: __ANOMY_0 2
+Add: cmp 3
+Add: __ANOMY_1 6
+Add: __ANOMY_2 10
+[Sequence]
+[Sequence]

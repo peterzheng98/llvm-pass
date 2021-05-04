@@ -14,6 +14,7 @@ Element::Element(BaseElement p) : element_type(p.element_type), target_name(p.ta
   this->main_line_next = NULL;
   this->br1 = p.br1;
   this->br2 = p.br2;
+  for(auto &obj: p.brs) brs.push_back(obj);
 }
 
 void Element::doubleSpace(){
@@ -34,7 +35,8 @@ std::string Element::toString(){
   std::string type;
   if(this->element_type == Branch) type = "Branch(" + br1 + "=>" + br2;
   else if(this->element_type == Store) type = "Store(";
-  else type = "Load(";
+  else if(this->element_type == Load) type = "Load(";
+  else type = "Switch(";
   return std::string(type + target_name + ")");
 }
 
@@ -42,7 +44,8 @@ std::string BaseElement::toString(){
   std::string type;
   if(this->element_type == Branch) type = "Branch(" + br1 + "=>" + br2;
   else if(this->element_type == Store) type = "Store(" + target_name;
-  else type = "Load(" + target_name;
+  else if(this->element_type == Load) type = "Load(" + target_name;
+  else type = "Switch(" + target_name;
   return std::string(type + ")");
 }
 
@@ -51,7 +54,7 @@ void Element::dfs(Element *p, std::vector<std::string> &output_str, std::ostream
   if(p->idx == 0){
     target << "[Sequence]";
     for(auto &p: output_str) {
-      if(p.find("Branch") == std::string::npos)
+      if(p.find("Branch") == std::string::npos && p.find("Switch") == std::string::npos)
       target << p << " ";
     }
     target << std::endl;
@@ -88,3 +91,18 @@ element_t BaseElement::getType(){ return this->element_type; }
 
 std::string BaseElement::getBr1() { return this->br1; }
 std::string BaseElement::getBr2() { return this->br2; }
+void BaseElement::addBrs(std::string r){
+  this->brs.push_back(r);
+}
+
+std::string BaseElement::getBrs(int idx){
+  return brs[idx];
+}
+
+auto BaseElement::begin(){
+  return brs.begin();
+}
+
+auto BaseElement::end(){
+  return brs.end();
+}

@@ -1,0 +1,587 @@
+[220]Function: _store_item_copy_chunks
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		load
+		getelementptr
+		bitcast
+		load
+		getelementptr
+		load
+		zext
+		sext
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		bitcast
+		store
+		br
+	Block: while.cond
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: while.body
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		getelementptr
+		load
+		store
+		br
+	Block: if.else
+		br
+	Block: if.end
+		br
+	Block: while.end
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		br
+	Block: if.then17
+		load
+		store
+		load
+		getelementptr
+		bitcast
+		load
+		getelementptr
+		load
+		zext
+		sext
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		bitcast
+		store
+		store
+		br
+	Block: while.cond36
+		load
+		icmp
+		br
+	Block: land.lhs.true
+		load
+		icmp
+		br
+	Block: land.rhs
+		load
+		icmp
+		br
+	Block: land.end
+		phi
+		br
+	Block: while.body40
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		sub
+		load
+		getelementptr
+		load
+		load
+		sub
+		icmp
+		br
+	Block: cond.true
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		sub
+		br
+	Block: cond.false
+		load
+		getelementptr
+		load
+		load
+		sub
+		br
+	Block: cond.end
+		phi
+		store
+		load
+		load
+		icmp
+		br
+	Block: if.then55
+		load
+		store
+		br
+	Block: if.end56
+		load
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		load
+		sext
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		load
+		sext
+		getelementptr
+		load
+		sext
+		call
+		load
+		load
+		getelementptr
+		load
+		add
+		store
+		load
+		load
+		add
+		store
+		load
+		load
+		sub
+		store
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then73
+		load
+		load
+		sext
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then76
+		load
+		store
+		br
+	Block: if.else77
+		store
+		br
+	Block: if.end78
+		br
+	Block: if.end79
+		load
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then83
+		store
+		load
+		getelementptr
+		load
+		store
+		br
+	Block: if.end85
+		br
+	Block: while.end86
+		br
+	Block: if.else87
+		store
+		br
+	Block: while.cond88
+		load
+		load
+		icmp
+		br
+	Block: land.rhs91
+		load
+		icmp
+		br
+	Block: land.end93
+		phi
+		br
+	Block: while.body94
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		sub
+		load
+		load
+		sub
+		icmp
+		br
+	Block: cond.true102
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		sub
+		br
+	Block: cond.false106
+		load
+		load
+		sub
+		br
+	Block: cond.end108
+		phi
+		store
+		load
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		load
+		sext
+		getelementptr
+		load
+		getelementptr
+		bitcast
+		load
+		getelementptr
+		load
+		zext
+		sext
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		sext
+		getelementptr
+		load
+		sext
+		call
+		load
+		load
+		add
+		store
+		load
+		load
+		getelementptr
+		load
+		add
+		store
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then143
+		load
+		load
+		load
+		sub
+		sext
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then149
+		load
+		store
+		br
+	Block: if.else150
+		store
+		br
+	Block: if.end151
+		br
+	Block: if.end152
+		br
+	Block: while.end153
+		br
+	Block: if.end154
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+copied
+d_it.addr
+dch
+done
+len.addr
+remain
+retval
+s_it.addr
+sch
+tch
+tch144
+todo
+todo95
+Phase 2:
+Add: __ANOMY_0 16
+Add: __ANOMY_2 19
+Add: __ANOMY_3 21
+Add: __ANOMY_4 26
+Add: __ANOMY_5 28
+Add: __ANOMY_7 35
+Add: __ANOMY_8 37
+Add: __ANOMY_11 47
+Add: __ANOMY_12 49
+Add: __ANOMY_13 50
+Add: __ANOMY_14 52
+Add: cmp 53
+Add: __ANOMY_15 55
+Add: __ANOMY_16 57
+Add: tobool11 58
+Add: __ANOMY_17 60
+Add: __ANOMY_18 62
+Add: __ANOMY_19 67
+Add: __ANOMY_20 69
+Add: __ANOMY_21 74
+Add: __ANOMY_22 76
+Add: __ANOMY_24 79
+Add: __ANOMY_25 81
+Add: __ANOMY_26 86
+Add: __ANOMY_27 88
+Add: __ANOMY_29 95
+Add: __ANOMY_30 97
+Add: __ANOMY_33 108
+Add: tobool37 109
+Add: __ANOMY_34 111
+Add: tobool38 112
+Add: __ANOMY_35 114
+Add: tobool39 115
+Add: __ANOMY_37 119
+Add: __ANOMY_38 121
+Add: __ANOMY_39 122
+Add: __ANOMY_40 124
+Add: sub 125
+Add: __ANOMY_41 126
+Add: __ANOMY_42 128
+Add: __ANOMY_43 129
+Add: sub44 130
+Add: cmp45 131
+Add: __ANOMY_44 133
+Add: __ANOMY_45 135
+Add: __ANOMY_46 136
+Add: __ANOMY_47 138
+Add: sub49 139
+Add: __ANOMY_48 141
+Add: __ANOMY_49 143
+Add: __ANOMY_50 144
+Add: sub51 145
+Add: __ANOMY_51 149
+Add: __ANOMY_52 150
+Add: cmp53 151
+Add: __ANOMY_53 153
+Add: __ANOMY_54 156
+Add: __ANOMY_55 159
+Add: __ANOMY_56 161
+Add: __ANOMY_57 164
+Add: __ANOMY_58 167
+Add: __ANOMY_59 170
+Add: __ANOMY_60 173
+Add: __ANOMY_61 174
+Add: __ANOMY_62 176
+Add: add 177
+Add: __ANOMY_63 179
+Add: __ANOMY_64 180
+Add: add67 181
+Add: __ANOMY_65 183
+Add: __ANOMY_66 184
+Add: sub68 185
+Add: __ANOMY_67 187
+Add: __ANOMY_68 189
+Add: __ANOMY_69 190
+Add: __ANOMY_70 192
+Add: cmp71 193
+Add: __ANOMY_71 195
+Add: __ANOMY_72 196
+Add: __ANOMY_73 200
+Add: tobool75 201
+Add: __ANOMY_74 203
+Add: __ANOMY_75 209
+Add: __ANOMY_76 210
+Add: __ANOMY_77 212
+Add: cmp81 213
+Add: __ANOMY_78 216
+Add: __ANOMY_79 218
+Add: __ANOMY_80 225
+Add: __ANOMY_81 226
+Add: cmp89 227
+Add: __ANOMY_82 229
+Add: tobool92 230
+Add: __ANOMY_84 234
+Add: __ANOMY_85 236
+Add: __ANOMY_86 237
+Add: __ANOMY_87 239
+Add: sub98 240
+Add: __ANOMY_88 241
+Add: __ANOMY_89 242
+Add: sub99 243
+Add: cmp100 244
+Add: __ANOMY_90 246
+Add: __ANOMY_91 248
+Add: __ANOMY_92 249
+Add: __ANOMY_93 251
+Add: sub105 252
+Add: __ANOMY_94 254
+Add: __ANOMY_95 255
+Add: sub107 256
+Add: __ANOMY_96 260
+Add: __ANOMY_97 263
+Add: __ANOMY_98 265
+Add: __ANOMY_99 268
+Add: __ANOMY_101 271
+Add: __ANOMY_102 273
+Add: __ANOMY_103 278
+Add: __ANOMY_104 280
+Add: __ANOMY_106 287
+Add: __ANOMY_107 289
+Add: __ANOMY_109 296
+Add: __ANOMY_110 299
+Add: __ANOMY_111 302
+Add: __ANOMY_112 303
+Add: add136 304
+Add: __ANOMY_113 306
+Add: __ANOMY_114 307
+Add: __ANOMY_115 309
+Add: add138 310
+Add: __ANOMY_116 312
+Add: __ANOMY_117 314
+Add: __ANOMY_118 315
+Add: __ANOMY_119 317
+Add: cmp141 318
+Add: __ANOMY_120 320
+Add: __ANOMY_121 321
+Add: __ANOMY_122 322
+Add: sub145 323
+Add: __ANOMY_123 327
+Add: tobool148 328
+Add: __ANOMY_124 330
+Add: __ANOMY_125 340
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]

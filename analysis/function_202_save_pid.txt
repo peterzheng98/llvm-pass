@@ -1,0 +1,114 @@
+[202]Function: save_pid
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		load
+		call
+		icmp
+		br
+	Block: if.then
+		load
+		call
+		store
+		icmp
+		br
+	Block: if.then3
+		getelementptr
+		load
+		call
+		icmp
+		br
+	Block: if.then6
+		getelementptr
+		call
+		br
+	Block: land.lhs.true
+		load
+		call
+		icmp
+		br
+	Block: if.then11
+		load
+		load
+		call
+		br
+	Block: if.end
+		br
+	Block: if.end13
+		load
+		call
+		br
+	Block: if.end15
+		br
+	Block: if.end16
+		getelementptr
+		load
+		call
+		getelementptr
+		call
+		store
+		icmp
+		br
+	Block: if.then22
+		getelementptr
+		call
+		br
+	Block: if.end24
+		load
+		call
+		sext
+		call
+		load
+		call
+		icmp
+		br
+	Block: if.then30
+		getelementptr
+		call
+		br
+	Block: if.end32
+		getelementptr
+		load
+		call
+		icmp
+		br
+	Block: if.then37
+		getelementptr
+		load
+		call
+		br
+	Block: if.end39
+		ret
+Phase 1: Allocated Variables: 
+buffer
+fp
+pid
+pid_file.addr
+tmp_pid_file
+Phase 2:
+Add: __ANOMY_0 6
+Add: __ANOMY_1 10
+Add: __ANOMY_2 16
+Add: __ANOMY_3 23
+Add: __ANOMY_5 28
+Add: __ANOMY_6 32
+Add: __ANOMY_7 37
+Add: __ANOMY_8 47
+Add: __ANOMY_9 51
+Add: __ANOMY_10 59
+Add: __ANOMY_11 64
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]Load(stderr) 

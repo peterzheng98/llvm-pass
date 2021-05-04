@@ -1,0 +1,281 @@
+[268]Function: conn_timeout_thread
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		load
+		sdiv
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		store
+		br
+	Block: if.end
+		load
+		sdiv
+		store
+		call
+		br
+	Block: while.cond
+		load
+		icmp
+		br
+	Block: while.body
+		load
+		icmp
+		br
+	Block: if.then3
+		load
+		call
+		br
+	Block: if.end5
+		load
+		store
+		store
+		br
+	Block: for.cond
+		load
+		load
+		icmp
+		br
+	Block: for.body
+		load
+		srem
+		icmp
+		br
+	Block: if.then8
+		load
+		icmp
+		br
+	Block: if.then10
+		load
+		load
+		call
+		br
+	Block: if.end12
+		load
+		call
+		br
+	Block: if.end14
+		load
+		load
+		sext
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then16
+		br
+	Block: if.end17
+		load
+		load
+		sext
+		getelementptr
+		load
+		store
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then21
+		br
+	Block: if.end22
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: land.lhs.true
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then26
+		br
+	Block: if.end27
+		load
+		load
+		getelementptr
+		load
+		sub
+		load
+		icmp
+		br
+	Block: if.then29
+		getelementptr
+		store
+		getelementptr
+		bitcast
+		call
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		getelementptr
+		call
+		icmp
+		br
+	Block: if.then34
+		call
+		br
+	Block: if.end35
+		br
+	Block: if.else
+		load
+		getelementptr
+		load
+		load
+		icmp
+		br
+	Block: if.then38
+		load
+		getelementptr
+		load
+		store
+		br
+	Block: if.end40
+		br
+	Block: if.end41
+		br
+	Block: for.inc
+		load
+		add
+		store
+		br
+	Block: for.end
+		load
+		load
+		load
+		sub
+		sub
+		add
+		store
+		load
+		icmp
+		br
+	Block: if.then45
+		store
+		br
+	Block: if.end46
+		load
+		icmp
+		br
+	Block: if.then48
+		load
+		load
+		call
+		br
+	Block: if.end50
+		call
+		getelementptr
+		load
+		load
+		sext
+		add
+		getelementptr
+		store
+		getelementptr
+		store
+		call
+		br
+	Block: while.end
+		call
+		ret
+Phase 1: Allocated Variables: 
+arg.addr
+buf
+c
+i
+now
+oldest_last_cmd
+sleep_slice
+sleep_time
+timeslice
+to_sleep
+Phase 2:
+Add: __ANOMY_1 14
+Add: cmp 15
+Add: __ANOMY_2 19
+Add: div1 20
+Add: __ANOMY_7 37
+Add: __ANOMY_9 41
+Add: rem 42
+Add: cmp7 43
+Add: __ANOMY_12 49
+Add: __ANOMY_13 52
+Add: __ANOMY_15 56
+Add: __ANOMY_18 64
+Add: __ANOMY_20 69
+Add: __ANOMY_21 71
+Add: cmp20 72
+Add: __ANOMY_22 75
+Add: __ANOMY_23 77
+Add: cmp23 78
+Add: __ANOMY_24 80
+Add: __ANOMY_25 82
+Add: cmp25 83
+Add: __ANOMY_27 87
+Add: __ANOMY_28 89
+Add: __ANOMY_31 99
+Add: __ANOMY_32 101
+Add: __ANOMY_33 103
+Add: __ANOMY_34 111
+Add: __ANOMY_35 113
+Add: __ANOMY_36 114
+Add: cmp37 115
+Add: __ANOMY_37 117
+Add: __ANOMY_38 119
+Add: __ANOMY_39 124
+Add: inc 125
+Add: __ANOMY_42 130
+Add: __ANOMY_43 135
+Add: cmp44 136
+Add: __ANOMY_46 144
+Add: __ANOMY_47 149
+Add: __ANOMY_48 150
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(stderr) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(conns) Load(__ANOMY_14) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(conns) Load(__ANOMY_14) Load(conns) Load(__ANOMY_17) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(conns) Load(__ANOMY_14) Load(conns) Load(__ANOMY_17) Load(current_time) Load(settings) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(conns) Load(__ANOMY_14) Load(conns) Load(__ANOMY_17) Load(current_time) Load(settings) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(conns) Load(__ANOMY_14) Load(conns) Load(__ANOMY_17) Load(current_time) Load(settings) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(conns) Load(__ANOMY_14) Load(conns) Load(__ANOMY_17) Load(current_time) Load(settings) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(conns) Load(__ANOMY_14) Load(conns) Load(__ANOMY_17) Load(current_time) Load(settings) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(conns) Load(__ANOMY_14) Load(conns) Load(__ANOMY_17) Load(current_time) Load(settings) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(conns) Load(__ANOMY_14) Load(conns) Load(__ANOMY_17) Load(current_time) Load(settings) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(conns) Load(__ANOMY_14) Load(conns) Load(__ANOMY_17) Load(current_time) Load(settings) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(conns) Load(__ANOMY_14) Load(conns) Load(__ANOMY_17) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(conns) Load(__ANOMY_14) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(conns) Load(__ANOMY_14) Load(conns) Load(__ANOMY_17) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(conns) Load(__ANOMY_14) Load(conns) Load(__ANOMY_17) Load(current_time) Load(settings) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(conns) Load(__ANOMY_14) Load(conns) Load(__ANOMY_17) Load(current_time) Load(settings) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(conns) Load(__ANOMY_14) Load(conns) Load(__ANOMY_17) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(stderr) Load(conns) Load(__ANOMY_14) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(stderr) Load(conns) Load(__ANOMY_14) Load(conns) Load(__ANOMY_17) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(stderr) Load(conns) Load(__ANOMY_14) Load(conns) Load(__ANOMY_17) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(stderr) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(stderr) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(stderr) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(do_run_conn_timeout_thread) Load(settings) Load(stderr) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) Load(settings) Load(stderr) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(current_time) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(current_time) Load(max_fds) Load(settings) Load(stderr) 
+[Sequence]Load(max_fds) Load(do_run_conn_timeout_thread) Load(settings) Load(stderr) 
+[Sequence]Load(max_fds) 

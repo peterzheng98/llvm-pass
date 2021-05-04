@@ -1,0 +1,72 @@
+[281]Function: new_socket
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		call
+		store
+		icmp
+		br
+	Block: if.then
+		store
+		br
+	Block: if.end
+		load
+		call
+		store
+		icmp
+		br
+	Block: lor.lhs.false
+		load
+		load
+		or
+		call
+		icmp
+		br
+	Block: if.then5
+		call
+		load
+		call
+		store
+		br
+	Block: if.end7
+		load
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+ai.addr
+flags
+retval
+sfd
+Phase 2:
+Add: __ANOMY_0 5
+Add: __ANOMY_1 7
+Add: __ANOMY_2 8
+Add: __ANOMY_3 10
+Add: __ANOMY_4 11
+Add: __ANOMY_5 13
+Add: __ANOMY_6 20
+Add: __ANOMY_7 25
+Add: __ANOMY_8 26
+Add: or 27
+Add: __ANOMY_9 32
+Add: __ANOMY_10 36
+Add: __ANOMY_11 39
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]

@@ -1,0 +1,15 @@
+[172]Function: stats_init
+	Block: entry
+		call
+		call
+		store
+		call
+		sub
+		sub
+		store
+		load
+		call
+		ret
+Phase 1: Allocated Variables: 
+Phase 2:
+[Sequence]Store(stats_state) Store(process_started) Load(settings) 

@@ -1,0 +1,109 @@
+[18]Function: conn_close_idle
+	Block: entry
+		alloca
+		store
+		load
+		icmp
+		br
+	Block: land.lhs.true
+		load
+		load
+		getelementptr
+		load
+		sub
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: land.lhs.true3
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then6
+		load
+		icmp
+		br
+	Block: if.then8
+		load
+		load
+		getelementptr
+		load
+		call
+		br
+	Block: if.end
+		br
+	Block: if.end9
+		load
+		icmp
+		br
+	Block: if.then11
+		load
+		load
+		getelementptr
+		load
+		call
+		br
+	Block: if.end14
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		load
+		add
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		getelementptr
+		call
+		load
+		call
+		load
+		call
+		br
+	Block: if.end22
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+Phase 2:
+Add: __ANOMY_2 6
+Add: __ANOMY_3 8
+Add: __ANOMY_5 13
+Add: __ANOMY_6 15
+Add: cmp2 16
+Add: __ANOMY_7 18
+Add: __ANOMY_8 20
+Add: cmp5 21
+Add: __ANOMY_11 27
+Add: __ANOMY_12 29
+Add: __ANOMY_15 37
+Add: __ANOMY_16 39
+Add: __ANOMY_17 42
+Add: __ANOMY_18 44
+Add: __ANOMY_19 48
+Add: __ANOMY_20 50
+Add: __ANOMY_22 56
+Add: __ANOMY_23 58
+Add: __ANOMY_24 62
+Add: __ANOMY_25 64
+[Sequence]Load(settings) Load(current_time) Load(settings) Load(settings) Load(stats17) Store(stats17) 
+[Sequence]Load(settings) Load(current_time) Load(settings) Load(settings) Load(stderr) Load(stats17) Store(stats17) 
+[Sequence]Load(settings) Load(current_time) Load(settings) Load(settings) Load(stats17) Store(stats17) 
+[Sequence]Load(settings) Load(current_time) Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(current_time) Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(current_time) Load(settings) Load(settings) Load(stderr) 

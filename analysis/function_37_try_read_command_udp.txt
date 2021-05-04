@@ -1,0 +1,46 @@
+[37]Function: try_read_command_udp
+	Block: entry
+		alloca
+		alloca
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		icmp
+		br
+	Block: if.then
+		load
+		getelementptr
+		store
+		load
+		call
+		store
+		br
+	Block: if.else
+		load
+		getelementptr
+		store
+		load
+		call
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+retval
+Phase 2:
+Add: __ANOMY_0 3
+Add: __ANOMY_1 5
+Add: __ANOMY_2 7
+Add: __ANOMY_3 11
+Add: __ANOMY_4 14
+Add: __ANOMY_5 18
+Add: __ANOMY_6 21
+Add: __ANOMY_7 25
+[Sequence]
+[Sequence]

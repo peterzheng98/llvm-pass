@@ -1,0 +1,138 @@
+[64]Function: append_bin_stats
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		store
+		store
+		load
+		getelementptr
+		getelementptr
+		load
+		load
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		store
+		load
+		zext
+		load
+		add
+		store
+		bitcast
+		getelementptr
+		store
+		getelementptr
+		store
+		getelementptr
+		load
+		call
+		store
+		getelementptr
+		store
+		getelementptr
+		store
+		getelementptr
+		store
+		getelementptr
+		load
+		call
+		store
+		getelementptr
+		load
+		getelementptr
+		load
+		store
+		getelementptr
+		store
+		load
+		bitcast
+		getelementptr
+		call
+		load
+		getelementptr
+		store
+		load
+		zext
+		icmp
+		br
+	Block: if.then
+		load
+		load
+		load
+		zext
+		call
+		load
+		zext
+		load
+		sext
+		getelementptr
+		store
+		load
+		icmp
+		br
+	Block: if.then13
+		load
+		load
+		load
+		zext
+		call
+		br
+	Block: if.end
+		br
+	Block: if.end15
+		load
+		zext
+		add
+		load
+		getelementptr
+		getelementptr
+		load
+		add
+		store
+		ret
+Phase 1: Allocated Variables: 
+bodylen
+buf
+c.addr
+header
+key.addr
+klen.addr
+val.addr
+vlen.addr
+Phase 2:
+Add: __ANOMY_0 13
+Add: __ANOMY_2 17
+Add: __ANOMY_4 23
+Add: __ANOMY_5 25
+Add: __ANOMY_6 34
+Add: __ANOMY_7 44
+Add: __ANOMY_8 48
+Add: __ANOMY_9 50
+Add: __ANOMY_10 54
+Add: __ANOMY_11 58
+Add: __ANOMY_12 61
+Add: __ANOMY_13 65
+Add: __ANOMY_14 66
+Add: __ANOMY_15 67
+Add: __ANOMY_16 70
+Add: __ANOMY_17 72
+Add: __ANOMY_18 76
+Add: cmp11 77
+Add: __ANOMY_19 79
+Add: __ANOMY_20 80
+Add: __ANOMY_21 81
+Add: __ANOMY_22 86
+Add: __ANOMY_23 89
+[Sequence]Load(stats) Load(stats1) Store(response) Store(response) Store(response) Store(response) Store(response) Store(response) Store(response) Store(response) Store(response) Load(stats18) Store(stats18) 
+[Sequence]Load(stats) Load(stats1) Store(response) Store(response) Store(response) Store(response) Store(response) Store(response) Store(response) Store(response) Store(response) Load(stats18) Store(stats18) 
+[Sequence]Load(stats) Load(stats1) Store(response) Store(response) Store(response) Store(response) Store(response) Store(response) Store(response) Store(response) Store(response) Load(stats18) Store(stats18) 

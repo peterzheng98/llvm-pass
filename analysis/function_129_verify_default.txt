@@ -1,0 +1,24 @@
+[129]Function: verify_default
+	Block: entry
+		alloca
+		alloca
+		store
+		zext
+		store
+		load
+		trunc
+		br
+	Block: if.then
+		load
+		call
+		call
+		unreachable
+	Block: if.end
+		ret
+Phase 1: Allocated Variables: 
+condition.addr
+param.addr
+Phase 2:
+Add: __ANOMY_0 5
+Add: __ANOMY_1 8
+[Sequence]

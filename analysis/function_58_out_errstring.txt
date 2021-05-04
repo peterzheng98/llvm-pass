@@ -1,0 +1,20 @@
+[58]Function: out_errstring
+	Block: entry
+		alloca
+		alloca
+		store
+		store
+		load
+		getelementptr
+		store
+		load
+		load
+		call
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+str.addr
+Phase 2:
+Add: __ANOMY_0 4
+Add: __ANOMY_1 7
+Add: __ANOMY_2 8

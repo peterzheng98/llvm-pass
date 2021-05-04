@@ -1,0 +1,70 @@
+[20]Function: conn_set_state
+	Block: entry
+		alloca
+		alloca
+		store
+		store
+		load
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		icmp
+		br
+	Block: if.then3
+		load
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		call
+		load
+		call
+		call
+		br
+	Block: if.end
+		load
+		icmp
+		br
+	Block: lor.lhs.false
+		load
+		icmp
+		br
+	Block: if.then9
+		br
+	Block: if.end10
+		load
+		load
+		getelementptr
+		store
+		br
+	Block: if.end12
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+state.addr
+Phase 2:
+Add: __ANOMY_0 4
+Add: __ANOMY_1 5
+Add: __ANOMY_2 7
+Add: cmp 8
+Add: __ANOMY_5 14
+Add: __ANOMY_6 16
+Add: __ANOMY_7 17
+Add: __ANOMY_8 19
+Add: __ANOMY_9 21
+Add: __ANOMY_10 25
+Add: cmp7 26
+Add: __ANOMY_11 28
+Add: cmp8 29
+Add: __ANOMY_12 32
+Add: __ANOMY_13 33
+[Sequence]Load(settings) 
+[Sequence]Load(settings) 
+[Sequence]Load(settings) 
+[Sequence]Load(settings) Load(stderr) 

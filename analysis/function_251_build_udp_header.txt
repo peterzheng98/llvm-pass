@@ -1,0 +1,166 @@
+[251]Function: build_udp_header
+	Block: entry
+		alloca
+		alloca
+		alloca
+		store
+		store
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		getelementptr
+		load
+		sdiv
+		store
+		load
+		getelementptr
+		load
+		srem
+		icmp
+		br
+	Block: if.then3
+		load
+		add
+		store
+		br
+	Block: if.end
+		load
+		icmp
+		br
+	Block: if.then4
+		store
+		br
+	Block: if.end5
+		load
+		trunc
+		load
+		getelementptr
+		store
+		br
+	Block: if.end7
+		load
+		getelementptr
+		load
+		zext
+		sdiv
+		trunc
+		load
+		getelementptr
+		store
+		store
+		load
+		getelementptr
+		load
+		zext
+		srem
+		trunc
+		load
+		getelementptr
+		store
+		store
+		load
+		getelementptr
+		load
+		zext
+		sdiv
+		trunc
+		load
+		getelementptr
+		store
+		store
+		load
+		getelementptr
+		load
+		zext
+		srem
+		trunc
+		load
+		getelementptr
+		store
+		store
+		load
+		getelementptr
+		load
+		zext
+		sdiv
+		trunc
+		load
+		getelementptr
+		store
+		store
+		load
+		getelementptr
+		load
+		zext
+		srem
+		trunc
+		load
+		getelementptr
+		store
+		store
+		load
+		getelementptr
+		store
+		store
+		load
+		getelementptr
+		store
+		store
+		load
+		getelementptr
+		load
+		add
+		store
+		ret
+Phase 1: Allocated Variables: 
+hdr.addr
+resp.addr
+total
+Phase 2:
+Add: __ANOMY_0 5
+Add: __ANOMY_1 7
+Add: tobool 8
+Add: __ANOMY_2 10
+Add: __ANOMY_3 12
+Add: div 13
+Add: __ANOMY_4 15
+Add: __ANOMY_5 17
+Add: rem 18
+Add: tobool2 19
+Add: __ANOMY_6 21
+Add: inc 22
+Add: __ANOMY_7 25
+Add: cmp 26
+Add: __ANOMY_8 30
+Add: __ANOMY_9 32
+Add: __ANOMY_10 36
+Add: __ANOMY_11 38
+Add: __ANOMY_12 42
+Add: __ANOMY_13 46
+Add: __ANOMY_14 48
+Add: __ANOMY_15 52
+Add: __ANOMY_16 56
+Add: __ANOMY_17 58
+Add: __ANOMY_18 62
+Add: __ANOMY_19 66
+Add: __ANOMY_20 68
+Add: __ANOMY_21 72
+Add: __ANOMY_22 76
+Add: __ANOMY_23 78
+Add: __ANOMY_24 82
+Add: __ANOMY_25 86
+Add: __ANOMY_26 88
+Add: __ANOMY_27 92
+Add: __ANOMY_28 96
+Add: __ANOMY_29 100
+Add: __ANOMY_30 104
+Add: __ANOMY_31 106
+Add: inc38 107
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]

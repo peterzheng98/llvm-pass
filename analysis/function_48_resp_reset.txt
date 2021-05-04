@@ -1,0 +1,76 @@
+[48]Function: resp_reset
+	Block: entry
+		alloca
+		store
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		getelementptr
+		load
+		call
+		load
+		getelementptr
+		store
+		br
+	Block: if.end
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then4
+		load
+		getelementptr
+		load
+		call
+		load
+		getelementptr
+		store
+		br
+	Block: if.end7
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		store
+		ret
+Phase 1: Allocated Variables: 
+resp.addr
+Phase 2:
+Add: __ANOMY_0 2
+Add: __ANOMY_1 4
+Add: tobool 5
+Add: __ANOMY_2 7
+Add: __ANOMY_3 9
+Add: __ANOMY_4 11
+Add: __ANOMY_5 15
+Add: __ANOMY_6 17
+Add: tobool3 18
+Add: __ANOMY_7 20
+Add: __ANOMY_8 22
+Add: __ANOMY_9 24
+Add: __ANOMY_10 28
+Add: __ANOMY_11 31
+Add: __ANOMY_12 34
+Add: __ANOMY_13 37
+Add: __ANOMY_14 40
+Add: __ANOMY_15 43
+[Sequence]
+[Sequence]

@@ -1,0 +1,277 @@
+[100]Function: process_stats_conns
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		load
+		add
+		call
+		store
+		alloca
+		store
+		load
+		add
+		alloca
+		store
+		store
+		store
+		store
+		br
+	Block: for.cond
+		load
+		load
+		icmp
+		br
+	Block: for.body
+		load
+		load
+		sext
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		load
+		sext
+		getelementptr
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then6
+		getelementptr
+		load
+		call
+		store
+		getelementptr
+		call
+		store
+		load
+		getelementptr
+		load
+		trunc
+		getelementptr
+		load
+		load
+		call
+		br
+	Block: if.end
+		load
+		load
+		sext
+		getelementptr
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then15
+		load
+		load
+		sext
+		getelementptr
+		load
+		call
+		getelementptr
+		load
+		call
+		store
+		getelementptr
+		call
+		store
+		load
+		getelementptr
+		load
+		trunc
+		getelementptr
+		load
+		load
+		call
+		load
+		load
+		sext
+		getelementptr
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: land.lhs.true
+		load
+		load
+		sext
+		getelementptr
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: land.lhs.true35
+		load
+		load
+		sext
+		getelementptr
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then41
+		getelementptr
+		load
+		call
+		store
+		getelementptr
+		call
+		store
+		load
+		getelementptr
+		load
+		trunc
+		getelementptr
+		load
+		load
+		call
+		br
+	Block: if.end49
+		getelementptr
+		load
+		call
+		store
+		getelementptr
+		load
+		load
+		sext
+		getelementptr
+		load
+		getelementptr
+		load
+		call
+		call
+		store
+		load
+		getelementptr
+		load
+		trunc
+		getelementptr
+		load
+		load
+		call
+		getelementptr
+		load
+		call
+		store
+		getelementptr
+		load
+		load
+		load
+		sext
+		getelementptr
+		load
+		getelementptr
+		load
+		sub
+		call
+		store
+		load
+		getelementptr
+		load
+		trunc
+		getelementptr
+		load
+		load
+		call
+		br
+	Block: if.end70
+		br
+	Block: if.end71
+		br
+	Block: for.inc
+		load
+		add
+		store
+		br
+	Block: for.end
+		load
+		call
+		ret
+Phase 1: Allocated Variables: 
+__vla_expr0
+__vla_expr1
+add_stats.addr
+c.addr
+extras_len
+i
+key_str
+klen
+saved_stack
+val_str
+vla
+vla2
+vlen
+Phase 2:
+Add: __ANOMY_0 14
+Add: add 15
+Add: __ANOMY_2 20
+Add: add1 21
+Add: __ANOMY_3 28
+Add: __ANOMY_6 33
+Add: __ANOMY_9 40
+Add: __ANOMY_12 49
+Add: __ANOMY_13 55
+Add: __ANOMY_14 57
+Add: __ANOMY_15 60
+Add: __ANOMY_16 61
+Add: __ANOMY_18 65
+Add: __ANOMY_22 74
+Add: __ANOMY_24 80
+Add: __ANOMY_25 86
+Add: __ANOMY_26 88
+Add: __ANOMY_27 91
+Add: __ANOMY_28 92
+Add: __ANOMY_30 95
+Add: __ANOMY_34 104
+Add: __ANOMY_38 113
+Add: __ANOMY_41 122
+Add: __ANOMY_42 128
+Add: __ANOMY_43 130
+Add: __ANOMY_44 133
+Add: __ANOMY_45 134
+Add: __ANOMY_46 138
+Add: __ANOMY_48 143
+Add: __ANOMY_51 152
+Add: __ANOMY_52 154
+Add: __ANOMY_53 157
+Add: __ANOMY_54 158
+Add: __ANOMY_55 161
+Add: __ANOMY_58 167
+Add: __ANOMY_61 176
+Add: __ANOMY_62 178
+Add: __ANOMY_63 181
+Add: __ANOMY_64 182
+Add: __ANOMY_65 187
+Add: inc 188
+Add: __ANOMY_66 191
+[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_5) Load(max_fds) Load(conns) Load(__ANOMY_5) Load(max_fds) Load(conns) Load(__ANOMY_5) 
+[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_5) Load(max_fds) Load(conns) Load(__ANOMY_5) Load(max_fds) Load(conns) Load(__ANOMY_5) Load(conns) Load(__ANOMY_8) Load(__ANOMY_10) Load(conns) Load(__ANOMY_17) Load(__ANOMY_19) 
+[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_5) Load(max_fds) Load(conns) Load(__ANOMY_5) Load(max_fds) Load(conns) Load(__ANOMY_5) Load(conns) Load(__ANOMY_8) Load(__ANOMY_10) Load(conns) Load(__ANOMY_17) Load(__ANOMY_19) Load(conns) Load(__ANOMY_21) Load(conns) Load(__ANOMY_29) Load(__ANOMY_31) Load(conns) Load(__ANOMY_47) Load(__ANOMY_49) Load(current_time) Load(conns) Load(__ANOMY_57) Load(__ANOMY_59) 
+[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_5) Load(max_fds) Load(conns) Load(__ANOMY_5) Load(max_fds) Load(conns) Load(__ANOMY_5) Load(conns) Load(__ANOMY_8) Load(__ANOMY_10) Load(conns) Load(__ANOMY_17) Load(__ANOMY_19) Load(conns) Load(__ANOMY_21) Load(conns) Load(__ANOMY_29) Load(__ANOMY_31) Load(conns) Load(__ANOMY_33) Load(__ANOMY_35) Load(conns) Load(__ANOMY_47) Load(__ANOMY_49) Load(current_time) Load(conns) Load(__ANOMY_57) Load(__ANOMY_59) 
+[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_5) Load(max_fds) Load(conns) Load(__ANOMY_5) Load(max_fds) Load(conns) Load(__ANOMY_5) Load(conns) Load(__ANOMY_8) Load(__ANOMY_10) Load(conns) Load(__ANOMY_17) Load(__ANOMY_19) Load(conns) Load(__ANOMY_21) Load(conns) Load(__ANOMY_29) Load(__ANOMY_31) Load(conns) Load(__ANOMY_33) Load(__ANOMY_35) Load(conns) Load(__ANOMY_37) Load(__ANOMY_39) Load(conns) Load(__ANOMY_47) Load(__ANOMY_49) Load(current_time) Load(conns) Load(__ANOMY_57) Load(__ANOMY_59) 
+[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_5) Load(max_fds) Load(conns) Load(__ANOMY_5) Load(max_fds) Load(conns) Load(__ANOMY_5) Load(conns) Load(__ANOMY_8) Load(__ANOMY_10) Load(conns) Load(__ANOMY_17) Load(__ANOMY_19) Load(conns) Load(__ANOMY_21) Load(conns) Load(__ANOMY_29) Load(__ANOMY_31) Load(conns) Load(__ANOMY_33) Load(__ANOMY_35) 
+[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_5) Load(max_fds) Load(conns) Load(__ANOMY_5) Load(max_fds) Load(conns) Load(__ANOMY_5) Load(conns) Load(__ANOMY_8) Load(__ANOMY_10) Load(conns) Load(__ANOMY_17) Load(__ANOMY_19) Load(conns) Load(__ANOMY_21) Load(conns) Load(__ANOMY_29) Load(__ANOMY_31) Load(conns) Load(__ANOMY_33) Load(__ANOMY_35) Load(conns) Load(__ANOMY_37) Load(__ANOMY_39) 
+[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_5) Load(max_fds) Load(conns) Load(__ANOMY_5) Load(conns) Load(__ANOMY_8) Load(__ANOMY_10) Load(conns) Load(__ANOMY_17) Load(__ANOMY_19) Load(conns) Load(__ANOMY_21) Load(conns) Load(__ANOMY_29) Load(__ANOMY_31) Load(conns) Load(__ANOMY_33) Load(__ANOMY_35) Load(conns) Load(__ANOMY_37) Load(__ANOMY_39) 
+[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_5) Load(max_fds) Load(conns) Load(__ANOMY_5) Load(conns) Load(__ANOMY_8) Load(__ANOMY_10) 
+[Sequence]Load(max_fds) Load(conns) Load(__ANOMY_5) Load(conns) Load(__ANOMY_8) Load(__ANOMY_10) 

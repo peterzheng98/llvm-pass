@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 typedef enum{
-  HEAD, Branch, Store, Load
+  HEAD, Branch, Store, Load, Switch
 } element_t;
 class BaseElement;
 
@@ -14,6 +14,7 @@ private:
 public:
   Element** next;
   Element* main_line_next;
+  std::vector<std::string> brs;
 private:
   int capacity, idx;
   bool isHead;
@@ -33,10 +34,16 @@ private:
   element_t element_type;
   std::string target_name, br1, br2;
 public:
+  std::vector<std::string> brs;
+public:
   BaseElement(element_t, std::string);
   BaseElement(element_t, std::string, std::string);
   std::string toString();
   element_t getType();
   std::string getBr1();
   std::string getBr2();
+  std::string getBrs(int);
+  void addBrs(std::string);
+  auto begin();
+  auto end();
 };

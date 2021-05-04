@@ -1,0 +1,124 @@
+[62]Function: append_stats
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		store
+		store
+		load
+		zext
+		icmp
+		br
+	Block: land.lhs.true
+		load
+		icmp
+		br
+	Block: if.then
+		br
+	Block: if.end
+		load
+		bitcast
+		store
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then6
+		load
+		load
+		zext
+		add
+		zext
+		add
+		store
+		load
+		load
+		call
+		br
+	Block: if.then10
+		br
+	Block: if.end11
+		load
+		load
+		load
+		load
+		load
+		call
+		br
+	Block: if.else
+		load
+		load
+		zext
+		add
+		add
+		zext
+		store
+		load
+		load
+		call
+		br
+	Block: if.then18
+		br
+	Block: if.end19
+		load
+		load
+		load
+		load
+		load
+		call
+		br
+	Block: if.end20
+		ret
+Phase 1: Allocated Variables: 
+c
+cookie.addr
+key.addr
+klen.addr
+needed
+needed12
+val.addr
+vlen.addr
+Phase 2:
+Add: __ANOMY_0 13
+Add: __ANOMY_1 17
+Add: cmp2 18
+Add: __ANOMY_2 21
+Add: __ANOMY_4 24
+Add: __ANOMY_5 26
+Add: cmp4 27
+Add: __ANOMY_6 29
+Add: __ANOMY_7 30
+Add: __ANOMY_8 36
+Add: __ANOMY_9 37
+Add: __ANOMY_10 41
+Add: __ANOMY_11 42
+Add: __ANOMY_12 43
+Add: __ANOMY_13 44
+Add: __ANOMY_14 45
+Add: __ANOMY_15 48
+Add: __ANOMY_16 49
+Add: __ANOMY_17 55
+Add: __ANOMY_18 56
+Add: __ANOMY_19 60
+Add: __ANOMY_20 61
+Add: __ANOMY_21 62
+Add: __ANOMY_22 63
+Add: __ANOMY_23 64
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]

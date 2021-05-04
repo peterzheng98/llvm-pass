@@ -1,0 +1,112 @@
+[283]Function: maximize_sndbuf
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		load
+		bitcast
+		call
+		icmp
+		br
+	Block: if.then
+		load
+		icmp
+		br
+	Block: if.then2
+		call
+		br
+	Block: if.end
+		br
+	Block: if.end3
+		load
+		store
+		store
+		br
+	Block: while.cond
+		load
+		load
+		icmp
+		br
+	Block: while.body
+		load
+		load
+		add
+		udiv
+		store
+		load
+		bitcast
+		load
+		call
+		icmp
+		br
+	Block: if.then7
+		load
+		store
+		load
+		add
+		store
+		br
+	Block: if.else
+		load
+		sub
+		store
+		br
+	Block: if.end9
+		br
+	Block: while.end
+		load
+		icmp
+		br
+	Block: if.then11
+		load
+		load
+		load
+		load
+		call
+		br
+	Block: if.end13
+		ret
+Phase 1: Allocated Variables: 
+avg
+intsize
+last_good
+max
+min
+old_size
+sfd.addr
+Phase 2:
+Add: __ANOMY_0 10
+Add: __ANOMY_3 21
+Add: __ANOMY_4 25
+Add: __ANOMY_5 26
+Add: cmp4 27
+Add: __ANOMY_6 29
+Add: __ANOMY_7 30
+Add: add 31
+Add: div 32
+Add: __ANOMY_8 34
+Add: __ANOMY_10 36
+Add: __ANOMY_11 40
+Add: __ANOMY_12 42
+Add: add8 43
+Add: __ANOMY_13 46
+Add: sub 47
+Add: __ANOMY_16 55
+Add: __ANOMY_17 56
+Add: __ANOMY_18 57
+[Sequence]Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(stderr) 
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]Load(settings) 
+[Sequence]Load(settings) 

@@ -1,0 +1,87 @@
+[214]Function: rbuf_release
+	Block: entry
+		alloca
+		store
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: land.lhs.true
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: land.lhs.true2
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		getelementptr
+		load
+		trunc
+		br
+	Block: if.then4
+		load
+		getelementptr
+		load
+		call
+		load
+		getelementptr
+		store
+		br
+	Block: if.else
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		call
+		br
+	Block: if.end
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		store
+		br
+	Block: if.end9
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+Phase 2:
+Add: __ANOMY_0 2
+Add: __ANOMY_1 4
+Add: cmp 5
+Add: __ANOMY_2 7
+Add: __ANOMY_3 9
+Add: cmp1 10
+Add: __ANOMY_4 12
+Add: __ANOMY_5 14
+Add: cmp3 15
+Add: __ANOMY_6 17
+Add: __ANOMY_7 19
+Add: __ANOMY_8 22
+Add: __ANOMY_9 24
+Add: __ANOMY_10 26
+Add: __ANOMY_11 30
+Add: __ANOMY_12 32
+Add: __ANOMY_13 34
+Add: __ANOMY_14 35
+Add: __ANOMY_15 37
+Add: __ANOMY_16 40
+Add: __ANOMY_17 43
+Add: __ANOMY_18 46
+[Sequence]
+[Sequence]

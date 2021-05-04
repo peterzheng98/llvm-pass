@@ -1,0 +1,127 @@
+[22]Function: conn_worker_readd
+	Block: entry
+		alloca
+		store
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		getelementptr
+		load
+		add
+		store
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then3
+		br
+	Block: if.end
+		br
+	Block: if.end4
+		load
+		getelementptr
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		load
+		load
+		bitcast
+		call
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		load
+		getelementptr
+		call
+		load
+		getelementptr
+		call
+		icmp
+		br
+	Block: if.then10
+		call
+		br
+	Block: if.end11
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then14
+		load
+		call
+		br
+	Block: if.else
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then17
+		load
+		call
+		br
+	Block: if.else18
+		load
+		call
+		br
+	Block: if.end19
+		br
+	Block: if.end20
+		ret
+Phase 1: Allocated Variables: 
+c.addr
+Phase 2:
+Add: __ANOMY_0 2
+Add: __ANOMY_1 4
+Add: cmp 5
+Add: __ANOMY_2 7
+Add: __ANOMY_3 9
+Add: dec 10
+Add: __ANOMY_4 12
+Add: __ANOMY_5 14
+Add: cmp2 15
+Add: __ANOMY_6 19
+Add: __ANOMY_7 22
+Add: __ANOMY_8 24
+Add: __ANOMY_9 26
+Add: __ANOMY_10 27
+Add: __ANOMY_11 29
+Add: __ANOMY_12 30
+Add: __ANOMY_14 33
+Add: __ANOMY_15 35
+Add: __ANOMY_16 37
+Add: __ANOMY_17 38
+Add: __ANOMY_18 41
+Add: __ANOMY_19 48
+Add: __ANOMY_20 50
+Add: cmp13 51
+Add: __ANOMY_21 53
+Add: __ANOMY_22 56
+Add: __ANOMY_23 58
+Add: cmp16 59
+Add: __ANOMY_24 61
+Add: __ANOMY_25 64
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]

@@ -1,0 +1,456 @@
+[70]Function: _store_item_copy_data
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		br
+	Block: if.then1
+		load
+		load
+		load
+		getelementptr
+		load
+		sub
+		call
+		icmp
+		br
+	Block: lor.lhs.false
+		load
+		load
+		load
+		getelementptr
+		load
+		call
+		icmp
+		br
+	Block: if.then8
+		store
+		br
+	Block: if.end
+		br
+	Block: if.else
+		load
+		getelementptr
+		bitcast
+		load
+		getelementptr
+		load
+		zext
+		sext
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		bitcast
+		load
+		getelementptr
+		load
+		zext
+		sext
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		sext
+		call
+		load
+		getelementptr
+		bitcast
+		load
+		getelementptr
+		load
+		zext
+		sext
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		sext
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		bitcast
+		load
+		getelementptr
+		load
+		zext
+		sext
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		sext
+		call
+		br
+	Block: if.end84
+		br
+	Block: if.else85
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		br
+	Block: if.then90
+		load
+		load
+		load
+		getelementptr
+		load
+		sub
+		call
+		icmp
+		br
+	Block: lor.lhs.false96
+		load
+		load
+		load
+		getelementptr
+		load
+		call
+		icmp
+		br
+	Block: if.then101
+		store
+		br
+	Block: if.end102
+		br
+	Block: if.else103
+		load
+		getelementptr
+		bitcast
+		load
+		getelementptr
+		load
+		zext
+		sext
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		bitcast
+		load
+		getelementptr
+		load
+		zext
+		sext
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		sext
+		call
+		load
+		getelementptr
+		bitcast
+		load
+		getelementptr
+		load
+		zext
+		sext
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		sext
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		bitcast
+		load
+		getelementptr
+		load
+		zext
+		sext
+		getelementptr
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		and
+		icmp
+		zext
+		select
+		getelementptr
+		load
+		getelementptr
+		load
+		sext
+		call
+		br
+	Block: if.end184
+		br
+	Block: if.end185
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+add_it.addr
+comm.addr
+new_it.addr
+old_it.addr
+retval
+Phase 2:
+Add: __ANOMY_0 9
+Add: cmp 10
+Add: __ANOMY_1 12
+Add: __ANOMY_2 14
+Add: __ANOMY_3 19
+Add: __ANOMY_4 20
+Add: __ANOMY_5 21
+Add: __ANOMY_6 23
+Add: sub 24
+Add: __ANOMY_7 28
+Add: __ANOMY_8 29
+Add: __ANOMY_9 30
+Add: __ANOMY_10 32
+Add: __ANOMY_11 39
+Add: __ANOMY_13 42
+Add: __ANOMY_14 44
+Add: __ANOMY_15 49
+Add: __ANOMY_16 51
+Add: __ANOMY_18 58
+Add: __ANOMY_19 60
+Add: __ANOMY_21 67
+Add: __ANOMY_23 70
+Add: __ANOMY_24 72
+Add: __ANOMY_25 77
+Add: __ANOMY_26 79
+Add: __ANOMY_28 86
+Add: __ANOMY_29 88
+Add: __ANOMY_31 95
+Add: __ANOMY_32 97
+Add: __ANOMY_33 100
+Add: __ANOMY_35 103
+Add: __ANOMY_36 105
+Add: __ANOMY_37 110
+Add: __ANOMY_38 112
+Add: __ANOMY_40 119
+Add: __ANOMY_41 121
+Add: __ANOMY_43 128
+Add: __ANOMY_44 130
+Add: __ANOMY_45 134
+Add: __ANOMY_47 137
+Add: __ANOMY_48 139
+Add: __ANOMY_49 144
+Add: __ANOMY_50 146
+Add: __ANOMY_52 153
+Add: __ANOMY_53 155
+Add: __ANOMY_55 162
+Add: __ANOMY_56 164
+Add: __ANOMY_57 169
+Add: __ANOMY_58 171
+Add: __ANOMY_59 176
+Add: __ANOMY_60 177
+Add: __ANOMY_61 178
+Add: __ANOMY_62 180
+Add: sub92 181
+Add: __ANOMY_63 185
+Add: __ANOMY_64 186
+Add: __ANOMY_65 187
+Add: __ANOMY_66 189
+Add: __ANOMY_67 196
+Add: __ANOMY_69 199
+Add: __ANOMY_70 201
+Add: __ANOMY_71 206
+Add: __ANOMY_72 208
+Add: __ANOMY_74 215
+Add: __ANOMY_75 217
+Add: __ANOMY_77 224
+Add: __ANOMY_79 227
+Add: __ANOMY_80 229
+Add: __ANOMY_81 234
+Add: __ANOMY_82 236
+Add: __ANOMY_84 243
+Add: __ANOMY_85 245
+Add: __ANOMY_87 252
+Add: __ANOMY_88 254
+Add: __ANOMY_89 257
+Add: __ANOMY_91 260
+Add: __ANOMY_92 262
+Add: __ANOMY_93 267
+Add: __ANOMY_94 269
+Add: __ANOMY_96 276
+Add: __ANOMY_97 278
+Add: __ANOMY_99 285
+Add: __ANOMY_100 287
+Add: __ANOMY_101 291
+Add: __ANOMY_103 294
+Add: __ANOMY_104 296
+Add: __ANOMY_105 301
+Add: __ANOMY_106 303
+Add: __ANOMY_108 310
+Add: __ANOMY_109 312
+Add: __ANOMY_111 319
+Add: __ANOMY_112 321
+Add: __ANOMY_113 328
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]

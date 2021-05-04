@@ -1,0 +1,65 @@
+[50]Function: resp_add_iov
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		load
+		getelementptr
+		load
+		zext
+		store
+		load
+		load
+		getelementptr
+		load
+		sext
+		getelementptr
+		getelementptr
+		store
+		load
+		sext
+		load
+		getelementptr
+		load
+		sext
+		getelementptr
+		getelementptr
+		store
+		load
+		getelementptr
+		load
+		add
+		store
+		load
+		load
+		getelementptr
+		load
+		add
+		store
+		ret
+Phase 1: Allocated Variables: 
+buf.addr
+len.addr
+resp.addr
+x
+Phase 2:
+Add: __ANOMY_0 7
+Add: __ANOMY_1 9
+Add: __ANOMY_2 12
+Add: __ANOMY_3 13
+Add: __ANOMY_4 15
+Add: __ANOMY_5 20
+Add: __ANOMY_6 22
+Add: __ANOMY_7 24
+Add: __ANOMY_8 29
+Add: __ANOMY_9 31
+Add: inc 32
+Add: __ANOMY_10 34
+Add: __ANOMY_11 35
+Add: __ANOMY_12 37
+Add: add 38
+[Sequence]Store(arrayidx) Store(arrayidx4) 

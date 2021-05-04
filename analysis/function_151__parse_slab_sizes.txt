@@ -1,0 +1,165 @@
+[151]Function: _parse_slab_sizes
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		store
+		store
+		store
+		load
+		call
+		icmp
+		br
+	Block: if.then
+		store
+		br
+	Block: if.end
+		load
+		call
+		store
+		br
+	Block: for.cond
+		load
+		icmp
+		br
+	Block: for.body
+		load
+		call
+		br
+	Block: lor.lhs.false
+		load
+		load
+		icmp
+		br
+	Block: lor.lhs.false5
+		load
+		load
+		icmp
+		br
+	Block: if.then7
+		load
+		load
+		call
+		store
+		br
+	Block: if.end9
+		load
+		load
+		icmp
+		br
+	Block: if.then11
+		load
+		load
+		call
+		store
+		br
+	Block: if.end13
+		load
+		load
+		add
+		icmp
+		br
+	Block: if.then15
+		load
+		load
+		call
+		store
+		br
+	Block: if.end17
+		load
+		load
+		load
+		add
+		store
+		sext
+		getelementptr
+		store
+		load
+		store
+		load
+		icmp
+		br
+	Block: if.then19
+		load
+		call
+		store
+		br
+	Block: if.end21
+		br
+	Block: for.inc
+		call
+		store
+		br
+	Block: for.end
+		load
+		load
+		sext
+		getelementptr
+		store
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+b
+i
+last_size
+p
+retval
+s.addr
+size
+slab_sizes.addr
+Phase 2:
+Add: __ANOMY_0 14
+Add: __ANOMY_1 20
+Add: __ANOMY_2 24
+Add: cmp2 25
+Add: __ANOMY_3 27
+Add: __ANOMY_4 30
+Add: __ANOMY_6 34
+Add: __ANOMY_9 39
+Add: __ANOMY_10 43
+Add: __ANOMY_11 44
+Add: cmp10 45
+Add: __ANOMY_13 48
+Add: __ANOMY_14 52
+Add: __ANOMY_15 53
+Add: add 54
+Add: cmp14 55
+Add: __ANOMY_17 58
+Add: __ANOMY_18 62
+Add: __ANOMY_19 63
+Add: __ANOMY_20 64
+Add: inc 65
+Add: __ANOMY_21 70
+Add: __ANOMY_22 72
+Add: cmp18 73
+Add: __ANOMY_24 83
+Add: __ANOMY_25 84
+Add: __ANOMY_26 90
+[Sequence]
+[Sequence]Load(stderr) 
+[Sequence]Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) 
+[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(settings) Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(settings) Load(stderr) 
+[Sequence]Load(settings) Load(settings) Load(stderr) 
+[Sequence]

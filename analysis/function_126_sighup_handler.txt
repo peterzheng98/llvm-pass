@@ -1,0 +1,10 @@
+[126]Function: sighup_handler
+	Block: entry
+		alloca
+		store
+		store
+		ret
+Phase 1: Allocated Variables: 
+sig.addr
+Phase 2:
+[Sequence]Store(settings) 

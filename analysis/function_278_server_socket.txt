@@ -1,0 +1,591 @@
+[278]Function: server_socket
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		store
+		zext
+		store
+		bitcast
+		call
+		bitcast
+		call
+		bitcast
+		getelementptr
+		store
+		store
+		store
+		load
+		icmp
+		zext
+		select
+		getelementptr
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		store
+		br
+	Block: if.end
+		getelementptr
+		load
+		call
+		load
+		getelementptr
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then5
+		load
+		icmp
+		br
+	Block: if.then7
+		load
+		load
+		call
+		call
+		br
+	Block: if.else
+		call
+		br
+	Block: if.end10
+		store
+		br
+	Block: if.end11
+		load
+		store
+		br
+	Block: for.cond
+		load
+		icmp
+		br
+	Block: for.body
+		load
+		call
+		store
+		icmp
+		br
+	Block: if.then14
+		call
+		load
+		icmp
+		br
+	Block: if.then17
+		call
+		call
+		unreachable
+	Block: if.end18
+		br
+	Block: if.end19
+		load
+		icmp
+		br
+	Block: if.then21
+		store
+		load
+		bitcast
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then24
+		load
+		call
+		call
+		unreachable
+	Block: if.end26
+		br
+	Block: if.end27
+		load
+		getelementptr
+		load
+		icmp
+		br
+	Block: if.then29
+		load
+		bitcast
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then32
+		call
+		load
+		call
+		br
+	Block: if.end34
+		br
+	Block: if.end35
+		load
+		bitcast
+		call
+		load
+		icmp
+		br
+	Block: if.then38
+		load
+		call
+		br
+	Block: if.else39
+		load
+		bitcast
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then42
+		call
+		br
+	Block: if.end43
+		load
+		bitcast
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then46
+		call
+		br
+	Block: if.end47
+		load
+		bitcast
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then50
+		call
+		br
+	Block: if.end51
+		br
+	Block: if.end52
+		load
+		bitcast
+		load
+		getelementptr
+		load
+		store
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		call
+		icmp
+		br
+	Block: if.then55
+		call
+		load
+		icmp
+		br
+	Block: if.then58
+		call
+		load
+		call
+		load
+		call
+		store
+		br
+	Block: if.end60
+		load
+		call
+		br
+	Block: if.else62
+		load
+		add
+		store
+		load
+		icmp
+		br
+	Block: land.lhs.true
+		load
+		load
+		call
+		icmp
+		br
+	Block: if.then66
+		call
+		load
+		call
+		load
+		call
+		store
+		br
+	Block: if.end68
+		load
+		icmp
+		br
+	Block: land.lhs.true70
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		icmp
+		br
+	Block: lor.lhs.false
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		icmp
+		br
+	Block: if.then79
+		store
+		load
+		bitcast
+		bitcast
+		store
+		getelementptr
+		load
+		call
+		icmp
+		br
+	Block: if.then87
+		load
+		getelementptr
+		load
+		getelementptr
+		load
+		zext
+		icmp
+		br
+	Block: if.then93
+		load
+		load
+		icmp
+		zext
+		select
+		bitcast
+		getelementptr
+		load
+		call
+		zext
+		call
+		br
+	Block: if.else100
+		load
+		load
+		icmp
+		zext
+		select
+		bitcast
+		getelementptr
+		load
+		call
+		zext
+		call
+		br
+	Block: if.end107
+		br
+	Block: if.end108
+		br
+	Block: if.end109
+		br
+	Block: if.end110
+		load
+		icmp
+		br
+	Block: if.then113
+		store
+		br
+	Block: for.cond114
+		load
+		load
+		icmp
+		br
+	Block: for.body117
+		load
+		icmp
+		br
+	Block: if.then120
+		load
+		store
+		br
+	Block: if.else121
+		load
+		call
+		store
+		load
+		icmp
+		br
+	Block: if.then125
+		call
+		call
+		unreachable
+	Block: if.end126
+		br
+	Block: if.end127
+		load
+		load
+		call
+		br
+	Block: for.inc
+		load
+		add
+		store
+		br
+	Block: for.end
+		br
+	Block: if.else129
+		load
+		load
+		load
+		call
+		store
+		icmp
+		br
+	Block: if.then132
+		load
+		call
+		call
+		unreachable
+	Block: if.end134
+		load
+		load
+		getelementptr
+		store
+		load
+		store
+		br
+	Block: if.end136
+		br
+	Block: for.inc137
+		load
+		getelementptr
+		load
+		store
+		br
+	Block: for.end138
+		load
+		call
+		load
+		icmp
+		zext
+		store
+		br
+	Block: return
+		load
+		ret
+Phase 1: Allocated Variables: 
+agg.tmp
+agg.tmp81
+ai
+c
+error
+flags
+hints
+interface.addr
+len
+len80
+ling
+listen_conn_add
+my_sockaddr
+napi_id
+next
+per_thread_fd
+port.addr
+port_buf
+portnumber_file.addr
+retval
+sfd
+ssl_enabled.addr
+success
+transport.addr
+Phase 2:
+Add: __ANOMY_4 39
+Add: cmp 40
+Add: __ANOMY_6 45
+Add: cmp1 46
+Add: __ANOMY_7 51
+Add: __ANOMY_8 53
+Add: __ANOMY_9 57
+Add: cmp4 58
+Add: __ANOMY_10 60
+Add: cmp6 61
+Add: __ANOMY_12 64
+Add: __ANOMY_13 72
+Add: __ANOMY_14 75
+Add: tobool 76
+Add: __ANOMY_15 78
+Add: __ANOMY_18 95
+Add: __ANOMY_20 99
+Add: cmp23 100
+Add: __ANOMY_22 107
+Add: __ANOMY_23 109
+Add: cmp28 110
+Add: __ANOMY_24 112
+Add: __ANOMY_26 116
+Add: cmp31 117
+Add: __ANOMY_27 120
+Add: __ANOMY_28 124
+Add: __ANOMY_30 127
+Add: cmp37 128
+Add: __ANOMY_31 130
+Add: __ANOMY_32 133
+Add: __ANOMY_34 137
+Add: cmp41 138
+Add: __ANOMY_35 142
+Add: __ANOMY_37 146
+Add: cmp45 147
+Add: __ANOMY_38 151
+Add: __ANOMY_40 155
+Add: cmp49 156
+Add: __ANOMY_41 161
+Add: __ANOMY_42 163
+Add: __ANOMY_43 165
+Add: __ANOMY_44 167
+Add: __ANOMY_45 169
+Add: __ANOMY_46 171
+Add: __ANOMY_48 180
+Add: __ANOMY_49 182
+Add: __ANOMY_50 186
+Add: __ANOMY_51 189
+Add: inc 190
+Add: __ANOMY_52 192
+Add: cmp63 193
+Add: __ANOMY_53 195
+Add: __ANOMY_55 201
+Add: __ANOMY_56 203
+Add: __ANOMY_57 207
+Add: cmp69 208
+Add: __ANOMY_58 210
+Add: __ANOMY_59 212
+Add: __ANOMY_60 214
+Add: __ANOMY_61 218
+Add: __ANOMY_62 220
+Add: __ANOMY_63 222
+Add: __ANOMY_64 227
+Add: __ANOMY_66 232
+Add: __ANOMY_67 236
+Add: __ANOMY_68 238
+Add: __ANOMY_69 240
+Add: __ANOMY_70 244
+Add: __ANOMY_71 245
+Add: cmp94 246
+Add: __ANOMY_74 256
+Add: __ANOMY_75 257
+Add: cmp101 258
+Add: __ANOMY_78 271
+Add: cmp111 272
+Add: __ANOMY_79 276
+Add: __ANOMY_81 280
+Add: cmp118 281
+Add: __ANOMY_82 283
+Add: __ANOMY_83 286
+Add: __ANOMY_84 289
+Add: cmp123 290
+Add: __ANOMY_85 296
+Add: __ANOMY_86 297
+Add: __ANOMY_87 300
+Add: inc128 301
+Add: __ANOMY_88 305
+Add: __ANOMY_89 306
+Add: __ANOMY_93 317
+Add: __ANOMY_94 320
+Add: __ANOMY_95 324
+Add: __ANOMY_96 326
+Add: __ANOMY_97 329
+Add: __ANOMY_98 331
+Add: cmp139 332
+Add: __ANOMY_99 336
+[Sequence]Store(__ANOMY_2) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(stderr) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(stderr) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(stderr) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(settings) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(settings) Load(settings) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(settings) Load(settings) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(settings) Load(settings) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(settings) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Store(__sockaddr__82) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Store(__sockaddr__82) Load(in6) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Store(__sockaddr__82) Load(in) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Store(__sockaddr__82) Load(in6) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Store(__sockaddr__82) Load(in) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(call56) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(call56) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Load(stderr) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(call15) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Store(__sockaddr__82) Load(in6) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) Store(__sockaddr__82) Load(in) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(call56) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Store(__sockaddr__) Load(call56) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(settings) Load(stderr) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) Load(main_base) Load(listen_conn) Store(listen_conn) Load(call15) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(call56) 
+[Sequence]Store(__ANOMY_2) Load(settings) Store(__sockaddr__) Load(call56) 
+[Sequence]Store(__ANOMY_2) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) 
+[Sequence]Store(__ANOMY_2) Load(settings) Load(stderr) 
+[Sequence]Store(__ANOMY_2) Load(call15) 
+[Sequence]Store(__ANOMY_2) 
+[Sequence]Store(__ANOMY_2) Load(stderr) 
+[Sequence]Store(__ANOMY_2) 
+[Sequence]Store(__ANOMY_2) 
+[Sequence]Store(__ANOMY_2) Load(stderr) 

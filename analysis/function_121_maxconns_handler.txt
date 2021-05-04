@@ -1,0 +1,43 @@
+[121]Function: maxconns_handler
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		bitcast
+		call
+		load
+		icmp
+		br
+	Block: lor.lhs.false
+		load
+		trunc
+		zext
+		icmp
+		br
+	Block: if.then
+		call
+		load
+		call
+		call
+		br
+	Block: if.else
+		call
+		call
+		br
+	Block: if.end
+		ret
+Phase 1: Allocated Variables: 
+arg.addr
+fd.addr
+t
+which.addr
+Phase 2:
+Add: __ANOMY_1 9
+Add: cmp 10
+[Sequence]Load(allow_new_conns) 
+[Sequence]Load(allow_new_conns) Load(main_base) 
+[Sequence]Load(main_base) 

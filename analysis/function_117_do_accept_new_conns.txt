@@ -1,0 +1,130 @@
+[117]Function: do_accept_new_conns
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		zext
+		store
+		load
+		store
+		br
+	Block: for.cond
+		load
+		icmp
+		br
+	Block: for.body
+		load
+		trunc
+		br
+	Block: if.then
+		load
+		call
+		load
+		getelementptr
+		load
+		load
+		call
+		icmp
+		br
+	Block: if.then3
+		call
+		br
+	Block: if.end
+		br
+	Block: if.else
+		load
+		call
+		load
+		getelementptr
+		load
+		call
+		icmp
+		br
+	Block: if.then8
+		call
+		br
+	Block: if.end9
+		br
+	Block: if.end10
+		br
+	Block: for.inc
+		load
+		getelementptr
+		load
+		store
+		br
+	Block: for.end
+		load
+		trunc
+		br
+	Block: if.then13
+		call
+		call
+		getelementptr
+		load
+		load
+		sub
+		mul
+		getelementptr
+		load
+		load
+		sub
+		add
+		store
+		load
+		load
+		add
+		store
+		store
+		call
+		br
+	Block: if.else17
+		call
+		store
+		call
+		load
+		add
+		store
+		call
+		store
+		call
+		br
+	Block: if.end19
+		ret
+Phase 1: Allocated Variables: 
+do_accept.addr
+elapsed_us
+maxconns_exited
+next
+Phase 2:
+Add: __ANOMY_1 9
+Add: tobool 10
+Add: __ANOMY_2 12
+Add: __ANOMY_3 15
+Add: __ANOMY_4 17
+Add: __ANOMY_5 19
+Add: __ANOMY_7 27
+Add: __ANOMY_8 29
+Add: __ANOMY_9 31
+Add: __ANOMY_10 39
+Add: __ANOMY_11 41
+Add: __ANOMY_12 44
+Add: __ANOMY_13 50
+Add: __ANOMY_15 55
+Add: __ANOMY_17 60
+[Sequence]Load(listen_conn) Store(stats_state) Load(stats) Store(stats) Store(allow_new_conns) 
+[Sequence]Load(listen_conn) Load(stats) Load(stats) Load(stats) Store(stats) Store(stats_state) 
+[Sequence]Load(listen_conn) Store(stats_state) Load(stats) Store(stats) Store(allow_new_conns) 
+[Sequence]Load(listen_conn) Load(stats) Load(stats) Load(stats) Store(stats) Store(stats_state) 
+[Sequence]Load(listen_conn) Store(stats_state) Load(stats) Store(stats) Store(allow_new_conns) 
+[Sequence]Load(listen_conn) Load(stats) Load(stats) Load(stats) Store(stats) Store(stats_state) 
+[Sequence]Load(listen_conn) 
+[Sequence]Load(listen_conn) 
+[Sequence]Load(listen_conn) Load(settings) 
+[Sequence]Load(listen_conn) Load(settings) 
+[Sequence]Load(listen_conn) 
+[Sequence]Load(listen_conn) Load(settings) 
+[Sequence]Load(listen_conn) Load(settings) 
+[Sequence]Load(listen_conn) 
+[Sequence]Load(listen_conn) Load(settings) 

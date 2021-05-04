@@ -1,0 +1,173 @@
+[91]Function: get_stats
+	Block: entry
+		alloca
+		alloca
+		alloca
+		alloca
+		alloca
+		store
+		store
+		store
+		store
+		store
+		load
+		icmp
+		br
+	Block: if.then
+		load
+		icmp
+		br
+	Block: if.then1
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		load
+		load
+		bitcast
+		load
+		call
+		call
+		load
+		load
+		bitcast
+		call
+		call
+		load
+		load
+		call
+		br
+	Block: if.else
+		load
+		load
+		call
+		icmp
+		br
+	Block: if.then4
+		load
+		load
+		call
+		br
+	Block: if.else5
+		load
+		load
+		call
+		icmp
+		br
+	Block: if.then8
+		load
+		load
+		call
+		br
+	Block: if.else9
+		load
+		load
+		call
+		icmp
+		br
+	Block: if.then12
+		load
+		load
+		call
+		br
+	Block: if.else13
+		load
+		load
+		call
+		icmp
+		br
+	Block: if.then16
+		load
+		load
+		call
+		br
+	Block: if.else17
+		load
+		load
+		call
+		icmp
+		br
+	Block: if.then20
+		load
+		load
+		call
+		br
+	Block: if.else21
+		store
+		br
+	Block: if.end
+		br
+	Block: if.end22
+		br
+	Block: if.end23
+		br
+	Block: if.end24
+		br
+	Block: if.end25
+		br
+	Block: if.end26
+		br
+	Block: if.else27
+		store
+		br
+	Block: if.end28
+		load
+		trunc
+		ret
+Phase 1: Allocated Variables: 
+add_stats.addr
+c.addr
+nkey.addr
+ret
+stat_type.addr
+Phase 2:
+Add: __ANOMY_0 10
+Add: cmp 11
+Add: __ANOMY_1 13
+Add: tobool 14
+Add: __ANOMY_2 17
+Add: __ANOMY_3 18
+Add: __ANOMY_6 22
+Add: __ANOMY_7 23
+Add: __ANOMY_10 27
+Add: __ANOMY_11 28
+Add: __ANOMY_14 33
+Add: __ANOMY_15 34
+Add: __ANOMY_17 38
+Add: __ANOMY_18 39
+Add: __ANOMY_19 42
+Add: __ANOMY_20 43
+Add: __ANOMY_21 47
+Add: __ANOMY_22 48
+Add: __ANOMY_23 51
+Add: __ANOMY_24 52
+Add: __ANOMY_25 56
+Add: __ANOMY_26 57
+Add: __ANOMY_27 60
+Add: __ANOMY_28 61
+Add: __ANOMY_29 65
+Add: __ANOMY_30 66
+Add: __ANOMY_31 69
+Add: __ANOMY_32 70
+Add: __ANOMY_33 74
+Add: __ANOMY_34 75
+Add: __ANOMY_35 78
+Add: __ANOMY_36 79
+Add: __ANOMY_37 83
+Add: __ANOMY_38 84
+Add: __ANOMY_39 97
+[Sequence]
+[Sequence]Load(stats_state) Load(stats_state) Load(stats) 
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
+[Sequence]
