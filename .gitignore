@@ -36,5 +36,4 @@ analysis/
 readable/
 trans/
 data/
-*.txt
 parallel

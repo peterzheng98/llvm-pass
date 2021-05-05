@@ -1,5 +1,6 @@
 #include "element.h"
 
+#include <deque>
 #include <iostream>
 #include <memory>
 #include <thread>
@@ -9,9 +10,15 @@
 #include <string>
 #include <utility>
 #include <ctime>
-#include <deque>
 #include <cassert>
 
+inline void dump(const std::vector<Element *> *p){
+  std::cerr << "Size: " << p->size() << ": ";
+  for(int i = 0; i < p->size(); ++i){
+    std::cerr << (*p)[i]->toString() << " ";
+  }
+  std::cerr << std::endl;
+}
 std::string data_prefix = "./data/";
 std::map<std::string, std::vector<std::vector<Element *>>> block2instSeq;
 std::set<std::string> ignored_target;
@@ -21,7 +28,10 @@ const int verbosity = 2;
 std::vector<std::vector<Element *>*>* expandCall(const std::vector<Element *> *original){
   std::vector<Element *> *template_one = new std::vector<Element *>();
   int i;
-  for(i = 0; i < original->size(); ++original){
+  std::cerr << "Original: " << std::endl;
+  dump(original);
+  std::cerr << std::endl;
+  for(i = 0; i < original->size(); ++i){
     bool test = false;
     test |= (*original)[i]->getElementType() != FunctionCall;
     test |= ((*original)[i]->getElementType() == FunctionCall && block2instSeq.count((*original)[i]->getTargetName()) == 0);
@@ -41,6 +51,11 @@ std::vector<std::vector<Element *>*>* expandCall(const std::vector<Element *> *o
     }
     r->push_back(new_sequence);
   }
+  i = i + 1;
+  for(int j = 0; j < r->size(); ++j){
+    for(; i < original->size(); ++i)
+    (*r)[j]->push_back(new Element((*original)[i]->getElementType(), (*original)[i]->getTargetName(), false));
+  }
   std::cerr << "Expanding to " << r->size() << " sequences." << std::endl;
   if(verbosity >= 2){
     int idx = 0;
@@ -50,10 +65,6 @@ std::vector<std::vector<Element *>*>* expandCall(const std::vector<Element *> *o
       std::cerr << std::endl;
       idx++;
     }
-  }
-  i = i + 1;
-  for(int j = 0; j < r->size(); ++j){
-    (*r)[j]->push_back(new Element((*original)[i]->getElementType(), (*original)[i]->getTargetName(), false));
   }
   return r;
 }
@@ -84,10 +95,16 @@ inline void output(std::string &header, std::vector<Element *> *p){
   trans.close();
 }
 
+
+
 void bfs(int target_size, std::string &start){
   auto all_seq = block2instSeq[start];
   for(int i = 0; i < all_seq.size(); ++i){
-    target_list.push_back(&all_seq[i]);
+    std::vector<Element *> *elem = new std::vector<Element *>();
+    for(auto &j : all_seq[i]){
+      elem->push_back(new Element(j->getElementType(), j->getTargetName(), false));
+    }
+    target_list.push_back(elem);
   }
   std::string prefix("master");
   int size_all = target_list.size();
@@ -104,13 +121,25 @@ void bfs(int target_size, std::string &start){
     std::cerr << "All expanded!!";
     return;
   }
-  std::cerr << size_all << " " << target_list.size();
+  std::cerr << size_all << " " << target_list.size() << std::endl;
+  // while(target_list.size() > 0) {
+  //   auto p = target_list.front();
+  //   target_list.pop_front();
+  // }
+  // std::cerr << "fuck!!" << target_list.size() << std::endl;
+  // int ttt;
+  // std::cin >> ttt;
+  
   while(size_all < target_size){
-    auto head = target_list.front();
+    std::vector<Element*> *head = target_list.front();
     target_list.pop_front();
+    std::cerr << "Current head: ";
+    dump(head);
     if(head == nullptr) continue;
     auto expand_result = expandCall(head);
+    std::cerr << "Expanded: " << std::endl;
     for(auto &expanded_seq: *expand_result){
+      dump(expanded_seq);
       if(check_no_expandable(expanded_seq)) output(prefix, expanded_seq);
       else{
         target_list.push_back(expanded_seq);
