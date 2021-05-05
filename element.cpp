@@ -1,5 +1,8 @@
 #include "element.h"
 
+
+extern std::set<std::string> ignored_target;
+
 Element::Element(element_t type, std::string name, bool isHead = false) : element_type(type), target_name(name), capacity(10), idx(0){
   this->next = new Element*[capacity];
   for(int i = 0; i < capacity; ++i) this->next[i] = NULL;
@@ -51,30 +54,78 @@ std::string BaseElement::toString(){
   return std::string(type + ")");
 }
 
-void Element::dfs(Element *p, std::vector<std::string> &output_str, std::ostream &target){
+void Element::dfs(Element *p, std::vector<std::string> &output_str, std::vector<Element*> &output_target, std::ostream &target, std::map<std::string, std::vector<Element*>> &to_be_merged){
   output_str.push_back(p->toString());
+  output_target.push_back(p);
   if(p->idx == 0){
-    target << "[Sequence]";
-    for(auto &p: output_str) {
-      if(p.find("Branch") == std::string::npos && p.find("Switch") == std::string::npos)
-      target << p << " ";
+    
+    std::string to_be_output;
+    std::vector<Element *> to_be_output_raw;
+    int idx = 0;
+    for(auto &p_str: output_str) {
+      if(p_str.find("Branch") == std::string::npos && p_str.find("Switch") == std::string::npos && (ignored_target.count(p_str) == 0)){
+        to_be_output = to_be_output + p_str + " ";
+        to_be_output_raw.push_back(output_target[idx]);
+      }
+      idx++;
     }
-    target << std::endl;
+    if(to_be_output.length() != 0){
+      target << "Sequence: " << to_be_output << std::endl;
+      to_be_merged[to_be_output] = to_be_output_raw;
+    } else {
+      target << "Zero Sequence." << std::endl;
+    }
     output_str.pop_back();
+    output_target.pop_back();
     return; 
   } else {
-    for(int i = 0; i < p->idx; ++i) dfs(p->next[i], output_str, target);
+    for(int i = 0; i < p->idx; ++i) dfs(p->next[i], output_str, output_target, target, to_be_merged);
     output_str.pop_back();
+    output_target.pop_back();
   }
   return;
 }
 
 void Element::getAllMemoryAccessPath(std::ostream &target){
   std::vector<std::string> temp_object;
+  std::vector<Element *> output_target;
+  std::map<std::string, std::vector<Element *>> to_be_merged;
   if(this->isHead){
-    for(int i = 0; i < idx; ++i) dfs(next[i], temp_object, target);
+    for(int i = 0; i < idx; ++i) dfs(next[i], temp_object, output_target, target, to_be_merged);
   } else {
-    dfs(this, temp_object, target);
+    dfs(this, temp_object, output_target, target, to_be_merged);
+  }
+  std::vector<std::string> keys;
+  for(auto &j: to_be_merged){
+    keys.push_back(j.first);
+  }
+  std::sort(keys.begin(), keys.end(), [&](std::string &r1, std::string &r2){
+    return r1.length() <= r2.length();
+  });
+  for(int i = 0; i < keys.size(); ++i){
+    std::string current = keys[i];
+    bool found = false;
+    for(int j = keys.size() - 1; j > i; --j){
+      if(keys[j].find(current) != std::string::npos){
+        found = true;
+        break;
+      }
+    }
+    if(found) keys[i] = "[TO BE DELETED]";
+  }
+  std::map<std::string, std::vector<Element *>> after_merge;
+  for(auto &j : keys){
+    if(j.find("[TO BE DELETED]") == std::string::npos){
+      after_merge[j] = to_be_merged[j];
+    }
+  }
+  target << "After Merge: " << std::endl;
+  for(auto &j : after_merge){
+    target << "Sequence: ";
+    for(auto &r : j.second){
+      target << r->toString() << " ";
+    }
+    target << std::endl;
   }
 }
 

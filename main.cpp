@@ -23,9 +23,24 @@
 using namespace llvm;
 
 const std::string path_prefix = "./analysis/";
+const std::string ignored_file = "./ignore.txt";
 
 std::vector<std::thread> thread_pool;
 Element *head;
+
+std::set<std::string> ignored_target;
+
+void init(){
+  std::fstream fs(ignored_file, std::ios::in);
+  std::string t;
+  int idx = 0;
+  while(fs >> t){
+    std::cout << "Read[" << t << "]" << std::endl;
+    ignored_target.insert(t);
+    idx++;
+  }
+  std::cout << "read " << idx << " targets." << std::endl;
+}
 
 void generate_dfs(Element *r, std::vector<BaseElement> &start_obj, std::map<std::string, std::vector<BaseElement>> &p, std::map<std::string, int> &visit_times){
   Element *prev = r;
@@ -254,6 +269,29 @@ void check_function(llvm::Module::iterator &iter, int idx){
         }
         continue;
       }
+      if(isa<SelectInst>(inst_iter)){
+        auto select_i = cast<SelectInst>(inst_iter);
+        std::string as_true, as_false;
+        auto true_val = select_i->getTrueValue(), false_val = select_i->getFalseValue();
+        if(isa<ConstantExpr>(true_val)){
+          auto t_inst = cast<ConstantExpr>(true_val);
+          as_true = t_inst->getOperand(0)->getName().str();
+        } else {
+          as_true = true_val->getName().str();
+        }
+        if(isa<ConstantExpr>(false_val)){
+          auto t_inst = cast<ConstantExpr>(false_val);
+          as_false = t_inst->getOperand(0)->getName().str();
+        } else {
+          as_false = false_val->getName().str();
+        }
+        std::cout << "select: " << as_true << " || " << as_false << std::endl;
+        if(allocated_variables.count(as_true) && allocated_variables.count(as_false)){
+          allocated_variables.insert(inst_iter->getName().str());
+          temporatory_phase2.push_back(std::pair<std::string, int>(inst_iter->getName().str(), idx));
+        }
+        continue;
+      }
       std::cout << "not found: " << inst_iter->getOpcodeName() << std::endl;
     }
   }
@@ -364,7 +402,7 @@ int main(int argc, char** argv) {
         std::cerr << "Usage: <executable> <IR Files>" << std::endl;
         return 0;
     }
-  
+  init();
   llvm::LLVMContext context;
   SMDiagnostic error;
   std::unique_ptr<Module> m = parseIRFile(argv[1], error, context);

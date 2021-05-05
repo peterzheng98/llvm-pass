@@ -1,6 +1,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <set>
+#include <map>
+#include <algorithm>
 typedef enum{
   HEAD, Branch, Store, Load, Switch, FunctionCall
 } element_t;
@@ -19,7 +22,7 @@ private:
   int capacity, idx;
   bool isHead;
   void doubleSpace();
-  void dfs(Element *p, std::vector<std::string> &output_str, std::ostream &target);
+  void dfs(Element *p, std::vector<std::string> &output_str, std::vector<Element*> &output_target, std::ostream &target, std::map<std::string, std::vector<Element*>> &to_be_merged);
   std::string toString();
 public:
   Element(element_t type, std::string name, bool isHead);
