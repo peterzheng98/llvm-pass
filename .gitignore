@@ -32,3 +32,9 @@
 *.app
 
 ir_test
+analysis/
+readable/
+trans/
+data/
+*.txt
+parallel

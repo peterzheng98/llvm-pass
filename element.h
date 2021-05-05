@@ -23,12 +23,16 @@ private:
   bool isHead;
   void doubleSpace();
   void dfs(Element *p, std::vector<std::string> &output_str, std::vector<Element*> &output_target, std::ostream &target, std::map<std::string, std::vector<Element*>> &to_be_merged);
-  std::string toString();
+  
 public:
   Element(element_t type, std::string name, bool isHead);
   Element(BaseElement p);
   void addElement(Element *);
-  void getAllMemoryAccessPath(std::ostream &target);  
+  std::map<std::string, std::vector<Element *>>* getAllMemoryAccessPath(std::ostream &target);
+  const element_t getElementType() const;
+  element_t getElementType();
+  std::string getTargetName();
+  std::string toString();
 };
 
 class BaseElement{

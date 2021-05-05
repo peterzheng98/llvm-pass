@@ -20,6 +20,7 @@
 #include <set>
 #include <string>
 #include <utility>
+#include <ctime>
 using namespace llvm;
 
 const std::string path_prefix = "./analysis/";
@@ -29,6 +30,8 @@ std::vector<std::thread> thread_pool;
 Element *head;
 
 std::set<std::string> ignored_target;
+std::map<std::string, std::map<std::string, std::vector<Element *>>> function_list;
+std::set<std::string> func_visited;
 
 void init(){
   std::fstream fs(ignored_file, std::ios::in);
@@ -143,14 +146,15 @@ void debug_llvm_value(llvm::Value *p){
   std::cout << " Search end. " << std::endl;
 }
 
-void check_function(llvm::Module::iterator &iter, int idx){
+void check_function(llvm::Module::iterator &iter, int sidx){
+  auto start = clock();
   head = new Element(element_t::HEAD, "HEAD", true);
   std::set<std::string> allocated_variables;
-  std::cout << "[" << idx << "]" << "Function: " << iter->getName().str() << std::endl;
+  std::cout << "[" << sidx << "]" << "Function: " << iter->getName().str() << std::endl;
   auto func_iter = iter->begin(), func_terminal = iter->end();
   if(func_iter == func_terminal) return;
-  std::ofstream output_files(path_prefix + "function_" + std::to_string(idx) + "_" + iter->getName().str() + ".txt", std::ios::out);
-  output_files << "[" << idx << "]" << "Function: " << iter->getName().str() << std::endl;
+  std::ofstream output_files(path_prefix + "function_" + std::to_string(sidx) + "_" + iter->getName().str() + ".txt", std::ios::out);
+  output_files << "[" << sidx << "]" << "Function: " << iter->getName().str() << std::endl;
   // Phase 1: find all the values that allocated on stack
   // The reason: stack variable is private
   for(; func_terminal != func_iter; func_iter++){
@@ -167,7 +171,7 @@ void check_function(llvm::Module::iterator &iter, int idx){
     output_files << p << std::endl;
   }
   std::vector<std::pair<std::string, int>> temporatory_phase2;
-  idx = 0;
+  int idx = 0;
   // Phase 2: do Propagation
   // If a variable is on stack, then all its arithmetic target is on the stack
   func_iter = iter->begin(), func_terminal = iter->end();
@@ -393,7 +397,10 @@ void check_function(llvm::Module::iterator &iter, int idx){
   Element *original = head;
   generate_dfs(original, block2insts["entry"], block2insts, visit_time);
   original = head;
-  original->getAllMemoryAccessPath(output_files);
+  auto function_level_result = original->getAllMemoryAccessPath(output_files);
+  auto end_time = ((double)clock() - start) / CLOCKS_PER_SEC;
+  std::cerr << "[" << sidx << "]" << "Analysis: " << iter->getName().str() << " for " << end_time << " seconds." << std::endl;
+  function_list[iter->getName().str()] = *function_level_result;
   output_files.close();
 }
 
@@ -414,13 +421,29 @@ int main(int argc, char** argv) {
   std::cout << error.getMessage().str() << std::endl;
   std::cout << m->getName().str() << std::endl;
   int idx = 0;
+  std::cerr << "Pass 1: Start" << std::endl;
+  auto timer_start = clock();
   for(auto iter = m->begin(), goal = m->end(); iter != goal; ++iter){
     check_function(iter, idx++);
     // thread_pool.push_back(std::move(std::thread(check_function, std::ref(iter), idx++)));
   }
-  // for(auto &p: thread_pool){
-  //   p.join();
-  // }
-  return 0;
-
+  std::cerr << "Pass 1: End[Cost: " << ((double)clock() - timer_start) / CLOCKS_PER_SEC << "  seconds]" << std::endl;
+  std::cerr << "Pass 2: Propagation(Data Preparation)" << std::endl;
+  std::string path_prefix_data = "./data/";
+  std::ofstream function_list_file("./func.txt");
+  function_list_file << function_list.size() << std::endl;
+  for(auto &k : function_list){
+    std::ofstream ifs(path_prefix_data + k.first, std::ios::out);
+    ifs << k.second.size() << std::endl;
+    for(auto &obj: k.second){
+      auto t = obj.second;
+      ifs << "-1 " << t.size() << std::endl;
+      for(auto &elem: t){
+        ifs << (int)elem->getElementType() << " " << elem->getTargetName() << std::endl;
+      }
+    }
+    ifs.close();
+    function_list_file << k.first << std::endl;
+  }
+  function_list_file.close();
 }

@@ -86,7 +86,7 @@ void Element::dfs(Element *p, std::vector<std::string> &output_str, std::vector<
   return;
 }
 
-void Element::getAllMemoryAccessPath(std::ostream &target){
+std::map<std::string, std::vector<Element *>>* Element::getAllMemoryAccessPath(std::ostream &target){
   std::vector<std::string> temp_object;
   std::vector<Element *> output_target;
   std::map<std::string, std::vector<Element *>> to_be_merged;
@@ -113,21 +113,22 @@ void Element::getAllMemoryAccessPath(std::ostream &target){
     }
     if(found) keys[i] = "[TO BE DELETED]";
   }
-  std::map<std::string, std::vector<Element *>> after_merge;
+  std::map<std::string, std::vector<Element *>> *after_merge = new std::map<std::string, std::vector<Element *>>();
   for(auto &j : keys){
     if(j.find("[TO BE DELETED]") == std::string::npos){
-      after_merge[j] = to_be_merged[j];
+      (*after_merge)[j] = to_be_merged[j];
     }
   }
   target << std::endl << "<==============================>" << std::endl;
   target << "After Merge: " << std::endl;
-  for(auto &j : after_merge){
+  for(auto &j : *after_merge){
     target << "Sequence: ";
     for(auto &r : j.second){
       target << r->toString() << " ";
     }
     target << std::endl;
   }
+  return after_merge;
 }
 
 BaseElement::BaseElement(element_t p, std::string target){
@@ -160,3 +161,7 @@ auto BaseElement::begin(){
 auto BaseElement::end(){
   return brs.end();
 }
+
+const element_t Element::getElementType() const { return this->element_type; }
+element_t Element::getElementType() { return this->element_type; }
+std::string Element::getTargetName() { return this->target_name; }
