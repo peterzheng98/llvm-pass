@@ -18,4 +18,6 @@ Phase 2:
 Add: __ANOMY_0 4
 Add: __ANOMY_1 7
 Add: __ANOMY_2 8
-[Sequence]Call(out_string) 
+Sequence: Call(out_string) 
+After Merge: 
+Sequence: Call(out_string) 

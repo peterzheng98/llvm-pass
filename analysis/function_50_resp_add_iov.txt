@@ -62,4 +62,6 @@ Add: __ANOMY_10 34
 Add: __ANOMY_11 35
 Add: __ANOMY_12 37
 Add: add 38
-[Sequence]Store(arrayidx) Store(arrayidx4) 
+Sequence: Store(arrayidx) Store(arrayidx4) 
+After Merge: 
+Sequence: Store(arrayidx) Store(arrayidx4) 

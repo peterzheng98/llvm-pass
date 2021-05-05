@@ -1,3 +1,13 @@
+Read[Load(stderr)]
+Read[Call(fprintf)]
+Read[Call(pthread_mutex_lock)]
+Read[Call(pthread_cond_signal)]
+Read[Call(pthread_mutex_unlock)]
+Read[Call(pthread_join)]
+Read[Call(malloc)]
+Read[Call(llvm.memcpy.p0i8.p0i8.i64)]
+Read[Call(snprintf)]
+read 9 targets.
 
 example/memcached.ll
 [0]Function: event_handler
@@ -829,7 +839,7 @@ Load: drive_machine.use_accept4
 icmp: __ANOMY_16  0
 		zext Target: __ANOMY_17 Use: 0
 		select Target: cond Use: 1
-not found: select
+select: .str.382 || .str.383
 		call Target:  Use: 0
 Call to: perror
 		call Target: call15 Use: 1
@@ -4755,7 +4765,7 @@ __ANOMY_16
 icmp: __ANOMY_17  0
 		zext Target: __ANOMY_18 Use: 0
 		select Target: cond Use: 1
-not found: select
+select: .str.13 || .str.14
 		call Target: call Use: 0
 Call to: fprintf
 		load Target: __ANOMY_19 Use: 1
@@ -6848,7 +6858,7 @@ __ANOMY_1
 icmp: __ANOMY_2  0
 		zext Target: __ANOMY_3 Use: 0
 		select Target: cond Use: 1
-not found: select
+select:  || 
 		icmp Target: tobool Use: 1
 icmp: cond  1
 		ret Target:  Use: 0
@@ -8045,7 +8055,7 @@ target: and
 icmp: and  0
 		zext Target: __ANOMY_4 Use: 0
 		select Target: cond Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr Use: 1
 		store Target:  Use: 0
 Store: add.ptr pointer: key
@@ -8638,7 +8648,7 @@ target: and158
 icmp: and158  0
 		zext Target: __ANOMY_88 Use: 0
 		select Target: cond160 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr161 Use: 1
 		bitcast Target: __ANOMY_89 Use: 1
 		load Target: __ANOMY_90 Use: 1
@@ -9033,7 +9043,7 @@ target: and257
 icmp: and257  0
 		zext Target: __ANOMY_156 Use: 0
 		select Target: cond259 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr260 Use: 1
 		load Target: __ANOMY_157 Use: 1
 Load: it.addr
@@ -9520,7 +9530,7 @@ target: and13
 icmp: and13  0
 		zext Target: __ANOMY_17 Use: 0
 		select Target: cond Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr15 Use: 1
 		load Target: __ANOMY_18 Use: 1
 Load: new_it.addr
@@ -9540,7 +9550,7 @@ target: and18
 icmp: and18  0
 		zext Target: __ANOMY_20 Use: 0
 		select Target: cond20 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr21 Use: 1
 		load Target: __ANOMY_21 Use: 1
 Load: old_it.addr
@@ -9574,7 +9584,7 @@ target: and30
 icmp: and30  0
 		zext Target: __ANOMY_27 Use: 0
 		select Target: cond32 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr33 Use: 1
 		load Target: __ANOMY_28 Use: 1
 Load: old_it.addr
@@ -9594,7 +9604,7 @@ target: and36
 icmp: and36  0
 		zext Target: __ANOMY_30 Use: 0
 		select Target: cond38 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr39 Use: 1
 		load Target: __ANOMY_31 Use: 1
 Load: old_it.addr
@@ -9637,7 +9647,7 @@ target: and50
 icmp: and50  0
 		zext Target: __ANOMY_39 Use: 0
 		select Target: cond52 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr53 Use: 1
 		load Target: __ANOMY_40 Use: 1
 Load: new_it.addr
@@ -9657,7 +9667,7 @@ target: and56
 icmp: and56  0
 		zext Target: __ANOMY_42 Use: 0
 		select Target: cond58 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr59 Use: 1
 		load Target: __ANOMY_43 Use: 1
 Load: old_it.addr
@@ -9700,7 +9710,7 @@ target: and72
 icmp: and72  0
 		zext Target: __ANOMY_51 Use: 0
 		select Target: cond74 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr75 Use: 1
 		load Target: __ANOMY_52 Use: 1
 Load: add_it.addr
@@ -9720,7 +9730,7 @@ target: and78
 icmp: and78  0
 		zext Target: __ANOMY_54 Use: 0
 		select Target: cond80 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr81 Use: 1
 		load Target: __ANOMY_55 Use: 1
 Load: add_it.addr
@@ -9830,7 +9840,7 @@ target: and112
 icmp: and112  0
 		zext Target: __ANOMY_73 Use: 0
 		select Target: cond114 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr115 Use: 1
 		load Target: __ANOMY_74 Use: 1
 Load: new_it.addr
@@ -9850,7 +9860,7 @@ target: and118
 icmp: and118  0
 		zext Target: __ANOMY_76 Use: 0
 		select Target: cond120 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr121 Use: 1
 		load Target: __ANOMY_77 Use: 1
 Load: add_it.addr
@@ -9884,7 +9894,7 @@ target: and130
 icmp: and130  0
 		zext Target: __ANOMY_83 Use: 0
 		select Target: cond132 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr133 Use: 1
 		load Target: __ANOMY_84 Use: 1
 Load: add_it.addr
@@ -9904,7 +9914,7 @@ target: and136
 icmp: and136  0
 		zext Target: __ANOMY_86 Use: 0
 		select Target: cond138 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr139 Use: 1
 		load Target: __ANOMY_87 Use: 1
 Load: add_it.addr
@@ -9947,7 +9957,7 @@ target: and150
 icmp: and150  0
 		zext Target: __ANOMY_95 Use: 0
 		select Target: cond152 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr153 Use: 1
 		load Target: __ANOMY_96 Use: 1
 Load: new_it.addr
@@ -9967,7 +9977,7 @@ target: and156
 icmp: and156  0
 		zext Target: __ANOMY_98 Use: 0
 		select Target: cond158 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr159 Use: 1
 		load Target: __ANOMY_99 Use: 1
 Load: add_it.addr
@@ -10010,7 +10020,7 @@ target: and172
 icmp: and172  0
 		zext Target: __ANOMY_107 Use: 0
 		select Target: cond174 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr175 Use: 1
 		load Target: __ANOMY_108 Use: 1
 Load: old_it.addr
@@ -10030,7 +10040,7 @@ target: and178
 icmp: and178  0
 		zext Target: __ANOMY_110 Use: 0
 		select Target: cond180 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr181 Use: 1
 		load Target: __ANOMY_111 Use: 1
 Load: old_it.addr
@@ -11507,7 +11517,7 @@ Load:
 icmp: __ANOMY_32  0
 		zext Target: __ANOMY_33 Use: 0
 		select Target: cond2 Use: 1
-not found: select
+select: .str.118 || .str.119
 		call Target:  Use: 0
 Call to: append_stat
 		load Target: __ANOMY_34 Use: 1
@@ -11597,7 +11607,7 @@ Load:
 icmp: __ANOMY_66  0
 		zext Target: __ANOMY_67 Use: 0
 		select Target: cond10 Use: 1
-not found: select
+select: .str.131 || .str.132
 		call Target:  Use: 0
 Call to: append_stat
 		load Target: __ANOMY_68 Use: 1
@@ -11619,7 +11629,7 @@ Load:
 		trunc Target: tobool11 Use: 0
 		zext Target: __ANOMY_76 Use: 0
 		select Target: cond13 Use: 1
-not found: select
+select: .str.131 || .str.132
 		call Target:  Use: 0
 Call to: append_stat
 		load Target: __ANOMY_77 Use: 1
@@ -11652,7 +11662,7 @@ Load:
 		trunc Target: tobool14 Use: 0
 		zext Target: __ANOMY_89 Use: 0
 		select Target: cond16 Use: 1
-not found: select
+select: .str.131 || .str.132
 		call Target:  Use: 0
 Call to: append_stat
 		load Target: __ANOMY_90 Use: 1
@@ -11695,7 +11705,7 @@ Load:
 		trunc Target: tobool22 Use: 0
 		zext Target: __ANOMY_103 Use: 0
 		select Target: cond24 Use: 1
-not found: select
+select: .str.131 || .str.132
 		call Target:  Use: 0
 Call to: append_stat
 		load Target: __ANOMY_104 Use: 1
@@ -11717,7 +11727,7 @@ Load:
 		trunc Target: tobool25 Use: 0
 		zext Target: __ANOMY_112 Use: 0
 		select Target: cond27 Use: 1
-not found: select
+select: .str.131 || .str.132
 		call Target:  Use: 0
 Call to: append_stat
 		load Target: __ANOMY_113 Use: 1
@@ -11766,7 +11776,7 @@ Load:
 		trunc Target: tobool28 Use: 0
 		zext Target: __ANOMY_133 Use: 0
 		select Target: cond30 Use: 1
-not found: select
+select: .str.131 || .str.132
 		call Target:  Use: 0
 Call to: append_stat
 		load Target: __ANOMY_134 Use: 1
@@ -11807,7 +11817,7 @@ Load:
 		trunc Target: tobool32 Use: 0
 		zext Target: __ANOMY_150 Use: 0
 		select Target: cond34 Use: 1
-not found: select
+select: .str.131 || .str.132
 		call Target:  Use: 0
 Call to: append_stat
 		load Target: __ANOMY_151 Use: 1
@@ -11820,7 +11830,7 @@ Load:
 		trunc Target: tobool35 Use: 0
 		zext Target: __ANOMY_155 Use: 0
 		select Target: cond37 Use: 1
-not found: select
+select: .str.131 || .str.132
 		call Target:  Use: 0
 Call to: append_stat
 		load Target: __ANOMY_156 Use: 1
@@ -11842,7 +11852,7 @@ Load:
 		trunc Target: tobool38 Use: 0
 		zext Target: __ANOMY_164 Use: 0
 		select Target: cond40 Use: 1
-not found: select
+select: .str.131 || .str.132
 		call Target:  Use: 0
 Call to: append_stat
 		load Target: __ANOMY_165 Use: 1
@@ -11855,7 +11865,7 @@ Load:
 		trunc Target: tobool41 Use: 0
 		zext Target: __ANOMY_169 Use: 0
 		select Target: cond43 Use: 1
-not found: select
+select: .str.131 || .str.132
 		call Target:  Use: 0
 Call to: append_stat
 		load Target: __ANOMY_170 Use: 1
@@ -11904,7 +11914,7 @@ Load:
 		trunc Target: tobool44 Use: 0
 		zext Target: __ANOMY_190 Use: 0
 		select Target: cond46 Use: 1
-not found: select
+select: .str.131 || .str.132
 		call Target:  Use: 0
 Call to: append_stat
 		load Target: __ANOMY_191 Use: 1
@@ -11961,7 +11971,7 @@ Load: c.addr
 Call to: item_stats_sizes_status
 		zext Target: __ANOMY_214 Use: 0
 		select Target: cond49 Use: 1
-not found: select
+select: .str.131 || .str.132
 		call Target:  Use: 0
 Call to: append_stat
 		load Target: __ANOMY_215 Use: 1
@@ -12062,7 +12072,7 @@ Load:
 		trunc Target: tobool50 Use: 0
 		zext Target: __ANOMY_258 Use: 0
 		select Target: cond52 Use: 1
-not found: select
+select: .str.131 || .str.132
 		call Target:  Use: 0
 Call to: append_stat
 		load Target: __ANOMY_259 Use: 1
@@ -12551,7 +12561,7 @@ icmp: call3  1
 not found: phi
 		zext Target: __ANOMY_7 Use: 0
 		select Target: cond Use: 1
-not found: select
+select:  || 
 		ret Target:  Use: 0
 Phase 2:
 Add: __ANOMY_0 7
@@ -13715,7 +13725,7 @@ target: and25
 icmp: and25  0
 		zext Target: __ANOMY_26 Use: 0
 		select Target: cond27 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr28 Use: 1
 		load Target: __ANOMY_27 Use: 1
 Load: it
@@ -13735,7 +13745,7 @@ target: and31
 icmp: and31  0
 		zext Target: __ANOMY_29 Use: 0
 		select Target: cond33 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr34 Use: 1
 		store Target:  Use: 0
 Store: add.ptr34 pointer: ptr
@@ -14028,7 +14038,7 @@ target: and104
 icmp: and104  0
 		zext Target: __ANOMY_74 Use: 0
 		select Target: cond106 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr107 Use: 1
 		load Target: __ANOMY_75 Use: 1
 Load: it
@@ -14048,7 +14058,7 @@ target: and110
 icmp: and110  0
 		zext Target: __ANOMY_77 Use: 0
 		select Target: cond112 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr113 Use: 1
 		load Target: __ANOMY_78 Use: 1
 Load: buf.addr
@@ -14089,7 +14099,7 @@ target: and123
 icmp: and123  0
 		zext Target: __ANOMY_86 Use: 0
 		select Target: cond125 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr126 Use: 1
 		load Target: __ANOMY_87 Use: 1
 Load: it
@@ -14109,7 +14119,7 @@ target: and129
 icmp: and129  0
 		zext Target: __ANOMY_89 Use: 0
 		select Target: cond131 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr132 Use: 1
 		load Target: __ANOMY_90 Use: 1
 Load: res
@@ -14207,7 +14217,7 @@ target: and158
 icmp: and158  0
 		zext Target: __ANOMY_105 Use: 0
 		select Target: cond160 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr161 Use: 1
 		bitcast Target: __ANOMY_106 Use: 1
 		load Target: __ANOMY_107 Use: 1
@@ -14242,7 +14252,7 @@ target: and167
 icmp: and167  0
 		zext Target: __ANOMY_112 Use: 0
 		select Target: cond169 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr170 Use: 1
 		load Target: __ANOMY_113 Use: 1
 Load: it
@@ -14318,7 +14328,7 @@ target: and187
 icmp: and187  0
 		zext Target: __ANOMY_127 Use: 0
 		select Target: cond189 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr190 Use: 1
 		load Target: __ANOMY_128 Use: 1
 Load: new_it
@@ -14338,7 +14348,7 @@ target: and193
 icmp: and193  0
 		zext Target: __ANOMY_130 Use: 0
 		select Target: cond195 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr196 Use: 1
 		load Target: __ANOMY_131 Use: 1
 Load: buf.addr
@@ -14379,7 +14389,7 @@ target: and206
 icmp: and206  0
 		zext Target: __ANOMY_139 Use: 0
 		select Target: cond208 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr209 Use: 1
 		load Target: __ANOMY_140 Use: 1
 Load: new_it
@@ -14399,7 +14409,7 @@ target: and212
 icmp: and212  0
 		zext Target: __ANOMY_142 Use: 0
 		select Target: cond214 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr215 Use: 1
 		load Target: __ANOMY_143 Use: 1
 Load: res
@@ -21836,7 +21846,7 @@ Load:
 		trunc Target: tobool Use: 0
 		zext Target: __ANOMY_17 Use: 0
 		select Target: cond Use: 1
-not found: select
+select: .str.457 || .str.456
 		call Target:  Use: 0
 Call to: restart_set_kv
 		load Target: __ANOMY_18 Use: 1
@@ -21846,7 +21856,7 @@ Load:
 		trunc Target: tobool1 Use: 0
 		zext Target: __ANOMY_20 Use: 0
 		select Target: cond2 Use: 1
-not found: select
+select: .str.457 || .str.456
 		call Target:  Use: 0
 Call to: restart_set_kv
 		load Target: __ANOMY_21 Use: 1
@@ -23202,7 +23212,7 @@ target: and
 icmp: and  0
 		zext Target: __ANOMY_6 Use: 0
 		select Target: cond Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr3 Use: 1
 		load Target: __ANOMY_7 Use: 1
 Load: d_it.addr
@@ -23222,7 +23232,7 @@ target: and6
 icmp: and6  0
 		zext Target: __ANOMY_9 Use: 0
 		select Target: cond8 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr9 Use: 1
 		bitcast Target: __ANOMY_10 Use: 1
 		store Target:  Use: 0
@@ -23323,7 +23333,7 @@ target: and26
 icmp: and26  0
 		zext Target: __ANOMY_28 Use: 0
 		select Target: cond28 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr29 Use: 1
 		load Target: __ANOMY_29 Use: 1
 Load: s_it.addr
@@ -23343,7 +23353,7 @@ target: and32
 icmp: and32  0
 		zext Target: __ANOMY_31 Use: 0
 		select Target: cond34 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr35 Use: 1
 		bitcast Target: __ANOMY_32 Use: 1
 		store Target:  Use: 0
@@ -23745,7 +23755,7 @@ target: and123
 icmp: and123  0
 		zext Target: __ANOMY_105 Use: 0
 		select Target: cond125 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr126 Use: 1
 		load Target: __ANOMY_106 Use: 1
 Load: s_it.addr
@@ -23765,7 +23775,7 @@ target: and129
 icmp: and129  0
 		zext Target: __ANOMY_108 Use: 0
 		select Target: cond131 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr132 Use: 1
 		load Target: __ANOMY_109 Use: 1
 Load: done
@@ -24164,7 +24174,7 @@ __ANOMY_8
 icmp: __ANOMY_9  0
 		zext Target: __ANOMY_10 Use: 0
 		select Target: cond Use: 1
-not found: select
+select: .str.372 || .str.373
 		store Target:  Use: 0
 Store: cond pointer: protoname
 		br Target:  Use: 0
@@ -24216,7 +24226,7 @@ __ANOMY_18
 icmp: __ANOMY_19  0
 		zext Target: __ANOMY_20 Use: 0
 		select Target: cond12 Use: 1
-not found: select
+select: .str.375 || .str.376
 		store Target:  Use: 0
 Store: cond12 pointer: protoname
 		br Target:  Use: 0
@@ -25630,7 +25640,7 @@ __ANOMY_18
 icmp: __ANOMY_19  0
 		zext Target: __ANOMY_20 Use: 0
 		select Target: cond Use: 1
-not found: select
+select:  || 
 		add Target: add Use: 1
 binary: 2
 	[binary]__ANOMY_17
@@ -27398,7 +27408,7 @@ target: and
 icmp: and  0
 		zext Target: __ANOMY_31 Use: 0
 		select Target: cond Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr20 Use: 1
 		load Target: __ANOMY_32 Use: 1
 Load: resp
@@ -27432,7 +27442,7 @@ target: and28
 icmp: and28  0
 		zext Target: __ANOMY_38 Use: 0
 		select Target: cond30 Use: 1
-not found: select
+select:  || 
 		getelementptr Target: add.ptr31 Use: 1
 		bitcast Target: __ANOMY_39 Use: 1
 		store Target:  Use: 0
@@ -28775,7 +28785,7 @@ Load: flag.addr
 		trunc Target: tobool Use: 0
 		zext Target: __ANOMY_1 Use: 0
 		select Target: cond Use: 1
-not found: select
+select: .str.428 || .str.429
 		ret Target:  Use: 0
 Phase 2:
 Add: __ANOMY_0 3
@@ -29466,7 +29476,7 @@ Load: transport.addr
 icmp: __ANOMY_4  0
 		zext Target: __ANOMY_5 Use: 0
 		select Target: cond Use: 1
-not found: select
+select:  || 
 		getelementptr Target: ai_socktype Use: 1
 		store Target:  Use: 0
 Store: cond pointer: ai_socktype
@@ -29869,7 +29879,7 @@ Load: transport.addr
 icmp: __ANOMY_71  0
 		zext Target: __ANOMY_72 Use: 0
 		select Target: cond96 Use: 1
-not found: select
+select: .str.191 || .str.483
 		bitcast Target: in Use: 1
 		getelementptr Target: sin_port Use: 1
 		load Target: __ANOMY_73 Use: 1
@@ -29890,7 +29900,7 @@ Load: transport.addr
 icmp: __ANOMY_75  0
 		zext Target: __ANOMY_76 Use: 0
 		select Target: cond103 Use: 1
-not found: select
+select: .str.191 || .str.483
 		bitcast Target: in6 Use: 1
 		getelementptr Target: sin6_port Use: 1
 		load Target: __ANOMY_77 Use: 1

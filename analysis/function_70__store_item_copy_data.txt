@@ -446,11 +446,13 @@ Add: __ANOMY_109 312
 Add: __ANOMY_111 319
 Add: __ANOMY_112 321
 Add: __ANOMY_113 328
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(_store_item_copy_chunks) Call(_store_item_copy_chunks) 
-[Sequence]Call(_store_item_copy_chunks) Call(_store_item_copy_chunks) 
-[Sequence]Call(_store_item_copy_chunks) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(_store_item_copy_chunks) Call(_store_item_copy_chunks) 
-[Sequence]Call(_store_item_copy_chunks) Call(_store_item_copy_chunks) 
-[Sequence]Call(_store_item_copy_chunks) 
+Zero Sequence.
+Sequence: Call(_store_item_copy_chunks) Call(_store_item_copy_chunks) 
+Sequence: Call(_store_item_copy_chunks) Call(_store_item_copy_chunks) 
+Sequence: Call(_store_item_copy_chunks) 
+Zero Sequence.
+Sequence: Call(_store_item_copy_chunks) Call(_store_item_copy_chunks) 
+Sequence: Call(_store_item_copy_chunks) Call(_store_item_copy_chunks) 
+Sequence: Call(_store_item_copy_chunks) 
+After Merge: 
+Sequence: Call(_store_item_copy_chunks) Call(_store_item_copy_chunks) 

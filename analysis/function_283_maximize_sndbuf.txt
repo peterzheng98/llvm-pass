@@ -101,12 +101,17 @@ Add: sub 47
 Add: __ANOMY_16 55
 Add: __ANOMY_17 56
 Add: __ANOMY_18 57
-[Sequence]Call(getsockopt) Load(settings) Load(stderr) Call(fprintf) 
-[Sequence]Call(getsockopt) Call(setsockopt) Load(settings) Load(stderr) Call(fprintf) 
-[Sequence]Call(getsockopt) Call(setsockopt) Call(setsockopt) Load(settings) Load(stderr) Call(fprintf) 
-[Sequence]Call(getsockopt) Call(setsockopt) Call(setsockopt) Call(setsockopt) 
-[Sequence]Call(getsockopt) Call(setsockopt) Call(setsockopt) Call(setsockopt) 
-[Sequence]Call(getsockopt) Call(setsockopt) Call(setsockopt) 
-[Sequence]Call(getsockopt) Call(setsockopt) 
-[Sequence]Call(getsockopt) Load(settings) 
-[Sequence]Call(getsockopt) Load(settings) Call(perror) 
+Sequence: Call(getsockopt) Load(settings) 
+Sequence: Call(getsockopt) Call(setsockopt) Load(settings) 
+Sequence: Call(getsockopt) Call(setsockopt) Call(setsockopt) Load(settings) 
+Sequence: Call(getsockopt) Call(setsockopt) Call(setsockopt) Call(setsockopt) 
+Sequence: Call(getsockopt) Call(setsockopt) Call(setsockopt) Call(setsockopt) 
+Sequence: Call(getsockopt) Call(setsockopt) Call(setsockopt) 
+Sequence: Call(getsockopt) Call(setsockopt) 
+Sequence: Call(getsockopt) Load(settings) 
+Sequence: Call(getsockopt) Load(settings) Call(perror) 
+After Merge: 
+Sequence: Call(getsockopt) Call(setsockopt) Call(setsockopt) Call(setsockopt) 
+Sequence: Call(getsockopt) Call(setsockopt) Call(setsockopt) Load(settings) 
+Sequence: Call(getsockopt) Call(setsockopt) Load(settings) 
+Sequence: Call(getsockopt) Load(settings) Call(perror) 

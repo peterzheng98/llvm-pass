@@ -25,5 +25,7 @@ Add: __ANOMY_0 2
 Add: cmp 3
 Add: __ANOMY_1 6
 Add: __ANOMY_2 10
-[Sequence]Call(unlink) Call(vperror) 
-[Sequence]
+Sequence: Call(unlink) Call(vperror) 
+Zero Sequence.
+After Merge: 
+Sequence: Call(unlink) Call(vperror) 

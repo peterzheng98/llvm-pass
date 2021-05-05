@@ -89,8 +89,11 @@ Add: __ANOMY_12 44
 Add: __ANOMY_13 47
 Add: __ANOMY_14 50
 Add: __ANOMY_15 53
-[Sequence]Call(item_get) 
-[Sequence]Call(item_get) 
-[Sequence]Call(item_get) Call(item_remove) 
-[Sequence]Call(item_touch) 
-[Sequence]Call(item_touch) Call(item_remove) 
+Sequence: Call(item_get) 
+Sequence: Call(item_get) 
+Sequence: Call(item_get) Call(item_remove) 
+Sequence: Call(item_touch) 
+Sequence: Call(item_touch) Call(item_remove) 
+After Merge: 
+Sequence: Call(item_get) Call(item_remove) 
+Sequence: Call(item_touch) Call(item_remove) 

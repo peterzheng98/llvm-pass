@@ -61,6 +61,10 @@ Add: __ANOMY_2 13
 Add: __ANOMY_3 15
 Add: __ANOMY_4 22
 Add: __ANOMY_6 29
-[Sequence]Call(dup) Load(settings) Store(max_fds) Call(getrlimit) Load(stderr) Call(fprintf) Call(close) Load(max_fds) Call(calloc) Store(conns) Load(stderr) Call(fprintf) Call(exit) 
-[Sequence]Call(dup) Load(settings) Store(max_fds) Call(getrlimit) Store(max_fds) Call(close) Load(max_fds) Call(calloc) Store(conns) Load(stderr) Call(fprintf) Call(exit) 
-[Sequence]Call(dup) Call(perror) Call(exit) 
+Sequence: Call(dup) Load(settings) Store(max_fds) Call(getrlimit) Call(close) Load(max_fds) Call(calloc) Store(conns) Call(exit) 
+Sequence: Call(dup) Load(settings) Store(max_fds) Call(getrlimit) Store(max_fds) Call(close) Load(max_fds) Call(calloc) Store(conns) Call(exit) 
+Sequence: Call(dup) Call(perror) Call(exit) 
+After Merge: 
+Sequence: Call(dup) Call(perror) Call(exit) 
+Sequence: Call(dup) Load(settings) Store(max_fds) Call(getrlimit) Call(close) Load(max_fds) Call(calloc) Store(conns) Call(exit) 
+Sequence: Call(dup) Load(settings) Store(max_fds) Call(getrlimit) Store(max_fds) Call(close) Load(max_fds) Call(calloc) Store(conns) Call(exit) 

@@ -49,5 +49,8 @@ Add: __ANOMY_6 19
 Add: __ANOMY_7 20
 Add: __ANOMY_8 22
 Add: __ANOMY_9 25
-[Sequence]Call(out_of_memory) 
-[Sequence]Call(resp_add_iov) Call(conn_set_state) 
+Sequence: Call(out_of_memory) 
+Sequence: Call(resp_add_iov) Call(conn_set_state) 
+After Merge: 
+Sequence: Call(out_of_memory) 
+Sequence: Call(resp_add_iov) Call(conn_set_state) 

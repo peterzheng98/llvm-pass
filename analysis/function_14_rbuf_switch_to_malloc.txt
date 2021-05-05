@@ -88,5 +88,7 @@ Add: __ANOMY_17 44
 Add: __ANOMY_18 46
 Add: __ANOMY_19 49
 Add: __ANOMY_20 54
-[Sequence]Call(malloc) 
-[Sequence]Call(malloc) Call(do_cache_free) Call(llvm.memcpy.p0i8.p0i8.i64) 
+Zero Sequence.
+Sequence: Call(do_cache_free) 
+After Merge: 
+Sequence: Call(do_cache_free) 

@@ -261,17 +261,19 @@ Add: __ANOMY_60 149
 Add: __ANOMY_61 151
 Add: __ANOMY_62 155
 Add: __ANOMY_63 156
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]Call(do_cache_free) Call(pthread_mutex_lock) Load(stats27) Store(stats27) Call(pthread_mutex_unlock) 
-[Sequence]Call(do_cache_free) Call(pthread_mutex_lock) Load(stats27) Store(stats27) Call(pthread_mutex_unlock) 
-[Sequence]Call(do_cache_free) Call(pthread_mutex_lock) Load(stats27) Store(stats27) Call(pthread_mutex_unlock) 
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Sequence: Call(do_cache_free) Load(stats27) Store(stats27) 
+Sequence: Call(do_cache_free) Load(stats27) Store(stats27) 
+Sequence: Call(do_cache_free) Load(stats27) Store(stats27) 
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+After Merge: 
+Sequence: Call(do_cache_free) Load(stats27) Store(stats27) 

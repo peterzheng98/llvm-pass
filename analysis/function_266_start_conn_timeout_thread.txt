@@ -33,6 +33,8 @@ retval
 Phase 2:
 Add: __ANOMY_2 13
 Add: __ANOMY_3 20
-[Sequence]Load(settings) Store(do_run_conn_timeout_thread) Call(pthread_create) 
-[Sequence]Load(settings) Store(do_run_conn_timeout_thread) Call(pthread_create) Load(stderr) Call(strerror) Call(fprintf) 
-[Sequence]Load(settings) 
+Sequence: Load(settings) Store(do_run_conn_timeout_thread) Call(pthread_create) 
+Sequence: Load(settings) Store(do_run_conn_timeout_thread) Call(pthread_create) Call(strerror) 
+Sequence: Load(settings) 
+After Merge: 
+Sequence: Load(settings) Store(do_run_conn_timeout_thread) Call(pthread_create) Call(strerror) 

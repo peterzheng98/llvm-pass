@@ -88,6 +88,8 @@ Add: __ANOMY_16 47
 Add: __ANOMY_17 49
 Add: __ANOMY_18 50
 Add: __ANOMY_19 56
-[Sequence]
-[Sequence]Call(do_cache_alloc) Call(pthread_mutex_lock) Load(stats7) Store(stats7) Call(pthread_mutex_unlock) 
-[Sequence]Call(do_cache_alloc) 
+Zero Sequence.
+Sequence: Call(do_cache_alloc) Load(stats7) Store(stats7) 
+Sequence: Call(do_cache_alloc) 
+After Merge: 
+Sequence: Call(do_cache_alloc) Load(stats7) Store(stats7) 

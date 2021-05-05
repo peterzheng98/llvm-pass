@@ -113,12 +113,15 @@ Add: __ANOMY_20 61
 Add: __ANOMY_21 62
 Add: __ANOMY_22 63
 Add: __ANOMY_23 64
-[Sequence]Call(grow_stats_buf) 
-[Sequence]Call(grow_stats_buf) Call(append_ascii_stats) 
-[Sequence]Call(grow_stats_buf) 
-[Sequence]Call(grow_stats_buf) Call(append_bin_stats) 
-[Sequence]Call(grow_stats_buf) 
-[Sequence]Call(grow_stats_buf) Call(append_ascii_stats) 
-[Sequence]Call(grow_stats_buf) 
-[Sequence]Call(grow_stats_buf) Call(append_bin_stats) 
-[Sequence]
+Sequence: Call(grow_stats_buf) 
+Sequence: Call(grow_stats_buf) Call(append_ascii_stats) 
+Sequence: Call(grow_stats_buf) 
+Sequence: Call(grow_stats_buf) Call(append_bin_stats) 
+Sequence: Call(grow_stats_buf) 
+Sequence: Call(grow_stats_buf) Call(append_ascii_stats) 
+Sequence: Call(grow_stats_buf) 
+Sequence: Call(grow_stats_buf) Call(append_bin_stats) 
+Zero Sequence.
+After Merge: 
+Sequence: Call(grow_stats_buf) Call(append_ascii_stats) 
+Sequence: Call(grow_stats_buf) Call(append_bin_stats) 

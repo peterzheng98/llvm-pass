@@ -53,6 +53,9 @@ Add: __ANOMY_6 17
 Add: cmp 18
 Add: __ANOMY_9 26
 Add: __ANOMY_10 29
-[Sequence]Call(drive_machine) 
-[Sequence]Load(settings) Call(conn_close) 
-[Sequence]Load(settings) Load(stderr) Call(fprintf) Call(conn_close) 
+Sequence: Call(drive_machine) 
+Sequence: Load(settings) Call(conn_close) 
+Sequence: Load(settings) Call(conn_close) 
+After Merge: 
+Sequence: Call(drive_machine) 
+Sequence: Load(settings) Call(conn_close) 

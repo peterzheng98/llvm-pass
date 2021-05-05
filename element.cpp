@@ -119,6 +119,7 @@ void Element::getAllMemoryAccessPath(std::ostream &target){
       after_merge[j] = to_be_merged[j];
     }
   }
+  target << std::endl << "<==============================>" << std::endl;
   target << "After Merge: " << std::endl;
   for(auto &j : after_merge){
     target << "Sequence: ";

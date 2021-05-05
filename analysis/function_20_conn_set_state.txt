@@ -64,7 +64,9 @@ Add: __ANOMY_11 28
 Add: cmp8 29
 Add: __ANOMY_12 32
 Add: __ANOMY_13 33
-[Sequence]Load(settings) 
-[Sequence]Load(settings) 
-[Sequence]Load(settings) 
-[Sequence]Load(settings) Load(stderr) Call(state_text) Call(state_text) Call(fprintf) 
+Sequence: Load(settings) 
+Sequence: Load(settings) 
+Sequence: Load(settings) 
+Sequence: Load(settings) Call(state_text) Call(state_text) 
+After Merge: 
+Sequence: Load(settings) Call(state_text) Call(state_text) 

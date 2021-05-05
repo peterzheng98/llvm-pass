@@ -51,7 +51,10 @@ Add: __ANOMY_2 11
 Add: __ANOMY_4 17
 Add: __ANOMY_6 23
 Add: __ANOMY_8 30
-[Sequence]Load(current_time) 
-[Sequence]Load(process_started) Load(process_started) 
-[Sequence]Load(process_started) 
-[Sequence]
+Sequence: Load(current_time) 
+Sequence: Load(process_started) Load(process_started) 
+Sequence: Load(process_started) 
+Zero Sequence.
+After Merge: 
+Sequence: Load(current_time) 
+Sequence: Load(process_started) Load(process_started) 

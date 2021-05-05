@@ -101,9 +101,11 @@ Add: __ANOMY_22 56
 Add: __ANOMY_23 58
 Add: __ANOMY_24 62
 Add: __ANOMY_25 64
-[Sequence]Load(settings) Load(current_time) Load(settings) Load(settings) Call(pthread_mutex_lock) Load(stats17) Store(stats17) Call(pthread_mutex_unlock) Call(conn_set_state) Call(drive_machine) 
-[Sequence]Load(settings) Load(current_time) Load(settings) Load(settings) Load(stderr) Call(fprintf) Call(pthread_mutex_lock) Load(stats17) Store(stats17) Call(pthread_mutex_unlock) Call(conn_set_state) Call(drive_machine) 
-[Sequence]Load(settings) Load(current_time) Load(settings) Load(settings) Call(pthread_mutex_lock) Load(stats17) Store(stats17) Call(pthread_mutex_unlock) Call(conn_set_state) Call(drive_machine) 
-[Sequence]Load(settings) Load(current_time) Load(settings) Load(settings) Load(stderr) Call(fprintf) 
-[Sequence]Load(settings) Load(current_time) Load(settings) Load(settings) 
-[Sequence]Load(settings) Load(current_time) Load(settings) Load(settings) Load(stderr) Call(fprintf) 
+Sequence: Load(settings) Load(current_time) Load(settings) Load(settings) Load(stats17) Store(stats17) Call(conn_set_state) Call(drive_machine) 
+Sequence: Load(settings) Load(current_time) Load(settings) Load(settings) Load(stats17) Store(stats17) Call(conn_set_state) Call(drive_machine) 
+Sequence: Load(settings) Load(current_time) Load(settings) Load(settings) Load(stats17) Store(stats17) Call(conn_set_state) Call(drive_machine) 
+Sequence: Load(settings) Load(current_time) Load(settings) Load(settings) 
+Sequence: Load(settings) Load(current_time) Load(settings) Load(settings) 
+Sequence: Load(settings) Load(current_time) Load(settings) Load(settings) 
+After Merge: 
+Sequence: Load(settings) Load(current_time) Load(settings) Load(settings) Load(stats17) Store(stats17) Call(conn_set_state) Call(drive_machine) 

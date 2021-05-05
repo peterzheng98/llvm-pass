@@ -24,6 +24,7 @@ rv
 Phase 2:
 Add: __ANOMY_0 4
 Add: __ANOMY_1 12
-[Sequence]
-[Sequence]
-[Sequence]
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+After Merge: 

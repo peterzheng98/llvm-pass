@@ -36,6 +36,9 @@ Add: __ANOMY_3 10
 Add: __ANOMY_4 12
 Add: cmp2 13
 Add: __ANOMY_5 15
-[Sequence]
-[Sequence]Call(complete_nread_binary) 
-[Sequence]Call(complete_nread_ascii) 
+Zero Sequence.
+Sequence: Call(complete_nread_binary) 
+Sequence: Call(complete_nread_ascii) 
+After Merge: 
+Sequence: Call(complete_nread_ascii) 
+Sequence: Call(complete_nread_binary) 

@@ -97,11 +97,14 @@ Add: __ANOMY_19 46
 Add: __ANOMY_20 49
 Add: __ANOMY_21 53
 Add: __ANOMY_22 54
-[Sequence]
-[Sequence]Call(resp_finish) 
-[Sequence]Call(resp_finish) Call(resp_finish) 
-[Sequence]Call(resp_finish) Call(resp_finish) Call(resp_finish) 
-[Sequence]Call(resp_finish) Call(resp_finish) Load(stderr) Call(fprintf) 
-[Sequence]Call(resp_finish) Load(stderr) Call(fprintf) 
-[Sequence]Load(stderr) Call(fprintf) 
-[Sequence]Call(item_remove) 
+Zero Sequence.
+Sequence: Call(resp_finish) 
+Sequence: Call(resp_finish) Call(resp_finish) 
+Sequence: Call(resp_finish) Call(resp_finish) Call(resp_finish) 
+Sequence: Call(resp_finish) Call(resp_finish) 
+Sequence: Call(resp_finish) 
+Zero Sequence.
+Sequence: Call(item_remove) 
+After Merge: 
+Sequence: Call(item_remove) 
+Sequence: Call(resp_finish) Call(resp_finish) Call(resp_finish) 

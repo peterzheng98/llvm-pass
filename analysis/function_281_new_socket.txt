@@ -66,7 +66,10 @@ Add: or 27
 Add: __ANOMY_9 32
 Add: __ANOMY_10 36
 Add: __ANOMY_11 39
-[Sequence]Call(socket) Call(fcntl) Call(fcntl) 
-[Sequence]Call(socket) Call(fcntl) Call(fcntl) Call(perror) Call(close) 
-[Sequence]Call(socket) Call(fcntl) Call(perror) Call(close) 
-[Sequence]Call(socket) 
+Sequence: Call(socket) Call(fcntl) Call(fcntl) 
+Sequence: Call(socket) Call(fcntl) Call(fcntl) Call(perror) Call(close) 
+Sequence: Call(socket) Call(fcntl) Call(perror) Call(close) 
+Sequence: Call(socket) 
+After Merge: 
+Sequence: Call(socket) Call(fcntl) Call(fcntl) Call(perror) Call(close) 
+Sequence: Call(socket) Call(fcntl) Call(perror) Call(close) 

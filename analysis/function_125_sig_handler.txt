@@ -11,4 +11,6 @@ Phase 1: Allocated Variables:
 sig.addr
 Phase 2:
 Add: __ANOMY_0 3
-[Sequence]Store(stop_main_loop) Call(strsignal) Call(printf) 
+Sequence: Store(stop_main_loop) Call(strsignal) Call(printf) 
+After Merge: 
+Sequence: Store(stop_main_loop) Call(strsignal) Call(printf) 

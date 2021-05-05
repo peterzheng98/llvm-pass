@@ -56,10 +56,11 @@ Add: cmp3 20
 Add: __ANOMY_6 22
 Add: __ANOMY_7 25
 Add: __ANOMY_8 31
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+After Merge: 

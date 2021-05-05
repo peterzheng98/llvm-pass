@@ -66,7 +66,9 @@ Add: __ANOMY_10 29
 Add: __ANOMY_11 31
 Add: __ANOMY_12 32
 Add: __ANOMY_13 35
-[Sequence]
-[Sequence]Call(__ANOMY_9) 
-[Sequence]Call(__ANOMY_9) 
-[Sequence]Call(__ANOMY_9) 
+Zero Sequence.
+Sequence: Call(__ANOMY_9) 
+Sequence: Call(__ANOMY_9) 
+Sequence: Call(__ANOMY_9) 
+After Merge: 
+Sequence: Call(__ANOMY_9) 

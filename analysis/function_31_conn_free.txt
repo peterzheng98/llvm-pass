@@ -44,5 +44,7 @@ Add: tobool1 15
 Add: __ANOMY_6 17
 Add: __ANOMY_7 19
 Add: __ANOMY_8 22
-[Sequence]Load(conns) Store(__ANOMY_1) Call(free) 
-[Sequence]Load(conns) Store(__ANOMY_1) Call(free) Call(free) 
+Sequence: Load(conns) Store(__ANOMY_1) Call(free) 
+Sequence: Load(conns) Store(__ANOMY_1) Call(free) Call(free) 
+After Merge: 
+Sequence: Load(conns) Store(__ANOMY_1) Call(free) Call(free) 

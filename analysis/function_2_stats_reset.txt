@@ -9,4 +9,6 @@
 		ret
 Phase 1: Allocated Variables: 
 Phase 2:
-[Sequence]Call(STATS_LOCK) Call(llvm.memset.p0i8.i64) Call(stats_prefix_clear) Call(STATS_UNLOCK) Call(threadlocal_stats_reset) Call(item_stats_reset) 
+Sequence: Call(STATS_LOCK) Call(llvm.memset.p0i8.i64) Call(stats_prefix_clear) Call(STATS_UNLOCK) Call(threadlocal_stats_reset) Call(item_stats_reset) 
+After Merge: 
+Sequence: Call(STATS_LOCK) Call(llvm.memset.p0i8.i64) Call(stats_prefix_clear) Call(STATS_UNLOCK) Call(threadlocal_stats_reset) Call(item_stats_reset) 

@@ -61,7 +61,10 @@ Add: __ANOMY_9 24
 Add: __ANOMY_10 27
 Add: __ANOMY_11 29
 Add: __ANOMY_12 31
-[Sequence]Call(event_del) Load(settings) Call(conn_cleanup) Call(conn_set_state) Call(close) Call(pthread_mutex_lock) Store(allow_new_conns) Call(pthread_mutex_unlock) Call(STATS_LOCK) Load(stats_state) Store(stats_state) Call(STATS_UNLOCK) 
-[Sequence]Call(event_del) Load(settings) Call(conn_cleanup) Call(rbuf_release) Call(conn_set_state) Call(close) Call(pthread_mutex_lock) Store(allow_new_conns) Call(pthread_mutex_unlock) Call(STATS_LOCK) Load(stats_state) Store(stats_state) Call(STATS_UNLOCK) 
-[Sequence]Call(event_del) Load(settings) Load(stderr) Call(fprintf) Call(conn_cleanup) Call(conn_set_state) Call(close) Call(pthread_mutex_lock) Store(allow_new_conns) Call(pthread_mutex_unlock) Call(STATS_LOCK) Load(stats_state) Store(stats_state) Call(STATS_UNLOCK) 
-[Sequence]Call(event_del) Load(settings) Load(stderr) Call(fprintf) Call(conn_cleanup) Call(rbuf_release) 
+Sequence: Call(event_del) Load(settings) Call(conn_cleanup) Call(conn_set_state) Call(close) Store(allow_new_conns) Call(STATS_LOCK) Load(stats_state) Store(stats_state) Call(STATS_UNLOCK) 
+Sequence: Call(event_del) Load(settings) Call(conn_cleanup) Call(rbuf_release) Call(conn_set_state) Call(close) Store(allow_new_conns) Call(STATS_LOCK) Load(stats_state) Store(stats_state) Call(STATS_UNLOCK) 
+Sequence: Call(event_del) Load(settings) Call(conn_cleanup) Call(conn_set_state) Call(close) Store(allow_new_conns) Call(STATS_LOCK) Load(stats_state) Store(stats_state) Call(STATS_UNLOCK) 
+Sequence: Call(event_del) Load(settings) Call(conn_cleanup) Call(rbuf_release) 
+After Merge: 
+Sequence: Call(event_del) Load(settings) Call(conn_cleanup) Call(conn_set_state) Call(close) Store(allow_new_conns) Call(STATS_LOCK) Load(stats_state) Store(stats_state) Call(STATS_UNLOCK) 
+Sequence: Call(event_del) Load(settings) Call(conn_cleanup) Call(rbuf_release) Call(conn_set_state) Call(close) Store(allow_new_conns) Call(STATS_LOCK) Load(stats_state) Store(stats_state) Call(STATS_UNLOCK) 

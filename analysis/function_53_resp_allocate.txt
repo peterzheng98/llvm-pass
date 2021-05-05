@@ -294,22 +294,25 @@ Add: __ANOMY_56 178
 Add: __ANOMY_57 182
 Add: __ANOMY_58 189
 Add: __ANOMY_59 192
-[Sequence]
-[Sequence]Call(do_cache_alloc) 
-[Sequence]Call(do_cache_alloc) Call(pthread_mutex_lock) Load(stats41) Store(stats41) Call(pthread_mutex_unlock) 
-[Sequence]Call(do_cache_alloc) Call(pthread_mutex_lock) Load(stats41) Store(stats41) Call(pthread_mutex_unlock) Store(arrayidx57) Store(arrayidx60) 
-[Sequence]Call(do_cache_alloc) Call(pthread_mutex_lock) Load(stats41) Store(stats41) Call(pthread_mutex_unlock) Store(arrayidx57) Store(arrayidx60) Store(arrayidx57) Store(arrayidx60) 
-[Sequence]Call(do_cache_alloc) Call(pthread_mutex_lock) Load(stats41) Store(stats41) Call(pthread_mutex_unlock) Store(arrayidx57) Store(arrayidx60) Store(arrayidx57) Store(arrayidx60) Store(arrayidx57) Store(arrayidx60) 
-[Sequence]Call(do_cache_alloc) 
-[Sequence]Call(do_cache_alloc) Call(pthread_mutex_lock) Load(stats41) Store(stats41) Call(pthread_mutex_unlock) 
-[Sequence]Call(do_cache_alloc) 
-[Sequence]Call(do_cache_alloc) Call(pthread_mutex_lock) Load(stats41) Store(stats41) Call(pthread_mutex_unlock) 
-[Sequence]
-[Sequence]
-[Sequence]Load(arrayidx) 
-[Sequence]Load(arrayidx) 
-[Sequence]Load(arrayidx) Load(arrayidx) 
-[Sequence]Load(arrayidx) Load(arrayidx) Load(arrayidx) 
-[Sequence]Load(arrayidx) Load(arrayidx) Load(arrayidx) 
-[Sequence]Load(arrayidx) Load(arrayidx) 
-[Sequence]Load(arrayidx) 
+Zero Sequence.
+Sequence: Call(do_cache_alloc) 
+Sequence: Call(do_cache_alloc) Load(stats41) Store(stats41) 
+Sequence: Call(do_cache_alloc) Load(stats41) Store(stats41) Store(arrayidx57) Store(arrayidx60) 
+Sequence: Call(do_cache_alloc) Load(stats41) Store(stats41) Store(arrayidx57) Store(arrayidx60) Store(arrayidx57) Store(arrayidx60) 
+Sequence: Call(do_cache_alloc) Load(stats41) Store(stats41) Store(arrayidx57) Store(arrayidx60) Store(arrayidx57) Store(arrayidx60) Store(arrayidx57) Store(arrayidx60) 
+Sequence: Call(do_cache_alloc) 
+Sequence: Call(do_cache_alloc) Load(stats41) Store(stats41) 
+Sequence: Call(do_cache_alloc) 
+Sequence: Call(do_cache_alloc) Load(stats41) Store(stats41) 
+Zero Sequence.
+Zero Sequence.
+Sequence: Load(arrayidx) 
+Sequence: Load(arrayidx) 
+Sequence: Load(arrayidx) Load(arrayidx) 
+Sequence: Load(arrayidx) Load(arrayidx) Load(arrayidx) 
+Sequence: Load(arrayidx) Load(arrayidx) Load(arrayidx) 
+Sequence: Load(arrayidx) Load(arrayidx) 
+Sequence: Load(arrayidx) 
+After Merge: 
+Sequence: Call(do_cache_alloc) Load(stats41) Store(stats41) Store(arrayidx57) Store(arrayidx60) Store(arrayidx57) Store(arrayidx60) Store(arrayidx57) Store(arrayidx60) 
+Sequence: Load(arrayidx) Load(arrayidx) Load(arrayidx) 

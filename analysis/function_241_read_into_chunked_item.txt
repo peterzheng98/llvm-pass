@@ -470,37 +470,42 @@ Add: __ANOMY_114 277
 Add: __ANOMY_115 279
 Add: tobool112 280
 Add: __ANOMY_116 286
-[Sequence]
-[Sequence]Call(do_item_alloc_chunk) 
-[Sequence]Call(do_item_alloc_chunk) 
-[Sequence]Call(__ANOMY_70) Call(do_item_alloc_chunk) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(do_item_alloc_chunk) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(llvm.memmove.p0i8.p0i8.i64) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(llvm.memmove.p0i8.p0i8.i64) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(llvm.memmove.p0i8.p0i8.i64) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(llvm.memmove.p0i8.p0i8.i64) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(do_item_alloc_chunk) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(do_item_alloc_chunk) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(do_item_alloc_chunk) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) Call(do_item_alloc_chunk) 
-[Sequence]Call(__ANOMY_70) Call(pthread_mutex_lock) Load(stats77) Store(stats77) Call(pthread_mutex_unlock) 
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]Call(do_item_alloc_chunk) 
-[Sequence]Call(do_item_alloc_chunk) 
-[Sequence]
+Zero Sequence.
+Sequence: Call(do_item_alloc_chunk) 
+Sequence: Call(do_item_alloc_chunk) 
+Sequence: Call(__ANOMY_70) Call(do_item_alloc_chunk) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(do_item_alloc_chunk) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) Call(llvm.memmove.p0i8.p0i8.i64) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) Call(llvm.memmove.p0i8.p0i8.i64) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) Call(llvm.memmove.p0i8.p0i8.i64) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) Call(llvm.memmove.p0i8.p0i8.i64) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) Call(do_item_alloc_chunk) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) Call(do_item_alloc_chunk) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(do_item_alloc_chunk) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(do_item_alloc_chunk) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) 
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Sequence: Call(do_item_alloc_chunk) 
+Sequence: Call(do_item_alloc_chunk) 
+Zero Sequence.
+After Merge: 
+Sequence: Call(__ANOMY_70) Call(do_item_alloc_chunk) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) Call(do_item_alloc_chunk) 
+Sequence: Call(__ANOMY_70) Load(stats77) Store(stats77) Call(__ANOMY_70) Load(stats77) Store(stats77) Call(llvm.memmove.p0i8.p0i8.i64) 

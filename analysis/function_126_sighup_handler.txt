@@ -7,4 +7,6 @@
 Phase 1: Allocated Variables: 
 sig.addr
 Phase 2:
-[Sequence]Store(settings) 
+Sequence: Store(settings) 
+After Merge: 
+Sequence: Store(settings) 

@@ -171,13 +171,18 @@ Add: __ANOMY_40 94
 Add: __ANOMY_42 100
 Add: __ANOMY_43 102
 Add: __ANOMY_44 106
-[Sequence]Call(resp_free) Call(pthread_mutex_lock) Load(stats25) Store(stats25) Call(pthread_mutex_unlock) 
-[Sequence]Call(resp_free) Call(pthread_mutex_lock) Load(stats25) Store(stats25) Call(pthread_mutex_unlock) 
-[Sequence]Call(resp_free) Call(pthread_mutex_lock) Load(stats25) Store(stats25) Call(pthread_mutex_unlock) 
-[Sequence]
-[Sequence]Call(__ANOMY_16) Call(do_cache_free) 
-[Sequence]Call(__ANOMY_16) Call(do_cache_free) 
-[Sequence]Call(free) 
-[Sequence]Call(free) Call(__ANOMY_16) Call(do_cache_free) 
-[Sequence]Call(item_remove) Call(__ANOMY_16) Call(do_cache_free) 
-[Sequence]Call(item_remove) Call(free) 
+Sequence: Call(resp_free) Load(stats25) Store(stats25) 
+Sequence: Call(resp_free) Load(stats25) Store(stats25) 
+Sequence: Call(resp_free) Load(stats25) Store(stats25) 
+Zero Sequence.
+Sequence: Call(__ANOMY_16) Call(do_cache_free) 
+Sequence: Call(__ANOMY_16) Call(do_cache_free) 
+Sequence: Call(free) 
+Sequence: Call(free) Call(__ANOMY_16) Call(do_cache_free) 
+Sequence: Call(item_remove) Call(__ANOMY_16) Call(do_cache_free) 
+Sequence: Call(item_remove) Call(free) 
+After Merge: 
+Sequence: Call(free) Call(__ANOMY_16) Call(do_cache_free) 
+Sequence: Call(item_remove) Call(__ANOMY_16) Call(do_cache_free) 
+Sequence: Call(item_remove) Call(free) 
+Sequence: Call(resp_free) Load(stats25) Store(stats25) 

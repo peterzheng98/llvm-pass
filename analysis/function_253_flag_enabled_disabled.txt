@@ -12,3 +12,4 @@ Phase 1: Allocated Variables:
 flag.addr
 Phase 2:
 Add: __ANOMY_0 3
+After Merge: 

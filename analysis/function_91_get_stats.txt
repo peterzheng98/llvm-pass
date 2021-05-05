@@ -163,11 +163,18 @@ Add: __ANOMY_36 79
 Add: __ANOMY_37 83
 Add: __ANOMY_38 84
 Add: __ANOMY_39 97
-[Sequence]
-[Sequence]Call(STATS_LOCK) Load(stats_state) Call(append_stat) Load(stats_state) Call(append_stat) Load(stats) Call(append_stat) Call(STATS_UNLOCK) Call(global_page_pool_size) Call(append_stat) Call(item_stats_totals) 
-[Sequence]Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) 
-[Sequence]Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(item_stats_sizes_disable) 
-[Sequence]Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(item_stats_sizes_enable) 
-[Sequence]Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(item_stats_sizes) 
-[Sequence]Call(nz_strcmp) Call(nz_strcmp) Call(slabs_stats) 
-[Sequence]Call(nz_strcmp) Call(item_stats) 
+Zero Sequence.
+Sequence: Call(STATS_LOCK) Load(stats_state) Call(append_stat) Load(stats_state) Call(append_stat) Load(stats) Call(append_stat) Call(STATS_UNLOCK) Call(global_page_pool_size) Call(append_stat) Call(item_stats_totals) 
+Sequence: Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) 
+Sequence: Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(item_stats_sizes_disable) 
+Sequence: Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(item_stats_sizes_enable) 
+Sequence: Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(item_stats_sizes) 
+Sequence: Call(nz_strcmp) Call(nz_strcmp) Call(slabs_stats) 
+Sequence: Call(nz_strcmp) Call(item_stats) 
+After Merge: 
+Sequence: Call(STATS_LOCK) Load(stats_state) Call(append_stat) Load(stats_state) Call(append_stat) Load(stats) Call(append_stat) Call(STATS_UNLOCK) Call(global_page_pool_size) Call(append_stat) Call(item_stats_totals) 
+Sequence: Call(nz_strcmp) Call(item_stats) 
+Sequence: Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(item_stats_sizes) 
+Sequence: Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(item_stats_sizes_enable) 
+Sequence: Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(nz_strcmp) Call(item_stats_sizes_disable) 
+Sequence: Call(nz_strcmp) Call(nz_strcmp) Call(slabs_stats) 

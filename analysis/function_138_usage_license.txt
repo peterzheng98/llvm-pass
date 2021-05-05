@@ -5,4 +5,6 @@
 		ret
 Phase 1: Allocated Variables: 
 Phase 2:
-[Sequence]Call(printf) Call(printf) 
+Sequence: Call(printf) Call(printf) 
+After Merge: 
+Sequence: Call(printf) Call(printf) 

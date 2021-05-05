@@ -540,48 +540,50 @@ Add: __ANOMY_123 327
 Add: tobool148 328
 Add: __ANOMY_124 330
 Add: __ANOMY_125 340
-[Sequence]
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(do_item_alloc_chunk) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(do_item_alloc_chunk) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(do_item_alloc_chunk) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(do_item_alloc_chunk) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(do_item_alloc_chunk) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(do_item_alloc_chunk) 
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(do_item_alloc_chunk) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(do_item_alloc_chunk) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(do_item_alloc_chunk) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(llvm.memcpy.p0i8.p0i8.i64) Call(do_item_alloc_chunk) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(do_item_alloc_chunk) 
-[Sequence]Call(llvm.memcpy.p0i8.p0i8.i64) Call(do_item_alloc_chunk) 
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
-[Sequence]
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Sequence: Call(do_item_alloc_chunk) 
+Sequence: Call(do_item_alloc_chunk) 
+Zero Sequence.
+Zero Sequence.
+Sequence: Call(do_item_alloc_chunk) 
+Sequence: Call(do_item_alloc_chunk) 
+Zero Sequence.
+Zero Sequence.
+Sequence: Call(do_item_alloc_chunk) 
+Sequence: Call(do_item_alloc_chunk) 
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Sequence: Call(do_item_alloc_chunk) 
+Sequence: Call(do_item_alloc_chunk) 
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Sequence: Call(do_item_alloc_chunk) 
+Sequence: Call(do_item_alloc_chunk) 
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Sequence: Call(do_item_alloc_chunk) 
+Sequence: Call(do_item_alloc_chunk) 
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+Zero Sequence.
+After Merge: 
+Sequence: Call(do_item_alloc_chunk) 

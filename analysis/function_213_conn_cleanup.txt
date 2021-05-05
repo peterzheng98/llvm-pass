@@ -38,5 +38,7 @@ Add: __ANOMY_4 13
 Add: __ANOMY_5 15
 Add: cmp 16
 Add: __ANOMY_6 18
-[Sequence]Call(conn_release_items) Call(conn_set_state) 
-[Sequence]Call(conn_release_items) Call(conn_set_state) 
+Sequence: Call(conn_release_items) Call(conn_set_state) 
+Sequence: Call(conn_release_items) Call(conn_set_state) 
+After Merge: 
+Sequence: Call(conn_release_items) Call(conn_set_state) 

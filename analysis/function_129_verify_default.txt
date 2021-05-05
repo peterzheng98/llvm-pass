@@ -21,4 +21,6 @@ param.addr
 Phase 2:
 Add: __ANOMY_0 5
 Add: __ANOMY_1 8
-[Sequence]Call(printf) Call(exit) 
+Sequence: Call(printf) Call(exit) 
+After Merge: 
+Sequence: Call(printf) Call(exit) 

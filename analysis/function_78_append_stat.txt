@@ -48,4 +48,6 @@ Add: __ANOMY_2 23
 Add: __ANOMY_3 24
 Add: __ANOMY_4 28
 Add: __ANOMY_5 29
-[Sequence]Call(llvm.va_start) Call(vsnprintf) Call(llvm.va_end) Call(strlen) Call(__ANOMY_1) 
+Sequence: Call(llvm.va_start) Call(vsnprintf) Call(llvm.va_end) Call(strlen) Call(__ANOMY_1) 
+After Merge: 
+Sequence: Call(llvm.va_start) Call(vsnprintf) Call(llvm.va_end) Call(strlen) Call(__ANOMY_1) 

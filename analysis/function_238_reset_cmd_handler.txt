@@ -71,9 +71,11 @@ Add: __ANOMY_12 32
 Add: tobool 33
 Add: __ANOMY_13 35
 Add: __ANOMY_14 38
-[Sequence]Call(conn_set_state) 
-[Sequence]Call(conn_set_state) 
-[Sequence]Call(conn_set_state) 
-[Sequence]Call(item_remove) Call(conn_set_state) 
-[Sequence]Call(item_remove) Call(conn_set_state) 
-[Sequence]Call(item_remove) Call(conn_set_state) 
+Sequence: Call(conn_set_state) 
+Sequence: Call(conn_set_state) 
+Sequence: Call(conn_set_state) 
+Sequence: Call(item_remove) Call(conn_set_state) 
+Sequence: Call(item_remove) Call(conn_set_state) 
+Sequence: Call(item_remove) Call(conn_set_state) 
+After Merge: 
+Sequence: Call(item_remove) Call(conn_set_state) 
