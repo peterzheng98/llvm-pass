@@ -195,8 +195,11 @@ void check_function(llvm::Module::iterator &iter, int sidx){
         auto p = load_i->getPointerOperand();
         std::string load_source = cast<LoadInst>(inst_iter)->getPointerOperand()->getName().str();
         if(isa<GetElementPtrInst>(p)){
-          std::cout << cast<GetElementPtrInst>(p)->getPointerOperand()->getName().str() << std::endl;
+          std::cout << "GEP: " << cast<GetElementPtrInst>(p)->getPointerOperand()->getName().str() << std::endl;
           load_source = cast<GetElementPtrInst>(p)->getPointerOperand()->getName().str();
+        } else if(isa<ConstantExpr>(p)){
+          load_source = cast<ConstantExpr>(p)->getOperand(0)->getName().str();
+          std::cout << "Constant Expr: " << load_source << std::endl;
         }
         if(allocated_variables.count(load_source)){
           allocated_variables.insert(inst_iter->getName().str());
@@ -328,10 +331,10 @@ void check_function(llvm::Module::iterator &iter, int sidx){
       if(isa<StoreInst>(inst_iter)){
         std::string target = cast<StoreInst>(inst_iter)->getPointerOperand()->getName().str();
         StoreInst *inst = cast<StoreInst>(inst_iter);
-        if(isa<GetElementPtrInst>(inst->getPointerOperand())){
+        if(target == "" && isa<GetElementPtrInst>(inst->getPointerOperand())){
           target = cast<GetElementPtrInst>(inst->getPointerOperand())->getPointerOperand()->getName().str();
         }
-        if(isa<ConstantExpr>(inst->getPointerOperand())){
+        if(target == "" && isa<ConstantExpr>(inst->getPointerOperand())){
           auto t_inst = cast<ConstantExpr>(inst->getPointerOperand());
           target = t_inst->getOperand(0)->getName().str();
         }
@@ -343,13 +346,17 @@ void check_function(llvm::Module::iterator &iter, int sidx){
       if(isa<LoadInst>(inst_iter)){
         std::string target = cast<LoadInst>(inst_iter)->getPointerOperand()->getName().str();
         LoadInst *inst = cast<LoadInst>(inst_iter);
-        if(isa<GetElementPtrInst>(inst->getPointerOperand())){
+        std::cout << "Phase 3: Load add: Original" << target << " to " << inst_iter->getName().str() << std::endl;
+        if(target == "" && isa<GetElementPtrInst>(inst->getPointerOperand())){
           target = cast<GetElementPtrInst>(inst->getPointerOperand())->getPointerOperand()->getName().str();
+          std::cout << "Phase 3: Load add: GEP" << target << std::endl;
         }
-        if(isa<ConstantExpr>(inst->getPointerOperand())){
+        if(target == "" && isa<ConstantExpr>(inst->getPointerOperand())){
           auto t_inst = cast<ConstantExpr>(inst->getPointerOperand());
           target = t_inst->getOperand(0)->getName().str();
+          std::cout << "Phase 3: Load add: Constant Expr" << target << std::endl;
         }
+        
         if(allocated_variables.count(target)) continue;
         BaseElement tmp(Load, target);
         p->push_back(tmp);
@@ -416,6 +423,11 @@ int main(int argc, char** argv) {
   if(!m)
   {
     std::cout << "error!" << std::endl;
+    std::cout << error.getMessage().str() << std::endl;
+    std::cout << error.getLineContents().str() << std::endl;
+    std::fstream fs(std::string(argv[1]) + ".err", std::ios::out);
+    fs << error.getMessage().str() << std::endl << error.getLineContents().str() << std::endl;
+    fs.close();
     return 0;
   }
   std::cout << error.getMessage().str() << std::endl;
@@ -430,7 +442,7 @@ int main(int argc, char** argv) {
   std::cerr << "Pass 1: End[Cost: " << ((double)clock() - timer_start) / CLOCKS_PER_SEC << "  seconds]" << std::endl;
   std::cerr << "Pass 2: Propagation(Data Preparation)" << std::endl;
   std::string path_prefix_data = "./data/";
-  std::ofstream function_list_file("./func.txt");
+  std::ofstream function_list_file("./" + std::string(argv[1]) + ".func.txt");
   function_list_file << function_list.size() << std::endl;
   for(auto &k : function_list){
     std::ofstream ifs(path_prefix_data + k.first, std::ios::out);

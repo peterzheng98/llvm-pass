@@ -11,6 +11,7 @@
 #include <utility>
 #include <ctime>
 #include <cassert>
+#include <thread>
 
 inline void dump(const std::vector<Element *> *p){
   std::cerr << "Size: " << p->size() << ": ";
@@ -23,14 +24,16 @@ std::string data_prefix = "./data/";
 std::map<std::string, std::vector<std::vector<Element *>>> block2instSeq;
 std::set<std::string> ignored_target;
 std::deque<std::vector<Element *>*> target_list;
-const int verbosity = 2;
+const int verbosity = 3;
 
 std::vector<std::vector<Element *>*>* expandCall(const std::vector<Element *> *original){
   std::vector<Element *> *template_one = new std::vector<Element *>();
   int i;
-  std::cerr << "Original: " << std::endl;
-  dump(original);
-  std::cerr << std::endl;
+  if(verbosity >= 3){
+    std::cerr << "Original: " << std::endl;
+    dump(original);
+    std::cerr << std::endl;
+  }
   for(i = 0; i < original->size(); ++i){
     bool test = false;
     test |= (*original)[i]->getElementType() != FunctionCall;
@@ -85,17 +88,18 @@ inline void output(std::string &header, std::vector<Element *> *p){
   std::ofstream readable(readable_path, std::ios::app), trans(trans_path, std::ios::app);
   readable << "[Sequence]: ";
   trans << "-1 " << p->size() << std::endl;
+  std::cerr << "[Sequence]: ";
   for(int i = 0; i < p->size(); ++i){
     readable << (*p)[i]->toString() << " ";
     trans << (int)(*p)[i]->getElementType() << " " << (*p)[i]->getTargetName() << " ";
+    std::cerr << (*p)[i]->toString() << " ";
   }
   readable << std::endl;
   trans << std::endl;
+  std::cerr << std::endl;
   readable.close();
   trans.close();
 }
-
-
 
 void bfs(int target_size, std::string &start){
   auto all_seq = block2instSeq[start];
@@ -122,17 +126,10 @@ void bfs(int target_size, std::string &start){
     return;
   }
   std::cerr << size_all << " " << target_list.size() << std::endl;
-  // while(target_list.size() > 0) {
-  //   auto p = target_list.front();
-  //   target_list.pop_front();
-  // }
-  // std::cerr << "fuck!!" << target_list.size() << std::endl;
-  // int ttt;
-  // std::cin >> ttt;
-  
-  while(size_all < target_size){
+  while(size_all < target_size && size_all > 0){
     std::vector<Element*> *head = target_list.front();
     target_list.pop_front();
+    size_all--;
     std::cerr << "Current head: ";
     dump(head);
     if(head == nullptr) continue;
@@ -144,6 +141,14 @@ void bfs(int target_size, std::string &start){
       else{
         target_list.push_back(expanded_seq);
         size_all++;
+      }
+    }
+  }
+  for(int i = 0; i < target_list.size(); ++i){
+    for(int j = 0; j < target_list[i]->size(); ++j){
+      if((*target_list[i])[j]->getElementType() == FunctionCall){
+        std::string func_name((*target_list[i])[j]->getTargetName());
+        if(block2instSeq.count(func_name) == 0 || block2instSeq[func_name].size() == 0) (*target_list[i])[j]->DeleteNode();
       }
     }
   }
@@ -162,11 +167,65 @@ void bfs(int target_size, std::string &start){
         recount++;
       }
     }
+    std::cerr << "Test:" << recount << " " << size_all << std::endl;
     assert(recount == size_all);
   }
 }
-void dfs();
 
+void dfs(std::vector<Element *> *current_sequence, std::map<std::string, short> &visited, int idx, std::string prefix){
+  if(check_no_expandable(current_sequence)) {
+    output(prefix, current_sequence);
+    return;
+  }
+  std::vector<Element *> *template_one = new std::vector<Element *>();
+  int i, next_call;
+  for(i = 0; i < current_sequence->size(); ++i){
+    bool test = false;
+    test |= (*current_sequence)[i]->getElementType() != FunctionCall;
+    test |= ((*current_sequence)[i]->getElementType() == FunctionCall && block2instSeq.count((*current_sequence)[i]->getTargetName()) == 0);
+    test |= ((*current_sequence)[i]->getElementType() == FunctionCall && block2instSeq[(*current_sequence)[i]->getTargetName()].size() == 0);
+    test |= ((*current_sequence)[i]->getElementType() == FunctionCall && visited[(*current_sequence)[i]->getTargetName()] >= 3);
+    if(test){
+      template_one->push_back(new Element((*current_sequence)[i]->getElementType(), (*current_sequence)[i]->getTargetName(), false));
+    } else break;
+  }
+  if(i >= current_sequence->size()){
+    output(prefix, current_sequence);
+    return;
+  }
+  next_call = i;
+  std::string call_target = (*current_sequence)[i]->getTargetName();
+  std::vector<std::vector<Element *>> *p = &(block2instSeq[call_target]);
+  auto new_sequence = new std::vector<Element*>(template_one->begin(), template_one->end());
+  assert(new_sequence->size() == template_one->size());
+  for(int i = 0; i < p->size(); ++i){
+    auto seq = (*p)[i];
+    int reduce_size = seq.size();
+    std::cerr << "reduce size: " << reduce_size << std::endl;
+    visited[call_target] += 1;
+    for(int j = 0; j < reduce_size; ++j) new_sequence->push_back(new Element(seq[j]->getElementType(), seq[j]->getTargetName(), false));
+    for(int k = next_call + 1; k < current_sequence->size(); ++k) {
+      new_sequence->push_back(new Element((*current_sequence)[k]->getElementType(), (*current_sequence)[k]->getTargetName(), false));
+      reduce_size++;
+    }
+    std::cerr << "over all reduce size: " << reduce_size << std::endl;
+    dump(new_sequence);
+    std::cerr << "<--->" << std::endl;
+    dfs(new_sequence, visited, idx, prefix);
+    visited[call_target] -= 1;
+    for(int k = reduce_size - 1; k >= 0; k--) new_sequence->pop_back();
+  }
+}
+
+void worker();
+
+void dispatch(int idx, std::vector<Element*> *start_sequence){
+  std::map<std::string, short> *visited = new std::map<std::string, short>();
+  std::vector<Element *> *internal_obj = new std::vector<Element *>();
+  for(int i = 0; i < start_sequence->size(); ++i) internal_obj->push_back(new Element((*start_sequence)[i]->getElementType(), (*start_sequence)[i]->getTargetName(), false));
+  for(auto &j : block2instSeq) (*visited)[j.first] = 0;
+  dfs(internal_obj, *visited, idx, std::to_string(idx));
+}
 
 void loadfiles(std::string &configs){
   std::ifstream config_fs(configs);
@@ -190,6 +249,8 @@ void loadfiles(std::string &configs){
       for(int k = 0; k < record_cnt; ++k){
         int ops, cnt;
         func_fs >> ops >> cnt;
+        std::cerr << "ops: " << ops << std::endl;
+        std::cerr << "files: " << data_prefix + func_name << std::endl;
         assert(ops == -1);
         std::vector<Element *> *p = new std::vector<Element*>();
         for(int l = 0; l < cnt; ++l){
@@ -209,12 +270,13 @@ void loadfiles(std::string &configs){
 }
 
 int main(int argc, char** argv){
-  if(argc != 3){
-    std::cerr << "Usage: <executable> <Top Files> <start function>" << std::endl;
+  if(argc != 4){
+    std::cerr << "Usage: <executable> <Top Files> <start function> <BFS Depth>" << std::endl;
     return 0;
   }
   std::string start(argv[2]);
   std::string top_file_name(argv[1]);
+  int bfs_depth = std::stoi(std::string(argv[3]));
   loadfiles(top_file_name);
   std::cerr << "Total function counts: " << block2instSeq.size() << std::endl;
   if(verbosity >= 3){
@@ -229,5 +291,25 @@ int main(int argc, char** argv){
       }
     }
   }
-  bfs(170, start);
+  bfs(bfs_depth, start);
+  if(verbosity >= 3){
+    int idx = 0;
+    for(auto j : target_list){
+      std::cerr << idx << " : ";
+      for(int i = 0; i < j->size(); ++i){
+        std::cerr << (*j)[i]->toString() << " ";
+      }
+      std::cerr << std::endl;
+    }
+    idx++;
+  }
+  std::cerr << "BFS end" << std::endl;
+  std::thread **tid = new std::thread*[target_list.size()];
+  for(int i = 0; i < target_list.size(); ++i){
+    tid[i] = new std::thread(dispatch, i, target_list[i]);
+  }
+  for(int i = 0; i < target_list.size(); ++i){
+    tid[i]->join();
+  }
+  std::cerr << "DFS End" << std::endl;
 }

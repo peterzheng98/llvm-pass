@@ -5,7 +5,7 @@
 #include <map>
 #include <algorithm>
 typedef enum{
-  HEAD, Branch, Store, Load, Switch, FunctionCall
+  HEAD, Branch, Store, Load, Switch, FunctionCall, DELETED = 10000
 } element_t;
 class BaseElement;
 
@@ -18,6 +18,7 @@ public:
   Element** next;
   Element* main_line_next;
   std::vector<std::string> brs;
+  int select_idx;
 private:
   int capacity, idx;
   bool isHead;
@@ -33,6 +34,7 @@ public:
   element_t getElementType();
   std::string getTargetName();
   std::string toString();
+  void DeleteNode();
 };
 
 class BaseElement{

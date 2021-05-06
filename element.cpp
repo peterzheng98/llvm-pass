@@ -8,6 +8,7 @@ Element::Element(element_t type, std::string name, bool isHead = false) : elemen
   for(int i = 0; i < capacity; ++i) this->next[i] = NULL;
   this->isHead = isHead;
   this->main_line_next = NULL;
+  this->select_idx = 0;
 }
 
 Element::Element(BaseElement p) : element_type(p.element_type), target_name(p.target_name), capacity(10), idx(0){
@@ -34,6 +35,10 @@ void Element::addElement(Element *p){
   this->next[idx++] = p;
 }
 
+void Element::DeleteNode(){
+  this->element_type = DELETED;
+}
+
 std::string Element::toString(){
   std::string type;
   if(this->element_type == Branch) type = "Branch(" + br1 + "=>" + br2;
@@ -41,6 +46,7 @@ std::string Element::toString(){
   else if(this->element_type == Load) type = "Load(";
   else if(this->element_type == Switch) type = "Switch(";
   else if(this->element_type == FunctionCall) type = "Call(";
+  else type = "Delete(";
   return std::string(type + target_name + ")");
 }
 
