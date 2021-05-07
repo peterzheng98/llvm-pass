@@ -35,6 +35,7 @@ public:
   std::string getTargetName();
   std::string toString();
   void DeleteNode();
+  ~Element();
 };
 
 class BaseElement{

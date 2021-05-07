@@ -299,6 +299,31 @@ void check_function(llvm::Module::iterator &iter, int sidx){
         }
         continue;
       }
+      if(isa<PHINode>(inst_iter)){
+        auto phi_i = cast<PHINode>(inst_iter);
+        bool const_flag = false;
+        bool phi_stack = true;
+        for(auto start = phi_i->value_op_begin(); start != phi_i->value_op_end(); ++start){
+          std::string target = (*start)->getName().str();
+          if(target == "" && isa<GetElementPtrInst>(*start)){
+            target = cast<GetElementPtrInst>(*start)->getPointerOperand()->getName().str();
+          }
+          else if(target == "" && isa<ConstantExpr>(*start)){
+            auto t_inst = cast<ConstantExpr>(*start);
+            target = t_inst->getOperand(0)->getName().str();
+          } else if(target == "" && isa<ConstantData>(*start)){
+            std::cout << "\t phi node: A CONSTANT" << std::endl;
+            continue;
+          }
+          std::cout << "\t phi node: " << target << std::endl;
+          if(!allocated_variables.count(target)) phi_stack = false;
+        }
+        if(phi_stack){
+          allocated_variables.insert(inst_iter->getName().str());
+          temporatory_phase2.push_back(std::pair<std::string, int>(inst_iter->getName().str(), idx));
+        }
+        continue;
+      }
       std::cout << "not found: " << inst_iter->getOpcodeName() << std::endl;
     }
   }

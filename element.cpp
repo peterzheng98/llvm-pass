@@ -11,6 +11,10 @@ Element::Element(element_t type, std::string name, bool isHead = false) : elemen
   this->select_idx = 0;
 }
 
+Element::~Element(){
+  delete this->next;
+}
+
 Element::Element(BaseElement p) : element_type(p.element_type), target_name(p.target_name), capacity(10), idx(0){
   this->next = new Element*[capacity];
   for(int i = 0; i < capacity; ++i) this->next[i] = NULL;

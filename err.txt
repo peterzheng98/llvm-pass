@@ -1,0 +1,833 @@
+Total function counts: 97
+166 166
+Current head: Size: 2: Call(sanitycheck) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(free) 
+Current head: Size: 12: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Call(enable_large_pages) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 12: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Call(usage) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 12: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Call(usage_license) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 17: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(optarg) Call(atof) Store(settings) Load(settings) Load(optarg) Call(strdup) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 16: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(optarg) Call(atoi) Store(settings) Load(settings) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 18: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(optarg) Call(strcmp) Load(optarg) Call(strcmp) Load(optarg) Call(strcmp) Load(optarg) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 18: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(optarg) Call(strcmp) Load(optarg) Call(strcmp) Load(optarg) Call(strcmp) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 16: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(optarg) Call(strcmp) Load(optarg) Call(strcmp) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 14: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(optarg) Call(strcmp) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 16: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(optarg) Call(strdup) Call(strlen) Call(atoi) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 14: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(optarg) Call(strdup) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 14: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(optarg) Call(strtol) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 18: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(optarg) Load(optarg) Load(__ANOMY_59) Load(optarg) Load(__ANOMY_62) Store(settings) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 13: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(optarg) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 15: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(optarg) Call(strdup) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 24: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(optarg) Call(strstr) Load(settings) Call(strlen) Load(optarg) Call(strlen) Load(settings) Load(optarg) Load(settings) Call(free) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 28: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Call(strdup) Call(_parse_slab_sizes) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 30: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Call(strdup) Call(_parse_slab_sizes) Load(settings) Load(settings) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 36: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Call(strchr) Load(settings) Store(settings) Load(settings) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 37: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Call(strchr) Load(settings) Store(settings) Load(settings) Store(settings) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 35: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Call(strchr) Store(settings) Load(settings) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 35: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Call(strchr) Store(settings) Load(settings) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 49: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Call(getrlimit) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Call(getpwnam) Call(setgroups) Call(__errno_location) Load(call679) Call(__errno_location) Load(call682) Call(strerror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 43: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Call(setrlimit) Call(getrlimit) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 38: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Call(setrlimit) Call(setrlimit) Call(getrlimit) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 50: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Call(getpwnam) Call(setgroups) Call(__errno_location) Load(call679) Call(__errno_location) Load(call682) Call(strerror) Call(setgid) Call(setuid) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 46: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Call(getpwnam) Call(setgroups) Call(setgid) Call(setuid) Load(settings) Call(signal) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 57: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Call(restart_register) Load(settings) Load(settings) Call(restart_mmap_open) Load(settings) Call(assoc_init) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 60: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Call(storage_init) Store(ext_storage) Load(settings) Call(slabs_prefill_global) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 61: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Call(slabs_prefill_global) Load(settings) Store(process_started) Call(restart_fixup) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 65: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Call(start_assoc_maintenance_thread) Call(start_item_crawler_thread) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 65: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Call(start_assoc_maintenance_thread) Call(start_storage_compact_thread) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 65: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Call(start_item_crawler_thread) Call(start_storage_compact_thread) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 65: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Call(start_item_crawler_thread) Call(start_storage_write_thread) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 65: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Call(start_lru_maintainer_thread) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 66: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Call(start_lru_maintainer_thread) Load(settings) Call(start_slab_maintenance_thread) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 67: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Call(start_lru_maintainer_thread) Load(settings) Load(settings) Call(start_conn_timeout_thread) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 66: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Call(start_storage_compact_thread) Call(start_lru_maintainer_thread) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 65: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Call(start_storage_compact_thread) Call(start_storage_write_thread) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 66: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Call(start_storage_write_thread) Call(start_lru_maintainer_thread) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 66: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Call(start_storage_write_thread) Load(settings) Call(start_slab_maintenance_thread) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 71: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Call(start_slab_maintenance_thread) Load(settings) Call(clock_gettime) Store(monotonic) Store(monotonic_start) Load(monotonic_start) Store(monotonic_start) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 67: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Call(start_slab_maintenance_thread) Load(settings) Call(start_conn_timeout_thread) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 80: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Call(__errno_location) Store(call872) Load(settings) Load(settings) Call(server_socket_unix) Load(settings) Call(getenv) Call(strlen) Call(fopen) Call(__errno_location) Load(call895) Call(strerror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 75: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Call(__errno_location) Store(call872) Load(settings) Load(settings) Call(server_socket_unix) Load(settings) Call(vperror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 79: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(getenv) Call(__errno_location) Store(call900) Load(settings) Call(__errno_location) Store(call907) Load(settings) Call(fclose) Call(rename) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 82: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(getenv) Call(__errno_location) Store(call900) Load(settings) Call(__errno_location) Store(call907) Load(settings) Call(free) Call(usleep) Load(stats_state) Load(stats_state) Load(settings) Call(save_pid) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 81: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(getenv) Call(__errno_location) Store(call900) Load(settings) Call(__errno_location) Store(call907) Load(settings) Call(usleep) Load(stats_state) Load(stats_state) Load(settings) Call(save_pid) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 81: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(getenv) Call(__errno_location) Store(call900) Load(settings) Call(__errno_location) Store(call907) Load(settings) Call(usleep) Load(stats_state) Load(stats_state) Load(settings) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 80: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(getenv) Call(__errno_location) Store(call900) Load(settings) Call(__errno_location) Store(call907) Load(settings) Load(settings) Call(server_sockets) Call(fclose) Call(rename) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 79: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(getenv) Call(__errno_location) Store(call900) Load(settings) Call(__errno_location) Store(call907) Load(settings) Load(settings) Call(server_sockets) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 80: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(getenv) Call(__errno_location) Store(call900) Load(settings) Call(__errno_location) Store(call907) Load(settings) Load(settings) Call(server_sockets) Load(settings) Call(vperror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 80: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(getenv) Call(__errno_location) Store(call900) Load(settings) Load(settings) Call(server_sockets) Call(__errno_location) Store(call907) Load(settings) Call(fclose) Call(rename) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 82: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(getenv) Call(__errno_location) Store(call900) Load(settings) Load(settings) Call(server_sockets) Call(__errno_location) Store(call907) Load(settings) Load(settings) Call(server_sockets) Load(settings) Call(vperror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 77: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(getenv) Call(__errno_location) Store(call900) Load(settings) Load(settings) Call(server_sockets) Load(settings) Call(vperror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 82: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(getenv) Call(strlen) Call(fopen) Call(__errno_location) Load(call895) Call(strerror) Call(__errno_location) Store(call900) Load(settings) Load(settings) Call(server_sockets) Load(settings) Call(vperror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 82: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(getenv) Call(strlen) Call(fopen) Call(__errno_location) Store(call900) Load(settings) Call(__errno_location) Store(call907) Load(settings) Load(settings) Call(server_sockets) Load(settings) Call(vperror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 79: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(getenv) Call(strlen) Call(fopen) Call(__errno_location) Store(call900) Load(settings) Load(settings) Call(server_sockets) Load(settings) Call(vperror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 76: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(usleep) Load(stats_state) Load(stats_state) Load(settings) Call(save_pid) Load(settings) Call(uriencode_init) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 84: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(usleep) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Call(uriencode_init) Load(stop_main_loop) Load(main_base) Call(event_base_loop) Load(stop_main_loop) Load(main_base) Call(event_base_loop) Load(stop_main_loop) Load(main_base) Call(event_base_loop) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 83: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(usleep) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Call(uriencode_init) Load(stop_main_loop) Load(main_base) Call(event_base_loop) Load(stop_main_loop) Load(main_base) Call(event_base_loop) Load(stop_main_loop) Load(stop_main_loop) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 84: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(usleep) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Call(uriencode_init) Load(stop_main_loop) Load(main_base) Call(event_base_loop) Load(stop_main_loop) Load(stop_main_loop) Call(stop_threads) Load(settings) Load(stop_main_loop) Call(restart_mmap_close) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 84: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(usleep) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Call(uriencode_init) Load(stop_main_loop) Load(stop_main_loop) Call(stop_threads) Load(settings) Call(remove_pidfile) Load(settings) Load(main_base) Call(event_base_free) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 83: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(usleep) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Call(uriencode_init) Load(stop_main_loop) Load(stop_main_loop) Call(stop_threads) Load(settings) Call(remove_pidfile) Load(settings) Load(settings) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 83: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(usleep) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Call(uriencode_init) Load(stop_main_loop) Load(stop_main_loop) Call(stop_threads) Load(settings) Load(settings) Load(main_base) Call(event_base_free) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 85: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(usleep) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Call(uriencode_init) Load(stop_main_loop) Load(stop_main_loop) Call(stop_threads) Load(settings) Load(settings) Load(settings) Call(free) Load(main_base) Call(event_base_free) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 81: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(usleep) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Call(uriencode_init) Load(stop_main_loop) Load(stop_main_loop) Call(stop_threads) Load(settings) Load(stop_main_loop) Call(remove_pidfile) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 82: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(usleep) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Call(uriencode_init) Load(stop_main_loop) Load(stop_main_loop) Call(stop_threads) Load(settings) Load(stop_main_loop) Call(restart_mmap_close) Call(remove_pidfile) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 83: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Call(clock_handler) Load(settings) Load(settings) Call(usleep) Load(stats_state) Load(stats_state) Load(settings) Load(settings) Call(uriencode_init) Load(stop_main_loop) Load(stop_main_loop) Call(stop_threads) Load(settings) Load(stop_main_loop) Load(settings) Load(settings) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 79: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Store(monotonic) Store(monotonic_start) Load(monotonic_start) Store(monotonic_start) Call(clock_handler) Load(settings) Call(__errno_location) Store(call872) Load(settings) Load(settings) Call(server_socket_unix) Load(settings) Call(vperror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 79: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(clock_gettime) Store(monotonic) Store(monotonic_start) Load(monotonic_start) Store(monotonic_start) Call(clock_handler) Load(settings) Load(settings) Call(getenv) Call(strlen) Call(fopen) Call(__errno_location) Load(call895) Call(strerror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 71: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Load(settings) Load(settings) Call(start_conn_timeout_thread) Call(clock_gettime) Store(monotonic) Store(monotonic_start) Load(monotonic_start) Store(monotonic_start) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 66: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) Load(settings) Load(settings) Call(slabs_init) Load(settings) Load(settings) Store(process_started) Call(restart_fixup) Call(signal) Call(slabs_set_storage) Load(settings) Call(memcached_thread_init) Call(init_lru_crawler) Call(start_assoc_maintenance_thread) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 58: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Load(settings) Load(settings) Call(authfile_load) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Call(restart_register) Load(settings) Load(settings) Call(restart_mmap_open) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 56: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Load(settings) Load(settings) Call(authfile_load) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Load(settings) Call(assoc_init) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 55: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Load(settings) Load(settings) Call(authfile_load) Load(settings) Call(__errno_location) Load(call739) Call(strerror) Call(vperror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 55: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Load(settings) Load(settings) Call(authfile_load) Load(settings) Call(__errno_location) Load(call742) Call(strerror) Call(vperror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 59: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(mlockall) Call(__errno_location) Load(call723) Call(strerror) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Load(settings) Load(settings) Call(authfile_load) Load(settings) Call(__errno_location) Load(call739) Call(strerror) Call(vperror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 59: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(mlockall) Call(__errno_location) Load(call723) Call(strerror) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Load(settings) Load(settings) Call(authfile_load) Load(settings) Call(__errno_location) Load(call742) Call(strerror) Call(vperror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 56: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(mlockall) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Call(stats_init) Call(logger_init) Call(conn_init) Load(settings) Call(restart_register) Load(settings) Load(settings) Call(restart_mmap_open) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 56: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(mlockall) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Load(settings) Load(settings) Call(authfile_load) Load(settings) Call(__errno_location) Load(call739) Call(strerror) Call(vperror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 56: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(mlockall) Call(event_config_new) Call(event_config_set_flag) Call(event_base_new_with_config) Store(main_base) Call(event_config_free) Load(settings) Load(settings) Load(settings) Call(authfile_load) Load(settings) Call(__errno_location) Load(call742) Call(strerror) Call(vperror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 48: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(geteuid) Load(settings) Call(signal) Load(settings) Call(daemonize) Call(mlockall) Call(__errno_location) Load(call723) Call(strerror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 46: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(getpwnam) Call(setgroups) Call(__errno_location) Load(call679) Call(__errno_location) Load(call682) Call(strerror) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 43: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Call(getrlimit) Load(settings) Load(settings) Call(setrlimit) Call(getuid) Call(getpwnam) Call(setgroups) Call(setgid) Call(setuid) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 38: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Load(settings) Call(getrlimit) Call(setrlimit) Call(setrlimit) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 38: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 40: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Load(settings) Load(settings) Store(settings) Call(getrlimit) Call(setrlimit) Call(setrlimit) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 38: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 37: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Store(settings) Load(settings) Load(settings) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 37: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Load(settings) Load(settings) Load(settings) Call(hash_init) Load(settings) Load(settings) Store(settings) Load(settings) Store(settings) Load(settings) Load(settings) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 26: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 30: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Call(storage_check_config) Call(strdup) Call(_parse_slab_sizes) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 28: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Store(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 13: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Load(settings) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 14: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Call(enable_large_pages) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 14: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Call(usage) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 14: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Call(usage_license) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 19: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(atof) Store(settings) Load(settings) Load(optarg) Call(strdup) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 18: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(atoi) Store(settings) Load(settings) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 20: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strcmp) Load(optarg) Call(strcmp) Load(optarg) Call(strcmp) Load(optarg) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 20: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strcmp) Load(optarg) Call(strcmp) Load(optarg) Call(strcmp) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 18: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strcmp) Load(optarg) Call(strcmp) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 16: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strcmp) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 18: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strlen) Call(atoi) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 16: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 16: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strtol) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 20: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Load(optarg) Load(__ANOMY_59) Load(optarg) Load(__ANOMY_62) Store(settings) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 15: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 17: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Load(settings) Load(optarg) Call(strdup) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 26: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Load(settings) Load(settings) Load(optarg) Call(strstr) Load(settings) Call(strlen) Load(optarg) Call(strlen) Load(settings) Load(optarg) Load(settings) Call(free) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 22: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 15: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Load(settings) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 16: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Call(enable_large_pages) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 16: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Call(usage) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 16: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Call(usage_license) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 21: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(atof) Store(settings) Load(settings) Load(optarg) Call(strdup) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 20: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(atoi) Store(settings) Load(settings) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 22: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strcmp) Load(optarg) Call(strcmp) Load(optarg) Call(strcmp) Load(optarg) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 22: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strcmp) Load(optarg) Call(strcmp) Load(optarg) Call(strcmp) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 20: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strcmp) Load(optarg) Call(strcmp) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 18: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strcmp) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 18: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 23: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Call(atof) Store(settings) Load(settings) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 24: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Call(atoi) Store(settings) Load(settings) Load(settings) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 20: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Call(item_stats_sizes_init) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 22: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Call(safe_strtoul) Load(settings) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 21: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Call(safe_strtoul) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 21: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Call(strcmp) Call(strcmp) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 21: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Load(settings) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 22: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(atoi) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 21: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 26: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Call(atof) Store(settings) Load(settings) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 27: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Call(atoi) Store(settings) Load(settings) Load(settings) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 23: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Call(item_stats_sizes_init) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 23: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Call(safe_strtol) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 26: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Call(safe_strtoul) Load(settings) Store(settings) Call(strdup) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 24: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Call(safe_strtoul) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 24: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Call(strcmp) Call(strcmp) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 28: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Load(settings) Store(settings) Store(settings) Store(settings) Store(settings) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 25: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Store(settings) Call(atoi) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 24: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Store(settings) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 29: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Call(atof) Store(settings) Load(settings) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 30: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Call(atoi) Store(settings) Load(settings) Load(settings) Load(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 26: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Call(item_stats_sizes_init) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 26: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Call(safe_strtol) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 29: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Call(safe_strtoul) Load(settings) Store(settings) Call(strdup) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 27: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Call(safe_strtoul) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 27: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Call(strcmp) Call(strcmp) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 26: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Call(strdup) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 31: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Load(settings) Store(settings) Store(settings) Store(settings) Store(settings) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 28: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Store(settings) Call(atoi) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 27: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Store(settings) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 29: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Store(settings) Call(strdup) Call(getsubopt) Store(settings) Store(settings) Store(settings) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 21: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strlen) Call(atoi) Store(settings) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 22: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Call(strlen) Call(strlen) Call(atoi) Store(settings) Call(free) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 18: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strdup) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 18: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Call(strtol) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 22: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Load(optarg) Load(__ANOMY_59) Load(optarg) Load(__ANOMY_62) Store(settings) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 17: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(optarg) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 19: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(settings) Load(optarg) Call(strdup) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 28: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(settings) Load(settings) Load(optarg) Call(strstr) Load(settings) Call(strlen) Load(optarg) Call(strlen) Load(settings) Load(optarg) Load(settings) Call(free) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 24: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Load(settings) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 17: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Load(settings) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 16: Call(sanitycheck) Call(signal) Call(signal) Call(signal) Call(signal) Call(settings_init) Call(verify_default) Call(storage_init_config) Call(init_lru_maintainer) Call(setbuf) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) Call(getopt_long) Store(settings) 
+Expanding to 1 sequences.
+	[0]: Call(event_get_version) Call(strncmp) Call(event_get_version) 
+Expanded: 
+Size: 4: Call(event_get_version) Call(strncmp) Call(event_get_version) Call(signal) 
+Current head: Size: 
